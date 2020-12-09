@@ -13,58 +13,9 @@
 <fg=red>                                                                                              </>
 
 You are almost ready with the installation! There are required steps you have to do manually:
-  *  <fg=blue>Rename</> <comment>ezplatform_webpack.config.js</> to <comment>webpack.config.js</>
-  *  <fg=blue>Modify</> <comment>config/packages/security.yaml</> file by adding new entries to <comment>providers</>
-     and <comment>firewalls</> sections. Please be aware that order of entries under <comment>firewalls</> setting is important.
-     <fg=green>
-     security:
-
-         # ...
-         providers:
-             ezplatform:
-                 id: ezpublish.security.user_provider
-
-         # ...
-         firewalls:
-             ezpublish_forgot_password:
-                 pattern: /user/(forgot-password|reset-password)
-                 security: false
-
-             # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
-             #ezplatform_rest:
-             #    request_matcher: EzSystems\EzPlatformAdminUi\REST\Security\NonAdminRESTRequestMatcher
-             #    user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
-             #    anonymous: ~
-             #    guard:
-             #        authenticators:
-             #            - lexik_jwt_authentication.jwt_token_authenticator
-             #        entry_point: lexik_jwt_authentication.jwt_token_authenticator
-             #    stateless: true
-
-             #ezplatform_graphql:
-             #    request_matcher: EzSystems\EzPlatformGraphQL\Security\NonAdminGraphQLRequestMatcher
-             #    user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
-             #    anonymous: ~
-             #    guard:
-             #        authenticators:
-             #            - lexik_jwt_authentication.jwt_token_authenticator
-             #        entry_point: lexik_jwt_authentication.jwt_token_authenticator
-             #    stateless: true
-
-             ezpublish_front:
-                 pattern: ^/
-                 user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
-                 anonymous: ~
-                 ezpublish_rest_session: ~
-                 form_login:
-                     require_previous_session: false
-                     csrf_token_generator: security.csrf.token_manager
-                 logout: ~
-
-             # your entries...
-     </>
   *  <fg=blue>Configure database</> connection in <comment>.env</> file
   *  <fg=blue>Run</> following commands:
+       >  <comment>composer recipes:install ibexa/oss --force</>
+          <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
        >  <comment>bin/console ezplatform:install clean</>
        >  <comment>bin/console ezplatform:graphql:generate-schema</>
-
