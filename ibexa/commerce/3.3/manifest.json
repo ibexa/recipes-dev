@@ -40,7 +40,6 @@
     "EzSystems\\EzPlatformAdminUiAssetsBundle\\EzPlatformAdminUiAssetsBundle": ["all"],
     "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": ["all"],
     "EzSystems\\EzPlatformMatrixFieldtypeBundle\\EzPlatformMatrixFieldtypeBundle": ["all"],
-    "EzSystems\\BehatBundle\\EzSystemsBehatBundle": ["behat"],
     "EzSystems\\PlatformHttpCacheBundle\\EzSystemsPlatformHttpCacheBundle": ["all"],
     "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": ["all"],
     "EzSystems\\EzPlatformGraphQL\\EzSystemsEzPlatformGraphQLBundle": ["all"],
@@ -51,7 +50,6 @@
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
-    "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": ["test", "behat"],
     "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"]
 },

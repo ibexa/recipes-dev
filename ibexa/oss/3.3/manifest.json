@@ -1,5 +1,5 @@
 {
-  "aliases": ["ibexa", "dxp", "cms"],
+  "aliases": ["ibexa", "ibexa-oss", "cms"],
   "bundles": {
     "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": ["all"],
     "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": ["all"],
@@ -49,7 +49,7 @@
     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
     "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"]
-},
+  },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
     "encore/": "/",
@@ -79,11 +79,7 @@
     "SESSION_HANDLER_ID": "session.handler.native_file",
     "SESSION_SAVE_PATH":  "%kernel.project_dir%/var/sessions/%kernel.environment%",
     "SOLR_DSN": "http://localhost:8983/solr",
-    "SOLR_CORE": "collection1",
-    "#10": "Enable recommendations by setting valid id, key and uri",
-    "#11": "RECOMMENDATIONS_CUSTOMER_ID=\"\"",
-    "#12": "RECOMMENDATIONS_LICENSE_KEY=\"\"",
-    "#13": "PUBLIC_SERVER_URI=\"\""
+    "SOLR_CORE": "collection1"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
