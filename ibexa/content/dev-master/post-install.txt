@@ -1,0 +1,21 @@
+<fg=red>                                                                                              </>
+<fg=red>       ::::     ./.  `..-..`              ``...``               .....`    `....`              </>
+<fg=red>       oo+/   ./++:/++++++++/:.        .:/++//////:.          -////:` `-://///////-`          </>
+<fg=red>       o/.    /++++++/:---:++++/`    `/+++/:----/////-      -////:`  -/////:--::////:`        </>
+<fg=red>          .   /++++:`       ./+++.  .+++/.     .:///:``-` -////:`   ////-`      `-////`       </>
+<fg=red>        ./+   /+++:          `+++/  +++/`    .////:` :///////:`    -///.          .///:       </>
+<fg=red>       /o++   /+++.           :+++``+++:   .////:`   .//////.      :///            ////       </>
+<fg=red>       oo++   -+++:          `+++/  /++/`./+//:`   `-////////:`    -///.          `////       </>
+<fg=red>       oo++    /+++/.       -++++.  .+++++++:`   .:////-``-////:`  `////-        ./////       </>
+<fg=red>       oo++     :+++++::::/++++/`    ./++++/---://///-`    `-////:`  -////:----:///////       </>
+<fg=red>       oo++      `-/++++++++/:.        .:/++//////:.         `-////:` `-://///////-///.       </>
+<fg=red>       ....          `....``              `.....`               `````     `....`   :.         </>
+<fg=red>                                                                                              </>
+
+You are almost ready with the installation! There are required steps you have to do manually:
+  *  <fg=blue>Configure database</> connection in <comment>.env</> file
+  *  <fg=blue>Run</> following commands:
+       >  <comment>composer recipes:install ibexa/oss --force</>
+          <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
+       >  <comment>bin/console ezplatform:install clean</>
+       >  <comment>bin/console ezplatform:graphql:generate-schema</>
