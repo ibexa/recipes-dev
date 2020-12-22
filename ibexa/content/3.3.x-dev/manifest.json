@@ -94,7 +94,7 @@
     "#10": "Enable recommendations by setting valid id, key and uri",
     "RECOMMENDATION_CUSTOMER_ID": 0,
     "RECOMMENDATION_LICENSE_KEY": "",
-    "PUBLIC_SERVER_URI": "",
+    "RECOMMENDATION_HOST_URI": "",
     "ELASTICSEARCH_DSN": "http://localhost:9200",
     "#11": "Enable fastly by setting valid service_id and key",
     "#12": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
