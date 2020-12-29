@@ -73,6 +73,7 @@
     "config/": "%CONFIG_DIR%/",
     "encore/": "/",
     "templates/": "templates/",
+    "translations/": "translations/",
     "assets/": "assets/"
   },
   "env": {
