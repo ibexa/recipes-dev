@@ -85,6 +85,7 @@
     "Siso\\Bundle\\OrderHistoryBundle\\SisoOrderHistoryBundle": ["all"],
     "Siso\\AdminErpPluginBundle\\SisoAdminErpPluginBundle": ["all"],
     "Siso\\Bundle\\InstallerBundle\\SisoInstallerBundle": ["all"],
+    "Siso\\Bundle\\ShopFrontendBundle\\SisoShopFrontendBundle": ["all"],
     "FOS\\RestBundle\\FOSRestBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
