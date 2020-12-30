@@ -67,7 +67,8 @@
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
     "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
-    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"]
+    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"],
+    "Ibexa\\Platform\\Bundle\\OAuth2Client\\IbexaPlatformOAuth2ClientBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
