@@ -18,4 +18,5 @@ You are almost ready with the installation! There are required steps you have to
        >  <comment>composer recipes:install ibexa/content --force</>
           <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
        >  <comment>php bin/console ezplatform:install clean</>
+       >  <comment>php bin/console ezplatform:install ezcommerce-clean</>
        >  <comment>php bin/console ezplatform:graphql:generate-schema</>

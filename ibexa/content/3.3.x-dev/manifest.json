@@ -45,7 +45,6 @@
     "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": ["all"],
     "EzSystems\\PlatformFastlyCacheBundle\\EzSystemsPlatformFastlyCacheBundle": ["all"],
     "EzSystems\\DateBasedPublisherBundle\\EzSystemsDateBasedPublisherBundle": ["all"],
-    "EzSystems\\EzPlatformEnterpriseEditionInstallerBundle\\EzPlatformEnterpriseEditionInstallerBundle": ["all"],
     "EzSystems\\EzPlatformWorkflowBundle\\EzPlatformWorkflowBundle": ["all"],
     "EzSystems\\EzPlatformCalendarBundle\\EzPlatformCalendarBundle": ["all"],
     "EzSystems\\EzPlatformVersionComparisonBundle\\EzPlatformVersionComparisonBundle": ["all"],
