@@ -21,6 +21,3 @@ siso_search:
 siso_tools:
     resource: '@SisoToolsBundle/Resources/config/routing.yml'
     prefix: /
-
-siso_basket:
-    resource: '@SisoBasketBundle/Resources/config/routing.yaml'
