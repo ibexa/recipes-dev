@@ -53,6 +53,7 @@
     "Ibexa\\Platform\\Bundle\\Connector\\Dam\\IbexaPlatformConnectorDamBundle": ["all"],
     "EzSystems\\EzRecommendationClientBundle\\EzRecommendationClientBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Personalization\\IbexaPlatformPersonalizationBundle": ["all"],
+    "Ibexa\\Platform\\Bundle\\ImageEditor\\IbexaPlatformImageEditorBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
