@@ -18,8 +18,8 @@ To finish the installation process:
     2. Run the following commands:
        >  <comment>composer recipes:install ibexa/oss --force</>
           <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
-       >  <comment>php bin/console ezplatform:install clean</>
-       >  <comment>php bin/console ezplatform:graphql:generate-schema</>
+       >  <comment>php bin/console ibexa:install</>
+       >  <comment>php bin/console ibexa:graphql:generate-schema</>
 
 Refer to https://doc.ibexa.co/en/latest/getting_started/install_ibexa_dxp for a detailed installation and configuration guide.
 <fg=red>Visit https://www.ibexa.co to learn more about the benefits of using Ibexa DXP</>.
