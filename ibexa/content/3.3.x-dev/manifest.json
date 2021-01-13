@@ -48,6 +48,7 @@
     "EzSystems\\EzPlatformWorkflowBundle\\EzPlatformWorkflowBundle": ["all"],
     "EzSystems\\EzPlatformCalendarBundle\\EzPlatformCalendarBundle": ["all"],
     "EzSystems\\EzPlatformVersionComparisonBundle\\EzPlatformVersionComparisonBundle": ["all"],
+    "Ibexa\\Platform\\Bundle\\Installer\\IbexaPlatformInstallerBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Icons\\IbexaPlatformIconsBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\ElasticSearchEngine\\PlatformElasticSearchEngineBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Connector\\Dam\\IbexaPlatformConnectorDamBundle": ["all"],
@@ -81,7 +82,6 @@
     "Siso\\ShopPriceEnginePluginBundle\\ShopPriceEnginePluginBundle": ["all"],
     "Siso\\Bundle\\SpecificationsTypeBundle\\SisoSpecificationsTypeBundle": ["all"],
     "Siso\\Bundle\\ContentPluginBundle\\SisoContentPluginBundle": ["all"],
-    "Siso\\Bundle\\InstallerBundle\\SisoInstallerBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Commerce\\FieldTypes\\IbexaPlatformCommerceFieldTypesBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Commerce\\Checkout\\IbexaPlatformCommerceCheckoutBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Commerce\\ShopUi\\IbexaPlatformCommerceShopUiBundle": ["all"]
