@@ -46,7 +46,6 @@
     "EzSystems\\EzPlatformPageFieldTypeBundle\\EzPlatformPageFieldTypeBundle": ["all"],
     "EzSystems\\EzPlatformFormBuilderBundle\\EzPlatformFormBuilderBundle": ["all"],
     "EzSystems\\DateBasedPublisherBundle\\EzSystemsDateBasedPublisherBundle": ["all"],
-    "EzSystems\\EzPlatformEnterpriseEditionInstallerBundle\\EzPlatformEnterpriseEditionInstallerBundle": ["all"],
     "EzSystems\\EzPlatformWorkflowBundle\\EzPlatformWorkflowBundle": ["all"],
     "EzSystems\\EzPlatformCalendarBundle\\EzPlatformCalendarBundle": ["all"],
     "EzSystems\\EzPlatformSiteFactoryBundle\\EzPlatformSiteFactoryBundle": ["all"],
