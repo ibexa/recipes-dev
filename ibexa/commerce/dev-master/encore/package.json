@@ -9,7 +9,7 @@
     "webpack-notifier": "^1.6.0",
     "react-collapsible": "^2.5.0",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.0.1"
+    "sass-loader": "^9.0.1"
   },
   "license": "UNLICENSED",
   "private": true,
