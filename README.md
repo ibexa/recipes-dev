@@ -1,20 +1,9 @@
-# Ibexa recipes repository
+# Ibexa staging recipes repository
 
-Here is the repository for `ibexa/*` and `ezsystems/*` packages. In order to use the recipes, configure your project with `flex.ibexa.co` server:
+Here is the repository for `ibexa/*` and `ezsystems/*` packages. In order to use the recipes, configure your project with `https://flex.ibexa.co.test-t6dnbai-pmv2ynvffpvc4.eu-4.platformsh.site/` server:
 ```json
-# composer.json
-        
-{
-    ...
-    "extra": {
-        "symfony": {
-            "allow-contrib": true,
-            "endpoint": "https://flex.ibexa.co"
-        }
-    }
-}
+composer config extra.symfony.endpoint https://flex.ibexa.co.test-t6dnbai-pmv2ynvffpvc4.eu-4.platformsh.site/
 ```
-
 ## COPYRIGHT
 Copyright (C) 1999-2021 Ibexa AS (formerly eZ Systems AS). All rights reserved.
 
