@@ -20,6 +20,7 @@ To finish the installation process:
           <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
        >  <comment>php bin/console ibexa:install</>
        >  <comment>php bin/console ibexa:graphql:generate-schema</>
+       >  <comment>composer run post-update-cmd</>
 
 Refer to https://doc.ibexa.co/en/latest/getting_started/install_ibexa_dxp for a detailed installation and configuration guide.
 <fg=red>Visit https://www.ibexa.co to learn more about the benefits of using Ibexa DXP</>.
