@@ -6,3 +6,9 @@ imports:
     - { resource: ezcommerce/ezcommerce_demo.yaml }
     - { resource: ezcommerce/ezcommerce_common.yaml }
     - { resource: ezcommerce/ezcommerce_advanced.yaml }
+
+ezplatform:
+    system:
+        default:
+            commerce:
+                enabled: true
