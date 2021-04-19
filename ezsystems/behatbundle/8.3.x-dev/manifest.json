@@ -9,5 +9,8 @@
         "behat_ibexa_content.yaml": "behat_ibexa_content.yaml",
         "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
         "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
     }
 }
