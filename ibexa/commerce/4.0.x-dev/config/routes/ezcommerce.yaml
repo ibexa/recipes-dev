@@ -51,3 +51,8 @@ ezcommerce_admin_ui:
 
 siso_basket:
     resource: '@SisoBasketBundle/Resources/config/routing.yaml'
+
+ibexa.commerce.rest:
+    resource: "@SisoRestApiBundle/Resources/config/routing.yaml"
+    prefix: "%ezpublish_rest.path_prefix%"
+
