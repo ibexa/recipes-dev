@@ -69,7 +69,6 @@
     "Siso\\Bundle\\EzStudioBundle\\SisoEzStudioBundle": ["all"],
     "Siso\\Bundle\\ComparisonBundle\\SisoComparisonBundle": ["all"],
     "Siso\\Bundle\\PaymentBundle\\SisoPaymentBundle": ["all"],
-    "Kaliop\\eZMigrationBundle\\eZMigrationBundle": ["all"],
     "Siso\\Bundle\\PriceBundle\\SisoPriceBundle": ["all"],
     "Siso\\Bundle\\QuickOrderBundle\\SisoQuickOrderBundle": ["all"],
     "Siso\\Bundle\\ToolsBundle\\SisoToolsBundle": ["all"],

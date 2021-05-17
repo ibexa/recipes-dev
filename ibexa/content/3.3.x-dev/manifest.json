@@ -68,7 +68,6 @@
     "Nelmio\\SolariumBundle\\NelmioSolariumBundle": ["all"],
     "JMS\\Payment\\CoreBundle\\JMSPaymentCoreBundle": ["all"],
     "Joli\\ApacheTikaBundle\\ApacheTikaBundle": ["all"],
-    "Kaliop\\eZMigrationBundle\\eZMigrationBundle": ["all"],
     "JMS\\JobQueueBundle\\JMSJobQueueBundle": ["all"],
     "FOS\\RestBundle\\FOSRestBundle": ["all"],
     "JMS\\SerializerBundle\\JMSSerializerBundle": ["all"],
