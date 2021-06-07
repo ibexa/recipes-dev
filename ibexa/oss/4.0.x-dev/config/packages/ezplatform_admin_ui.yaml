@@ -26,5 +26,5 @@ ezplatform:
                 media: /1/43/
             assets:
                 icon_sets:
-                    default_icons: /bundles/ezplatformadminui/img/ez-icons.svg
+                    default_icons: /bundles/ezplatformadminui/img/ibexa-icons.svg
                 default_icon_set: default_icons
