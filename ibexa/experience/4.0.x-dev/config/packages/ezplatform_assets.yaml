@@ -1,6 +1,7 @@
 webpack_encore:
     builds:
         ezplatform: "%kernel.project_dir%/public/assets/ezplatform/build"
+        richtext: "%kernel.project_dir%/public/assets/richtext/build"
 
 framework:
     assets:
