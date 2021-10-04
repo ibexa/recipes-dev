@@ -107,7 +107,8 @@
     "Ibexa\\Platform\\Bundle\\Personalization\\IbexaPlatformPersonalizationBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Migration\\IbexaPlatformMigrationBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\ImageEditor\\IbexaPlatformImageEditorBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\OAuth2Client\\IbexaPlatformOAuth2ClientBundle": ["all"]
+    "Ibexa\\Platform\\Bundle\\OAuth2Client\\IbexaPlatformOAuth2ClientBundle": ["all"],
+    "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
