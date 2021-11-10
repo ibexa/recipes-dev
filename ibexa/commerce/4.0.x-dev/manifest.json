@@ -55,7 +55,7 @@
     "Ibexa\\Platform\\Bundle\\Search\\IbexaPlatformSearchBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Icons\\IbexaPlatformIconsBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\Installer\\IbexaPlatformInstallerBundle": ["all"],
+    "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
     "FOS\\CommentBundle\\FOSCommentBundle": ["all"],
     "Tedivm\\StashBundle\\TedivmStashBundle": ["all"],
     "WhiteOctober\\BreadcrumbsBundle\\WhiteOctoberBreadcrumbsBundle": ["all"],
@@ -105,9 +105,9 @@
     "EWZ\\Bundle\\RecaptchaBundle\\EWZRecaptchaBundle": ["all"],
     "EzSystems\\EzRecommendationClientBundle\\EzRecommendationClientBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Personalization\\IbexaPlatformPersonalizationBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\Migration\\IbexaPlatformMigrationBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\ImageEditor\\IbexaPlatformImageEditorBundle": ["all"],
-    "Ibexa\\Platform\\Bundle\\OAuth2Client\\IbexaPlatformOAuth2ClientBundle": ["all"],
+    "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
+    "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
+    "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"]
   },
   "copy-from-recipe": {
