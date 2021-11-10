@@ -1,2 +1,2 @@
 ibexa.platform.oauth2_client:
-  resource: '@IbexaPlatformOAuth2ClientBundle/Resources/config/routing.yaml'
+  resource: '@IbexaOAuth2ClientBundle/Resources/config/routing.yaml'
