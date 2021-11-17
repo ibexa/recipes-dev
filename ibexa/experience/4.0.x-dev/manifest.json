@@ -92,7 +92,7 @@
     "Ibexa\\Platform\\Bundle\\Commerce\\Checkout\\IbexaPlatformCommerceCheckoutBundle": ["all"],
     "Ibexa\\Platform\\Bundle\\Commerce\\ShopUi\\IbexaPlatformCommerceShopUiBundle": ["all"],
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
-    "Ibexa\\Bundle\\NamespaceCompatibility\\IbexaNamespaceCompatibilityBundle": ["all"]
+    "Ibexa\\Bundle\\CompatibilityLayer\\IbexaCompatibilityLayerBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
