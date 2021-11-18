@@ -112,7 +112,7 @@ ezplatform:
                     - 48 # Setup
                     - 55 # Forms
                     - 56 # Site skeletons
-                    - 60 # eCommerce / Components
+                    - 60 # Components
     url_alias:
         slug_converter:
             transformation: 'urlalias_lowercase'
