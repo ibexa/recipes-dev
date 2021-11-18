@@ -1,8 +1,8 @@
 parameters:
-    siso_core.default.logo_image: /bundles/silversolutionseshop/img/logo.png
-    siso_core.admin.logo_image: /bundles/silversolutionseshop/img/logo.png
-    siso_core.default.invoice_logo: /bundles/silversolutionseshop/img/invoice_logo.png
-    siso_core.default.email_header: /bundles/silversolutionseshop/img/email-header.png
+    siso_core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    siso_core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    siso_core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png
+    siso_core.default.email_header: /bundles/ibexacommerceeshop/img/email-header.png
 
 
     siso_order_history.default.use_local_documents: true

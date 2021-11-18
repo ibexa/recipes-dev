@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="py-4">
-                     <img src="{{ asset('bundles/ezplatformadminui/img/ibexa-logo.svg') }}" alt="Ibexa" class="logo">
+                     <img src="{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}" alt="Ibexa" class="logo">
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
             <h1>
                 {{ 'ibexa_platform_welcome_page.welcome_to'|trans|desc('Welcome to') }}<br>
                 {{ ez_render_field(content, 'name') }}
-                {{ constant('EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle::VERSION') }}
+                {{ constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION') }}
             </h1>
             <div class="pt-5">
                 {{ ez_render_field(content, 'short_description') }}
