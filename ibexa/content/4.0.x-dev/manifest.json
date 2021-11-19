@@ -51,6 +51,7 @@
     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
     "Ibexa\\Bundle\\PersonalizationClient\\IbexaPersonalizationClientBundle": ["all"],
     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
+    "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
