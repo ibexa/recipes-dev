@@ -55,6 +55,8 @@ ezplatform:
             search:
                 engine: '%search_engine%'
                 connection: default
+            product_catalog:
+                engine: default
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
