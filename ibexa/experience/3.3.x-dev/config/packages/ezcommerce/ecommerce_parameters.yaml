@@ -1,15 +1,15 @@
 parameters:
     siso_core.default.ses_swiftmailer:
-        mailSender: shop@silversolutions.de
-        mailReceiver: shop@silversolutions.de
-        lostOrderEmailReceiver: shop@silversolutions.de
-        contactMailReceiver: shop@silversolutions.de
-        cancellationMailReceiver: shop@silversolutions.de
-        shopOwnerMailReceiver: shop@silversolutions.de
-    ses_eshop.forms.business.default_contact_recipient: shop@silversolutions.de
-    ses_eshop.order.sales_contact: shop@silversolutions.de
-    ses_eshop.lostorder_email: shop@silversolutions.de
-    siso_paypal_payment.receiver_email: shop@silver.de
+        mailSender: noreply@ibexa.co
+        mailReceiver: noreply@ibexa.co
+        lostOrderEmailReceiver: noreply@ibexa.co
+        contactMailReceiver: noreply@ibexa.co
+        cancellationMailReceiver: noreply@ibexa.co
+        shopOwnerMailReceiver: noreply@ibexa.co
+    ses_eshop.forms.business.default_contact_recipient: noreply@ibexa.co
+    ses_eshop.order.sales_contact: noreply@ibexa.co
+    ses_eshop.lostorder_email: noreply@ibexa.co
+    siso_paypal_payment.receiver_email: noreply@ibexa.co
 
     siso_core.siteaccess_group: ezdemo_site_clean_group
     apache_tika_path: '%kernel.project_dir%/bin/tika-app-1.20.jar'
