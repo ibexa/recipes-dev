@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace App;
+
 use Ibexa\Bundle\CompatibilityLayer\Kernel\BundleCompatibilityTrait;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
