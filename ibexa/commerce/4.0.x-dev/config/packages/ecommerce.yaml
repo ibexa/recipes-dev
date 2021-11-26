@@ -7,7 +7,7 @@ imports:
     - { resource: ezcommerce/ezcommerce_common.yaml }
     - { resource: ezcommerce/ezcommerce_advanced.yaml }
 
-ezplatform:
+ibexa:
     system:
         default:
             commerce:
