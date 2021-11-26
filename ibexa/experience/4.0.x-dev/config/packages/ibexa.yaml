@@ -43,7 +43,7 @@ parameters:
 
     env(HTTPCACHE_PURGE_TYPE): local # default value to maintain BC
 
-ezplatform:
+ibexa:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish
     http_cache:
         purge_type: '%purge_type%'
