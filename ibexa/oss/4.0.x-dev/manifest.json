@@ -53,7 +53,8 @@
     "encore/": "/",
     "templates/": "templates/",
     "translations/": "translations/",
-    "assets/": "assets/"
+    "assets/": "assets/",
+    "src/": "%SRC_DIR%/"
   },
   "env": {
     "SEARCH_ENGINE": "legacy",
