@@ -83,6 +83,9 @@
     "Ibexa\\Bundle\\Commerce\\Checkout\\IbexaCommerceCheckoutBundle": ["all"],
     "Ibexa\\Bundle\\Commerce\\ShopUi\\IbexaCommerceShopUiBundle": ["all"],
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
+    "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
+    "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
+    "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
     "Ibexa\\Bundle\\CompatibilityLayer\\IbexaCompatibilityLayerBundle": ["all"]
   },
   "copy-from-recipe": {
