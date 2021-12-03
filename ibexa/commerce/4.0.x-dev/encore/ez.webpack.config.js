@@ -26,7 +26,7 @@ module.exports = (Encore) => {
 
     const eZConfig = Encore.getWebpackConfig();
 
-    eZConfig.name = 'ezplatform';
+    eZConfig.name = 'ibexa';
 
     configManagers.forEach((configManagerPath) => {
         const configManager = require(configManagerPath);
