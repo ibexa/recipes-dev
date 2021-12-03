@@ -1,6 +1,7 @@
 webpack_encore:
     builds:
         ezplatform: "%kernel.project_dir%/public/assets/ezplatform/build"
+        ibexa: "%kernel.project_dir%/public/assets/ibexa/build"
         richtext: "%kernel.project_dir%/public/assets/richtext/build"
 
 framework:
@@ -9,4 +10,5 @@ framework:
         packages:
             ezplatform:
                 json_manifest_path: '%kernel.project_dir%/public/assets/ezplatform/build/manifest.json'
-
+            ibexa:
+                json_manifest_path: '%kernel.project_dir%/public/assets/ibexa/build/manifest.json'

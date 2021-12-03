@@ -47,7 +47,7 @@ security:
         # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
         #ezplatform_rest:
         #    request_matcher: Ibexa\AdminUi\REST\Security\NonAdminRESTRequestMatcher
-        #    user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    anonymous: ~
         #    guard:
         #        authenticators:
@@ -57,7 +57,7 @@ security:
 
         #ezplatform_graphql:
         #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
-        #    user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    anonymous: ~
         #    guard:
         #        authenticators:
@@ -67,7 +67,7 @@ security:
 
         ezpublish_front:
             pattern: ^/
-            user_checker: eZ\Publish\Core\MVC\Symfony\Security\UserChecker
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
             anonymous: ~
             ezpublish_rest_session: ~
             form_login:
