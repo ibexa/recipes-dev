@@ -1,11 +1,11 @@
 const path = require('path');
 const bundles = require('./var/encore/ez.config.js');
-const eZConfigManager = require('./ez.webpack.config.manager.js');
+const ConfigManager = require('./ez.webpack.config.manager.js');
 const configManagers = require('./var/encore/ez.config.manager.js');
 
 module.exports = (Encore) => {
-    Encore.setOutputPath('public/assets/ezplatform/build')
-        .setPublicPath('/assets/ezplatform/build')
+    Encore.setOutputPath('public/assets/ibexa/build')
+        .setPublicPath('/assets/ibexa/build')
         .addExternals({
             react: 'React',
             'react-dom': 'ReactDOM',
@@ -24,17 +24,17 @@ module.exports = (Encore) => {
         addEntries(Encore);
     });
 
-    const eZConfig = Encore.getWebpackConfig();
+    const Config = Encore.getWebpackConfig();
 
-    eZConfig.name = 'ibexa';
+    Config.name = 'ibexa';
 
     configManagers.forEach((configManagerPath) => {
         const configManager = require(configManagerPath);
 
-        configManager(eZConfig, eZConfigManager);
+        configManager(Config, ConfigManager);
     });
 
     Encore.reset();
 
-    return eZConfig;
+    return Config;
 };
