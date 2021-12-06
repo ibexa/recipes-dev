@@ -2,7 +2,7 @@
 parameters:
     elasticsearch_dsn: "%env(ELASTICSEARCH_DSN)%"
 
-ezplatform_elastic_search_engine:
+ibexa_elasticsearch:
     connections:
         default:
             hosts:
