@@ -5,7 +5,7 @@ ibexa:
             content_view:
                 full:
                     welcome_page:
-                        template: "@ezdesign/full/welcome_page.html.twig"
+                        template: "@ibexadesign/full/welcome_page.html.twig"
                         match:
                             Id\Location: 2
                         params:
