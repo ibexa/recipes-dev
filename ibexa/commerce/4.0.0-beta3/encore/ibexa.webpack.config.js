@@ -28,6 +28,9 @@ module.exports = (Encore) => {
 
     Config.name = 'ibexa';
 
+    Config.module.rules[4].oneOf[1].use[1].options.url = false;
+    Config.module.rules[1].oneOf[1].use[1].options.url = false;
+
     configManagers.forEach((configManagerPath) => {
         const configManager = require(configManagerPath);
 
