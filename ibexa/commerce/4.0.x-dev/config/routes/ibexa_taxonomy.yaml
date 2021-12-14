@@ -1,0 +1,2 @@
+ibexa.taxonomy:
+    resource: '@IbexaTaxonomyBundle/Resources/config/routing.yaml'
