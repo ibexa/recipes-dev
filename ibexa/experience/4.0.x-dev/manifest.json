@@ -55,7 +55,6 @@
     "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": ["all"],
     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
     "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": ["all"],
-    "Ibexa\\Bundle\\PersonalizationClient\\IbexaPersonalizationClientBundle": ["all"],
     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
     "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
