@@ -100,7 +100,6 @@
     "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": ["all"],
     "JMS\\SerializerBundle\\JMSSerializerBundle": ["all"],
     "EWZ\\Bundle\\RecaptchaBundle\\EWZRecaptchaBundle": ["all"],
-    "Ibexa\\Bundle\\PersonalizationClient\\IbexaPersonalizationClientBundle": ["all"],
     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
     "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
