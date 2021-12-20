@@ -19,7 +19,7 @@
         "REDIS_IMAGE": "healthcheck/redis",
         "#2": "# Behat / Selenium config",
         "#3": "## web host refer to the tip of the setup, so varnish if that is used.",
-        "SELENIUM_IMAGE": "selenium/standalone-chrome-debug:3.141.59-20210422",
+        "SELENIUM_IMAGE": "selenium/standalone-chrome-debug:3.141.59-20210929",
         "CHROMIUM_IMAGE": "registry.gitlab.com/dmore/docker-chrome-headless:7.1",
         "WEB_HOST": "http://web",
         "MINK_DEFAULT_SESSION": "selenium",
