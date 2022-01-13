@@ -21,30 +21,33 @@ nelmio_solarium:
             port: '%siso_search.solr.port%'
             path: '%siso_search.solr.path%'
             core: '%siso_search.solr.core%'
-            timeout: 30
         siso_core_admin:
             host: '%siso_search.solr.host%'
             port: '%siso_search.solr.port%'
             path: '%siso_search.solr.path%'
             core: admin
-            timeout: 30
         siso_econtent:
             host: '%siso_search.solr.host%'
             port: '%siso_search.solr.port%'
             path: '%siso_search.solr.path%'
             core: econtent
-            timeout: 30
         siso_econtent_back:
             host: '%siso_search.solr.host%'
             port: '%siso_search.solr.port%'
             path: '%siso_search.solr.path%'
             core: econtent_back
-            timeout: 30
 
     clients:
         default:
+            adapter_timeout: 30
             endpoints:
                 - default
+        siso_core_admin:
+            adapter_timeout: 30
+        siso_econtent:
+            adapter_timeout: 30
+        siso_econtent_back:
+            adapter_timeout: 30
         econtent:
             endpoints:
                 - siso_econtent
