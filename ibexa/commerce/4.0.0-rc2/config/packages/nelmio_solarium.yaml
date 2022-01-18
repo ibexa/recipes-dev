@@ -1,0 +1,13 @@
+nelmio_solarium:
+    endpoints:
+        default:
+            host: '%siso_search.solr.host%'
+            port: '%siso_search.solr.port%'
+            path: '%siso_search.solr.path%'
+            core: '%siso_search.solr.core%'
+
+    clients:
+        default:
+            adapter_timeout: 30
+            endpoints:
+                - default
