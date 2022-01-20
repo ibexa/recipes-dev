@@ -1,6 +1,6 @@
 login:
     path: /login
-    defaults: { _controller: ezpublish.security.controller:loginAction }
+    defaults: { _controller: Ibexa\Core\MVC\Symfony\Controller\SecurityController::loginAction }
 
 login_check:
     path: /login_check
