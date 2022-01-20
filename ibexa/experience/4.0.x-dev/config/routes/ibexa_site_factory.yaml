@@ -1,2 +1,2 @@
-ezplatform_site_factory:
+ibexa.site_factory:
     resource: '@IbexaSiteFactoryBundle/Resources/config/routing.yaml'
