@@ -1,2 +1,2 @@
-ezplatform_user:
+ibexa.user:
     resource: '@IbexaUserBundle/Resources/config/routing.yaml'
