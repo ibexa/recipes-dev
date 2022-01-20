@@ -1,23 +1,15 @@
-
-# Commerce routes
-
-# This file is auto-generated during the composer install
-silversolutions_eshop:
+ibexa.commerce.eshop:
     resource: "@IbexaCommerceEshopBundle/Resources/config/ses_routing.yml"
     prefix: /
 
-silversolutions_tools:
+ibexa.commerce.tools:
     resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'
     prefix: /
 
-silversolutions_translation:
+ibexa.commerce.translation:
     resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'
     prefix: /
 
-siso_search:
+ibexa.commerce.search:
     resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'
-    prefix: /
-
-siso_tools:
-    resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'
     prefix: /

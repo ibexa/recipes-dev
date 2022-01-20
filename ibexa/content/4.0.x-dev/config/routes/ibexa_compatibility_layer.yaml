@@ -1,0 +1,2 @@
+ibexa.compatibility_layer:
+    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routes.yaml'
