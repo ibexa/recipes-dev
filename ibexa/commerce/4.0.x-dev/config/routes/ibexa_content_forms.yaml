@@ -1,2 +1,2 @@
-ezplatform_content_forms:
+ibexa.content_forms:
     resource: '@IbexaContentFormsBundle/Resources/config/routing.yaml'

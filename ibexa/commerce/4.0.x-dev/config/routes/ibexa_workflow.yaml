@@ -1,2 +1,2 @@
-ezplatform.ee.workflow:
+ibexa.workflow:
     resource: '@IbexaWorkflowBundle/Resources/config/routing.yaml'

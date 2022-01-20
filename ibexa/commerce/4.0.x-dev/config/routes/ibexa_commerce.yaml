@@ -1,58 +1,49 @@
-
-# Commerce routes
-
-# This file is auto-generated during the composer install
-silversolutions_eshop:
+ibexa.commerce.eshop:
     resource: "@IbexaCommerceEshopBundle/Resources/config/ses_routing.yml"
     prefix: /
-silversolutions_tools:
+
+ibexa.commerce.tools:
     resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'
     prefix: /
-silversolutions_translation:
+
+ibexa.commerce.translation:
     resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'
     prefix: /
 
-siso_checkout:
+ibexa.commerce.checkout:
     resource: '@IbexaCommerceCheckoutBundle/Resources/config/routing.yaml'
     prefix: /
-siso_comparison:
+    
+ibexa.commerce.comparison:
     resource: '@IbexaCommerceComparisonBundle/Resources/config/routing.yml'
     prefix: /
-siso_quick_order:
+    
+ibexa.commerce.quick_order:
     resource: '@IbexaCommerceQuickOrderBundle/Resources/config/routing.yml'
     prefix: /
-siso_search:
+    
+ibexa.commerce.search:
     resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'
     prefix: /
-siso_tools:
-    resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'
-    prefix: /
-#siso_voucher:
-#    resource: "@IbexaCommerceVoucherBundle/Resources/config/routing.yml"
-#    prefix: /
-    #_siso_payment:
-    #resource: '@IbexaCommercePaymentBundle/Resources/config/routing.yml'
-    #_siso_paypal_payment:
-    #resource: '@IbexaCommercePaypalPaymentBundle/Resources/config/routing.yml'
-siso_orderhistory:
+    
+ibexa.commerce.orderhistory:
     resource: '@IbexaCommerceOrderHistoryBundle/Resources/config/routing.yml'
     prefix: /
 
-siso_local_order_management:
+ibexa.commerce.local_order_management:
     resource: '@IbexaCommerceLocalOrderManagementBundle/Resources/config/routing.yml'
     prefix: /
 
-silver_eshop_admin_rest_api:
+ibexa.commerce.admin_ui:
+    resource: '@IbexaCommerceAdminUiBundle/Resources/config/routing.yaml'
+
+ibexa.commerce.admin_ui.rest:
     resource: '@IbexaCommerceAdminUiBundle/Resources/config/routing_rest.yml'
     prefix:   '%ezpublish_rest.path_prefix%'
 
-ezcommerce_admin_ui:
-    resource: '@IbexaCommerceAdminUiBundle/Resources/config/routing.yaml'
-
-siso_basket:
+ibexa.commerce.basket:
     resource: '@IbexaCommerceBasketBundle/Resources/config/routing.yaml'
 
 ibexa.commerce.rest:
     resource: "@IbexaCommerceRestBundle/Resources/config/routing.yaml"
     prefix: "%ezpublish_rest.path_prefix%"
-
