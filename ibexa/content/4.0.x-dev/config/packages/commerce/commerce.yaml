@@ -7,7 +7,7 @@ parameters:
 
     siso_order_history.default.use_local_documents: true
 
-    # Default settings for eZ Commerce - will be overriden by backend config!
+    # Default settings for Commerce - will be overriden by backend config!
     siso_price.default.price_service_chain.product_list:
         - siso_price.price_provider.shop
     siso_price.default.price_service_chain.product_detail:

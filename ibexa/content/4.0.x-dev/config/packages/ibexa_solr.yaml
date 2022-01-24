@@ -1,5 +1,5 @@
-# Base configuration for Solr, for more options see: https://doc.ezplatform.com/en/latest/guide/search/#solr-bundle
-# Can have several connections used by each eZ Repositories in ezplatform.yml
+# Base configuration for Solr, for more options see: https://doc.ibexa.co/en/latest/guide/search/search/#solr-bundle
+# Can have several connections used by each Ibexa Repositories in ibexa.yaml
 parameters:
     # Solr root endpoint, relevant if `solr` is set as search_engine
     solr_dsn: '%env(SOLR_DSN)%'
