@@ -1,7 +1,7 @@
 const path = require('path');
-const bundles = require('./var/encore/ez.config.js');
-const eZConfigManager = require('./ez.webpack.config.manager.js');
-const configManagers = require('./var/encore/ez.config.manager.js');
+const bundles = require('./var/encore/ibexa.config.js');
+const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');
+const configManagers = require('./var/encore/ibexa.config.manager.js');
 
 module.exports = (Encore) => {
     Encore.setOutputPath('public/assets/ezplatform/build')
@@ -26,7 +26,7 @@ module.exports = (Encore) => {
 
     const eZConfig = Encore.getWebpackConfig();
 
-    eZConfig.name = 'ibexa';
+    eZConfig.name = 'ezplatform';
 
     eZConfig.module.rules[4].oneOf[1].use[1].options.url = false;
     eZConfig.module.rules[1].oneOf[1].use[1].options.url = false;
@@ -34,7 +34,7 @@ module.exports = (Encore) => {
     configManagers.forEach((configManagerPath) => {
         const configManager = require(configManagerPath);
 
-        configManager(eZConfig, eZConfigManager);
+        configManager(eZConfig, ibexaConfigManager);
     });
 
     Encore.reset();

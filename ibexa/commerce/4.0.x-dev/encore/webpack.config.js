@@ -2,10 +2,9 @@ const Encore = require('@symfony/webpack-encore');
 const path = require('path');
 const getEzConfig = require('./ez.webpack.config.js');
 const getIbexaConfig = require('./ibexa.webpack.config.js');
-const eZConfigManager = require('./ez.webpack.config.manager.js');
 const eZConfig = getEzConfig(Encore);
 const ibexaConfig = getIbexaConfig(Encore);
-const customConfigs = require('./ez.webpack.custom.configs.js');
+const customConfigs = require('./ibexa.webpack.custom.configs.js');
 
 Encore.reset();
 Encore
@@ -42,4 +41,4 @@ const projectConfig = Encore.getWebpackConfig();
 module.exports = [ eZConfig, ibexaConfig, ...customConfigs, projectConfig ];
 
 // uncomment this line if you've commented-out the above lines
-// module.exports = [ eZConfig, ...customConfigs ];
+// module.exports = [ eZConfig, ibexaConfig, ...customConfigs ];
