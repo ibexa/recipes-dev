@@ -10,6 +10,11 @@ ibexa.commerce.translation:
     resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'
     prefix: /
 
+ibexa.commerce.checkout:
+    resource: '@IbexaCommerceCheckoutBundle/Resources/config/routing.yaml'
+    prefix: /
+
 ibexa.commerce.search:
     resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'
     prefix: /
+
