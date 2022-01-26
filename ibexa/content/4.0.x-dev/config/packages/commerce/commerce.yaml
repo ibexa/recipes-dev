@@ -9,26 +9,26 @@ parameters:
 
     # Default settings for Commerce - will be overriden by backend config!
     siso_price.default.price_service_chain.product_list:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.product_detail:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.slider_product_list:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.basket:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.basket_variant:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.stored_basket:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.wish_list:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.quick_order:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.quick_order_line_preview:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.comparison:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.search_list:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
     siso_price.default.price_service_chain.bestseller_list:
-        - siso_price.price_provider.shop
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
