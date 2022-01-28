@@ -6,3 +6,4 @@ ibexa_taxonomy:
             field_mappings:
                 identifier: identifier
                 parent: parent
+                name: name
