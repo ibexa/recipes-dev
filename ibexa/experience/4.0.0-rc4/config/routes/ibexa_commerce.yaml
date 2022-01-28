@@ -1,0 +1,20 @@
+ibexa.commerce.eshop:
+    resource: "@IbexaCommerceEshopBundle/Resources/config/ses_routing.yml"
+    prefix: /
+
+ibexa.commerce.tools:
+    resource: '@IbexaCommerceToolsBundle/Resources/config/routing.yml'
+    prefix: /
+
+ibexa.commerce.translation:
+    resource: '@IbexaCommerceTranslationBundle/Resources/config/routing.yml'
+    prefix: /
+
+ibexa.commerce.checkout:
+    resource: '@IbexaCommerceCheckoutBundle/Resources/config/routing.yaml'
+    prefix: /
+
+ibexa.commerce.search:
+    resource: '@IbexaCommerceSearchBundle/Resources/config/routing.yml'
+    prefix: /
+
