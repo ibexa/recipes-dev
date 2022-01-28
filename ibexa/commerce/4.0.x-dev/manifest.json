@@ -159,7 +159,8 @@
     "#18": "SolariumBundle Solr DSN configuration",
     "#19": "Note that the /solr suffix will be appended automatically to Ibexa Solr Search Engine Bundle configuration",
     "SOLR_DSN": "http://${SISO_SEARCH_SOLR_HOST}:${SISO_SEARCH_SOLR_PORT}${SISO_SEARCH_SOLR_PATH}",
-    "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e"
+    "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e",
+    "IBEXA_EDITION": "commerce"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
