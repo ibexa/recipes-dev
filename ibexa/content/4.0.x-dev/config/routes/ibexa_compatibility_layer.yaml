@@ -1,5 +1,0 @@
-ibexa.compatibility_layer.oss:
-    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_oss.yaml'
-
-ibexa.compatibility_layer.content:
-    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_content.yaml'

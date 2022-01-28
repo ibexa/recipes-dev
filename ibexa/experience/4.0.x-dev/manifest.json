@@ -90,8 +90,7 @@
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
-    "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
-    "Ibexa\\Bundle\\CompatibilityLayer\\IbexaCompatibilityLayerBundle": ["all"]
+    "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",

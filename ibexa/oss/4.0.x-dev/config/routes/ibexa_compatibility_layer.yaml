@@ -1,2 +1,0 @@
-ibexa.compatibility_layer.oss:
-    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_oss.yaml'
