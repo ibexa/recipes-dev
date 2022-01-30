@@ -3,4 +3,5 @@ ibexa_product_catalog:
         default:
             type: local
             options:
+                root_location_remote_id: ibexa_product_catalog_root
                 product_type_group_identifier: 'product'
