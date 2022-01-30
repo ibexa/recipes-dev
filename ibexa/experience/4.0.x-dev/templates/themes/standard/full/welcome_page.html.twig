@@ -32,7 +32,7 @@
                     <strong>{{ ibexa_render_field(content, 'description') }}</strong>
                     <p class="mb-0">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to: %target%') }}</p>
 
-                    {% set admin_url = url('ezplatform.dashboard', { 'siteaccess': 'admin' }) %}
+                    {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
                     <p class="mb-0">
                         {{ 'ibexa_platform_welcome_page.create_new_content_at'|trans({'%target%': '<a href="' ~ admin_url ~ '" class="text-white"><u>' ~ admin_url ~ '</u></a>' })
                         |desc('Create new content at %target%')|raw }}
