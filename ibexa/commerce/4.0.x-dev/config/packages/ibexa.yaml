@@ -3,7 +3,7 @@ parameters:
 
     # Identifier used to generate the CSRF token. Commenting this line will result in authentication
     # issues both in AdminUI and REST calls
-    ezpublish_rest.csrf_token_intention: authenticate
+    ibexa.rest.csrf_token_intention: authenticate
 
     # You can uncomment following parameters to override the setting.
     # Their values correspond to the defaults being used.
@@ -12,7 +12,7 @@ parameters:
     #search_engine: '%env(SEARCH_ENGINE)%'
 
     # Session save path as used by symfony session handlers (eg. used for dsn with redis)
-    #ezplatform.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
+    #ibexa.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
 
     # Predefined pools are located in config/packages/cache_pool/
     # You can add your own cache pool to the folder mentioned above.
@@ -36,7 +36,7 @@ parameters:
 
     ## Session handler, by default set to file based (instead of ~) in order to be able to use %ezplatform.session.save_path%
     # env: SESSION_HANDLER_ID
-    #ezplatform.session.handler_id: session.handler.native_file
+    #ibexa.session.handler_id: session.handler.native_file
 
     ## Purge type used by HttpCache system ("local", "varnish"/"http", and on ee also "fastly")
     #purge_type: '%env(HTTPCACHE_PURGE_TYPE)%'

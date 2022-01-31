@@ -8,4 +8,4 @@ ibexa.product_catalog.admin:
 
 ibexa.product_catalog.rest:
     resource: '@IbexaProductCatalogBundle/Resources/config/routing_rest.yaml'
-    prefix: '%ezpublish_rest.path_prefix%'
+    prefix: '%ibexa.rest.path_prefix%'

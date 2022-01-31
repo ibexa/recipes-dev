@@ -5,4 +5,4 @@ ibexa.personalization:
 
 ibexa.personalization.rest:
     resource: "@IbexaPersonalizationBundle/Resources/config/routing_rest.yaml"
-    prefix:   '%ezpublish_rest.path_prefix%'
+    prefix:   '%ibexa.rest.path_prefix%'
