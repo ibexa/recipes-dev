@@ -3,4 +3,4 @@ ibexa.scheduler:
 
 ibexa.scheduler.rest:
     resource: '@IbexaSchedulerBundle/Resources/config/routing_rest.yaml'
-    prefix: '%ez_systems_date_based_publisher_rest_prefix%'
+    prefix: '%ibexa.scheduler.rest.prefix%'

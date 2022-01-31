@@ -1,10 +1,10 @@
 nelmio_solarium:
     endpoints:
         default:
-            host: '%siso_search.solr.host%'
-            port: '%siso_search.solr.port%'
-            path: '%siso_search.solr.path%'
-            core: '%siso_search.solr.core%'
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: '%ibexa.commerce.search.solr.core%'
 
     clients:
         default:

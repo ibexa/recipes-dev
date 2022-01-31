@@ -1,5 +1,5 @@
 parameters:
-    page_builder.token_authenticator.enabled: true
+    ibexa.page_builder.token_authenticator.enabled: true
 
 jms_translation:
     configs:
