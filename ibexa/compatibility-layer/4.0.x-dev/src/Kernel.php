@@ -42,8 +42,8 @@ class Kernel extends BaseKernel
 
         // Compatibility Layer
         $edition = IbexaSystemInfoExtension::getEditionByPackages();
-        if (is_file(\dirname(__DIR__) . '/config/routes/ibexa_compatibility_layer_' . $edition . '.yaml')) {
-            $routes->import('../config/routes/ibexa_compatibility_layer_' . $edition . '.yaml');
+        if (is_file(\dirname(__DIR__) . '/config/routes/deprecated/ibexa_compatibility_layer_' . $edition . '.yaml')) {
+            $routes->import('../config/routes/deprecated/ibexa_compatibility_layer_' . $edition . '.yaml');
         }
     }
 }
