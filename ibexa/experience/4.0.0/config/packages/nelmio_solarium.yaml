@@ -1,0 +1,13 @@
+nelmio_solarium:
+    endpoints:
+        default:
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: '%ibexa.commerce.search.solr.core%'
+
+    clients:
+        default:
+            adapter_timeout: 30
+            endpoints:
+                - default
