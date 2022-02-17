@@ -38,6 +38,9 @@ Encore.addEntry('welcome_page', [
 Encore.addEntry('app', './assets/app.js');
 
 const projectConfig = Encore.getWebpackConfig();
+
+projectConfig.name = 'app';
+
 module.exports = [ eZConfig, ibexaConfig, ...customConfigs, projectConfig ];
 
 // uncomment this line if you've commented-out the above lines
