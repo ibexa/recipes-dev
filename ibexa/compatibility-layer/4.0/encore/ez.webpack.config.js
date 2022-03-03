@@ -2,6 +2,8 @@ const path = require('path');
 const bundles = require('./var/encore/ibexa.config.js');
 const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');
 const configManagers = require('./var/encore/ibexa.config.manager.js');
+const configSetups = require('./var/encore/ibexa.config.setup.js');
+const path = require('path');
 
 module.exports = (Encore) => {
     Encore.setOutputPath('public/assets/ezplatform/build')
@@ -17,6 +19,12 @@ module.exports = (Encore) => {
         .enableSassLoader()
         .enableReactPreset()
         .enableSingleRuntimeChunk();
+
+    configSetups.forEach((configSetupPath) => {
+        const setupConfig = require(configSetupPath);
+
+        setupConfig(Encore);
+    });
 
     bundles.forEach((configPath) => {
         const addEntries = require(configPath);
