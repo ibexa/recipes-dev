@@ -1,4 +1,3 @@
-const path = require('path');
 const bundles = require('./var/encore/ibexa.config.js');
 const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');
 const configManagers = require('./var/encore/ibexa.config.manager.js');
