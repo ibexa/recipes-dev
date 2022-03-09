@@ -1,2 +1,0 @@
-ibexa.platform.image_editor:
-    resource: '@IbexaImageEditorBundle/Resources/config/routing.yaml'

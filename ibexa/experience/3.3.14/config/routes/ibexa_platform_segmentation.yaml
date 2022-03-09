@@ -1,2 +1,0 @@
-ibexa.platform.segmentation:
-    resource: '@IbexaPlatformSegmentationBundle/Resources/config/routing.yaml'

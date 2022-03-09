@@ -1,2 +1,0 @@
-ezplatform.ee.fieldtype.page:
-    resource: '@IbexaFieldTypePageBundle/Resources/config/routing.yaml'
