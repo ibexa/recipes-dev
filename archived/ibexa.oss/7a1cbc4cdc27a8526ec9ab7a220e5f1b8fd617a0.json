@@ -1,0 +1,747 @@
+{
+    "manifests": {
+        "ibexa/oss": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\TwigBundle\\TwigBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
+                        "all"
+                    ],
+                    "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": [
+                        "all"
+                    ],
+                    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": [
+                        "all"
+                    ],
+                    "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": [
+                        "all"
+                    ],
+                    "FOS\\JsRoutingBundle\\FOSJsRoutingBundle": [
+                        "all"
+                    ],
+                    "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": [
+                        "all"
+                    ],
+                    "JMS\\TranslationBundle\\JMSTranslationBundle": [
+                        "all"
+                    ],
+                    "Liip\\ImagineBundle\\LiipImagineBundle": [
+                        "all"
+                    ],
+                    "Nelmio\\CorsBundle\\NelmioCorsBundle": [
+                        "all"
+                    ],
+                    "Oneup\\FlysystemBundle\\OneupFlysystemBundle": [
+                        "all"
+                    ],
+                    "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishCoreBundle\\EzPublishCoreBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishLegacySearchEngineBundle\\EzPublishLegacySearchEngineBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishIOBundle\\EzPublishIOBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishDebugBundle\\EzPublishDebugBundle": [
+                        "dev",
+                        "test",
+                        "behat"
+                    ],
+                    "EzSystems\\PlatformHttpCacheBundle\\EzSystemsPlatformHttpCacheBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRestBundle\\EzPlatformRestBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformSolrSearchEngineBundle\\EzSystemsEzPlatformSolrSearchEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzSupportToolsBundle\\EzSystemsEzSupportToolsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCronBundle\\EzPlatformCronBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\PlatformInstallerBundle\\EzSystemsPlatformInstallerBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\DoctrineSchemaBundle\\DoctrineSchemaBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformContentFormsBundle\\EzPlatformContentFormsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformDesignEngineBundle\\EzPlatformDesignEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformStandardDesignBundle\\EzPlatformStandardDesignBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRichTextBundle\\EzPlatformRichTextBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiBundle\\EzPlatformAdminUiBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformUserBundle\\EzPlatformUserBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiAssetsBundle\\EzPlatformAdminUiAssetsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformMatrixFieldtypeBundle\\EzPlatformMatrixFieldtypeBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\BehatBundle\\EzSystemsBehatBundle": [
+                        "behat"
+                    ],
+                    "EzSystems\\EzPlatformGraphQL\\EzSystemsEzPlatformGraphQLBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformQueryFieldType\\Symfony\\EzSystemsEzPlatformQueryFieldTypeBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Search\\IbexaPlatformSearchBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
+                        "dev"
+                    ],
+                    "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
+                        "all"
+                    ],
+                    "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
+                        "all"
+                    ],
+                    "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
+                        "test",
+                        "behat"
+                    ],
+                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
+                        "all"
+                    ],
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "encore/": "/"
+                },
+                "env": {
+                    "SEARCH_ENGINE": "legacy",
+                    "#1": "Uncomment following line if you want to change the purge type.",
+                    "#2": "By default it will use `local` purge when running locally",
+                    "#3": "and `varnish` for Platform.sh installations.",
+                    "#4": "HTTPCACHE_PURGE_TYPE=local",
+                    "HTTPCACHE_DEFAULT_TTL": "86400",
+                    "HTTPCACHE_PURGE_SERVER": "http://localhost:80",
+                    "HTTPCACHE_VARNISH_INVALIDATE_TOKEN": "",
+                    "CACHE_POOL": "cache.tagaware.filesystem",
+                    "#5": "When using redis or memcached adapters, you can configure it using DSN:",
+                    "#6": "- https://symfony.com/doc/4.4/components/cache/adapters/redis_adapter.html#configure-the-connection",
+                    "#7": "- https://symfony.com/doc/4.4/components/cache/adapters/memcached_adapter.html#configure-the-connection",
+                    "CACHE_DSN": "localhost",
+                    "CACHE_NAMESPACE": "ezp",
+                    "DATABASE_CHARSET": "utf8mb4",
+                    "DATABASE_COLLATION": "utf8mb4_unicode_520_ci",
+                    "#8": "Needed by Doctrine Bundle / ORM to avoid it opening connection during situations where there is no service yet.",
+                    "#9": "See: https://symfony.com/doc/current/reference/configuration/doctrine.html#doctrine-dbal-configuration",
+                    "DATABASE_VERSION": "mariadb-10.3.0",
+                    "SESSION_HANDLER_ID": "session.handler.native_file",
+                    "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
+                    "SOLR_DSN": "http://localhost:8983/solr",
+                    "SOLR_CORE": "collection1",
+                    "#10": "Enable recommendations by setting valid id, key and uri",
+                    "#11": "RECOMMENDATIONS_CUSTOMER_ID=\"\"",
+                    "#12": "RECOMMENDATIONS_LICENSE_KEY=\"\"",
+                    "#13": "PUBLIC_SERVER_URI=\"\""
+                },
+                "composer-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd",
+                    "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
+                    "yarn install": "script",
+                    "ezplatform:encore:compile": "symfony-cmd"
+                },
+                "post-install-output": [
+                    "<fg=red>                                                                                              </>",
+                    "<fg=red>       ::::     ./.  `..-..`              ``...``               .....`    `....`              </>",
+                    "<fg=red>       oo+/   ./++:/++++++++/:.        .:/++//////:.          -////:` `-://///////-`          </>",
+                    "<fg=red>       o/.    /++++++/:---:++++/`    `/+++/:----/////-      -////:`  -/////:--::////:`        </>",
+                    "<fg=red>          .   /++++:`       ./+++.  .+++/.     .:///:``-` -////:`   ////-`      `-////`       </>",
+                    "<fg=red>        ./+   /+++:          `+++/  +++/`    .////:` :///////:`    -///.          .///:       </>",
+                    "<fg=red>       /o++   /+++.           :+++``+++:   .////:`   .//////.      :///            ////       </>",
+                    "<fg=red>       oo++   -+++:          `+++/  /++/`./+//:`   `-////////:`    -///.          `////       </>",
+                    "<fg=red>       oo++    /+++/.       -++++.  .+++++++:`   .:////-``-////:`  `////-        ./////       </>",
+                    "<fg=red>       oo++     :+++++::::/++++/`    ./++++/---://///-`    `-////:`  -////:----:///////       </>",
+                    "<fg=red>       oo++      `-/++++++++/:.        .:/++//////:.         `-////:` `-://///////-///.       </>",
+                    "<fg=red>       ....          `....``              `.....`               `````     `....`   :.         </>",
+                    "<fg=red>                                                                                              </>",
+                    "",
+                    "You are almost ready with the installation! There are required steps you have to do manually:",
+                    "  *  <fg=blue>Rename</> <comment>ezplatform_webpack.config.js</> to <comment>webpack.config.js</>",
+                    "  *  <fg=blue>Modify</> <comment>config/packages/security.yaml</> file by adding new entries to <comment>providers</>",
+                    "     and <comment>firewalls</> sections. Please be aware that order of entries under <comment>firewalls</> setting is important.",
+                    "     <fg=green>",
+                    "     security:",
+                    "",
+                    "         # ...",
+                    "         providers:",
+                    "             ezplatform:",
+                    "                 id: ezpublish.security.user_provider",
+                    "",
+                    "         # ...",
+                    "         firewalls:",
+                    "             ezpublish_forgot_password:",
+                    "                 pattern: /user/(forgot-password|reset-password)",
+                    "                 security: false",
+                    "",
+                    "             # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL",
+                    "             #ezplatform_rest:",
+                    "             #    request_matcher: EzSystems\\EzPlatformAdminUi\\REST\\Security\\NonAdminRESTRequestMatcher",
+                    "             #    user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                    "             #    anonymous: ~",
+                    "             #    guard:",
+                    "             #        authenticators:",
+                    "             #            - lexik_jwt_authentication.jwt_token_authenticator",
+                    "             #        entry_point: lexik_jwt_authentication.jwt_token_authenticator",
+                    "             #    stateless: true",
+                    "",
+                    "             #ezplatform_graphql:",
+                    "             #    request_matcher: EzSystems\\EzPlatformGraphQL\\Security\\NonAdminGraphQLRequestMatcher",
+                    "             #    user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                    "             #    anonymous: ~",
+                    "             #    guard:",
+                    "             #        authenticators:",
+                    "             #            - lexik_jwt_authentication.jwt_token_authenticator",
+                    "             #        entry_point: lexik_jwt_authentication.jwt_token_authenticator",
+                    "             #    stateless: true",
+                    "",
+                    "             ezpublish_front:",
+                    "                 pattern: ^/",
+                    "                 user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                    "                 anonymous: ~",
+                    "                 ezpublish_rest_session: ~",
+                    "                 form_login:",
+                    "                     require_previous_session: false",
+                    "                     csrf_token_generator: security.csrf.token_manager",
+                    "                 logout: ~",
+                    "",
+                    "             # your entries...",
+                    "     </>",
+                    "  *  <fg=blue>Configure database</> connection in <comment>.env</> file",
+                    "  *  <fg=blue>Run</> following commands:",
+                    "       >  <comment>bin/console ezplatform:install clean</>",
+                    "       >  <comment>bin/console ezplatform:graphql:generate-schema</>"
+                ]
+            },
+            "files": {
+                "config/packages/ezplatform.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    locale_fallback: en",
+                        "",
+                        "    # One of `legacy` (default) or `solr`",
+                        "    search_engine: '%env(SEARCH_ENGINE)%'",
+                        "",
+                        "    # Session save path as used by symfony session handlers (eg. used for dsn with redis)",
+                        "    ezplatform.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'",
+                        "",
+                        "    # Predefined pools are located in config/packages/cache_pool/",
+                        "    # You can add your own cache pool to the folder mentioned above.",
+                        "    # In order to change the default cache_pool use environmental variable export.",
+                        "    # The line below must not be altered as required cache service files are resolved based on environmental config.",
+                        "    cache_pool: '%env(CACHE_POOL)%'",
+                        "",
+                        "    # By default cache ttl is set to 24h, when using Varnish you can set a much higher value. High values depends on",
+                        "    # using EzSystemsPlatformHttpCacheBundle (default as of v1.12) which by design expires affected cache on changes",
+                        "    httpcache_default_ttl: '%env(HTTPCACHE_DEFAULT_TTL)%'",
+                        "",
+                        "    # Settings for HttpCache",
+                        "    purge_server: '%env(HTTPCACHE_PURGE_SERVER)%'",
+                        "",
+                        "    # Identifier used to generate the CSRF token. Commenting this line will result in authentication",
+                        "    # issues both in AdminUI and REST calls",
+                        "    ezpublish_rest.csrf_token_intention: authenticate",
+                        "",
+                        "    # Varnish invalidation/purge token (for use on platform.sh, eZ Platform Cloud and other places you can't use IP for ACL)",
+                        "    varnish_invalidate_token: '%env(resolve:default::HTTPCACHE_VARNISH_INVALIDATE_TOKEN)%'",
+                        "",
+                        "    # Compile time handlers",
+                        "    ## These are defined at compile time, and hence can't be set at runtime using env()",
+                        "    ## config/env/generic.php takes care about letting you set them by env variables",
+                        "",
+                        "    ## Session handler, by default set to file based (instead of ~) in order to be able to use %ezplatform.session.save_path%",
+                        "    # env: SESSION_HANDLER_ID",
+                        "    ezplatform.session.handler_id: session.handler.native_file",
+                        "",
+                        "    ## Purge type used by HttpCache system (\"local\", \"varnish\"/\"http\", and on ee also \"fastly\")",
+                        "    # env: HTTPCACHE_PURGE_TYPE",
+                        "    purge_type: local",
+                        "",
+                        "ezplatform:",
+                        "    # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish",
+                        "    http_cache:",
+                        "        purge_type: '%purge_type%'",
+                        "",
+                        "    # Repositories configuration, setup default repository to support solr if enabled",
+                        "    repositories:",
+                        "        default:",
+                        "            storage: ~",
+                        "            search:",
+                        "                engine: '%search_engine%'",
+                        "                connection: default",
+                        "",
+                        "    # Siteaccess configuration, with one siteaccess per default",
+                        "    siteaccess:",
+                        "        list: [site]",
+                        "        groups:",
+                        "            site_group: [site]",
+                        "        default_siteaccess: site",
+                        "        match:",
+                        "            URIElement: 1",
+                        "",
+                        "    # System settings, read in following order: `default`, <siteaccess-group>, <siteacces>, and `global`",
+                        "    # TIP: For multisite installations organize shared config into SiteAccess groups,",
+                        "    #      on single-site you can place shared config under \"default\" for simplicity as shown below.",
+                        "    system:",
+                        "        default:",
+                        "            # Cache pool service, needs to be different per repository (database) on multi repository install.",
+                        "            cache_service_name: '%cache_pool%'",
+                        "            # These reflect the current installers, complete installation before you change them. For changing var_dir",
+                        "            # it is recommended to install clean, then change setting before you start adding binary content, otherwise you'll",
+                        "            # need to manually modify your database data to reflect this to avoid exceptions.",
+                        "            var_dir: var/site",
+                        "            content:",
+                        "                # As we by default enable EzSystemsPlatformHttpCacheBundle which is designed to expire all affected cache",
+                        "                # on changes, and as error / redirects now have separate ttl, we easier allow ttl to be greatly increased",
+                        "                default_ttl: '%httpcache_default_ttl%'",
+                        "            # HttpCache purge server(s) setting, eg Varnish, for when ezpublish.http_cache.purge_type is set to 'varnish'.",
+                        "            http_cache:",
+                        "                purge_servers: ['%purge_server%']",
+                        "                varnish_invalidate_token: '%varnish_invalidate_token%'",
+                        "",
+                        "        site:",
+                        "            languages: [eng-GB]",
+                        "",
+                        "    url_alias:",
+                        "        slug_converter:",
+                        "            transformation: 'urlalias_lowercase'",
+                        "",
+                        "framework:",
+                        "    translator: { fallback: '%locale_fallback%' }",
+                        "    validation: { enable_annotations: true }",
+                        "    default_locale: '%locale_fallback%'",
+                        "    esi: true",
+                        "    fragments: true",
+                        "    session:",
+                        "        # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id",
+                        "        # if handler_id set to null will use default session handler from php.ini",
+                        "        handler_id: '%ezplatform.session.handler_id%'",
+                        "        save_path: '%ezplatform.session.save_path%'",
+                        "        # Note: eZ Platform also allows session name and session cookie configuration to be per SiteAccess, by",
+                        "        #       default session name will be set to \"eZSESSID{siteaccess_hash}\" (unique session name per siteaccess)",
+                        "        #       Further reading on sessions: http://doc.ezplatform.com/en/latest/guide/sessions/",
+                        "    http_method_override: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_admin_ui.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    # Admin siteaccess group name",
+                        "    admin_group_name: admin_group",
+                        "",
+                        "ezplatform:",
+                        "    siteaccess:",
+                        "        list: [admin]",
+                        "        groups:",
+                        "            # WARNING: Do not remove or rename this group.",
+                        "            # It's used to distinguish common siteaccesses from admin ones.",
+                        "            # In case of multisite with multiple admin panels, remember to add any additional admin siteaccess to this group.",
+                        "            admin_group: [admin]",
+                        "",
+                        "    system:",
+                        "        admin_group:",
+                        "            # For admin this needs to contain all languages you want to translate content to on the given repository.",
+                        "            languages: [eng-GB]",
+                        "            content_tree_module:",
+                        "                contextual_tree_root_location_ids:",
+                        "                    - 2 # Home (Content structure)",
+                        "                    - 5 # Users",
+                        "                    - 43 # Media",
+                        "                    - 48 # Setup",
+                        "            subtree_paths:",
+                        "                content: /1/2/",
+                        "                media: /1/43/",
+                        "            assets:",
+                        "                icon_sets:",
+                        "                    default_icons: /bundles/ezplatformadminui/img/ez-icons.svg",
+                        "                default_icon_set: default_icons",
+                        "",
+                        "jms_translation:",
+                        "    configs:",
+                        "        admin:",
+                        "            dirs:",
+                        "                - '%kernel.project_dir%/vendor/ezsystems/ezplatform-admin-ui/src'",
+                        "            output_dir: '%kernel.project_dir%/vendor/ezsystems/ezplatform-admin-ui/src/bundle/Resources/translations/'",
+                        "            excluded_dirs: [Behat, Tests, node_modules]",
+                        "            extractor:",
+                        "                - ez_policy",
+                        "            output_format: \"xliff\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_assets.yaml": {
+                    "contents": [
+                        "webpack_encore:",
+                        "    builds:",
+                        "        ezplatform: \"%kernel.project_dir%/public/assets/ezplatform/build\"",
+                        "",
+                        "framework:",
+                        "    assets:",
+                        "        packages:",
+                        "            ezplatform:",
+                        "                json_manifest_path: '%kernel.project_dir%/public/assets/ezplatform/build/manifest.json'",
+                        "",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_doctrine_schema.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    database_charset: '%env(DATABASE_CHARSET)%'",
+                        "    # collation currently has effect on MySQL only",
+                        "    database_collation: '%env(DATABASE_COLLATION)%'",
+                        "",
+                        "# If you are not using MySQL, you can comment-out this section",
+                        "ez_doctrine_schema:",
+                        "    tables:",
+                        "        options:",
+                        "            charset: '%database_charset%'",
+                        "            collate: '%database_collation%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_http_cache.yaml": {
+                    "contents": [
+                        "## FOSHttpCache Configuration",
+                        "fos_http_cache:",
+                        "    cache_control:",
+                        "        rules:",
+                        "            # Make sure already cacheable (fresh) responses from eZ Platform which are errors/redirect gets lower ttl (then default_ttl)",
+                        "            -   match:",
+                        "                    match_response: \"response.isFresh() && ( response.isServerError() || response.isClientError() || response.isRedirect() )\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        max_age: 5",
+                        "                        s_maxage: 20",
+                        "            # Example of performance tuning, force TTL on 404 pages to avoid crawlers / ... taking to much load",
+                        "            # Should not be set to high, as cached 404's can cause issues for future routes, url aliases, wildcards, ..",
+                        "            -   match:",
+                        "                    match_response: \"!response.isFresh() && response.isNotFound()\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        public: true",
+                        "                        max_age: 0",
+                        "                        s_maxage: 20",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_solr.yaml": {
+                    "contents": [
+                        "# Base configuration for Solr, for more options see: https://doc.ezplatform.com/en/latest/guide/search/#solr-bundle",
+                        "# Can have several connections used by each eZ Repositories in ezplatform.yml",
+                        "parameters:",
+                        "    # Solr root endpoint, relevant if `solr` is set as search_engine",
+                        "    solr_dsn: '%env(SOLR_DSN)%'",
+                        "    solr_core: '%env(SOLR_CORE)%'",
+                        "",
+                        "ez_search_engine_solr:",
+                        "    endpoints:",
+                        "        endpoint0:",
+                        "            dsn: '%solr_dsn%'",
+                        "            core: '%solr_core%'",
+                        "    connections:",
+                        "        default:",
+                        "            entry_endpoints:",
+                        "                - endpoint0",
+                        "            mapping:",
+                        "                default: endpoint0",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_welcome_page.yaml": {
+                    "contents": [
+                        "# You can safely delete this file to disable welcome page",
+                        "ezplatform:",
+                        "    system:",
+                        "        site:",
+                        "            content_view:",
+                        "                full:",
+                        "                    welcome_page:",
+                        "                        template: \"@ezdesign/full/welcome_page.html.twig\"",
+                        "                        match:",
+                        "                            Id\\Location: 2",
+                        "                        params:",
+                        "                            project_dir: '%kernel.project_dir%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform.yaml": {
+                    "contents": [
+                        "login:",
+                        "    path: /login",
+                        "    defaults: { _controller: ezpublish.security.controller:loginAction }",
+                        "",
+                        "login_check:",
+                        "    path: /login_check",
+                        "",
+                        "logout:",
+                        "    path: /logout",
+                        "",
+                        "ezplatform_kernel_internal:",
+                        "    resource: '@EzPublishCoreBundle/Resources/config/routing/internal.yml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_admin_ui.yaml": {
+                    "contents": [
+                        "ezplatform_admin_ui:",
+                        "    resource: '@EzPlatformAdminUiBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ezplatform_admin_ui_rest:",
+                        "    resource: '@EzPlatformAdminUiBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_content_forms.yaml": {
+                    "contents": [
+                        "ezplatform_content_forms:",
+                        "    resource: '@EzPlatformContentFormsBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_http_cache.yaml": {
+                    "contents": [
+                        "ezplatform_http_cache:",
+                        "    resource: '@EzSystemsPlatformHttpCacheBundle/Resources/config/routing.yml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_query_field_type.yaml": {
+                    "contents": [
+                        "ezplatform_query_field_type:",
+                        "    resource: '@EzSystemsEzPlatformQueryFieldTypeBundle/Resources/config/routing/rest.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_rest.yaml": {
+                    "contents": [
+                        "ezplatform_rest:",
+                        "    resource: '@EzPlatformRestBundle/Resources/config/routing.yml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        "",
+                        "ezplatform_rest_options:",
+                        "    resource: '@EzPlatformRestBundle/Resources/config/routing.yml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        "    type: rest_options",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_search.yaml": {
+                    "contents": [
+                        "platform_search:",
+                        "    resource: '@IbexaPlatformSearchBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_support_tools.yaml": {
+                    "contents": [
+                        "ezplatform_support_tools:",
+                        "  resource: '@EzSystemsEzSupportToolsBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_user.yaml": {
+                    "contents": [
+                        "ezplatform_user:",
+                        "    resource: '@EzPlatformUserBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.config.js": {
+                    "contents": [
+                        "const path = require('path');",
+                        "const bundles = require('./var/encore/ez.config.js');",
+                        "const eZConfigManager = require('./ez.webpack.config.manager.js');",
+                        "const configManagers = require('./var/encore/ez.config.manager.js');",
+                        "",
+                        "module.exports = (Encore) => {",
+                        "    Encore.setOutputPath('public/assets/ezplatform/build')",
+                        "        .setPublicPath('/assets/ezplatform/build')",
+                        "        .addExternals({",
+                        "            react: 'React',",
+                        "            'react-dom': 'ReactDOM',",
+                        "            jquery: 'jQuery',",
+                        "            moment: 'moment',",
+                        "            'popper.js': 'Popper',",
+                        "            alloyeditor: 'AlloyEditor',",
+                        "            'prop-types': 'PropTypes',",
+                        "        })",
+                        "        .enableSassLoader()",
+                        "        .enableReactPreset()",
+                        "        .enableSingleRuntimeChunk();",
+                        "",
+                        "    bundles.forEach((configPath) => {",
+                        "        const addEntries = require(configPath);",
+                        "",
+                        "        addEntries(Encore);",
+                        "    });",
+                        "",
+                        "    const eZConfig = Encore.getWebpackConfig();",
+                        "",
+                        "    eZConfig.name = 'ezplatform';",
+                        "",
+                        "    configManagers.forEach((configManagerPath) => {",
+                        "        const configManager = require(configManagerPath);",
+                        "",
+                        "        configManager(eZConfig, eZConfigManager);",
+                        "    });",
+                        "",
+                        "    return eZConfig;",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.config.manager.js": {
+                    "contents": [
+                        "const fs = require('fs');",
+                        "const findItems = (eZConfig, entryName) => {",
+                        "    const items = eZConfig.entry[entryName];",
+                        "",
+                        "    if (!items) {",
+                        "        throw new Error(`Couldn't find entry with name: \"${entryName}\". Please check if there is a typo in the name.`);",
+                        "    }",
+                        "",
+                        "    return items;",
+                        "};",
+                        "const replace = ({ eZConfig, entryName, itemToReplace, newItem }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "    const indexToReplace = items.indexOf(fs.realpathSync(itemToReplace));",
+                        "",
+                        "    if (indexToReplace < 0) {",
+                        "        throw new Error(`Couldn't find item \"${itemToReplace}\" in entry \"${entryName}\". Please check if there is a typo in the name.`);",
+                        "    }",
+                        "",
+                        "    items[indexToReplace] = newItem;",
+                        "};",
+                        "const remove = ({ eZConfig, entryName, itemsToRemove }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "    const realPathItemsToRemove = itemsToRemove.map((item) => fs.realpathSync(item));",
+                        "",
+                        "    eZConfig.entry[entryName] = items.filter((item) => !realPathItemsToRemove.includes(item));",
+                        "};",
+                        "const add = ({ eZConfig, entryName, newItems }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "",
+                        "    eZConfig.entry[entryName] = [...items, ...newItems];",
+                        "};",
+                        "",
+                        "module.exports = {",
+                        "    replace,",
+                        "    remove,",
+                        "    add",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ezplatform_webpack.config.js": {
+                    "contents": [
+                        "const Encore = require('@symfony/webpack-encore');",
+                        "const path = require('path');",
+                        "const getEzConfig = require('./ez.webpack.config.js');",
+                        "const eZConfigManager = require('./ez.webpack.config.manager.js');",
+                        "const eZConfig = getEzConfig(Encore);",
+                        "",
+                        "Encore.reset();",
+                        "Encore.setOutputPath('public/assets/build')",
+                        "    .setPublicPath('/assets/build')",
+                        "    .enableSassLoader()",
+                        "    .enableReactPreset()",
+                        "    .enableSingleRuntimeChunk();",
+                        "",
+                        "// Put your config here.",
+                        "",
+                        "// uncomment the two lines below, if you added a new entry (by Encore.addEntry() or Encore.addStyleEntry() method) to your own Encore configuration for your project",
+                        "// const projectConfig = Encore.getWebpackConfig();",
+                        "// module.exports = [ eZConfig, projectConfig ];",
+                        "",
+                        "// comment-out this line if you've uncommented the above lines",
+                        "module.exports = eZConfig;",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "7a1cbc4cdc27a8526ec9ab7a220e5f1b8fd617a0"
+        }
+    }
+}

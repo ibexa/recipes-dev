@@ -1,0 +1,11 @@
+{
+    "manifests": {
+        "ibexa/system-info": {
+            "manifest": {
+                "bundles": []
+            },
+            "files": [],
+            "ref": "df5cbf2d936128db395ba5c579ef37869af236db"
+        }
+    }
+}

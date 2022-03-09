@@ -1,0 +1,25 @@
+{
+    "manifests": {
+        "ezsystems/behatbundle": {
+            "manifest": {
+                "bundles": {
+                    "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
+                        "test",
+                        "behat"
+                    ],
+                    "EzSystems\\BehatBundle\\EzSystemsBehatBundle": [
+                        "behat"
+                    ]
+                },
+                "copy-from-package": {
+                    "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
+                    "behat_ibexa_content.yaml": "behat_ibexa_content.yaml",
+                    "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
+                    "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
+                }
+            },
+            "files": [],
+            "ref": "6a31688b75ce9d3fee7cfd6d1e1fb859db19a838"
+        }
+    }
+}

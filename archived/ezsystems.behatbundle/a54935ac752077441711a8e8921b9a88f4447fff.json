@@ -1,0 +1,37 @@
+{
+    "manifests": {
+        "ezsystems/behatbundle": {
+            "manifest": {
+                "bundles": {
+                    "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
+                        "test",
+                        "behat"
+                    ],
+                    "EzSystems\\BehatBundle\\EzSystemsBehatBundle": [
+                        "behat"
+                    ]
+                },
+                "copy-from-package": {
+                    "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
+                    "behat_ibexa_content.yaml": "behat_ibexa_content.yaml",
+                    "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
+                    "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/behat/ezplatform_behat.yaml": {
+                    "contents": [
+                        "_ezplatform_behat:",
+                        "    resource: '@eZBehatBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a54935ac752077441711a8e8921b9a88f4447fff"
+        }
+    }
+}

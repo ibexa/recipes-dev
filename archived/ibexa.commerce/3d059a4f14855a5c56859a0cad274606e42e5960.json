@@ -1,0 +1,2486 @@
+{
+    "manifests": {
+        "ibexa/commerce": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\TwigBundle\\TwigBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
+                        "all"
+                    ],
+                    "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": [
+                        "all"
+                    ],
+                    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
+                        "all"
+                    ],
+                    "FOS\\JsRoutingBundle\\FOSJsRoutingBundle": [
+                        "all"
+                    ],
+                    "JMS\\TranslationBundle\\JMSTranslationBundle": [
+                        "all"
+                    ],
+                    "Oneup\\FlysystemBundle\\OneupFlysystemBundle": [
+                        "all"
+                    ],
+                    "Liip\\ImagineBundle\\LiipImagineBundle": [
+                        "all"
+                    ],
+                    "Nelmio\\CorsBundle\\NelmioCorsBundle": [
+                        "all"
+                    ],
+                    "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": [
+                        "all"
+                    ],
+                    "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": [
+                        "all"
+                    ],
+                    "Gregwar\\CaptchaBundle\\GregwarCaptchaBundle": [
+                        "all"
+                    ],
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
+                        "all"
+                    ],
+                    "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishCoreBundle\\EzPublishCoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishLegacySearchEngineBundle\\EzPublishLegacySearchEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformSolrSearchEngineBundle\\EzSystemsEzPlatformSolrSearchEngineBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishIOBundle\\EzPublishIOBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRestBundle\\EzPlatformRestBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishDebugBundle\\EzPublishDebugBundle": [
+                        "dev",
+                        "test",
+                        "behat"
+                    ],
+                    "EzSystems\\EzSupportToolsBundle\\EzSystemsEzSupportToolsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCronBundle\\EzPlatformCronBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\PlatformInstallerBundle\\EzSystemsPlatformInstallerBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\DoctrineSchemaBundle\\DoctrineSchemaBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformContentFormsBundle\\EzPlatformContentFormsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformDesignEngineBundle\\EzPlatformDesignEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformStandardDesignBundle\\EzPlatformStandardDesignBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRichTextBundle\\EzPlatformRichTextBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiBundle\\EzPlatformAdminUiBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformUserBundle\\EzPlatformUserBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiAssetsBundle\\EzPlatformAdminUiAssetsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformMatrixFieldtypeBundle\\EzPlatformMatrixFieldtypeBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\PlatformHttpCacheBundle\\EzSystemsPlatformHttpCacheBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\PlatformFastlyCacheBundle\\EzSystemsPlatformFastlyCacheBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformPageBuilderBundle\\EzPlatformPageBuilderBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformPageFieldTypeBundle\\EzPlatformPageFieldTypeBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformFormBuilderBundle\\EzPlatformFormBuilderBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\DateBasedPublisherBundle\\EzSystemsDateBasedPublisherBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformWorkflowBundle\\EzPlatformWorkflowBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCalendarBundle\\EzPlatformCalendarBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformSiteFactoryBundle\\EzPlatformSiteFactoryBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformGraphQL\\EzSystemsEzPlatformGraphQLBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformQueryFieldType\\Symfony\\EzSystemsEzPlatformQueryFieldTypeBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformVersionComparisonBundle\\EzPlatformVersionComparisonBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Search\\IbexaPlatformSearchBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Icons\\IbexaPlatformIconsBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Installer\\IbexaPlatformInstallerBundle": [
+                        "all"
+                    ],
+                    "FOS\\CommentBundle\\FOSCommentBundle": [
+                        "all"
+                    ],
+                    "Tedivm\\StashBundle\\TedivmStashBundle": [
+                        "all"
+                    ],
+                    "WhiteOctober\\BreadcrumbsBundle\\WhiteOctoberBreadcrumbsBundle": [
+                        "all"
+                    ],
+                    "Nelmio\\SolariumBundle\\NelmioSolariumBundle": [
+                        "all"
+                    ],
+                    "JMS\\Payment\\CoreBundle\\JMSPaymentCoreBundle": [
+                        "all"
+                    ],
+                    "Joli\\ApacheTikaBundle\\ApacheTikaBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\OneSkyBundle\\OneSkyBundle": [
+                        "all"
+                    ],
+                    "Silversolutions\\Bundle\\EshopBundle\\SilversolutionsEshopBundle": [
+                        "all"
+                    ],
+                    "Silversolutions\\Bundle\\ToolsBundle\\SilversolutionsToolsBundle": [
+                        "all"
+                    ],
+                    "Silversolutions\\Bundle\\TranslationBundle\\SilversolutionsTranslationBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\EzStudioBundle\\SisoEzStudioBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\ComparisonBundle\\SisoComparisonBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\PaymentBundle\\SisoPaymentBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\PriceBundle\\SisoPriceBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\QuickOrderBundle\\SisoQuickOrderBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\ToolsBundle\\SisoToolsBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\TestToolsBundle\\SisoTestToolsBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\SearchBundle\\SisoSearchBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\VoucherBundle\\SisoVoucherBundle": [
+                        "all"
+                    ],
+                    "Siso\\ShopPriceEnginePluginBundle\\ShopPriceEnginePluginBundle": [
+                        "all"
+                    ],
+                    "JMS\\JobQueueBundle\\JMSJobQueueBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\LocalOrderManagementBundle\\SisoLocalOrderManagementBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\NewsletterBundle\\SisoNewsletterBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\SpecificationsTypeBundle\\SisoSpecificationsTypeBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\ContentPluginBundle\\SisoContentPluginBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\OrderHistoryBundle\\SisoOrderHistoryBundle": [
+                        "all"
+                    ],
+                    "Siso\\AdminErpPluginBundle\\SisoAdminErpPluginBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\ShopFrontendBundle\\SisoShopFrontendBundle": [
+                        "all"
+                    ],
+                    "Siso\\Bundle\\BasketBundle\\SisoBasketBundle": [
+                        "all"
+                    ],
+                    "Siso\\RestApiBundle\\SisoRestApiBundle": [
+                        "all"
+                    ],
+                    "FOS\\RestBundle\\FOSRestBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
+                        "dev"
+                    ],
+                    "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
+                        "all"
+                    ],
+                    "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
+                        "all"
+                    ],
+                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\ElasticSearchEngine\\PlatformElasticSearchEngineBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Commerce\\AdminUi\\IbexaPlatformCommerceAdminUiBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Commerce\\PageBuilder\\IbexaPlatformCommercePageBuilderBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Permissions\\PlatformPermissionsBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Commerce\\FieldTypes\\IbexaPlatformCommerceFieldTypesBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Commerce\\ShopUi\\IbexaPlatformCommerceShopUiBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Commerce\\Checkout\\IbexaPlatformCommerceCheckoutBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Connector\\Dam\\IbexaPlatformConnectorDamBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Segmentation\\IbexaPlatformSegmentationBundle": [
+                        "all"
+                    ],
+                    "JMS\\SerializerBundle\\JMSSerializerBundle": [
+                        "all"
+                    ],
+                    "EWZ\\Bundle\\RecaptchaBundle\\EWZRecaptchaBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzRecommendationClientBundle\\EzRecommendationClientBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Personalization\\IbexaPlatformPersonalizationBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Migration\\IbexaPlatformMigrationBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\ImageEditor\\IbexaPlatformImageEditorBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\OAuth2Client\\IbexaPlatformOAuth2ClientBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "encore/": "/",
+                    "templates/": "templates/",
+                    "translations/": "translations/",
+                    "assets/": "assets/"
+                },
+                "env": {
+                    "SEARCH_ENGINE": "legacy",
+                    "#1": "Uncomment following line if you want to change the purge type.",
+                    "#2": "By default it will use `local` purge when running locally",
+                    "#3": "and `varnish` for Platform.sh installations.",
+                    "#4": "HTTPCACHE_PURGE_TYPE=local",
+                    "HTTPCACHE_DEFAULT_TTL": "86400",
+                    "HTTPCACHE_PURGE_SERVER": "http://localhost:80",
+                    "HTTPCACHE_VARNISH_INVALIDATE_TOKEN": "",
+                    "CACHE_POOL": "cache.tagaware.filesystem",
+                    "#5": "When using redis or memcached adapters, you can configure it using DSN:",
+                    "#6": "- https://symfony.com/doc/4.4/components/cache/adapters/redis_adapter.html#configure-the-connection",
+                    "#7": "- https://symfony.com/doc/4.4/components/cache/adapters/memcached_adapter.html#configure-the-connection",
+                    "CACHE_DSN": "localhost",
+                    "CACHE_NAMESPACE": "ezp",
+                    "DATABASE_CHARSET": "utf8mb4",
+                    "DATABASE_COLLATION": "utf8mb4_unicode_520_ci",
+                    "#8": "Needed by Doctrine Bundle / ORM to avoid it opening connection during situations where there is no service yet.",
+                    "#9": "See: https://symfony.com/doc/current/reference/configuration/doctrine.html#doctrine-dbal-configuration",
+                    "DATABASE_VERSION": "mariadb-10.3.0",
+                    "SESSION_HANDLER_ID": "session.handler.native_file",
+                    "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
+                    "SOLR_CORE": "collection1",
+                    "#10": "Enable recommendations by setting valid id, key and uri",
+                    "RECOMMENDATION_CUSTOMER_ID": 0,
+                    "RECOMMENDATION_LICENSE_KEY": "",
+                    "RECOMMENDATION_HOST_URI": "",
+                    "ELASTICSEARCH_DSN": "http://localhost:9200",
+                    "#11": "Enable fastly by setting valid service_id and key",
+                    "#12": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
+                    "#13": "FASTLY_SERVICE_ID=\"\"",
+                    "#14": "FASTLY_KEY=\"\"",
+                    "SISO_SEARCH_SOLR_HOST": "localhost",
+                    "SISO_SEARCH_SOLR_PORT": 8983,
+                    "SISO_SEARCH_SOLR_CORE": "collection1",
+                    "#15": "Do not add 'solr' to the path. It is automatically added by SolariumBundle",
+                    "SISO_SEARCH_SOLR_PATH": "",
+                    "#16": "SolariumBundle Solr DSN configuration",
+                    "#17": "Note that /solr suffix will be appended autmatically to eZ Platform Solr Search Engine Bundle configuration",
+                    "SOLR_DSN": "http://${SISO_SEARCH_SOLR_HOST}:${SISO_SEARCH_SOLR_PORT}${SISO_SEARCH_SOLR_PATH}",
+                    "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e"
+                },
+                "composer-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd",
+                    "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
+                    "yarn install": "script",
+                    "ibexa:encore:compile": "symfony-cmd"
+                },
+                "post-install-output": [
+                    "<fg=red>                                                                                              </>",
+                    "<fg=red>       ::::     ./.  `..-..`              ``...``               .....`    `....`              </>",
+                    "<fg=red>       oo+/   ./++:/++++++++/:.        .:/++//////:.          -////:` `-://///////-`          </>",
+                    "<fg=red>       o/.    /++++++/:---:++++/`    `/+++/:----/////-      -////:`  -/////:--::////:`        </>",
+                    "<fg=red>          .   /++++:`       ./+++.  .+++/.     .:///:``-` -////:`   ////-`      `-////`       </>",
+                    "<fg=red>        ./+   /+++:          `+++/  +++/`    .////:` :///////:`    -///.          .///:       </>",
+                    "<fg=red>       /o++   /+++.           :+++``+++:   .////:`   .//////.      :///            ////       </>",
+                    "<fg=red>       oo++   -+++:          `+++/  /++/`./+//:`   `-////////:`    -///.          `////       </>",
+                    "<fg=red>       oo++    /+++/.       -++++.  .+++++++:`   .:////-``-////:`  `////-        ./////       </>",
+                    "<fg=red>       oo++     :+++++::::/++++/`    ./++++/---://///-`    `-////:`  -////:----:///////       </>",
+                    "<fg=red>       oo++      `-/++++++++/:.        .:/++//////:.         `-////:` `-://///////-///.       </>",
+                    "<fg=red>       ....          `....``              `.....`               `````     `....`   :.         </>",
+                    "<fg=red>                                                                                              </>",
+                    "",
+                    "<fg=red>Thank you for installing Ibexa DXP!</>",
+                    "To finish the installation process:",
+                    "    1. Configure the database connection via <comment>DATABASE_URL</> in your <comment>.env</> file.",
+                    "    2. Run the following commands:",
+                    "       >  <comment>composer recipes:install ibexa/commerce --force</>",
+                    "          <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.",
+                    "       >  <comment>php bin/console ibexa:install</>",
+                    "       >  <comment>php bin/console ibexa:graphql:generate-schema</>",
+                    "       >  <comment>composer run post-update-cmd</>",
+                    "",
+                    "Refer to https://doc.ibexa.co/en/latest/getting_started/install_ibexa_dxp for a detailed installation and configuration guide.",
+                    "<info>To get started working with Ibexa DXP, see First steps: https://doc.ibexa.co/en/latest/getting_started/first_steps.",
+                    "For more in-depth information visit the Documentation center: https://developers.ibexa.co/documentation-hub.",
+                    "Check out the Ibexa Blog (https://www.ibexa.co/blog) to get updates and insights on working with Ibexa DXP.</>"
+                ]
+            },
+            "files": {
+                "assets/bootstrap.js": {
+                    "contents": [
+                        "import { startStimulusApp } from '@symfony/stimulus-bridge';",
+                        "import '@symfony/autoimport';",
+                        "",
+                        "// Registers Stimulus controllers from controllers.json and in the controllers/ directory",
+                        "export const app = startStimulusApp(require.context('./controllers', true, /\\.(j|t)sx?$/));",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "assets/images/conversation-chat-icon.svg": {
+                    "contents": [
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                        "<svg width=\"28px\" height=\"28px\" viewBox=\"0 0 28 28\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+                        "    <title>Conversation Chat 1</title>",
+                        "    <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
+                        "        <g transform=\"translate(-1189.000000, -748.000000)\" stroke=\"#DB0032\" stroke-width=\"1.10666664\">",
+                        "            <g transform=\"translate(1190.000000, 749.000000)\">",
+                        "                <path d=\"M8.87546649,14.4087997 L7.76879984,14.4087997 L3.34213327,18.8354663 L3.34213327,14.4087997 L1.12879998,14.4087997 C0.517604866,14.4087997 0.0221333329,13.9133282 0.0221333329,13.3021331 L0.0221333329,1.12879998 C0.0221333329,0.517604866 0.517604866,0.0221333329 1.12879998,0.0221333329 L19.9421329,0.0221333329 C20.553328,0.0221333329 21.0487996,0.517604866 21.0487996,1.12879998 L21.0487996,7.76879984\" id=\"Path\"></path>",
+                        "                <path d=\"M11.0887998,19.9421329 C11.0887998,20.553328 11.5842713,21.0487996 12.1954664,21.0487996 L18.282133,21.0487996 L23.2621329,25.4754662 L23.2621329,21.0487996 L24.3687995,21.0487996 C24.9799946,21.0487996 25.4754662,20.553328 25.4754662,19.9421329 L25.4754662,11.0887998 C25.4754662,10.4776047 24.9799946,9.98213313 24.3687995,9.98213313 L12.1954664,9.98213313 C11.5842713,9.98213313 11.0887998,10.4776047 11.0887998,11.0887998 L11.0887998,19.9421329 Z\" id=\"Path\"></path>",
+                        "            </g>",
+                        "        </g>",
+                        "    </g>",
+                        "</svg>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "assets/images/file-text-info-icon.svg": {
+                    "contents": [
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                        "<svg width=\"28px\" height=\"28px\" viewBox=\"0 0 28 28\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+                        "    <title>Common File Text Info</title>",
+                        "    <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
+                        "        <g transform=\"translate(-310.000000, -748.000000)\" stroke=\"#DB0032\" stroke-width=\"1.14356732\">",
+                        "            <g transform=\"translate(311.000000, 749.000000)\">",
+                        "                <line x1=\"4.59714061\" y1=\"9.17140987\" x2=\"15.4610301\" y2=\"9.17140987\" id=\"Path\"></line>",
+                        "                <line x1=\"4.59714061\" y1=\"12.6021118\" x2=\"11.4585445\" y2=\"12.6021118\" id=\"Path\"></line>",
+                        "                <line x1=\"4.59714061\" y1=\"5.74070793\" x2=\"12.6021118\" y2=\"5.74070793\" id=\"Path\"></line>",
+                        "                <line x1=\"4.59714061\" y1=\"16.0328138\" x2=\"9.17140987\" y2=\"16.0328138\" id=\"Path\"></line>",
+                        "                <line x1=\"4.59714061\" y1=\"19.4635157\" x2=\"9.17140987\" y2=\"19.4635157\" id=\"Path\"></line>",
+                        "                <path d=\"M11.4585445,26.3249196 L1.16643866,26.3249196 C0.534863873,26.3249196 0.0228713463,25.8129271 0.0228713463,25.1813523 L0.0228713463,1.16643866 C0.0228713463,0.534863873 0.534863873,0.0228713463 1.16643866,0.0228713463 L16.367879,0.0228713463 C16.6711471,0.0228713463 16.9619705,0.143461235 17.1763811,0.35793657 L21.4155851,4.59714061 C21.6300605,4.81155117 21.7506503,5.10237458 21.7506503,5.4056427 L21.7506503,9.17140987\" id=\"Path\"></path>",
+                        "                <path d=\"M12.6021118,19.4635157 C12.6021118,23.2529644 15.674067,26.3249196 19.4635157,26.3249196 C23.2529644,26.3249196 26.3249196,23.2529644 26.3249196,19.4635157 C26.3249196,15.674067 23.2529644,12.6021118 19.4635157,12.6021118 C15.674067,12.6021118 12.6021118,15.674067 12.6021118,19.4635157 Z\" id=\"Path\"></path>",
+                        "                <path d=\"M19.4635157,22.8942177 L19.4635157,18.8917321 C19.4635157,18.5759447 19.2075195,18.3199484 18.8917321,18.3199484 L17.7481647,18.3199484\" id=\"Path\"></path>",
+                        "                <path d=\"M18.6058402,15.4610301 C18.7637339,15.4610301 18.8917321,15.5890282 18.8917321,15.7469219 C18.8917321,15.9048156 18.7637339,16.0328138 18.6058402,16.0328138 C18.4479465,16.0328138 18.3199484,15.9048156 18.3199484,15.7469219 C18.3199484,15.5890282 18.4479465,15.4610301 18.6058402,15.4610301\" id=\"Path\"></path>",
+                        "                <line x1=\"17.7481647\" y1=\"22.8942177\" x2=\"21.1788667\" y2=\"22.8942177\" id=\"Path\"></line>",
+                        "            </g>",
+                        "        </g>",
+                        "    </g>",
+                        "</svg>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "assets/images/folder-icon.svg": {
+                    "contents": [
+                        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+                        "<svg width=\"28px\" height=\"28px\" viewBox=\"0 0 28 28\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">",
+                        "    <title>Folder Star</title>",
+                        "    <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" stroke-linecap=\"round\" stroke-linejoin=\"round\">",
+                        "        <g transform=\"translate(-758.000000, -749.000000)\" stroke=\"#DB0032\" stroke-width=\"1.12853337\">",
+                        "            <g transform=\"translate(759.000000, 750.000000)\">",
+                        "                <path d=\"M22.5932382,10.179371 L22.5932382,4.53670416 C22.5932382,3.91343239 22.0879766,3.40817079 21.4647048,3.40817079 L10.312538,3.40817079 C9.88520108,3.40794258 9.49464869,3.16635928 9.30362914,2.78409183 L8.2337795,0.646649623 C8.04275994,0.264382178 7.65220755,0.0227988774 7.22487066,0.0225706675 L1.15110404,0.0225706675 C0.527832269,0.0225706675 0.0225706675,0.527832269 0.0225706675,1.15110404 L0.0225706675,18.0791047 C0.0225706675,18.7023764 0.527832269,19.207638 1.15110404,19.207638 L9.05083766,19.207638\" id=\"Path\"></path>",
+                        "                <path d=\"M20.0043826,12.9217071 L21.7411955,16.9505713 L25.1211529,16.9505713 C25.4707675,16.9373524 25.7910855,17.144921 25.92185,17.4694295 C26.0526145,17.7939379 25.9657058,18.1656034 25.7046047,18.3984796 L22.7704179,21.0121629 L24.395506,24.750994 C24.5417424,25.1016376 24.4481217,25.5064872 24.1627921,25.7573319 C23.8774626,26.0081767 23.4639555,26.0491637 23.1349342,25.8592137 L19.207638,23.6461598 L15.2803419,25.8592137 C14.9513205,26.0491637 14.5378135,26.0081767 14.2524839,25.7573319 C13.9671544,25.5064872 13.8735337,25.1016376 14.0197701,24.750994 L15.6448582,21.0121629 L12.7106714,18.3984796 C12.4487506,18.1665381 12.3607919,17.7950492 12.4908998,17.4702857 C12.6210077,17.1455222 12.9411249,16.9375181 13.2907375,16.9505713 L16.6763377,16.9505713 L18.4154076,12.9217071 C18.5730099,12.629712 18.8780825,12.4476994 19.2098951,12.4476994 C19.5417077,12.4476994 19.8467803,12.629712 20.0043826,12.9217071 Z\" id=\"Path\"></path>",
+                        "            </g>",
+                        "        </g>",
+                        "    </g>",
+                        "</svg>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "assets/scss/welcome-page.scss": {
+                    "contents": [
+                        "html {",
+                        "    position: relative;",
+                        "    min-height: 100%;",
+                        "}",
+                        "body {",
+                        "    font-size: 16px;",
+                        "    line-height: 26px;",
+                        "    color: #131C26;",
+                        "    overflow-x: hidden;",
+                        "    font-family: \"Noto Sans\";",
+                        "    margin-bottom: 48px;",
+                        "}",
+                        ".header {",
+                        "    &__container {",
+                        "        height: 379px;",
+                        "        background: #db0032;",
+                        "    }",
+                        "}",
+                        ".logo {",
+                        "    max-width: 117px;",
+                        "    max-height: 33px;",
+                        "}",
+                        "h1 {",
+                        "    font-size: 35px;",
+                        "    line-height: 44px;",
+                        "    font-family: 'Noto Sans';",
+                        "    font-weight: 500;",
+                        "}",
+                        "h2 {",
+                        "    font-size: 20px;",
+                        "    line-height: 24px;",
+                        "    font-family: 'Work Sans';",
+                        "    font-weight: 700;",
+                        "}",
+                        "a {",
+                        "    color: #252525;",
+                        "",
+                        "    &:hover {",
+                        "        color: #db0032;",
+                        "        text-decoration: none;",
+                        "    }",
+                        "}",
+                        "ul {",
+                        "    li:before {",
+                        "        content:\"\\2022\";",
+                        "        font-size:12pt;",
+                        "    }",
+                        "}",
+                        ".footer {",
+                        "    position: absolute;",
+                        "    bottom: 0;",
+                        "    height: 48px;",
+                        "    width: 100%;",
+                        "",
+                        "    .container-fluid {",
+                        "        display: flex;",
+                        "        align-items: flex-end;",
+                        "        height: 100%;",
+                        "    }",
+                        "}",
+                        ".copyright {",
+                        "    opacity: .6;",
+                        "}",
+                        ".background-grey {",
+                        "    background-color: #f7f7f9;",
+                        "}",
+                        ".ezrichtext-field {",
+                        "    p {",
+                        "        margin-bottom: 0;",
+                        "    }",
+                        "}",
+                        ".description {",
+                        "    max-width: 625px;",
+                        "}",
+                        ".references {",
+                        "    &-list {",
+                        "        &-item__link {",
+                        "            padding-left: 15px;",
+                        "        }",
+                        "    }",
+                        "}",
+                        ".container--wide {",
+                        "    max-width: 1566px;",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/cache_pool/cache.memcached.yaml": {
+                    "contents": [
+                        "# Reusable service for memcache cache for use in generic.php and plaformsh.php on demand",
+                        "#",
+                        "# For further reading on setup with eZ Platform and Memcached:",
+                        "# https://doc.ezplatform.com/en/latest/guide/persistence_cache/#memcached",
+                        "parameters:",
+                        "    cache_namespace: '%env(CACHE_NAMESPACE)%'",
+                        "    cache_dsn: '%env(CACHE_DSN)%'",
+                        "",
+                        "services:",
+                        "    cache.memcached:",
+                        "        public: true",
+                        "        parent: cache.adapter.memcached",
+                        "        tags:",
+                        "            -   name: cache.pool",
+                        "                clearer: cache.app_clearer",
+                        "                # Example from vendor/symfony/symfony/src/Symfony/Component/Cache/Traits/MemcachedTrait.php:",
+                        "                # memcached://user:pass@localhost?weight=33'",
+                        "                provider: 'memcached://%cache_dsn%'",
+                        "                # Cache namespace prefix overriding the one used by Symfony globally",
+                        "                # This makes sure cache is reliably shared across whole cluster and all Symfony env's",
+                        "                # Can be used for blue/green deployment strategies when changes affect content cache.",
+                        "                # For multi db setup adapt this to be unique per pool (one pool per database)",
+                        "                # If you prefer default behaviour set this to null or comment out, and consider for instance:",
+                        "                # https://symfony.com/doc/current/reference/configuration/framework.html#prefix-seed",
+                        "                namespace: '%cache_namespace%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/cache_pool/cache.redis.yaml": {
+                    "contents": [
+                        "# Optimized Redis cache adapter (from: https://github.com/ezsystems/symfony-tools)",
+                        "#",
+                        "# On platform.sh this is setup automatically in env/plaformsh.php.",
+                        "# For any other kind of use it can be enabled with CACHE_POOL, detected by env/generic.php.",
+                        "#",
+                        "# For further reading on setup with eZ Platform and Redis:",
+                        "# https://doc.ezplatform.com/en/latest/guide/persistence_cache/#redis",
+                        "parameters:",
+                        "    cache_namespace: '%env(CACHE_NAMESPACE)%'",
+                        "    cache_dsn: '%env(CACHE_DSN)%'",
+                        "",
+                        "services:",
+                        "    cache.redis:",
+                        "        public: true",
+                        "        class: Symfony\\Component\\Cache\\Adapter\\RedisTagAwareAdapter",
+                        "        parent: cache.adapter.redis",
+                        "        tags:",
+                        "            -   name: cache.pool",
+                        "                clearer: cache.app_clearer",
+                        "                # Examples from vendor/symfony/symfony/src/Symfony/Component/Cache/Traits/RedisTrait.php:",
+                        "                # redis://localhost:6379",
+                        "                # redis://secret@example.com:1234/13",
+                        "                # redis://secret@/var/run/redis.sock/13?persistent_id=4&class=Redis&timeout=3&retry_interval=3",
+                        "                # Example using Predis: redis://%cache_dsn%?class=\\Predis\\Client",
+                        "                provider: 'redis://%cache_dsn%'",
+                        "                # Cache namespace prefix overriding the one used by Symfony by default",
+                        "                # This makes sure cache is reliably shared across whole cluster and all Symfony env's",
+                        "                # Can be used for blue/green deployment strategies when changes affect content cache.",
+                        "                # For multi db setup adapt this to be unique per pool (one pool per database)",
+                        "                # If you prefer default behaviour set this to null or comment out, and consider for instance:",
+                        "                # https://symfony.com/doc/current/reference/configuration/framework.html#prefix-seed",
+                        "                namespace: '%cache_namespace%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/cache_pool/cache.tagaware.filesystem.yaml": {
+                    "contents": [
+                        "# Optimized File cache adapter (from: https://github.com/ezsystems/symfony-tools)",
+                        "#",
+                        "# Loaded by default, for use on single server setups.",
+                        "parameters:",
+                        "    cache_namespace: '%env(CACHE_NAMESPACE)%'",
+                        "",
+                        "services:",
+                        "    cache.tagaware.filesystem:",
+                        "        public: true",
+                        "        class: Symfony\\Component\\Cache\\Adapter\\FilesystemTagAwareAdapter",
+                        "        parent: cache.adapter.filesystem",
+                        "        tags:",
+                        "            -   name: cache.pool",
+                        "                clearer: cache.app_clearer",
+                        "                # Cache namespace prefix overriding the one used by Symfony by default",
+                        "                # This makes sure cache is reliably shared across whole cluster and all Symfony env's",
+                        "                # Can be used for blue/green deployment strategies when changes affect content cache.",
+                        "                # For multi db setup adapt this to be unique per pool (one pool per database)",
+                        "                # If you prefer default behaviour set this to null or comment out, and consider for instance:",
+                        "                # https://symfony.com/doc/current/reference/configuration/framework.html#prefix-seed",
+                        "                namespace: '%cache_namespace%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/dfs/dfs.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    env(DFS_DATABASE_URL): '%env(resolve:DATABASE_URL)%'",
+                        "    dfs_database_url: '%env(resolve:DFS_DATABASE_URL)%'",
+                        "    ibexa.platform.io.nfs.adapter.config:",
+                        "        root: '%dfs_nfs_path%'",
+                        "        path: '$var_dir$/$storage_dir$/'",
+                        "        writeFlags: ~",
+                        "        linkHandling: ~",
+                        "        permissions: [ ]",
+                        "",
+                        "# new doctrine connection for the dfs legacy_dfs_cluster metadata handler.",
+                        "doctrine:",
+                        "    dbal:",
+                        "        connections:",
+                        "            dfs:",
+                        "                # configure these for your database server",
+                        "                driver: '%dfs_database_driver%'",
+                        "                charset: '%dfs_database_charset%'",
+                        "                default_table_options:",
+                        "                    charset: '%dfs_database_charset%'",
+                        "                    collate: '%dfs_database_collation%'",
+                        "                url: '%dfs_database_url%'",
+                        "",
+                        "# define the flysystem handler",
+                        "oneup_flysystem:",
+                        "    adapters:",
+                        "        nfs_adapter:",
+                        "            custom:",
+                        "                service: ibexa.platform.io.nfs.adapter.site_access_aware",
+                        "",
+                        "# define the ez handlers",
+                        "ez_io:",
+                        "    binarydata_handlers:",
+                        "        nfs:",
+                        "            flysystem:",
+                        "                adapter: nfs_adapter",
+                        "    metadata_handlers:",
+                        "        dfs:",
+                        "            legacy_dfs_cluster:",
+                        "                connection: doctrine.dbal.dfs_connection",
+                        "",
+                        "# set the application handlers",
+                        "ezplatform:",
+                        "    system:",
+                        "        default:",
+                        "            io:",
+                        "                metadata_handler: dfs",
+                        "                binarydata_handler: nfs",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ecommerce.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: ezcommerce/autogenerated/*.yaml }",
+                        "    - { resource: ezcommerce/ecommerce_parameters.yaml }",
+                        "    - { resource: ezcommerce/ezcommerce.yaml }",
+                        "    - { resource: '@SilversolutionsEshopBundle/Resources/config/config_data_provider_ez.yml' }",
+                        "    - { resource: ezcommerce/ezcommerce_demo.yaml }",
+                        "    - { resource: ezcommerce/ezcommerce_common.yaml }",
+                        "    - { resource: ezcommerce/ezcommerce_advanced.yaml }",
+                        "",
+                        "ezplatform:",
+                        "    system:",
+                        "        default:",
+                        "            commerce:",
+                        "                enabled: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/autogenerated/.gitkeep": {
+                    "contents": [
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/ecommerce_parameters.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    siso_core.default.ses_swiftmailer:",
+                        "        mailSender: shop@silversolutions.de",
+                        "        mailReceiver: shop@silversolutions.de",
+                        "        lostOrderEmailReceiver: shop@silversolutions.de",
+                        "        contactMailReceiver: shop@silversolutions.de",
+                        "        cancellationMailReceiver: shop@silversolutions.de",
+                        "        shopOwnerMailReceiver: shop@silversolutions.de",
+                        "    ses_eshop.forms.business.default_contact_recipient: shop@silversolutions.de",
+                        "    ses_eshop.order.sales_contact: shop@silversolutions.de",
+                        "    ses_eshop.lostorder_email: shop@silversolutions.de",
+                        "    siso_paypal_payment.receiver_email: shop@silver.de",
+                        "",
+                        "    siso_core.siteaccess_group: ezdemo_site_clean_group",
+                        "    apache_tika_path: '%kernel.project_dir%/bin/tika-app-1.20.jar'",
+                        "",
+                        "    # ezcommerce solr",
+                        "#    siso_search.solr.host: '%env(SISO_SEARCH_SOLR_HOST)%'",
+                        "#    siso_search.solr.port: '%env(SISO_SEARCH_SOLR_PORT)%'",
+                        "#    siso_search.solr.core: '%env(SISO_SEARCH_SOLR_CORE)%'",
+                        "#    siso_search.solr.path: '%env(SISO_SEARCH_SOLR_PATH)%'",
+                        "",
+                        "    one_sky_api_key: my-one-sky-key",
+                        "    one_sky_secret: my-onesky-password",
+                        "",
+                        "    ewz_recaptcha_public_key: public_key",
+                        "    ewz_recaptcha_private_key: private_key",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/ezcommerce.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    siso_core.default.logo_image: /bundles/silversolutionseshop/img/logo.png",
+                        "    siso_core.admin.logo_image: /bundles/silversolutionseshop/img/logo.png",
+                        "    siso_core.default.invoice_logo: /bundles/silversolutionseshop/img/invoice_logo.png",
+                        "    siso_core.default.email_header: /bundles/silversolutionseshop/img/email-header.png",
+                        "",
+                        "",
+                        "    siso_order_history.default.use_local_documents: true",
+                        "",
+                        "    # Default settings for eZ Commerce - will be overriden by backend config!",
+                        "    siso_price.default.price_service_chain.product_list:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.product_detail:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.slider_product_list:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.basket:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.basket_variant:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.stored_basket:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.wish_list:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.quick_order:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.quick_order_line_preview:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.comparison:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.search_list:",
+                        "        - siso_price.price_provider.shop",
+                        "    siso_price.default.price_service_chain.bestseller_list:",
+                        "        - siso_price.price_provider.shop",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/ezcommerce_advanced.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "",
+                        "    siso_core.default.logo_image: /bundles/silversolutionseshop/img/logo.png",
+                        "    siso_core.admin.logo_image: /bundles/silversolutionseshop/img/logo.png",
+                        "    siso_core.default.invoice_logo: /bundles/silversolutionseshop/img/invoice_logo.png",
+                        "    siso_core.default.email_header: /bundles/silversolutionseshop/img/email-header-advanced.png",
+                        "",
+                        "",
+                        "    siso_core.default.erp_connection: false",
+                        "    siso_local_order_management.default.send_order_to_erp: false",
+                        "    siso_order_history.default.use_local_documents: true",
+                        "",
+                        "    # please set in backend configsection using the ERP URL for your ERP",
+                        "    siso_erp.default.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
+                        "    siso_erp.web_connector.service_location: 'http://mydomain.com/mywebconnector'",
+                        "",
+                        "nelmio_solarium:",
+                        "    endpoints:",
+                        "        default:",
+                        "            host: '%siso_search.solr.host%'",
+                        "            port: '%siso_search.solr.port%'",
+                        "            path: '%siso_search.solr.path%'",
+                        "            core: '%siso_search.solr.core%'",
+                        "            timeout: 30",
+                        "        siso_core_admin:",
+                        "            host: '%siso_search.solr.host%'",
+                        "            port: '%siso_search.solr.port%'",
+                        "            path: '%siso_search.solr.path%'",
+                        "            core: admin",
+                        "            timeout: 30",
+                        "        siso_econtent:",
+                        "            host: '%siso_search.solr.host%'",
+                        "            port: '%siso_search.solr.port%'",
+                        "            path: '%siso_search.solr.path%'",
+                        "            core: econtent",
+                        "            timeout: 30",
+                        "        siso_econtent_back:",
+                        "            host: '%siso_search.solr.host%'",
+                        "            port: '%siso_search.solr.port%'",
+                        "            path: '%siso_search.solr.path%'",
+                        "            core: econtent_back",
+                        "            timeout: 30",
+                        "",
+                        "    clients:",
+                        "        default:",
+                        "            endpoints:",
+                        "                - default",
+                        "        econtent:",
+                        "            endpoints:",
+                        "                - siso_econtent",
+                        "                - siso_econtent_back",
+                        "                - siso_core_admin",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/ezcommerce_common.yaml": {
+                    "contents": [
+                        "# common parts",
+                        "parameters:",
+                        "    siso_search.de.facet_position: left",
+                        "",
+                        "    siso_core.de.standard_price_factory.fallback_currency: EUR",
+                        "",
+                        "    siso_core.default.automatic_currency_conversion: true",
+                        "    siso_core.default.user_menu_bundles: ['SilversolutionsEshopBundle','SisoOrderHistoryBundle']",
+                        "    siso_price.default.price_export.product_type_filter: [ses_product]",
+                        "    siso_core.default.breadcrumb_content_label_fields: ['name', 'title']",
+                        "",
+                        "    siso_seo.default.is_seo_bundle_enabled: false",
+                        "    siso_core.default.navigation.content:",
+                        "        types: [\"st_module\", \"folder\", \"article\", \"landing_page\", \"ses_productcatalog\"]",
+                        "        sections: [1, 2, 9]",
+                        "        enable_priority_zero: false",
+                        "        #additional field keys for translating navigation node label",
+                        "        label_fields: ['name', 'title']",
+                        "        additional_fields: ['intro', 'media', 'alternative_title', 'alternative_intro', 'alternative_image']",
+                        "    silver_eshop.default.path_prefix_seo: ''",
+                        "",
+                        "apache_tika:",
+                        "    path: '%apache_tika_path%'",
+                        "",
+                        "twig:",
+                        "    debug: '%kernel.debug%'",
+                        "    strict_variables: '%kernel.debug%'",
+                        "    form_themes:",
+                        "        - 'bootstrap_4_layout.html.twig'",
+                        "        - '@ezdesign/Forms/form_div_layout.html.twig'",
+                        "",
+                        "jms_payment_core:",
+                        "    encryption:",
+                        "        provider: defuse_php_encryption",
+                        "        secret: '%env(JMS_PAYMENT_SECRET)%'",
+                        "        enabled: true",
+                        "",
+                        "stash:",
+                        "    caches:",
+                        "        default:",
+                        "            drivers:",
+                        "                - FileSystem",
+                        "            inMemory: true",
+                        "            registerDoctrineAdapter: false",
+                        "            FileSystem:",
+                        "                keyHashFunction: crc32",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezcommerce/ezcommerce_demo.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "",
+                        "    # ERP demo settings",
+                        "    siso_erp.de.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
+                        "    siso_erp.en.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
+                        "    siso_erp.admin.web_connector.service_location: 'http://ezcommerce-erp.silver-eshop.de?config=ezcommerce-ms-nav'",
+                        "",
+                        "    # settings for ERP in order to use the right fallback customer numbers for customers without customer no",
+                        "    siso_core.template_debitor.customer_numbers:",
+                        "        #configuration for the zone",
+                        "        EU:",
+                        "            #configuration for the country",
+                        "            DE:",
+                        "                #customer groups possible:",
+                        "                #RBV: 10001",
+                        "                #more groups",
+                        "                #RBV_DVGW: 10002",
+                        "                #default if no customer groups available",
+                        "                default: 20000",
+                        "            #default value for the zone, if no country is specified",
+                        "            default: 40000",
+                        "        World:",
+                        "            default: 20000",
+                        "        #default value if no zone is specified",
+                        "        default: 20000",
+                        "",
+                        "",
+                        "    # facets for icecat demo products",
+                        "    siso_search.default.simple_facet_definitions:",
+                        "        download:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_is_download_value_b'",
+                        "        color:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_product_colour_value_s'",
+                        "        power:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_power_value_s'",
+                        "        product_type:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_product_type_value_s'",
+                        "        coffee_type:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_coffee_input_type_value_s'",
+                        "        beans:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_coffee_beans_capacity_value_s'",
+                        "        voltage:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_ac_input_voltage_value_s'",
+                        "        weight:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_weight_value_s'",
+                        "        pressure:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ext_pump_pressure_value_s'",
+                        "",
+                        "        price_range:",
+                        "            #possible values: single|multi_and|multi_or",
+                        "            filter_type: 'single'",
+                        "            #possible values: alpha|numeric|manual|range",
+                        "            sort_type: 'range'",
+                        "            #sort_type_order: 'XS|S|M|L|XL|XXL'",
+                        "            index_field: 'ext_ses_price_range_ms'",
+                        "            # ONLY VALID FOR THIS FACET",
+                        "            index_range_boundries: 0|10|20|50|100",
+                        "        manufacturer:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_datamap_ses_brand_value_s'",
+                        "        style:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ext_ses_spec_style_s'",
+                        "        variant_color:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_variant_color_ms'",
+                        "        variant_size:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_variant_size_ms'",
+                        "        category:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'location_parent_id_mid'",
+                        "            # ONLY VALID FOR THIS FACET",
+                        "            location_id_values: true",
+                        "        size:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ext_ses_spec_size_s'",
+                        "        availability:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_stock_numeric_value_s'",
+                        "        discontinued:",
+                        "            filter_type: 'single'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ses_product_ses_discontinued_value_b'",
+                        "        brand:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ext_ses_spec_brand_s'",
+                        "        temperature:",
+                        "            filter_type: 'multi_or'",
+                        "            sort_type: 'alpha'",
+                        "            index_field: 'ext_ses_spec_temperature_s'",
+                        "",
+                        "",
+                        "    #which facets will be used per group",
+                        "    siso_search.default.used_facets:",
+                        "        product_list:",
+                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
+                        "            specifications: ['style', 'size',  'temperature']",
+                        "            variants: ['variant_color', 'variant_size']",
+                        "        product:",
+                        "            common: ['pressure', 'download', 'brand', 'color', 'manufacturer', 'category', 'price_range', 'power', 'product_type', 'coffee_type,beans', 'voltage', 'weight']",
+                        "            specifications: ['style', 'size',  'temperature']",
+                        "            variants: ['variant_color', 'variant_size']",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    locale_fallback: en",
+                        "",
+                        "    # Identifier used to generate the CSRF token. Commenting this line will result in authentication",
+                        "    # issues both in AdminUI and REST calls",
+                        "    ezpublish_rest.csrf_token_intention: authenticate",
+                        "",
+                        "    # You can uncomment following parameters to override the setting.",
+                        "    # Their values correspond to the defaults being used.",
+                        "",
+                        "    # One of `legacy` (default) or `solr`",
+                        "    #search_engine: '%env(SEARCH_ENGINE)%'",
+                        "",
+                        "    # Session save path as used by symfony session handlers (eg. used for dsn with redis)",
+                        "    #ezplatform.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'",
+                        "",
+                        "    # Predefined pools are located in config/packages/cache_pool/",
+                        "    # You can add your own cache pool to the folder mentioned above.",
+                        "    # In order to change the default cache_pool use environmental variable export.",
+                        "    # The line below must not be altered as required cache service files are resolved based on environmental config.",
+                        "    #cache_pool: '%env(CACHE_POOL)%'",
+                        "",
+                        "    # By default cache ttl is set to 24h, when using Varnish you can set a much higher value. High values depends on",
+                        "    # using EzSystemsPlatformHttpCacheBundle (default as of v1.12) which by design expires affected cache on changes",
+                        "    #httpcache_default_ttl: '%env(HTTPCACHE_DEFAULT_TTL)%'",
+                        "",
+                        "    # Settings for HttpCache",
+                        "    #purge_server: '%env(HTTPCACHE_PURGE_SERVER)%'",
+                        "",
+                        "    # Varnish invalidation/purge token (for use on platform.sh, eZ Platform Cloud and other places you can't use IP for ACL)",
+                        "    #varnish_invalidate_token: '%env(resolve:default::HTTPCACHE_VARNISH_INVALIDATE_TOKEN)%'",
+                        "",
+                        "    # Compile time handlers",
+                        "    ## These are defined at compile time, and hence can't be set at runtime using env()",
+                        "    ## config/env/generic.php takes care about letting you set them by env variables",
+                        "",
+                        "    ## Session handler, by default set to file based (instead of ~) in order to be able to use %ezplatform.session.save_path%",
+                        "    # env: SESSION_HANDLER_ID",
+                        "    #ezplatform.session.handler_id: session.handler.native_file",
+                        "",
+                        "    ## Purge type used by HttpCache system (\"local\", \"varnish\"/\"http\", and on ee also \"fastly\")",
+                        "    #purge_type: '%env(HTTPCACHE_PURGE_TYPE)%'",
+                        "",
+                        "    env(HTTPCACHE_PURGE_TYPE): local # default value to maintain BC",
+                        "",
+                        "ezplatform:",
+                        "    # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish",
+                        "    http_cache:",
+                        "        purge_type: '%purge_type%'",
+                        "",
+                        "    # Repositories configuration, setup default repository to support solr if enabled",
+                        "    repositories:",
+                        "        default:",
+                        "            storage: ~",
+                        "            search:",
+                        "                engine: '%search_engine%'",
+                        "                connection: default",
+                        "",
+                        "    # Siteaccess configuration, with one siteaccess per default",
+                        "    siteaccess:",
+                        "        list:",
+                        "            - import",
+                        "            - site",
+                        "            - admin",
+                        "        groups:",
+                        "            site_group: [import, site]",
+                        "",
+                        "            # WARNING: Do not remove or rename this group.",
+                        "            # It's used to distinguish common siteaccesses from admin ones.",
+                        "            # In case of multisite with multiple admin panels, remember to add any additional admin siteaccess to this group.",
+                        "            admin_group: [admin]",
+                        "        default_siteaccess: site",
+                        "        match:",
+                        "            URIElement: 1",
+                        "            # Uncomment if you've enabled SiteFactory",
+                        "            # '@EzSystems\\EzPlatformSiteFactory\\SiteAccessMatcher': ~",
+                        "",
+                        "    # System settings, read in following order: `default`, <siteaccess-group>, <siteacces>, and `global`",
+                        "    # TIP: For multisite installations organize shared config into SiteAccess groups,",
+                        "    #      on single-site you can place shared config under \"default\" for simplicity as shown below.",
+                        "    system:",
+                        "        default:",
+                        "            # Cache pool service, needs to be different per repository (database) on multi repository install.",
+                        "            cache_service_name: '%cache_pool%'",
+                        "            # These reflect the current installers, complete installation before you change them. For changing var_dir",
+                        "            # it is recommended to install clean, then change setting before you start adding binary content, otherwise you'll",
+                        "            # need to manually modify your database data to reflect this to avoid exceptions.",
+                        "            var_dir: var/site",
+                        "            content:",
+                        "                # As we by default enable EzSystemsPlatformHttpCacheBundle which is designed to expire all affected cache",
+                        "                # on changes, and as error / redirects now have separate ttl, we easier allow ttl to be greatly increased",
+                        "                default_ttl: '%httpcache_default_ttl%'",
+                        "            # HttpCache purge server(s) setting, eg Varnish, for when ezpublish.http_cache.purge_type is set to 'varnish'.",
+                        "            http_cache:",
+                        "                purge_servers: ['%purge_server%']",
+                        "                varnish_invalidate_token: '%varnish_invalidate_token%'",
+                        "",
+                        "            assets:",
+                        "                icon_sets:",
+                        "                    public_icons: /bundles/ezplatformadminui/img/ibexa-icons.svg",
+                        "                    streamlineicons: /bundles/ibexaplatformicons/img/all-icons.svg",
+                        "                default_icon_set: streamlineicons",
+                        "",
+                        "        site:",
+                        "            languages: [eng-GB]",
+                        "",
+                        "        admin_group:",
+                        "            # System languages. Note that by default, content, content types, and other data are in eng-GB locale,",
+                        "            # so removing eng-GB from this list may lead to errors or content not being shown, unless you change",
+                        "            # all eng-GB data to other locales first.",
+                        "            # For admin this needs to contain all languages you want to translate content to on the given repository.",
+                        "            languages: [eng-GB]",
+                        "            page_builder:",
+                        "                siteaccess_list: [site]",
+                        "            content_tree_module:",
+                        "                contextual_tree_root_location_ids:",
+                        "                    - 2 # Home (Content structure)",
+                        "                    - 5 # Users",
+                        "                    - 43 # Media",
+                        "                    - 48 # Setup",
+                        "                    - 55 # Forms",
+                        "                    - 56 # Site skeletons",
+                        "                    - 60 # Components",
+                        "    url_alias:",
+                        "        slug_converter:",
+                        "            transformation: 'urlalias_lowercase'",
+                        "",
+                        "framework:",
+                        "    translator: { fallback: '%locale_fallback%' }",
+                        "    validation: { enable_annotations: true }",
+                        "    default_locale: '%locale_fallback%'",
+                        "    esi: true",
+                        "    fragments: true",
+                        "    http_method_override: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_admin_ui.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    # Admin siteaccess group name",
+                        "    admin_group_name: admin_group",
+                        "",
+                        "ezplatform:",
+                        "    siteaccess:",
+                        "        list: [admin]",
+                        "        groups:",
+                        "            # WARNING: Do not remove or rename this group.",
+                        "            # It's used to distinguish common siteaccesses from admin ones.",
+                        "            # In case of multisite with multiple admin panels, remember to add any additional admin siteaccess to this group.",
+                        "            admin_group: [admin]",
+                        "",
+                        "    system:",
+                        "        admin_group:",
+                        "            # For admin this needs to contain all languages you want to translate content to on the given repository.",
+                        "            languages: [eng-GB]",
+                        "            content_tree_module:",
+                        "                contextual_tree_root_location_ids:",
+                        "                    - 2 # Home (Content structure)",
+                        "                    - 5 # Users",
+                        "                    - 43 # Media",
+                        "                    - 48 # Setup",
+                        "            subtree_paths:",
+                        "                content: /1/2/",
+                        "                media: /1/43/",
+                        "            assets:",
+                        "                icon_sets:",
+                        "                    streamlineicons: /bundles/ibexaplatformicons/img/all-icons.svg",
+                        "                default_icon_set: streamlineicons",
+                        "            content_type:",
+                        "                about:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#about'",
+                        "                article:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#article'",
+                        "                blog:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#blog'",
+                        "                blog_post:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#blog_post'",
+                        "                folder:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#folder'",
+                        "                form:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#form'",
+                        "                place:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#place'",
+                        "                product:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#product'",
+                        "                field:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#field'",
+                        "                user:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#user'",
+                        "                user_group:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#user_group'",
+                        "                file:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#file'",
+                        "                gallery:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#gallery'",
+                        "                image:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#image'",
+                        "                video:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#video'",
+                        "                landing_page:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#landing_page'",
+                        "                default-config:",
+                        "                    thumbnail: '/bundles/ibexaplatformicons/img/all-icons.svg#file'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_assets.yaml": {
+                    "contents": [
+                        "webpack_encore:",
+                        "    builds:",
+                        "        ezplatform: \"%kernel.project_dir%/public/assets/ezplatform/build\"",
+                        "        richtext: \"%kernel.project_dir%/public/assets/richtext/build\"",
+                        "",
+                        "framework:",
+                        "    assets:",
+                        "        json_manifest_path: ~",
+                        "        packages:",
+                        "            ezplatform:",
+                        "                json_manifest_path: '%kernel.project_dir%/public/assets/ezplatform/build/manifest.json'",
+                        "",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_doctrine_schema.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    database_charset: '%env(DATABASE_CHARSET)%'",
+                        "    # collation currently has effect on MySQL only",
+                        "    database_collation: '%env(DATABASE_COLLATION)%'",
+                        "",
+                        "# If you are not using MySQL, you can comment-out this section",
+                        "ez_doctrine_schema:",
+                        "    tables:",
+                        "        options:",
+                        "            charset: '%database_charset%'",
+                        "            collate: '%database_collation%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_elastic_search_engine.yaml": {
+                    "contents": [
+                        "# Base configuration for Elasticsearch",
+                        "parameters:",
+                        "    elasticsearch_dsn: \"%env(ELASTICSEARCH_DSN)%\"",
+                        "",
+                        "ezplatform_elastic_search_engine:",
+                        "    connections:",
+                        "        default:",
+                        "            hosts:",
+                        "                - \"%elasticsearch_dsn%\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_form_builder.yaml": {
+                    "contents": [
+                        "jms_translation:",
+                        "    configs:",
+                        "        form_builder:",
+                        "            dirs:",
+                        "                - '%kernel.project_dir%/vendor/ezsystems/ezplatform-form-builder/src'",
+                        "            output_dir: '%kernel.project_dir%/vendor/ezsystems/ezplatform-form-builder/src/bundle/Resources/translations/'",
+                        "            excluded_dirs: [Behat, Tests]",
+                        "            output_format: \"xliff\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_http_cache.yaml": {
+                    "contents": [
+                        "## FOSHttpCache Configuration",
+                        "fos_http_cache:",
+                        "    cache_control:",
+                        "        rules:",
+                        "            # Make sure already cacheable (fresh) responses from eZ Platform which are errors/redirect gets lower ttl (then default_ttl)",
+                        "            -   match:",
+                        "                    match_response: \"response.isFresh() && ( response.isServerError() || response.isClientError() || response.isRedirect() )\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        max_age: 5",
+                        "                        s_maxage: 20",
+                        "            # Example of performance tuning, force TTL on 404 pages to avoid crawlers / ... taking to much load",
+                        "            # Should not be set to high, as cached 404's can cause issues for future routes, url aliases, wildcards, ..",
+                        "            -   match:",
+                        "                    match_response: \"!response.isFresh() && response.isNotFound()\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        public: true",
+                        "                        max_age: 0",
+                        "                        s_maxage: 20",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_http_cache_fastly.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    fastly_service_id: '%env(FASTLY_SERVICE_ID)%'",
+                        "    fastly_key: '%env(FASTLY_KEY)%'",
+                        "",
+                        "ezplatform:",
+                        "    system:",
+                        "        default:",
+                        "            http_cache:",
+                        "                # If using fastly, 'purge_server' must be set to 'https://api.fastly.com'",
+                        "                fastly:",
+                        "                    service_id: '%fastly_service_id%'",
+                        "                    key: '%fastly_key%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_page_builder.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    page_builder.token_authenticator.enabled: true",
+                        "",
+                        "jms_translation:",
+                        "    configs:",
+                        "        page_builder:",
+                        "            dirs:",
+                        "                - '%kernel.project_dir%/vendor/ezsystems/ezplatform-page-builder/src'",
+                        "            output_dir: '%kernel.project_dir%/vendor/ezsystems/ezplatform-page-builder/src/bundle/Resources/translations/'",
+                        "            excluded_dirs: [Behat, Tests]",
+                        "            output_format: \"xlf\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_site_factory.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    # Adds a fallback DATABASE_URL if the env var is not set.",
+                        "    # This allows you to run cache:warmup even if your",
+                        "    # environment variables are not available yet.",
+                        "    # You should not need to change this value.",
+                        "    env(DATABASE_URL): ''",
+                        "    env(DATABASE_DRIVER): ''",
+                        "    database_driver: '%env(DATABASE_DRIVER)%'",
+                        "",
+                        "ez_platform_site_factory:",
+                        "    enabled: false",
+                        "#    templates:",
+                        "#        site_template:",
+                        "#            siteaccess_group: site_factory_group",
+                        "#            name: Example Site",
+                        "#            thumbnail: https://placekitten.com/160/95",
+                        "",
+                        "doctrine:",
+                        "    dbal:",
+                        "        connections:",
+                        "            # This connection is dedicated for SiteFactory to avoid known issues, should be the same as default",
+                        "            site_factory:",
+                        "                # configure these for your database server",
+                        "                driver: '%database_driver%'",
+                        "                charset: '%database_charset%'",
+                        "                default_table_options:",
+                        "                    charset: '%database_charset%'",
+                        "                    collate: '%database_collation%'",
+                        "                url: '%env(resolve:DATABASE_URL)%'",
+                        "",
+                        "framework:",
+                        "    cache:",
+                        "        pools:",
+                        "            # This pool should be used only by SiteFactory bundle",
+                        "            site_factory_pool:",
+                        "                # You can configure it according to your needs",
+                        "                adapter: cache.app",
+                        "                tags: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_solr.yaml": {
+                    "contents": [
+                        "# Base configuration for Solr, for more options see: https://doc.ezplatform.com/en/latest/guide/search/#solr-bundle",
+                        "# Can have several connections used by each eZ Repositories in ezplatform.yml",
+                        "parameters:",
+                        "    # Solr root endpoint, relevant if `solr` is set as search_engine",
+                        "    #solr_dsn: '%env(SOLR_DSN)%'",
+                        "    #solr_core: '%env(SOLR_CORE)%'",
+                        "",
+                        "ez_search_engine_solr:",
+                        "    endpoints:",
+                        "        endpoint0:",
+                        "            # suffixed explicitly for compatibility with SolariumBundle used by Commerce",
+                        "            dsn: '%solr_dsn%/solr'",
+                        "            core: '%solr_core%'",
+                        "    connections:",
+                        "        default:",
+                        "            entry_endpoints:",
+                        "                - endpoint0",
+                        "            mapping:",
+                        "                default: endpoint0",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ezplatform_welcome_page.yaml": {
+                    "contents": [
+                        "# You can safely delete this file to disable welcome page",
+                        "ezplatform:",
+                        "    system:",
+                        "        site:",
+                        "            content_view:",
+                        "                full:",
+                        "                    welcome_page:",
+                        "                        template: \"@ezdesign/full/welcome_page.html.twig\"",
+                        "                        match:",
+                        "                            Id\\Location: 2",
+                        "                        params:",
+                        "                            project_dir: '%kernel.project_dir%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql:",
+                        "    definitions:",
+                        "        mappings:",
+                        "            auto_discover: false",
+                        "            types:",
+                        "                -   type: yaml",
+                        "                    dir: \"%kernel.project_dir%/config/graphql/types\"",
+                        "                    suffix: ~",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ibexa_jms_translation.yaml": {
+                    "contents": [
+                        "jms_translation:",
+                        "    source_language: en",
+                        "    locales: [en]",
+                        "    dumper:",
+                        "        add_references: false",
+                        "        add_date: false",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/lexik_jwt_authentication.yaml": {
+                    "contents": [
+                        "lexik_jwt_authentication:",
+                        "    secret_key: '%env(APP_SECRET)%'",
+                        "    encoder:",
+                        "        signature_algorithm: HS256",
+                        "    # Disabled by default, because Page builder use an custom extractor",
+                        "    token_extractors:",
+                        "        authorization_header:",
+                        "            enabled: false",
+                        "        cookie:",
+                        "            enabled: false",
+                        "        query_parameter:",
+                        "            enabled: false",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/nelmio_solarium.yaml": {
+                    "contents": [
+                        "nelmio_solarium:",
+                        "    endpoints:",
+                        "        default:",
+                        "            host: '%siso_search.solr.host%'",
+                        "            port: '%siso_search.solr.port%'",
+                        "            path: '%siso_search.solr.path%'",
+                        "            core: '%siso_search.solr.core%'",
+                        "            timeout: 30",
+                        "",
+                        "    clients:",
+                        "        default:",
+                        "            endpoints:",
+                        "                - default",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/security.yaml": {
+                    "contents": [
+                        "#security:",
+                        "#    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers",
+                        "#    providers:",
+                        "#        in_memory: { memory: ~ }",
+                        "#    firewalls:",
+                        "#        dev:",
+                        "#            pattern: ^/(_(profiler|wdt)|css|images|js)/",
+                        "#            security: false",
+                        "#        main:",
+                        "#            anonymous: true",
+                        "#",
+                        "#            # activate different ways to authenticate",
+                        "#",
+                        "#            # http_basic: true",
+                        "#            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate",
+                        "#",
+                        "#            # form_login: true",
+                        "#            # https://symfony.com/doc/current/security/form_login_setup.html",
+                        "#",
+                        "#    # Easy way to control access for large sections of your site",
+                        "#    # Note: Only the *first* access control that matches will be used",
+                        "#    access_control:",
+                        "#        # - { path: ^/admin, roles: ROLE_ADMIN }",
+                        "#        # - { path: ^/profile, roles: ROLE_USER }",
+                        "#",
+                        "",
+                        "# To get started with security, check out the documentation:",
+                        "# https://symfony.com/doc/current/security.html",
+                        "security:",
+                        "    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded",
+                        "    providers:",
+                        "        ezplatform:",
+                        "            id: ezpublish.security.user_provider",
+                        "    #!        in_memory:",
+                        "    #!            memory: ~",
+                        "",
+                        "    firewalls:",
+                        "        # disables authentication for assets and the profiler, adapt it according to your needs",
+                        "        dev:",
+                        "            pattern: ^/(_(profiler|wdt)|css|images|js)/",
+                        "            security: false",
+                        "",
+                        "        ezpublish_forgot_password:",
+                        "            pattern: /user/(forgot-password|reset-password)",
+                        "            security: false",
+                        "",
+                        "        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL",
+                        "        #ezplatform_rest:",
+                        "        #    request_matcher: EzSystems\\EzPlatformAdminUi\\REST\\Security\\NonAdminRESTRequestMatcher",
+                        "        #    user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                        "        #    anonymous: ~",
+                        "        #    guard:",
+                        "        #        authenticators:",
+                        "        #            - lexik_jwt_authentication.jwt_token_authenticator",
+                        "        #        entry_point: lexik_jwt_authentication.jwt_token_authenticator",
+                        "        #    stateless: true",
+                        "",
+                        "        #ezplatform_graphql:",
+                        "        #    request_matcher: EzSystems\\EzPlatformGraphQL\\Security\\NonAdminGraphQLRequestMatcher",
+                        "        #    user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                        "        #    anonymous: ~",
+                        "        #    guard:",
+                        "        #        authenticators:",
+                        "        #            - lexik_jwt_authentication.jwt_token_authenticator",
+                        "        #        entry_point: lexik_jwt_authentication.jwt_token_authenticator",
+                        "        #    stateless: true",
+                        "",
+                        "        # Uncomment ibexa_oauth2_connect, ibexa_with_oauth2 rules and comment ezpublish_front firewall",
+                        "        # to enable OAuth2 authentication",
+                        "",
+                        "        #ibexa_front_oauth2_connect:",
+                        "        #    pattern: /oauth2/connect/*",
+                        "        #    security: false",
+                        "",
+                        "        #ibexa_front:",
+                        "        #    pattern: ^/",
+                        "        #    user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                        "        #    anonymous: ~",
+                        "        #    ezpublish_rest_session: ~",
+                        "        #    guard:",
+                        "        #        authenticators:",
+                        "        #            - Ibexa\\Platform\\Bundle\\OAuth2Client\\Security\\Authenticator\\OAuth2Authenticator",
+                        "        #            - EzSystems\\EzPlatformPageBuilder\\Security\\EditorialMode\\TokenAuthenticator",
+                        "        #        entry_point: Ibexa\\Platform\\Bundle\\OAuth2Client\\Security\\Authenticator\\OAuth2Authenticator",
+                        "        #    form_login:",
+                        "        #        require_previous_session: false",
+                        "        #        csrf_token_generator: security.csrf.token_manager",
+                        "        #    logout: ~",
+                        "",
+                        "        ezpublish_front:",
+                        "            pattern: ^/",
+                        "            user_checker: eZ\\Publish\\Core\\MVC\\Symfony\\Security\\UserChecker",
+                        "            anonymous: ~",
+                        "            ezpublish_rest_session: ~",
+                        "            form_login:",
+                        "                require_previous_session: false",
+                        "                csrf_token_generator: security.csrf.token_manager",
+                        "            guard:",
+                        "                authenticator: 'EzSystems\\EzPlatformPageBuilder\\Security\\EditorialMode\\TokenAuthenticator'",
+                        "            logout:",
+                        "                path: logout",
+                        "                handlers: [ siso_core.logout.listener ]",
+                        "",
+                        "        main:",
+                        "            anonymous: ~",
+                        "            # activate different ways to authenticate",
+                        "",
+                        "            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate",
+                        "            #http_basic: ~",
+                        "",
+                        "            # https://symfony.com/doc/current/security/form_login_setup.html",
+                        "            #form_login: ~",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezcommerce.yaml": {
+                    "contents": [
+                        "",
+                        "# Commerce routes",
+                        "",
+                        "# This file is auto-generated during the composer install",
+                        "silversolutions_eshop:",
+                        "    resource: \"@SilversolutionsEshopBundle/Resources/config/ses_routing.yml\"",
+                        "    prefix: /",
+                        "silversolutions_tools:",
+                        "    resource: '@SilversolutionsToolsBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "silversolutions_translation:",
+                        "    resource: '@SilversolutionsTranslationBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "",
+                        "siso_checkout:",
+                        "    resource: '@IbexaPlatformCommerceCheckoutBundle/Resources/config/routing.yaml'",
+                        "    prefix: /",
+                        "siso_comparison:",
+                        "    resource: '@SisoComparisonBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "siso_quick_order:",
+                        "    resource: '@SisoQuickOrderBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "siso_search:",
+                        "    resource: '@SisoSearchBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "siso_tools:",
+                        "    resource: '@SisoToolsBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "#siso_voucher:",
+                        "#    resource: \"@SisoVoucherBundle/Resources/config/routing.yml\"",
+                        "#    prefix: /",
+                        "    #_siso_payment:",
+                        "    #resource: '@SisoPaymentBundle/Resources/config/routing.yml'",
+                        "    #_siso_paypal_payment:",
+                        "    #resource: '@SisoPaypalPaymentBundle/Resources/config/routing.yml'",
+                        "siso_orderhistory:",
+                        "    resource: '@SisoOrderHistoryBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "",
+                        "siso_local_order_management:",
+                        "    resource: '@SisoLocalOrderManagementBundle/Resources/config/routing.yml'",
+                        "    prefix: /",
+                        "",
+                        "silver_eshop_admin_rest_api:",
+                        "    resource: '@IbexaPlatformCommerceAdminUiBundle/Resources/config/routing_rest.yml'",
+                        "    prefix:   '%ezpublish_rest.path_prefix%'",
+                        "",
+                        "ezcommerce_admin_ui:",
+                        "    resource: '@IbexaPlatformCommerceAdminUiBundle/Resources/config/routing.yaml'",
+                        "",
+                        "siso_basket:",
+                        "    resource: '@SisoBasketBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.commerce.rest:",
+                        "    resource: \"@SisoRestApiBundle/Resources/config/routing.yaml\"",
+                        "    prefix: \"%ezpublish_rest.path_prefix%\"",
+                        "",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform.yaml": {
+                    "contents": [
+                        "login:",
+                        "    path: /login",
+                        "    defaults: { _controller: ezpublish.security.controller:loginAction }",
+                        "",
+                        "login_check:",
+                        "    path: /login_check",
+                        "",
+                        "logout:",
+                        "    path: /logout",
+                        "",
+                        "ezplatform_kernel_internal:",
+                        "    resource: '@EzPublishCoreBundle/Resources/config/routing/internal.yml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_admin_ui.yaml": {
+                    "contents": [
+                        "ezplatform_admin_ui:",
+                        "    resource: '@EzPlatformAdminUiBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ezplatform_admin_ui_rest:",
+                        "    resource: '@EzPlatformAdminUiBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_calendar.yaml": {
+                    "contents": [
+                        "ezplatform.ee.calendar:",
+                        "    resource: '@EzPlatformCalendarBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ezplatform.ee.calendar.rest:",
+                        "    resource: '@EzPlatformCalendarBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_content_forms.yaml": {
+                    "contents": [
+                        "ezplatform_content_forms:",
+                        "    resource: '@EzPlatformContentFormsBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_date_based_publisher.yaml": {
+                    "contents": [
+                        "ezplatform.ee.date_based_publisher:",
+                        "    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ezplatform.ee.date_based_publisher_rest:",
+                        "    resource: '@EzSystemsDateBasedPublisherBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ez_systems_date_based_publisher_rest_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_form_builder.yaml": {
+                    "contents": [
+                        "ezplatform.ee.form_builder:",
+                        "    resource: '@EzPlatformFormBuilderBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ezplatform.ee.form_builder.form_captcha:",
+                        "    resource: '@EzPlatformFormBuilderBundle/Resources/config/captcha_routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_http_cache.yaml": {
+                    "contents": [
+                        "ezplatform_http_cache:",
+                        "    resource: '@EzSystemsPlatformHttpCacheBundle/Resources/config/routing.yml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_page_builder.yaml": {
+                    "contents": [
+                        "ezplatform.ee.page_builder:",
+                        "    resource: '@EzPlatformPageBuilderBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ezplatform.ee.page_builder_preview:",
+                        "    resource: '@EzPlatformPageBuilderBundle/Resources/config/routing_preview.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_page_fieldtype.yaml": {
+                    "contents": [
+                        "ezplatform.ee.fieldtype.page:",
+                        "    resource: '@EzPlatformPageFieldTypeBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_query_field_type.yaml": {
+                    "contents": [
+                        "ezplatform_query_field_type:",
+                        "    resource: '@EzSystemsEzPlatformQueryFieldTypeBundle/Resources/config/routing/rest.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_rest.yaml": {
+                    "contents": [
+                        "ezplatform_rest:",
+                        "    resource: '@EzPlatformRestBundle/Resources/config/routing.yml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        "",
+                        "ezplatform_rest_options:",
+                        "    resource: '@EzPlatformRestBundle/Resources/config/routing.yml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        "    type: rest_options",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_search.yaml": {
+                    "contents": [
+                        "platform_search:",
+                        "    resource: '@IbexaPlatformSearchBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_site_factory.yaml": {
+                    "contents": [
+                        "ezplatform_site_factory:",
+                        "    resource: '@EzPlatformSiteFactoryBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_support_tools.yaml": {
+                    "contents": [
+                        "ezplatform_support_tools:",
+                        "  resource: '@EzSystemsEzSupportToolsBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_user.yaml": {
+                    "contents": [
+                        "ezplatform_user:",
+                        "    resource: '@EzPlatformUserBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_version_comparison.yaml": {
+                    "contents": [
+                        "ezplatform_version_comparison:",
+                        "    resource: '@EzPlatformVersionComparisonBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezplatform_workflow.yaml": {
+                    "contents": [
+                        "ezplatform.ee.workflow:",
+                        "    resource: '@EzPlatformWorkflowBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ezrecommendation_client.yaml": {
+                    "contents": [
+                        "ezrecommendation_client:",
+                        "    resource: \"@EzRecommendationClientBundle/Resources/config/routing_rest.yaml\"",
+                        "    prefix:   '%ezpublish_rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/graphql.yaml": {
+                    "contents": [
+                        "overblog_graphql_endpoint:",
+                        "    path: /graphql",
+                        "    defaults:",
+                        "        _controller: Overblog\\GraphQLBundle\\Controller\\GraphController::endpointAction",
+                        "        _format: \"json\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_platform_connector_dam.yaml": {
+                    "contents": [
+                        "ibexa.platform.connector_dam:",
+                        "    resource: '@IbexaPlatformConnectorDamBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.platform.connector_dam.rest:",
+                        "    resource: '@IbexaPlatformConnectorDamBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ezpublish_rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_platform_image_editor.yaml": {
+                    "contents": [
+                        "ibexa.platform.image_editor:",
+                        "    resource: '@IbexaPlatformImageEditorBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_platform_oauth2_client.yaml": {
+                    "contents": [
+                        "ibexa.platform.oauth2_client:",
+                        "  resource: '@IbexaPlatformOAuth2ClientBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_platform_personalization.yaml": {
+                    "contents": [
+                        "ibexa_platform_personalization:",
+                        "    resource: '@IbexaPlatformPersonalizationBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_platform_segmentation.yaml": {
+                    "contents": [
+                        "ibexa.platform.segmentation:",
+                        "    resource: '@IbexaPlatformSegmentationBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.config.js": {
+                    "contents": [
+                        "const path = require('path');",
+                        "const bundles = require('./var/encore/ez.config.js');",
+                        "const eZConfigManager = require('./ez.webpack.config.manager.js');",
+                        "const configManagers = require('./var/encore/ez.config.manager.js');",
+                        "",
+                        "module.exports = (Encore) => {",
+                        "    Encore.setOutputPath('public/assets/ezplatform/build')",
+                        "        .setPublicPath('/assets/ezplatform/build')",
+                        "        .addExternals({",
+                        "            react: 'React',",
+                        "            'react-dom': 'ReactDOM',",
+                        "            moment: 'moment',",
+                        "            'popper.js': 'Popper',",
+                        "            alloyeditor: 'AlloyEditor',",
+                        "            'prop-types': 'PropTypes',",
+                        "        })",
+                        "        .enableSassLoader()",
+                        "        .enableReactPreset()",
+                        "        .enableSingleRuntimeChunk();",
+                        "",
+                        "    bundles.forEach((configPath) => {",
+                        "        const addEntries = require(configPath);",
+                        "",
+                        "        addEntries(Encore);",
+                        "    });",
+                        "",
+                        "    const eZConfig = Encore.getWebpackConfig();",
+                        "",
+                        "    eZConfig.name = 'ezplatform';",
+                        "",
+                        "    configManagers.forEach((configManagerPath) => {",
+                        "        const configManager = require(configManagerPath);",
+                        "",
+                        "        configManager(eZConfig, eZConfigManager);",
+                        "    });",
+                        "",
+                        "    return eZConfig;",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.config.manager.js": {
+                    "contents": [
+                        "const fs = require('fs');",
+                        "const findItems = (eZConfig, entryName) => {",
+                        "    const items = eZConfig.entry[entryName];",
+                        "",
+                        "    if (!items) {",
+                        "        throw new Error(`Couldn't find entry with name: \"${entryName}\". Please check if there is a typo in the name.`);",
+                        "    }",
+                        "",
+                        "    return items;",
+                        "};",
+                        "const replace = ({ eZConfig, entryName, itemToReplace, newItem }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "    const indexToReplace = items.indexOf(fs.realpathSync(itemToReplace));",
+                        "",
+                        "    if (indexToReplace < 0) {",
+                        "        throw new Error(`Couldn't find item \"${itemToReplace}\" in entry \"${entryName}\". Please check if there is a typo in the name.`);",
+                        "    }",
+                        "",
+                        "    items[indexToReplace] = newItem;",
+                        "};",
+                        "const remove = ({ eZConfig, entryName, itemsToRemove }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "    const realPathItemsToRemove = itemsToRemove.map((item) => fs.realpathSync(item));",
+                        "",
+                        "    eZConfig.entry[entryName] = items.filter((item) => !realPathItemsToRemove.includes(item));",
+                        "};",
+                        "const add = ({ eZConfig, entryName, newItems }) => {",
+                        "    const items = findItems(eZConfig, entryName);",
+                        "",
+                        "    eZConfig.entry[entryName] = [...items, ...newItems];",
+                        "};",
+                        "",
+                        "module.exports = {",
+                        "    replace,",
+                        "    remove,",
+                        "    add",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.custom.configs.js": {
+                    "contents": [
+                        "const path = require('path');",
+                        "const customConfigs = require('./var/encore/ez.webpack.custom.config.js');",
+                        "",
+                        "module.exports = customConfigs.reduce((configs, customConfigPath) => {",
+                        "    let customConfig = require(customConfigPath);",
+                        "",
+                        "    if (!Array.isArray(customConfig)) {",
+                        "        customConfig = [customConfig];",
+                        "    }",
+                        "",
+                        "    return [ ...configs, ...customConfig ];",
+                        "}, []);",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/package.json": {
+                    "contents": [
+                        "{",
+                        "  \"devDependencies\": {",
+                        "    \"@symfony/stimulus-bridge\": \"^1.1.0\",",
+                        "    \"@symfony/webpack-encore\": \"^0.32.0\",",
+                        "    \"@babel/preset-react\": \"^7.0.0\",",
+                        "    \"core-js\": \"^3.0.0\",",
+                        "    \"stimulus\": \"^2.0.0\",",
+                        "    \"regenerator-runtime\": \"^0.13.2\",",
+                        "    \"webpack-notifier\": \"^1.6.0\",",
+                        "    \"react-collapsible\": \"^2.5.0\",",
+                        "    \"node-sass\": \"^4.11.0\",",
+                        "    \"sass-loader\": \"^9.0.1\",",
+                        "    \"@babel/runtime\": \"^7.13.10\",",
+                        "    \"postcss-loader\": \"^3.0.0\",",
+                        "    \"raw-loader\": \"^3.1.0\",",
+                        "    \"style-loader\": \"^1.3.0\",",
+                        "    \"@ckeditor/ckeditor5-alignment\": \"^26.0.0\",",
+                        "    \"@ckeditor/ckeditor5-build-inline\": \"^26.0.0\",",
+                        "    \"@ckeditor/ckeditor5-dev-utils\": \"^24.4.1\",",
+                        "    \"@ckeditor/ckeditor5-widget\": \"^26.0.0\",",
+                        "    \"@ckeditor/ckeditor5-theme-lark\": \"^26.0.0\"",
+                        "  },",
+                        "  \"license\": \"UNLICENSED\",",
+                        "  \"private\": true,",
+                        "  \"scripts\": {",
+                        "    \"dev-server\": \"encore dev-server\",",
+                        "    \"dev\": \"encore dev\",",
+                        "    \"watch\": \"encore dev --watch\",",
+                        "    \"build\": \"encore production --progress\"",
+                        "  }",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/webpack.config.js": {
+                    "contents": [
+                        "const Encore = require('@symfony/webpack-encore');",
+                        "const path = require('path');",
+                        "const getEzConfig = require('./ez.webpack.config.js');",
+                        "const eZConfigManager = require('./ez.webpack.config.manager.js');",
+                        "const eZConfig = getEzConfig(Encore);",
+                        "const customConfigs = require('./ez.webpack.custom.configs.js');",
+                        "",
+                        "Encore.reset();",
+                        "Encore",
+                        "    .setOutputPath('public/build/')",
+                        "    .setPublicPath('/build')",
+                        "    .enableStimulusBridge('./assets/controllers.json')",
+                        "    .enableSassLoader()",
+                        "    .enableReactPreset()",
+                        "    .enableSingleRuntimeChunk()",
+                        "    .copyFiles({",
+                        "        from: './assets/images',",
+                        "        to: 'images/[path][name].[ext]',",
+                        "        pattern: /\\.(png|svg)$/",
+                        "    })",
+                        "    .configureBabel((config) => {",
+                        "        config.plugins.push('@babel/plugin-proposal-class-properties');",
+                        "    })",
+                        "",
+                        "    // enables @babel/preset-env polyfills",
+                        "    .configureBabelPresetEnv((config) => {",
+                        "        config.useBuiltIns = 'usage';",
+                        "        config.corejs = 3;",
+                        "    })",
+                        ";",
+                        "",
+                        "// Welcome page stylesheets",
+                        "Encore.addEntry('welcome_page', [",
+                        "    path.resolve(__dirname, './assets/scss/welcome-page.scss'),",
+                        "]);",
+                        "",
+                        "Encore.addEntry('app', './assets/app.js');",
+                        "",
+                        "const projectConfig = Encore.getWebpackConfig();",
+                        "module.exports = [ eZConfig, ...customConfigs, projectConfig ];",
+                        "",
+                        "// uncomment this line if you've commented-out the above lines",
+                        "// module.exports = [ eZConfig, ...customConfigs ];",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "templates/themes/standard/full/welcome_page.html.twig": {
+                    "contents": [
+                        "{% extends '@ezdesign/pagelayout.html.twig' %}",
+                        "",
+                        "{% trans_default_domain 'ibexa_platform_welcome_page' %}",
+                        "",
+                        "{% block stylesheets %}",
+                        "    <link href=\"https://fonts.googleapis.com/css?family=Work+Sans:400,700\" rel=\"stylesheet\">",
+                        "    <link href=\"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap\" rel=\"stylesheet\">",
+                        "    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">",
+                        "",
+                        "    {{ encore_entry_link_tags('welcome_page') }}",
+                        "{% endblock %}",
+                        "",
+                        "{% block content %}",
+                        "<header>",
+                        "    <div class=\"container-fluid container--wide\">",
+                        "        <div class=\"row\">",
+                        "            <div class=\"col-12\">",
+                        "                <div class=\"py-4\">",
+                        "                     <img src=\"{{ asset('bundles/ezplatformadminui/img/ibexa-logo.svg') }}\" alt=\"Ibexa\" class=\"logo\">",
+                        "                </div>",
+                        "            </div>",
+                        "        </div>",
+                        "    </div>",
+                        "    <div class=\"container-fluid header__container\">",
+                        "        <div class=\"container h-100 text-center text-white d-flex flex-column align-items-center justify-content-center\">",
+                        "            <h1>",
+                        "                {{ 'ibexa_platform_welcome_page.welcome_to'|trans|desc('Welcome to') }}<br>",
+                        "                {{ ez_render_field(content, 'name') }}",
+                        "                {{ constant('EzSystems\\\\EzPlatformCoreBundle\\\\EzPlatformCoreBundle::VERSION') }}",
+                        "            </h1>",
+                        "            <div class=\"pt-5\">",
+                        "                {{ ez_render_field(content, 'short_description') }}",
+                        "                <p class=\"mb-0\">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to:\u00a0%target%') }}</p>",
+                        "",
+                        "                {% set admin_url = url('ezplatform.dashboard', { 'siteaccess': 'admin' }) %}",
+                        "                <p class=\"mb-0\">",
+                        "                    {{ 'ibexa_platform_welcome_page.create_new_content_at'|trans({'%target%': '<a href=\"' ~ admin_url ~ '\" class=\"text-white\"><u>' ~ admin_url ~ '</u></a>' })",
+                        "                    |desc('Create new content at %target%')|raw }}",
+                        "                </p>",
+                        "            </div>",
+                        "        </div>",
+                        "    </div>",
+                        "</header>",
+                        "<div class=\"page pb-4\">",
+                        "    <div class=\"container-fluid background-grey pb-3\">",
+                        "        <div class=\"row py-3\">",
+                        "            <div class=\"col-12 py-3\">",
+                        "                <div class=\"container text-center description\">",
+                        "                    {{ ez_render_field(content, 'description') }}",
+                        "                </div>",
+                        "            </div>",
+                        "        </div>",
+                        "    </div>",
+                        "    <div class=\"container-fluid container--wide mt-5 references px-5\">",
+                        "        <div class=\"row\">",
+                        "            <div class=\"col-lg-4 col-md-6 col-sm-12\">",
+                        "                <div class=\"d-flex flex-row justify-content-center\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/file-text-info-icon.svg') }}\" alt=\"File text info icon\">",
+                        "                    </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.documentation'|trans|desc('Documentation') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ibexa.co/documentation-center\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.documentation_center'|trans|desc('Documentation center') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/projects/userguide\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.user_documentation'|trans|desc('User documentation') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.developer_documentation'|trans|desc('Developer documentation') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                        </ul>",
+                        "                    </div>",
+                        "                </div>",
+                        "            </div>",
+                        "            <div class=\"col-lg-4 col-md-6 mt-5 mt-md-0\">",
+                        "                <div class=\"d-flex flex-row justify-content-center\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/folder-icon.svg') }}\" alt=\"Folder icon\">",
+                        "                    </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.tutorials_and_resources'|trans|desc('Tutorials and resources') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/getting_started/first_steps\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.getting_started'|trans|desc('Getting started') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/tutorials/platform_beginner/building_a_bicycle_route_tracker_in_ez_platform\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.tutorials'|trans|desc('Tutorials') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"http://doc.ibexa.co/rest-api-reference\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.rest_api_reference'|trans|desc('REST API reference') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/api/public_php_api\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.public_php_api'|trans|desc('Public PHP API') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li>",
+                        "                                <a href=\"https://doc.ibexa.co/en/latest/api/graphql\" class=\"references-list-item__link\" target=\"_blank\">GraphQL</a>",
+                        "                            </li>",
+                        "                        </ul>",
+                        "                    </div>",
+                        "                </div>",
+                        "            </div>",
+                        "            <div class=\"col-lg-4 col-md-6 mt-lg-0 mt-5\">",
+                        "                <div class=\"d-flex flex-row justify-content-center mr-auto\">",
+                        "                    <div class=\"mr-3\">",
+                        "                        <img src=\"{{ asset('build/images/conversation-chat-icon.svg') }}\" alt=\"Conversation chat icon\">",
+                        "                    </div>",
+                        "                    <div>",
+                        "                        <h2 class=\"mb-3\">{{ 'ibexa_platform_welcome_page.forums_and_community'|trans|desc('Forums and community') }}</h2>",
+                        "                        <ul class=\"list-unstyled references-list\">",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://discuss.ibexa.co\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.discussion_forum'|trans|desc('Discussion forum') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ez-community-on-slack.herokuapp.com/\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.community_slack_channel'|trans|desc('Community Slack channel') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                            <li class=\"references-list-item\">",
+                        "                                <a href=\"https://ibexa.co/blog\" class=\"references-list-item__link\" target=\"_blank\">",
+                        "                                    {{ 'ibexa_platform_welcome_page.ibexa_blog'|trans|desc('Ibexa blog') }}",
+                        "                                </a>",
+                        "                            </li>",
+                        "                        </ul>",
+                        "                    </div>",
+                        "                </div>",
+                        "            </div>",
+                        "        </div>",
+                        "    </div>",
+                        "</div>",
+                        "<footer class=\"footer pb-3\">",
+                        "    <div class=\"container-fluid container--wide\">",
+                        "        <span class=\"copyright\">",
+                        "        {{ 'ibexa_platform_welcome_page.copyright'|trans({",
+                        "            '%ibexa_link_open%': '<a href=\"http://ibexa.co\" target=\"_blank\">',",
+                        "            '%ibexa_link_close%': '</a>',",
+                        "            '%current_year%': \"now\"|date(\"Y\")",
+                        "        }) |desc('Ibexa Digital Experience Platform \u00a9 %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others')|raw }}",
+                        "        </span>",
+                        "    </div>",
+                        "</footer>",
+                        "{% endblock %}",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "templates/themes/standard/pagelayout.html.twig": {
+                    "contents": [
+                        "<!doctype html>",
+                        "<html lang=\"{{ app.request.locale|replace({'_': '-'}) }}\">",
+                        "<head>",
+                        "    <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('bundles/ezplatformadminui/img/favicon.ico') }}\" />",
+                        "    <meta charset=\"utf-8\">",
+                        "    {% if content is defined and title is not defined %}",
+                        "        {% set title = ez_content_name( content ) %}",
+                        "    {% endif %}",
+                        "    <title>{{ title|default( 'Home' ) }}</title>",
+                        "    <meta name=\"generator\" content=\"Ibexa DXP\"/>",
+                        "    {% if content is defined and content.contentInfo.mainLocationId %}",
+                        "        <link rel=\"canonical\" href=\"{{ ez_path(content) }}\" />",
+                        "    {% endif %}",
+                        "",
+                        "    {% block stylesheets %}",
+                        "        {{ encore_entry_link_tags('app') }}",
+                        "    {% endblock %}",
+                        "</head>",
+                        "<body>",
+                        "{% block content %}",
+                        "{% endblock %}",
+                        "",
+                        "{% block javascripts %}",
+                        "    {{ encore_entry_script_tags('app') }}",
+                        "{% endblock %}",
+                        "</body>",
+                        "</html>",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "translations/ibexa_platform_welcome_page.en.xlf": {
+                    "contents": [
+                        "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+                        "<xliff xmlns=\"urn:oasis:names:tc:xliff:document:1.2\" xmlns:jms=\"urn:jms:translation\" version=\"1.2\">",
+                        "    <file source-language=\"en\" target-language=\"en\" datatype=\"plaintext\" original=\"not.available\">",
+                        "        <header>",
+                        "            <tool tool-id=\"JMSTranslationBundle\" tool-name=\"JMSTranslationBundle\" tool-version=\"1.1.0-DEV\"/>",
+                        "            <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as \"form.label.firstname\", then the developer has not provided a default message.</note>",
+                        "        </header>",
+                        "        <body>",
+                        "            <trans-unit id=\"2987fc15ff9917b965034c1f6113259e3670b0cb\" resname=\"ibexa_platform_welcome_page.community_slack_channel\">",
+                        "                <source>Community Slack channel</source>",
+                        "                <target state=\"new\">Community Slack channel</target>",
+                        "                <note>key: ibexa_platform_welcome_page.community_slack_channel</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"4c881f4c860503bedbef66f45a3500ac13c22621\" resname=\"ibexa_platform_welcome_page.copyright\">",
+                        "                <source>Ibexa Digital Experience Platform \u00a9 %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</source>",
+                        "                <target state=\"new\">Ibexa Digital Experience Platform \u00a9 %current_year% %ibexa_link_open%Ibexa%ibexa_link_close% and others</target>",
+                        "                <note>key: ibexa_platform_welcome_page.copyright</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"38fed69c2be5e97705fcf090148d490768d8c81d\" resname=\"ibexa_platform_welcome_page.create_new_content_at\">",
+                        "                <source>Create new content at %target%</source>",
+                        "                <target state=\"new\">Create new content at %target%</target>",
+                        "                <note>key: ibexa_platform_welcome_page.create_new_content_at</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"1390e41e8ca90a5bd5daa7a5c3ad06a5996bf6d8\" resname=\"ibexa_platform_welcome_page.developer_documentation\">",
+                        "                <source>Developer documentation</source>",
+                        "                <target state=\"new\">Developer documentation</target>",
+                        "                <note>key: ibexa_platform_welcome_page.developer_documentation</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"d20f60607aef51d406f58b24d5cbf78d378faed9\" resname=\"ibexa_platform_welcome_page.discussion_forum\">",
+                        "                <source>Discussion forum</source>",
+                        "                <target state=\"new\">Discussion forum</target>",
+                        "                <note>key: ibexa_platform_welcome_page.discussion_forum</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"85f6f00214473349dd7d2f21210ba566041b816d\" resname=\"ibexa_platform_welcome_page.documentation\">",
+                        "                <source>Documentation</source>",
+                        "                <target state=\"new\">Documentation</target>",
+                        "                <note>key: ibexa_platform_welcome_page.documentation</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"7b5e9ed019b56355d940c88703b12f7adf3955bf\" resname=\"ibexa_platform_welcome_page.documentation_center\">",
+                        "                <source>Documentation center</source>",
+                        "                <target state=\"new\">Documentation center</target>",
+                        "                <note>key: ibexa_platform_welcome_page.documentation_center</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"6c2779b7cb80ba0f46e1608a853d766f855cf39b\" resname=\"ibexa_platform_welcome_page.forums_and_community\">",
+                        "                <source>Forums and community</source>",
+                        "                <target state=\"new\">Forums and community</target>",
+                        "                <note>key: ibexa_platform_welcome_page.forums_and_community</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"22eeb52805189aeb47128d417c3dbd618d30c8d0\" resname=\"ibexa_platform_welcome_page.getting_started\">",
+                        "                <source>Getting started</source>",
+                        "                <target state=\"new\">Getting started</target>",
+                        "                <note>key: ibexa_platform_welcome_page.getting_started</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"1e438f216fca7d5e4c14b72dc5f2aafce168dafb\" resname=\"ibexa_platform_welcome_page.ibexa_blog\">",
+                        "                <source>Ibexa blog</source>",
+                        "                <target state=\"new\">Ibexa blog</target>",
+                        "                <note>key: ibexa_platform_welcome_page.ibexa_blog</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"0585031bc3561306d2bdc84968795e126ae1da11\" resname=\"ibexa_platform_welcome_page.navigate_to\">",
+                        "                <source>Navigate to: %target%</source>",
+                        "                <target state=\"new\">Navigate to: %target%</target>",
+                        "                <note>key: ibexa_platform_welcome_page.navigate_to</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"034d93e3dd14d39d2c3bb4740c4fef2e139f4e30\" resname=\"ibexa_platform_welcome_page.public_php_api\">",
+                        "                <source>Public PHP API</source>",
+                        "                <target state=\"new\">Public PHP API</target>",
+                        "                <note>key: ibexa_platform_welcome_page.public_php_api</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"0e868794e655862b46712096f3838035715ca91b\" resname=\"ibexa_platform_welcome_page.rest_api_reference\">",
+                        "                <source>REST API reference</source>",
+                        "                <target state=\"new\">REST API reference</target>",
+                        "                <note>key: ibexa_platform_welcome_page.rest_api_reference</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"7989236cbff5d38a5cfda3bfa9b211d80db1af04\" resname=\"ibexa_platform_welcome_page.tutorials\">",
+                        "                <source>Tutorials</source>",
+                        "                <target state=\"new\">Tutorials</target>",
+                        "                <note>key: ibexa_platform_welcome_page.tutorials</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"5c2121c5baa63c943a5c93decfbad20cdf23bf42\" resname=\"ibexa_platform_welcome_page.tutorials_and_resources\">",
+                        "                <source>Tutorials and resources</source>",
+                        "                <target state=\"new\">Tutorials and resources</target>",
+                        "                <note>key: ibexa_platform_welcome_page.tutorials_and_resources</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"7c2709c50bb6e3f654581e4f23f34d8c6dd65725\" resname=\"ibexa_platform_welcome_page.user_documentation\">",
+                        "                <source>User documentation</source>",
+                        "                <target state=\"new\">User documentation</target>",
+                        "                <note>key: ibexa_platform_welcome_page.user_documentation</note>",
+                        "            </trans-unit>",
+                        "            <trans-unit id=\"ebc66899289f111043fdf09adbfabd940f857825\" resname=\"ibexa_platform_welcome_page.welcome_to\">",
+                        "                <source>Welcome to</source>",
+                        "                <target state=\"new\">Welcome to</target>",
+                        "                <note>key: ibexa_platform_welcome_page.welcome_to</note>",
+                        "            </trans-unit>",
+                        "        </body>",
+                        "    </file>",
+                        "</xliff>",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3d059a4f14855a5c56859a0cad274606e42e5960"
+        }
+    }
+}

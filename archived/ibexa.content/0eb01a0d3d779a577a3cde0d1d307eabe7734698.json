@@ -1,0 +1,205 @@
+{
+    "manifests": {
+        "ibexa/content": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\TwigBundle\\TwigBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": [
+                        "all"
+                    ],
+                    "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
+                        "all"
+                    ],
+                    "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": [
+                        "all"
+                    ],
+                    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": [
+                        "all"
+                    ],
+                    "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": [
+                        "all"
+                    ],
+                    "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": [
+                        "all"
+                    ],
+                    "FOS\\JsRoutingBundle\\FOSJsRoutingBundle": [
+                        "all"
+                    ],
+                    "FOS\\HttpCacheBundle\\FOSHttpCacheBundle": [
+                        "all"
+                    ],
+                    "JMS\\TranslationBundle\\JMSTranslationBundle": [
+                        "all"
+                    ],
+                    "Liip\\ImagineBundle\\LiipImagineBundle": [
+                        "all"
+                    ],
+                    "Nelmio\\CorsBundle\\NelmioCorsBundle": [
+                        "all"
+                    ],
+                    "Oneup\\FlysystemBundle\\OneupFlysystemBundle": [
+                        "all"
+                    ],
+                    "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishCoreBundle\\EzPublishCoreBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishLegacySearchEngineBundle\\EzPublishLegacySearchEngineBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishIOBundle\\EzPublishIOBundle": [
+                        "all"
+                    ],
+                    "eZ\\Bundle\\EzPublishDebugBundle\\EzPublishDebugBundle": [
+                        "dev",
+                        "test",
+                        "behat"
+                    ],
+                    "EzSystems\\PlatformHttpCacheBundle\\EzSystemsPlatformHttpCacheBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRestBundle\\EzPlatformRestBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCoreBundle\\EzPlatformCoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformSolrSearchEngineBundle\\EzSystemsEzPlatformSolrSearchEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzSupportToolsBundle\\EzSystemsEzSupportToolsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformCronBundle\\EzPlatformCronBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\PlatformInstallerBundle\\EzSystemsPlatformInstallerBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\DoctrineSchemaBundle\\DoctrineSchemaBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformContentFormsBundle\\EzPlatformContentFormsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformDesignEngineBundle\\EzPlatformDesignEngineBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformStandardDesignBundle\\EzPlatformStandardDesignBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformRichTextBundle\\EzPlatformRichTextBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiBundle\\EzPlatformAdminUiBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformUserBundle\\EzPlatformUserBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformAdminUiAssetsBundle\\EzPlatformAdminUiAssetsBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformEncoreBundle\\EzSystemsEzPlatformEncoreBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformMatrixFieldtypeBundle\\EzPlatformMatrixFieldtypeBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\BehatBundle\\EzSystemsBehatBundle": [
+                        "behat"
+                    ],
+                    "EzSystems\\EzPlatformGraphQL\\EzSystemsEzPlatformGraphQLBundle": [
+                        "all"
+                    ],
+                    "EzSystems\\EzPlatformQueryFieldType\\Symfony\\EzSystemsEzPlatformQueryFieldTypeBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Search\\IbexaPlatformSearchBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Platform\\Bundle\\Assets\\IbexaPlatformAssetsBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": [
+                        "all"
+                    ],
+                    "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": [
+                        "dev"
+                    ],
+                    "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": [
+                        "all"
+                    ],
+                    "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
+                        "all"
+                    ],
+                    "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
+                        "test",
+                        "behat"
+                    ],
+                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
+                        "all"
+                    ],
+                    "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "encore/": "/"
+                },
+                "env": {
+                    "SEARCH_ENGINE": "legacy",
+                    "#1": "Uncomment following line if you want to change the purge type.",
+                    "#2": "By default it will use `local` purge when running locally",
+                    "#3": "and `varnish` for Platform.sh installations.",
+                    "#4": "HTTPCACHE_PURGE_TYPE=local",
+                    "HTTPCACHE_DEFAULT_TTL": "86400",
+                    "HTTPCACHE_PURGE_SERVER": "http://localhost:80",
+                    "HTTPCACHE_VARNISH_INVALIDATE_TOKEN": "",
+                    "CACHE_POOL": "cache.tagaware.filesystem",
+                    "#5": "When using redis or memcached adapters, you can configure it using DSN:",
+                    "#6": "- https://symfony.com/doc/4.4/components/cache/adapters/redis_adapter.html#configure-the-connection",
+                    "#7": "- https://symfony.com/doc/4.4/components/cache/adapters/memcached_adapter.html#configure-the-connection",
+                    "CACHE_DSN": "localhost",
+                    "CACHE_NAMESPACE": "ezp",
+                    "DATABASE_CHARSET": "utf8mb4",
+                    "DATABASE_COLLATION": "utf8mb4_unicode_520_ci",
+                    "#8": "Needed by Doctrine Bundle / ORM to avoid it opening connection during situations where there is no service yet.",
+                    "#9": "See: https://symfony.com/doc/current/reference/configuration/doctrine.html#doctrine-dbal-configuration",
+                    "DATABASE_VERSION": "mariadb-10.3.0",
+                    "SESSION_HANDLER_ID": "session.handler.native_file",
+                    "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
+                    "SOLR_DSN": "http://localhost:8983/solr",
+                    "SOLR_CORE": "collection1",
+                    "#10": "Enable recommendations by setting valid id, key and uri",
+                    "#11": "RECOMMENDATIONS_CUSTOMER_ID=\"\"",
+                    "#12": "RECOMMENDATIONS_LICENSE_KEY=\"\"",
+                    "#13": "PUBLIC_SERVER_URI=\"\""
+                },
+                "composer-scripts": {
+                    "cache:clear": "symfony-cmd",
+                    "assets:install %PUBLIC_DIR%": "symfony-cmd",
+                    "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
+                    "yarn install": "script",
+                    "ezplatform:encore:compile": "symfony-cmd"
+                }
+            },
+            "files": [],
+            "ref": "0eb01a0d3d779a577a3cde0d1d307eabe7734698"
+        }
+    }
+}
