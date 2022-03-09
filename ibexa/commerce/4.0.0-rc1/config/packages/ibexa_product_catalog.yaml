@@ -1,6 +1,0 @@
-ibexa_product_catalog:
-    engines:
-        default:
-            type: local
-            options:
-                product_type_group_identifier: 'product'

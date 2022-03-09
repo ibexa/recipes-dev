@@ -1,2 +1,0 @@
-ezplatform_site_factory:
-    resource: '@EzPlatformSiteFactoryBundle/Resources/config/routing.yaml'
