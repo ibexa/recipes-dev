@@ -1,6 +1,0 @@
-{
-  "aliases": [],
-  "bundles": {
-    "Ibexa\\Bundle\\Connector\\Unsplash\\IbexaConnectorUnsplashBundle": ["all"]
-  }
-}
