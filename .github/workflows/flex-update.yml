@@ -3,7 +3,7 @@ name: Update Flex endpoint
 on:
     push:
         branches:
-            - master-serverless
+            - master
 
 defaults:
     run:
@@ -13,4 +13,4 @@ jobs:
     call-flex-update:
         uses: symfony/recipes/.github/workflows/callable-flex-update.yml@main
         with:
-            branch: master-serverless
+            branch: master
