@@ -1,0 +1,34 @@
+parameters:
+    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png
+    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header.png
+
+
+    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true
+
+    # Default settings for Commerce - will be overriden by backend config!
+    ibexa.commerce.site_access.config.price.default.price_service_chain.product_list:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.product_detail:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.slider_product_list:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.basket:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.basket_variant:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.stored_basket:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.wish_list:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order_line_preview:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.comparison:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.search_list:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.bestseller_list:
+        - Ibexa\Bundle\Commerce\PriceEngine\Service\ShopPriceProvider
