@@ -50,6 +50,7 @@
     "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
+    "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
     "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": ["all"],
     "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
