@@ -343,6 +343,9 @@
             "4.0",
             "4.1"
         ],
+        "ibexa/measurement": [
+            "4.1"
+        ],
         "ibexa/migrations": [
             "4.0",
             "4.1"
