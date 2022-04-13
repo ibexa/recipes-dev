@@ -1,0 +1,66 @@
+name: CI
+
+on:
+    pull_request: ~
+
+jobs:
+    run-checks:
+        name: Run checks
+        runs-on: ubuntu-20.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+              id: checkout
+              with:
+                  fetch-depth: 0
+                  ref: 'refs/pull/${{ github.event.number }}/merge'
+
+            - name: Install tools
+              run: |
+                  git config --global user.email ""
+                  git config --global user.name "github-action[bot]"
+                  cd .github
+                  wget -q -O recipes-checker.zip https://codeload.github.com/symfony-tools/recipes-checker/zip/refs/heads/main
+                  unzip recipes-checker.zip
+                  cd recipes-checker-main
+                  composer install --ansi --no-dev
+
+            - name: Check manifest.json files
+              if: "always() && steps.checkout.outcome == 'success'"
+              run: |
+                  .github/recipes-checker-main/run lint:manifests
+
+            - name: Generate Flex testing endpoint
+              if: "always() && steps.checkout.outcome == 'success'"
+              run: |
+                  mkdir .github/flex-endpoint
+                  git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} master flex/pull-${{ github.event.number }} .github/flex-endpoint
+                  git stash
+                  git switch -c pr
+                  git switch --orphan flex/pull-${{ github.event.number }}
+                  git reset --hard -q
+                  mv .github/flex-endpoint/*.json .
+                  git add *.json
+                  git commit -m 'Create Flex endpoint' || true
+                  git push origin -f flex/pull-${{ github.event.number }}
+                  git switch pr
+                  git stash pop -q || true
+    
+            - name: manifest.json is found
+              if: "always() && steps.checkout.outcome == 'success'"
+              run: |
+                  MISSING=$(find * -mindepth 2 -maxdepth 2 -type d '!' -exec test -f '{}/manifest.json' ';' -print)
+
+                  if [[ "" != "$MISSING" ]]; then echo -e "::error::Recipes must define a \"manifest.json\" file\nFile not found in $MISSING\n"; exit 1; fi
+
+            - name: JSON files are valid
+              if: "always() && steps.checkout.outcome == 'success'"
+              run: |
+                  ERRORS=$(find * -name '*.json' | xargs -n1 -P0 bash -c 'ERR=$(cd / && python -mjson.tool '$(pwd)'/"$0" 2>&1 1> /dev/null) || echo \\n::error file="$0",line=`echo "${ERR#*: line }" | cut -d" " -f 1`::${ERR%%: line *}')
+
+                  if [[ "" != "$ERRORS" ]]; then echo -e "$ERRORS\n"; exit 1; fi
+
+            - name: YAML files are valid
+              if: "always() && steps.checkout.outcome == 'success'"
+              run: |
+                  find * -name '*.yaml' -or -name '*.yml' | .github/recipes-checker-main/run lint:yaml

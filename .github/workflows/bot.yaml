@@ -1,0 +1,19 @@
+name: "Post endpoint URL"
+on:
+    pull_request:
+      types: 
+        - opened
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Thanks for contribution! 🎉 \n\n To test the changes please execute: \n ```\ncomposer config extra.symfony.endpoint https://api.github.com/repos/${{ github.repository }}/contents/index.json?ref=flex/pull-${{ github.event.number }}\n```\n before executing the recipes.'
+            })
