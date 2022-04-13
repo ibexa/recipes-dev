@@ -16,5 +16,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Thanks for contribution! 🎉 \n\n To test the changes please execute: \n ```\ncomposer config extra.symfony.endpoint https://api.github.com/repos/${{ github.repository }} /contents/index.json?ref=flex/pull-{{ github.event.number }}\n```\n before executing the recipes.'
+              body: 'Thanks for contribution! 🎉 \n\n To test the changes please execute: \n ```\ncomposer config extra.symfony.endpoint https://api.github.com/repos/${{ github.repository }}/contents/index.json?ref=flex/pull-${{ github.event.number }}\n```\n before executing the recipes.'
             })
