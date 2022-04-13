@@ -30,11 +30,6 @@ jobs:
               run: |
                   .github/recipes-checker-main/run lint:manifests
 
-            - name: Remove non-patched packages
-              if: "always() && steps.checkout.outcome == 'success'"
-              run: |
-                  .github/recipes-checker-main/run list-unpatched-packages $GITHUB_EVENT_PATH ${{ secrets.GITHUB_TOKEN }} | xargs -r -n10 rm -rf
-
             - name: Generate Flex testing endpoint
               if: "always() && steps.checkout.outcome == 'success'"
               run: |
