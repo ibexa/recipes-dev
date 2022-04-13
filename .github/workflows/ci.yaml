@@ -44,7 +44,7 @@ jobs:
                   git commit -m 'Create Flex endpoint' || true
                   git push origin -f flex/pull-${{ github.event.number }}
                   git switch pr
-                  git stash pop -q
+                  git stash pop -q || true
     
             - name: manifest.json is found
               if: "always() && steps.checkout.outcome == 'success'"
