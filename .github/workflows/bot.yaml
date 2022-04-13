@@ -1,3 +1,4 @@
+name: "Post endpoint URL"
 on:
     pull_request:
       types: 
@@ -15,5 +16,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Thanks for contribution!'
+              body: 'Thanks for contribution!\n To test the endpoint please execute: `composer config extra.symfony.endpoint https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-6`'
             })
