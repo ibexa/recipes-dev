@@ -1,0 +1,17 @@
+name: Cleanup Flex testing endpoint
+
+on:
+    pull_request:
+        types:
+          - closed
+
+jobs:
+    flex-cleanup:
+        name: Cleanup Flex testing endpoint
+        runs-on: ubuntu-20.04
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Cleanup Flex testing endpoint
+              run: git push origin :flex/pull-${{ github.event.number }} || true
