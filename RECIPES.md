@@ -77,6 +77,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/content-forms](https://packagist.org/packages/ibexa/content-forms) | [4.2](ibexa/content-forms/4.2) |  |
 | [ibexa/content-tree](https://packagist.org/packages/ibexa/content-tree) | [4.2](ibexa/content-tree/4.2) |  |
 | [ibexa/core](https://packagist.org/packages/ibexa/core) | [4.2](ibexa/core/4.2) |  |
+| [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.2](ibexa/corporate-account/4.2) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.2](ibexa/cron/4.2) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.2](ibexa/design-engine/4.2) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [0.2](ibexa/docker/0.2) |  |

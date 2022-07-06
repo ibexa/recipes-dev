@@ -298,6 +298,9 @@
             "4.1",
             "4.2"
         ],
+        "ibexa/corporate-account": [
+            "4.2"
+        ],
         "ibexa/cron": [
             "4.0",
             "4.1",
