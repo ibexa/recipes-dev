@@ -336,6 +336,9 @@
             "4.1",
             "4.2"
         ],
+        "ibexa/fieldtype-address": [
+            "4.2"
+        ],
         "ibexa/fieldtype-matrix": [
             "4.0",
             "4.1",

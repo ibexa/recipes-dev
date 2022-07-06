@@ -85,6 +85,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [4.2](ibexa/elasticsearch/4.2) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [4.2](ibexa/experience/4.2) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
 | [ibexa/fastly](https://packagist.org/packages/ibexa/fastly) | [4.2](ibexa/fastly/4.2) |  |
+| [ibexa/fieldtype-address](https://packagist.org/packages/ibexa/fieldtype-address) | [4.2](ibexa/fieldtype-address/4.2) |  |
 | [ibexa/fieldtype-matrix](https://packagist.org/packages/ibexa/fieldtype-matrix) | [4.2](ibexa/fieldtype-matrix/4.2) |  |
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [4.2](ibexa/fieldtype-page/4.2) |  |
 | [ibexa/fieldtype-query](https://packagist.org/packages/ibexa/fieldtype-query) | [4.2](ibexa/fieldtype-query/4.2) |  |
