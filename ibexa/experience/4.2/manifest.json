@@ -92,7 +92,8 @@
     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
-    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"]
+    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"],
+    "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
