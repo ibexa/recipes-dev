@@ -64,8 +64,10 @@ ibexa:
             - import
             - site
             - admin
+            - corporate
         groups:
             site_group: [import, site]
+            corporate_group: [corporate]
         default_siteaccess: site
         match:
             URIElement: 1
