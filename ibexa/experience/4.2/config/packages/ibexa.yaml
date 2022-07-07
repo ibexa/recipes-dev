@@ -60,9 +60,12 @@ ibexa:
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
-        list: [site]
+        list:
+            - site
+            - corporate
         groups:
             site_group: [site]
+            corporate_group: [corporate]
         default_siteaccess: site
         match:
             URIElement: 1
