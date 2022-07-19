@@ -103,6 +103,9 @@ ibexa:
         site:
             languages: [eng-GB]
 
+        corporate_group:
+            languages: [eng-GB]
+
         admin_group:
             # System languages. Note that by default, content, content types, and other data are in eng-GB locale,
             # so removing eng-GB from this list may lead to errors or content not being shown, unless you change
