@@ -56,10 +56,8 @@ const add = ({ ibexaConfig, eZConfig, entryName, newItems }) => {
     config.entry[ibexaEntryName] = [...items, ...newItems];
 };
 const prepend = ({ ibexaConfig, eZConfig, entryName, newItems }) => {
-    const config = ibexaConfig ? ibexaConfig : eZConfig;
-
     const ibexaEntryName = ibexifyEntryName(entryName);
-    const items = findItems(config, ibexaEntryName);
+    const items = findItems(ibexaConfig, ibexaEntryName);
 
     config.entry[ibexaEntryName] = [...newItems, ...items];
 };
