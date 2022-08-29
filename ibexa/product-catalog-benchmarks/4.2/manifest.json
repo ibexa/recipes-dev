@@ -1,0 +1,13 @@
+{
+    "bundles": {
+        "Ibexa\\Bundle\\ProductCatalogBenchmarks\\IbexaProductCatalogBenchmarksBundle": ["all"]
+    },
+      "copy-from-package": {
+        ".blackfire.yaml": ".blackfire.yaml",
+        "bin/profile": "bin/profile"
+      },
+      "env": {
+        "ITERATIONS": 100,
+        "ITERATION_COUNTER_STARTING_VALUE": 0
+      }
+}
