@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="{{ app.request.locale|split('_')[0] }}">
+<head>
+    <meta charset="utf-8"/>
+    <!--
+      @copyright Copyright (C) Ibexa AS. All rights reserved.
+      @license For full copyright and license information view LICENSE file distributed with this source code.
+    -->
+    {%  block ibexa_seo_block %}
+        {%- if content is defined -%}
+            {{- ibexa_seo(content) -}}
+        {%- endif -%}
+    {% endblock %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('ibexa-commerce-shop-pagelayout-css', null, 'ibexa') }}
+        {{ encore_entry_link_tags('ibexa-commerce-checkout-layout-css', null, 'ibexa') }}
+        {{ encore_entry_link_tags('ibexa-commerce-shop-frontend-css', null, 'ibexa') }}
+    {% endblock %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="{{ asset("bundles/ibexacommerceeshop/vendor/modernizr/modernizr.js") }}"></script>
+    <script src="{{ asset("bundles/ibexacommerceeshop/vendor/jquery-2.1.3.min/index.js") }}"></script>
+    <script src="{{ asset("bundles/ibexacommerceeshop/js/vue/vue.js") }}"></script>
+    <script src="{{ asset("bundles/ibexacommerceeshop/js/vue/store.legacy.min.js") }}"></script>
+
+    {% block favicon %}
+        <link rel="shortcut icon" href="{{ asset("bundles/ibexaadminui/img/favicon.ico") }}">
+    {% endblock %}
+
+</head>
+
+
+{#parameters for the language switcher and others #}
+{% set current_siteaccess = ibexa.siteaccess.name %}
+{% set id = '' %}
+{% set source = '' %}
+{% set data_locations = '' %}
+{% if location.id is defined %}
+    {% set id = location.id %}
+    {% set source = 'eZ' %}
+    {% set data_locations = ibexa_commerce_get_data_location_ids(location) %}
+{% elseif catalogElement.identifier is defined %}
+    {% set id = catalogElement.identifier %}
+    {% set source = 'ssl' %}
+    {% set data_locations = ibexa_commerce_get_data_location_ids(catalogElement) %}
+{% elseif app.request.attributes.get('silverModule').versionInfo.contentInfo.id is defined %}
+    {% set id = app.request.attributes.get('silverModule').versionInfo.contentInfo.id %}
+    {% set source = 'silverModule' %}
+    {% set data_locations = ibexa_commerce_get_data_location_ids(app.request.attributes.get('location')) %}
+{% else %}
+    {% set source = 'url' %}
+    {% set id = ibexa.requestedUriString %}
+{% endif %}
+{#end - parameters for the language switcher and others #}
+
+<body class="{% block main_css_class %}{% endblock %}" data-siteaccess="{{ '/'|ibexa_commerce_siteaccess_path }}"
+      data-phalanx-url="{{ path('ibexa.commerce.phalanx') }}" data-location-ids="{{ data_locations }}">
+{% import '@ibexadesign/Components/tracker_macros.html.twig'|ibexa_commerce_resolve_template as tracker %}
+{% set tracking_codes_base = ibexa_commerce_track_base() %}
+{% block tracker_top_base %}
+    {{ tracker.top(tracking_codes_base) }}
+{% endblock %}
+{% block tracker_top %}{% endblock %}
+
+{% block spinner %}{% endblock %}
+
+<div class="off-canvas-wrap" id="js-main-offcanvas" data-offcanvas>
+    <div class="inner-wrap">
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+
+                {% block language_switcher_mobile %}
+                    {# include '@ibexadesign/parts/language_switcher_mobile.html.twig' #}
+                {% endblock %}
+
+                <li class="c-offcanvas__user-area">
+                    <ul class="accordion" data-accordion>
+                        <li class="accordion-navigation u-no-border">
+                            <a href="#accordion-panel-login">
+                                {% if not ses.profile.sesUser.isAnonymous %}
+                                    {{ 'My Account'|trans }}
+                                {% else %}
+                                    {{ 'Login / Register'|trans }}
+                                {% endif %}
+                            </a>
+                            <div id="accordion-panel-login" class="content u-padding-1x" id="headerLoginMobile">
+                                {{ render_esi(
+                                    controller(
+                                        'Ibexa\\Bundle\\Commerce\\Eshop\\Controller\\CustomerProfileDataController:showHeaderLoginAction',
+                                        {'isOffCanvas': true}
+                                    )
+                                ) }}
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><label>{{ 'label.offcanvas_main_menu'|trans|desc('Main Menu') }}</label></li>
+                {% include '@ibexadesign/Navigation/offcanvas_navigation.html.twig'|ibexa_commerce_resolve_template
+                    with {'locationId':ibexa_commerce_config_parameter('navigation_ez_location_root', 'ibexa.commerce.site_access.config.core')}
+                %}
+
+            </ul>
+        </aside>
+
+        <section class="main-section js-main-section">
+
+            {% block header %}
+                {% block header_meta_nav %}
+                    <div class="meta-nav hide-for-print js-meta-nav">
+                        <div class="row show-for-large-up">
+                            <div class="columns">
+                                <ul class="inline-list c-nav-meta" id="headerLoginDesktop">
+
+                                    {% block header_login %}
+                                        {{ render_esi(
+                                            controller(
+                                                'Ibexa\\Bundle\\Commerce\\Eshop\\Controller\\CustomerProfileDataController:showHeaderLoginAction',
+                                                {'isOffCanvas': false}
+                                            )
+                                        ) }}
+                                    {% endblock %}
+
+                                    {% block language_switcher %}
+                                        {# include '@ibexadesign/parts/language_switcher_desktop.html.twig' #}
+
+                                    {% endblock %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+                <div class="tools-wrap js-tools-wrap">
+                    <div class="row js-toastr-target">
+                        <div class="small-6 large-3 columns">
+                            {% block header_content %}
+                                <div class="row collapse">
+                                    <div class="small-2 columns show-for-medium-down">
+                                        <a href="#js-main-offcanvas" role="button"
+                                           class="left-off-canvas-toggle margin-right show-for-medium-down sticky" data-options="sticky_on: small">
+                                            <i class="fa fa-bars fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <div class="small-10 large-12 columns">
+                                        <a href="{{ '/'|ibexa_commerce_siteaccess_path }}" class="c-page-header__logo sticky" data-options="sticky_on: small" >
+                                            <img src="{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}" alt="{{ ibexa_commerce_config_parameter('productname', 'ibexa.commerce.site_access.config.core') }}"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endblock %}
+                        </div>
+                        {% block search %}
+                            <div class="large-4 xlarge-5 columns hide-for-print hide-for-medium-down end">
+                                {{ include('@ibexadesign/parts/header_search.html.twig'|ibexa_commerce_resolve_template) }}
+                            </div>
+                        {% endblock %}
+
+                    </div>
+                </div>
+
+                {% block main_nav %}
+
+                    <div id="dropdown-search" data-dropdown-content
+                         class="f-dropdown content mega c-search__dropdown hide-for-large-up" aria-hidden="true" tabindex="-1">
+                        {{ include('@ibexadesign/parts/header_search.html.twig'|ibexa_commerce_resolve_template) }}
+                    </div>
+
+                    <div class="nav-wrap hide-for-print">
+
+                        <div class="row">
+                            <div class="columns small-6 large-12 u-no-padding-left u-no-padding-right-on-small u-float-right-on-small u-float-right-on-medium">
+                                <div class="sticky contain-to-grid" >
+                                    <nav class="top-bar c-dropdownmenu js-main-nav" data-topbar role="navigation">
+                                        <ul class="title-area show-for-large-up">
+                                            <li class="name"></li>
+                                            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                                        </ul>
+                                        <section class="top-bar-section show-for-large-up">
+
+                                            {% include '@ibexadesign/Navigation/main_navigation.html.twig'|ibexa_commerce_resolve_template
+                                                with {'locationId':ibexa_commerce_config_parameter('navigation_ez_location_root', 'ibexa.commerce.site_access.config.core')}
+                                            %}
+
+                                        </section>
+                                        {% block header_feature_nav %}
+                                            <div class="c-icon-bar__wrapper js-icon-bar">
+                                                <div class="icon-bar">
+                                                    {% block header_feature_nav_content %}
+                                                        <div class="item c-icon-bar__item--fluid">
+                                                            {% include '@ibexadesign/Basket/widget.html.twig' %}
+                                                        </div>
+                                                        {% block tools_preview %}
+                                                            <div class="item c-icon-bar__item c-icon-bar__item--fluid">
+                                                                <a class="c-icon-bar__items-wrap" href="#" data-dropdown="dropdown-tools">
+                                                                    <div class="c-icon-bar__border">
+                                                                        <div class="c-icon-bar__icons u-inline-block left text-left">
+                                                                            <i class="fa fa-list-alt c-icon-bar__icon-main"></i>
+                                                                            <i class="fa fa-caret-down c-icon-bar__icon-secondary"></i>
+                                                                        </div>
+                                                                        <div class="c-icon-bar__labels show-for-large-up text-left">
+                                                                            <h5 class="c-icon-bar__heading">{{ 'common.my_shop'|trans|desc('My Shop') }}</h5>
+                                                                            <span class="c-icon-bar__label">{{ 'common.my_shop_functions'|trans|desc('Functions') }}</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                                <div id="dropdown-tools" class="f-dropdown content flexible no-arrow-on-small small text-left" data-dropdown-content>
+                                                                    <div class="c-icon-bar__menu">
+                                                                        <ul class="no-bullet u-no-margin-bottom">
+                                                                            {{ ibexa_commerce_user_menu()|raw }}
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% endblock %}
+                                                        <div class="item c-icon-bar__item--fluid with-border hide-for-large-up">
+                                                            <a href="{{ path('ibexa.commerce.global_search') }}" data-dropdown="dropdown-search"
+                                                               data-options="is_hover: false" aria-controls="dropdown-search" aria-expanded="false">
+                                                                <i class="fa fa-search"></i>
+                                                            </a>
+                                                        </div>
+                                                    {% endblock %}
+                                                </div>
+                                            </div>
+                                        {% endblock %}
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+
+            {% endblock %}
+
+            {% block breadcrumb %}
+                <div class="crumb-wrap hide-for-print">
+                    <div class="row">
+                        <div class="columns">
+                            {{ render(controller('Ibexa\\Bundle\\Commerce\\Eshop\\Controller\\BreadcrumbsController:renderBreadcrumbsAction')) }}
+                        </div>
+                    </div>
+                </div>
+            {% endblock %}
+
+            {#<div class="row">#}
+            {#<div class="columns">#}
+            {% block wrapper %}
+                {% block second_nav %}{% endblock %}
+
+                {% block all_content %}
+                    {% block messages_top %}{% endblock %}
+                    {% block sidebar %}{% endblock %}
+                    {% block content %}{% endblock %}
+                {% endblock %}
+            {% endblock %}
+            {#</div>#}
+            {#</div>#}
+
+            {% block footer %}
+                {{ render_esi(controller('Ibexa\\Bundle\\Commerce\\Eshop\\Controller\\PageLayoutController:getFooterAction')) }}
+            {% endblock %}
+
+            {% block scrollToTop %}
+                <a class="c-scroll hide hide-for-print js-scroll-to-top" href="#" data-offset="200">
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+          </span>
+                </a>
+            {% endblock %}
+
+        </section>
+
+        <a class="exit-off-canvas"></a>
+
+    </div>
+
+</div>
+
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('ibexa-commerce-shop-core-basket-widget-js', null, 'ibexa') }}
+    {{ encore_entry_script_tags('ibexa-commerce-shop-design-basket-widget-js', null, 'ibexa') }}
+    {{ encore_entry_script_tags('ibexa-commerce-shop-core-product-widgets-js', null, 'ibexa') }}
+    {% set sessionDataAccessDenied = app.request.get('_controller') is same as 'Ibexa\Core\MVC\Symfony\Controller\SecurityController:loginAction' %}
+
+    <script type="text/json" id="ses-url-config">
+{
+        "urlGetSessionData": "{{ path('ibexa.commerce.session.data') }}",
+        "session_name": "{{ ibexa_commerce_config_parameter('session', '').name }}",
+        "accessDenied": {{ sessionDataAccessDenied | json_encode }}
+}
+</script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/slick.js/slick/slick.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.accordion.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.alert.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.dropdown.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.equalizer.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.offcanvas.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.reveal.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.tab.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.tooltip.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation/js/foundation/foundation.topbar.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/foundation-datepicker/js/foundation-datepicker.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/underscore/underscore.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/backbone/backbone.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/hinclude/hinclude.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/xzoom/xzoom.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/tooltipster/dist/js/tooltipster.bundle.min.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/sticky/jquery.sticky.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/Sortable/Sortable.min.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/jquery.visible/jquery.visible.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/devbridge-autocomplete/dist/jquery.autocomplete.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/toastr/toastr.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/js-cookie/src/js.cookie.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/vendor/star-rating-svg/dist/jquery.star-rating-svg.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/vue/md5.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/vue/axios.min.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceshopfrontend/js/dynamic-header.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/assets/config.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/translations/storm.translations.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/storm.phalanx.controller.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/storm.phalanx.parser.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/storm.phalanx.provider.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/storm.phalanx.utils.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/price/price.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/basket/basket.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/list/list.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/sidebox/sidebox.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/checkout/checkout.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/dashboard/dashboard.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/variants/variants.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/quickorder/quickorder.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/hoplite/search/search.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/phalanx/storm.phalanx.actions.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/socialshare/storm.socialshareprivacy.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/socialshare/storm.socialshare.actions.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/cookiepolicy/storm.cookiepolicy.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/cookiepolicy/storm.cookiepolicy.actions.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/pages/landingpage/landingpage.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/pages/basket/storm.basket.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/components/scroll.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/components/navigation.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/components/language.switcher.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/components/price-toggler.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/components/star-rating.js') }}"></script>
+    <script src="{{ asset('bundles/ibexacommerceeshop/js/app.js') }}"></script>
+{% endblock %}
+
+{% block social_scripts %}{% endblock %}
+{% block user_scripts %}{% endblock %}
+
+{{ render_esi(controller('Ibexa\\Bundle\\Commerce\\Eshop\\Controller\\PageLayoutController:getJsTranslationsAction', {'isOffCanvas': true})) }}
+
+<script>
+    storm_translations.set(translations);
+</script>
+
+
+{% if app.environment == 'dev' %}
+    <script type='text/javascript' id="__bs_script__">//<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.2'><\/script>".replace("HOST", location.hostname));
+        //]]></script>
+{% endif %}
+
+{% block tracker_bottom_base %}
+    {{ tracker.bottom(tracking_codes_base) }}
+{% endblock %}
+{% block tracker_bottom %}{% endblock %}
+</body>
+</html>
