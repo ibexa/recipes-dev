@@ -80,7 +80,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.2](ibexa/corporate-account/4.2) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.2](ibexa/cron/4.2) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.2](ibexa/design-engine/4.2) |  |
-| [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [0.2](ibexa/docker/0.2) |  |
+| [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [4.2](ibexa/docker/4.2) |  |
 | [ibexa/doctrine-schema](https://packagist.org/packages/ibexa/doctrine-schema) | [4.2](ibexa/doctrine-schema/4.2) |  |
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [4.2](ibexa/elasticsearch/4.2) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [4.2](ibexa/experience/4.2) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
