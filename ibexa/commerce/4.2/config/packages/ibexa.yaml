@@ -100,6 +100,7 @@ ibexa:
                     streamlineicons: /bundles/ibexaicons/img/all-icons.svg
                 default_icon_set: streamlineicons
 
+            page_layout: "@ibexadesign/pagelayout.html.twig"
         site:
             languages: [eng-GB]
 
