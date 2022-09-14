@@ -2,7 +2,7 @@
 #    system:
 #        default:
 #            cdp:
-#                # Account number can be obtained from User Account settings in Ibexa CDP dashbaord
+#                # Account number can be obtained from Accounts settings in Ibexa CDP dashboard
 #                account_number: 123456
 #                user_data_streaming:
 #                    # Use Stream ID generated during data import from "stream file" in Data Manager
