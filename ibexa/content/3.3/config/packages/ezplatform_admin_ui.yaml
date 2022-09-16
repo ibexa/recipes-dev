@@ -21,6 +21,7 @@ ezplatform:
                     - 5 # Users
                     - 43 # Media
                     - 48 # Setup
+                    - 57 # eCommerce / Components
             subtree_paths:
                 content: /1/2/
                 media: /1/43/

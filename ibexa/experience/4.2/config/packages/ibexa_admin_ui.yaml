@@ -21,9 +21,14 @@ ibexa:
                     - 5 # Users
                     - 43 # Media
                     - 48 # Setup
+                    - 55 # Forms
+                    - 56 # Site skeletons
+                    - 60 # Components
             subtree_paths:
                 content: /1/2/
                 media: /1/43/
+            page_builder:
+                siteaccess_list: [site]
             assets:
                 icon_sets:
                     streamlineicons: /bundles/ibexaicons/img/all-icons.svg
