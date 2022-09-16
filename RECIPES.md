@@ -57,6 +57,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [4.2](ibexa/admin-ui-assets/4.2) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [4.2](ibexa/behat/4.2) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [4.2](ibexa/calendar/4.2) |  |
+| [ibexa/cdp](https://packagist.org/packages/ibexa/cdp) | [4.2](ibexa/cdp/4.2) | `cdp`, `ibexa-cdp`, `ibexacdp` |
 | [ibexa/commerce](https://packagist.org/packages/ibexa/commerce) | [4.2](ibexa/commerce/4.2) | `cms-commerce`, `cmscommerce`, `commerce`, `dxp-commerce`, `dxpcommerce`, `ibexa-commerce`, `ibexacommerce` |
 | [ibexa/commerce-admin-ui](https://packagist.org/packages/ibexa/commerce-admin-ui) | [4.2](ibexa/commerce-admin-ui/4.2) |  |
 | [ibexa/commerce-base-design](https://packagist.org/packages/ibexa/commerce-base-design) | [4.2](ibexa/commerce-base-design/4.2) |  |

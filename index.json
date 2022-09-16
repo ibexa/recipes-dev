@@ -1,5 +1,6 @@
 {
     "aliases": {
+        "cdp": "ibexa/cdp",
         "cms": "ibexa/oss",
         "cms-commerce": "ibexa/commerce",
         "cms-content": "ibexa/content",
@@ -17,10 +18,12 @@
         "dxpexperience": "ibexa/experience",
         "experience": "ibexa/experience",
         "ibexa": "ibexa/oss",
+        "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
         "ibexa-oss": "ibexa/oss",
+        "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
@@ -194,6 +197,10 @@
         "ibexa/calendar": [
             "4.0",
             "4.1",
+            "4.2"
+        ],
+        "ibexa/cdp": [
+            "3.3",
             "4.2"
         ],
         "ibexa/commerce": [
