@@ -1,0 +1,11 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\CompatibilityLayer\\IbexaCompatibilityLayerBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/",
+    "encore/": "/",
+    "src/": "%SRC_DIR%/"
+  }
+}

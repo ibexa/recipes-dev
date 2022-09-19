@@ -1,0 +1,55 @@
+parameters:
+
+    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png
+    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header-advanced.png
+
+
+    ibexa.commerce.site_access.config.core.default.erp_connection: false
+    ibexa.commerce.site_access.config.order.management.local.default.send_order_to_erp: false
+    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true
+
+    # please set in backend configsection using the ERP URL for your ERP
+    ibexa.commerce.site_access.config.erp.default.web_connector.service_location: 'http://mydomain.com/mywebconnector'
+    ibexa.commerce.erp.web_connector.service_location: 'http://mydomain.com/mywebconnector'
+
+nelmio_solarium:
+    endpoints:
+        default:
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: '%ibexa.commerce.search.solr.core%'
+        siso_core_admin:
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: admin
+        siso_econtent:
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: econtent
+        siso_econtent_back:
+            host: '%ibexa.commerce.search.solr.host%'
+            port: '%ibexa.commerce.search.solr.port%'
+            path: '%ibexa.commerce.search.solr.path%'
+            core: econtent_back
+
+    clients:
+        default:
+            adapter_timeout: 30
+            endpoints:
+                - default
+        siso_core_admin:
+            adapter_timeout: 30
+        siso_econtent:
+            adapter_timeout: 30
+        siso_econtent_back:
+            adapter_timeout: 30
+        econtent:
+            endpoints:
+                - siso_econtent
+                - siso_econtent_back
+                - siso_core_admin
