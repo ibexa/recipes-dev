@@ -1,0 +1,34 @@
+parameters:
+    ibexa.commerce.site_access.config.core.default.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.admin.logo_image: /bundles/ibexacommerceeshop/img/logo.png
+    ibexa.commerce.site_access.config.core.default.invoice_logo: /bundles/ibexacommerceeshop/img/invoice_logo.png
+    ibexa.commerce.site_access.config.core.default.email_header: /bundles/ibexacommerceeshop/img/email-header.png
+
+
+    ibexa.commerce.site_access.config.order.history.default.use_local_documents: true
+
+    # Default settings for Commerce - will be overridden by backend config!
+    ibexa.commerce.site_access.config.price.default.price_service_chain.product_list:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.product_detail:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.slider_product_list:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.basket:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.basket_variant:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.stored_basket:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.wish_list:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.quick_order_line_preview:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.comparison:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.search_list:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
+    ibexa.commerce.site_access.config.price.default.price_service_chain.bestseller_list:
+        - Ibexa\ProductCatalog\Bridge\PriceProvider
