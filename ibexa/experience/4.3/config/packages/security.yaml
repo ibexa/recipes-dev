@@ -48,6 +48,18 @@ security:
             pattern: /user/from-invite/register|/from-invite/register
             security: false
 
+        ibexa_corporate_dev:
+            pattern: ^/corporate/(css|images|js)/
+            security: false
+
+        ibexa_corporate_customer_portal_register:
+            pattern: ^/corporate/customer-portal/register
+            security: false
+
+        ibexa_corporate_fieldtype_address:
+            pattern: ^/corporate/address/form/
+            security: false
+
         # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector
         #ibexa_cdp:
         #    pattern: /cdp/webhook
