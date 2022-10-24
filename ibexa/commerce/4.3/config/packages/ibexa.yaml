@@ -118,3 +118,9 @@ framework:
     esi: true
     fragments: true
     http_method_override: true
+
+    rate_limiter:
+        corporate_account_application:
+            policy: 'fixed_window'
+            limit: 1
+            interval: '5 minutes'
