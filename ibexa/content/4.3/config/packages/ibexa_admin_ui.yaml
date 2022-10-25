@@ -64,3 +64,4 @@ ibexa:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
                 default-config:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
+            user_content_type_identifier: ['user']
