@@ -165,7 +165,11 @@
     "#19": "Note that the /solr suffix will be appended automatically to Ibexa Solr Search Engine Bundle configuration",
     "SOLR_DSN": "http://${SISO_SEARCH_SOLR_HOST}:${SISO_SEARCH_SOLR_PORT}${SISO_SEARCH_SOLR_PATH}",
     "JMS_PAYMENT_SECRET": "def00000706ea7318427e72fcea2c8ceb86773a4310e35119c48e3029196acfead1ba8cc898f48d1ef9cb3f7ebe191ab46eaf67ec94a2b6bd17c079ac7277de0175b9e3e",
-    "IBEXA_EDITION": "commerce"
+    "IBEXA_EDITION": "commerce",
+    "#20": "Default LOCK_DSN value (semaphor) makes project require additional 'sysvsem' PHP extension.",
+    "#21": "If you have that extension feel free to reconfigure this env value back to 'semaphor'.",
+    "#22": "'flock' is safe replacement and is backward compatible. Required by Symfony Rate Limiter.",
+    "LOCK_DSN": "flock"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
