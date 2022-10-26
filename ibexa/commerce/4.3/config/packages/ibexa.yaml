@@ -23,7 +23,7 @@ parameters:
     # framework:
     #     trusted_proxies: ['127.0.0.1']
     #
-    # More information: https://symfony.com/doc/current/deployment/proxies.html#custom-headers-when-using-a-reverse-proxy
+    # More information: https://symfony.com/doc/current/deployment/proxies.html
 
     # Predefined pools are located in config/packages/cache_pool/
     # You can add your own cache pool to the folder mentioned above.
