@@ -133,3 +133,8 @@ framework:
             policy: 'fixed_window'
             limit: 1
             interval: '5 minutes'
+            lock_factory: 'lock.corporate_account_application.factory'
+
+    lock:
+        default: '%env(LOCK_DSN)%'
+        corporate_account_application: '%env(IBEXA_LOCK_DSN)%'
