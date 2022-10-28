@@ -14,6 +14,17 @@ parameters:
     # Session save path as used by symfony session handlers (eg. used for dsn with redis)
     #ibexa.session.save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
 
+    # Trusted custom header name to be mapped to X_FORWARDED_FOR
+    #ibexa.trusted_header_client_ip_name: 'X-Custom-Client-Ip-Header'
+    #
+    ## Keep in mind you need will to configure the kernel.trusted_proxies option with
+    ## an IP address of your reverse proxy server to allow use of trusted headers
+    ##
+    ## framework:
+    ##     trusted_proxies: ['127.0.0.1']
+    ##
+    ## More information: https://symfony.com/doc/current/deployment/proxies.html
+
     # Predefined pools are located in config/packages/cache_pool/
     # You can add your own cache pool to the folder mentioned above.
     # In order to change the default cache_pool use environmental variable export.
@@ -118,3 +129,14 @@ framework:
     esi: true
     fragments: true
     http_method_override: true
+
+    rate_limiter:
+        corporate_account_application:
+            policy: 'fixed_window'
+            limit: 1
+            interval: '5 minutes'
+            lock_factory: 'lock.corporate_account_application.factory'
+
+    lock:
+        default: '%env(LOCK_DSN)%'
+        corporate_account_application: '%env(IBEXA_LOCK_DSN)%'
