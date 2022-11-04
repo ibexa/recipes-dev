@@ -112,8 +112,10 @@ ibexa:
                 default_icon_set: streamlineicons
 
             page_layout: "@ibexadesign/pagelayout.html.twig"
+            user_content_type_identifier: ['user', 'customer']
         site:
             languages: [eng-GB]
+            user_content_type_identifier: ['customer']
 
         corporate_group:
             languages: [eng-GB]
