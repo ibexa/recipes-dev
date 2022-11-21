@@ -61,7 +61,6 @@
     "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": ["all"],
     "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
-    "JMS\\SerializerBundle\\JMSSerializerBundle": ["all"],
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
