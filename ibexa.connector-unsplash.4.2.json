@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/connector-unsplash": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Connector\\Unsplash\\IbexaConnectorUnsplashBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "86768e12e1765073da76356ef9c2fca42be6b338"
+        }
+    }
+}
