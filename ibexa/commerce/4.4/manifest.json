@@ -62,7 +62,6 @@
     "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": ["all"],
     "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
     "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": ["all"],
-    "EWZ\\Bundle\\RecaptchaBundle\\EWZRecaptchaBundle": ["all"],
     "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
     "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": ["all"],
     "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
