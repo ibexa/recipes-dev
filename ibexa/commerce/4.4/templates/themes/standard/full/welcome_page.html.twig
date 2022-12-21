@@ -29,7 +29,7 @@
                 {{ constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION') }}
             </h1>
             <div class="pt-5">
-                {{ ibexa_render_field(content, 'short_description') }}
+                <strong>{{ ibexa_render_field(content, 'description') }}</strong>
                 <p class="mb-0">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to: %target%') }}</p>
 
                 {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
