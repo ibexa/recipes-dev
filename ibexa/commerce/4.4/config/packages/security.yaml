@@ -122,7 +122,6 @@ security:
                 authenticator: 'Ibexa\PageBuilder\Security\EditorialMode\TokenAuthenticator'
             logout:
                 path: logout
-                handlers: [ 'Ibexa\Bundle\Commerce\Eshop\Service\Security\LogoutListener' ]
 
         main:
             anonymous: ~
