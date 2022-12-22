@@ -1,2 +1,6 @@
 ibexa.compatibility_layer.commerce:
     resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_commerce.yaml'
+
+# Uncomment if you are using ibexa/commerce-* packages
+# ibexa.compatibility_layer.commerce.legacy_commerce:
+#    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_commerce_legacy_commerce.yaml'
