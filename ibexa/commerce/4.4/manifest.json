@@ -70,11 +70,13 @@
     "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
     "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
     "Ibexa\\Bundle\\Cart\\IbexaCartBundle": ["all"],
+    "Ibexa\\Bundle\\Checkout\\IbexaCheckoutBundle": ["all"],
     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
     "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": ["all"],
-    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"]
+    "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"],
+    "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
