@@ -216,6 +216,9 @@
             "4.3",
             "4.4"
         ],
+        "ibexa/checkout": [
+            "4.4"
+        ],
         "ibexa/commerce": [
             "3.3",
             "4.0",
@@ -608,6 +611,9 @@
             "4.1",
             "4.2",
             "4.3",
+            "4.4"
+        ],
+        "ibexa/storefront": [
             "4.4"
         ],
         "ibexa/system-info": [

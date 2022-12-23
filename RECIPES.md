@@ -59,6 +59,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [4.4](ibexa/calendar/4.4) |  |
 | [ibexa/cart](https://packagist.org/packages/ibexa/cart) | [4.4](ibexa/cart/4.4) |  |
 | [ibexa/cdp](https://packagist.org/packages/ibexa/cdp) | [4.4](ibexa/cdp/4.4) | `cdp`, `ibexa-cdp`, `ibexacdp` |
+| [ibexa/checkout](https://packagist.org/packages/ibexa/checkout) | [4.4](ibexa/checkout/4.4) |  |
 | [ibexa/commerce](https://packagist.org/packages/ibexa/commerce) | [4.4](ibexa/commerce/4.4) | `cms-commerce`, `cmscommerce`, `commerce`, `dxp-commerce`, `dxpcommerce`, `ibexa-commerce`, `ibexacommerce` |
 | [ibexa/commerce-admin-ui](https://packagist.org/packages/ibexa/commerce-admin-ui) | [4.4](ibexa/commerce-admin-ui/4.4) |  |
 | [ibexa/commerce-base-design](https://packagist.org/packages/ibexa/commerce-base-design) | [4.4](ibexa/commerce-base-design/4.4) |  |
@@ -116,6 +117,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/site-factory](https://packagist.org/packages/ibexa/site-factory) | [4.4](ibexa/site-factory/4.4) |  |
 | [ibexa/solr](https://packagist.org/packages/ibexa/solr) | [4.4](ibexa/solr/4.4) |  |
 | [ibexa/standard-design](https://packagist.org/packages/ibexa/standard-design) | [4.4](ibexa/standard-design/4.4) |  |
+| [ibexa/storefront](https://packagist.org/packages/ibexa/storefront) | [4.4](ibexa/storefront/4.4) |  |
 | [ibexa/system-info](https://packagist.org/packages/ibexa/system-info) | [4.4](ibexa/system-info/4.4) |  |
 | [ibexa/taxonomy](https://packagist.org/packages/ibexa/taxonomy) | [4.4](ibexa/taxonomy/4.4) |  |
 | [ibexa/tree-builder](https://packagist.org/packages/ibexa/tree-builder) | [4.4](ibexa/tree-builder/4.4) |  |
