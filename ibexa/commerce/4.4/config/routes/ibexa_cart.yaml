@@ -1,0 +1,2 @@
+ibexa.cart:
+    resource: '@IbexaCartBundle/Resources/config/routing.yaml'
