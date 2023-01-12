@@ -5,15 +5,22 @@ html {
 body {
     font-size: 16px;
     line-height: 26px;
-    color: #131C26;
+    color: #131c26;
     overflow-x: hidden;
-    font-family: "Noto Sans";
+    font-family: 'Noto Sans';
     margin-bottom: 48px;
 }
 .header {
     &__container {
         height: 379px;
-        background: #db0032;
+        background-image: url(/assets/images/main-background.jpg);
+        background-size: cover;
+
+        .btn-light {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
     }
 }
 .logo {
@@ -42,8 +49,8 @@ a {
 }
 ul {
     li:before {
-        content:"\2022";
-        font-size:12pt;
+        content: '\2022';
+        font-size: 12pt;
     }
 }
 .footer {
@@ -59,7 +66,7 @@ ul {
     }
 }
 .copyright {
-    opacity: .6;
+    opacity: 0.6;
 }
 .background-grey {
     background-color: #f7f7f9;

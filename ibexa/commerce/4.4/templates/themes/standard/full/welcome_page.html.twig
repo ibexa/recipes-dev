@@ -30,12 +30,11 @@
                 </h1>
                 <div class="pt-5">
                     <strong>{{ ibexa_render_field(content, 'description') }}</strong>
-                    <p class="mb-0">{{ 'ibexa_platform_welcome_page.navigate_to'|trans({'%target%': project_dir})|desc('Navigate to: %target%') }}</p>
 
                     {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
-                    <p class="mb-0">
-                        {{ 'ibexa_platform_welcome_page.create_new_content_at'|trans({'%target%': '<a href="' ~ admin_url ~ '" class="text-white"><u>' ~ admin_url ~ '</u></a>' })
-                        |desc('Create new content at %target%')|raw }}
+                    <p class="mb-0 mt-3">
+                        <a href="{{ admin_url }}" class="btn btn-danger">{{ 'ibexa_platform_welcome_page.create_content'|trans|desc('Create content') }}</a>
+                        <a href="/product-catalog" class="btn btn-light ml-2">{{ 'ibexa_platform_welcome_page.go_to_storefront'|trans|desc('Go to Storefront') }}</a>
                     </p>
                 </div>
             </div>
