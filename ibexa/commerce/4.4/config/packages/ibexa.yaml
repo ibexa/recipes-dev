@@ -68,6 +68,8 @@ ibexa:
                 connection: default
             product_catalog:
                 engine: default
+                regions:
+                    default: ~
 
     # Siteaccess configuration, with one siteaccess per default
     siteaccess:
@@ -78,6 +80,7 @@ ibexa:
             - corporate
         groups:
             site_group: [import, site]
+            storefront_group: [site]
             corporate_group: [corporate]
         default_siteaccess: site
         match:
