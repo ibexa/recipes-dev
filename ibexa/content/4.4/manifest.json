@@ -111,7 +111,7 @@
     "#15": "FASTLY_SERVICE_ID=\"\"",
     "#16": "FASTLY_KEY=\"\"",
     "IBEXA_EDITION": "content",
-    "VARIATION_HANDLER_IDENTIFIER": "alias"
+    "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
