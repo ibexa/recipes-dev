@@ -122,7 +122,8 @@
     "#20": "Default LOCK_DSN value (semaphore) makes project require additional 'sysvsem' PHP extension.",
     "#21": "If you have that extension feel free to reconfigure this env value back to 'semaphore'.",
     "#22": "'flock' is safe replacement and is backward compatible. Required by Symfony Rate Limiter.",
-    "IBEXA_LOCK_DSN": "flock"
+    "IBEXA_LOCK_DSN": "flock",
+    "VARIATION_HANDLER_IDENTIFIER": "alias"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
