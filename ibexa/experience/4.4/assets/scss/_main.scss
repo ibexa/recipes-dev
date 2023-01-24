@@ -9,7 +9,7 @@ body {
     letter-spacing: 0.12px;
     color: $ibexa-welcome-color-dark;
     overflow-x: hidden;
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -47,7 +47,7 @@ body {
 .ibexa-welcome-section-header {
     font-size: 48px;
     line-height: 72px;
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 0.27px;
     margin: 72px 0 24px;
@@ -56,7 +56,7 @@ body {
 .ibexa-welcome-block-header {
     font-size: 22px;
     line-height: 36px;
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     margin: 14px 0 20px;
 }

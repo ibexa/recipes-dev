@@ -19,7 +19,11 @@
             <div class="ibexa-welcome-row">
                 <div class="ibexa-welcome-column">
                     <div class="ibexa-welcome-header__logo">
-                        <img src="{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}" alt="Ibexa" class="logo">
+                        <img
+                            src="{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}"
+                            alt="Ibexa"
+                            class="logo"
+                        >
                     </div>
                     <h1 class="ibexa-welcome-section-header">
                         {{ 'ibexa_platform_welcome_page.header.title'|trans({
@@ -40,6 +44,7 @@
                     <button class="ibexa-welcome-header__go-down">
                         <img
                             src="{{ asset('build/images/caret-down.svg') }}"
+                            alt="{{ 'ibexa_platform_welcome_page.header.caret_down'|trans|desc('Down') }}"
                         />
                     </button>
                 </div>
@@ -47,7 +52,7 @@
                     <img
                         class="ibexa-welcome-img ibexa-welcome-img--center"
                         src="{{ asset('build/images/content.svg') }}"
-                        alt="Commerce"
+                        alt="{{ 'ibexa_platform_welcome_page.header.image'|trans|desc('Content') }}"
                     />
                 </div>
             </div>
@@ -67,6 +72,7 @@
                 <div class="ibexa-welcome-circle">
                     <img
                         src="{{ asset('build/images/documentation.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.documentation_center.image'|trans|desc('Documentation center') }}"
                     />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
@@ -86,6 +92,7 @@
                 <div class="ibexa-welcome-circle">
                     <img
                         src="{{ asset('build/images/user.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.user_documentation.image'|trans|desc('User documentation') }}"
                     />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
@@ -106,6 +113,7 @@ Learn how to administrate your digital store with Ibexa Commerce. Manage product
                 <div class="ibexa-welcome-circle">
                     <img
                         src="{{ asset('build/images/development.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.developer_documentation.image'|trans|desc('Developer documentation') }}"
                     />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
@@ -165,7 +173,7 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
                         <img
                             class="ibexa-welcome-img ibexa-welcome-img--right"
                             src="{{ asset('build/images/tutorials.svg') }}"
-                            alt="Tutorials"
+                            alt="{{ 'ibexa_platform_welcome_page.get_started.image'|trans|desc('Get started') }}"
                         />
                     </div>
                 </div>
@@ -244,7 +252,10 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
     <div class="ibexa-welcome-container ibexa-welcome-training-platform">
         <div class="ibexa-welcome-row ibexa-welcome-training-platform__block">
             <div class="ibexa-welcome-column ibexa-welcome-training-platform__img-column">
-                <img src="{{ asset('build/images/training.svg') }}" alt="Training">
+                <img
+                    src="{{ asset('build/images/training.svg') }}"
+                    alt="{{ 'ibexa_platform_welcome_page.training_platform.image'|trans|desc('Training platform') }}"
+                />
             </div>
             <div class="ibexa-welcome-column">
                 <h3 class="ibexa-welcome-block-header">
@@ -285,7 +296,7 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
                     <img
                         class="ibexa-welcome-img ibexa-welcome-img--center"
                         src="{{ asset('build/images/support.png') }}"
-                        alt="Support"
+                        alt="{{ 'ibexa_platform_welcome_page.contact.image'|trans|desc('Support') }}"
                     />
                 </div>
             </div>
