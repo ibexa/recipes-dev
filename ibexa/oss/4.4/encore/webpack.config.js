@@ -33,7 +33,7 @@ Encore.addEntry('welcome-page-css', [
     path.resolve(__dirname, './assets/scss/welcome-page.scss'),
 ]);
 
-// Welcome page stylesheets
+// Welcome page javascripts
 Encore.addEntry('welcome-page-js', [
     path.resolve(__dirname, './assets/js/welcome.page.js'),
 ]);
