@@ -12,13 +12,13 @@
         <note>key: ibexa_platform_welcome_page.contact.action</note>
       </trans-unit>
       <trans-unit id="bf9fe11dbf65019b202ad1698b680364f6a7fd5a" resname="ibexa_platform_welcome_page.contact.content">
-        <source>If you need help, contact with our support team</source>
-        <target state="new">If you need help, contact with our support team</target>
+        <source>If you need help, contact our support team</source>
+        <target state="new">If you need help, contact our support team</target>
         <note>key: ibexa_platform_welcome_page.contact.content</note>
       </trans-unit>
       <trans-unit id="04d639506956b4106a6e32b13529af399176a4c8" resname="ibexa_platform_welcome_page.contact.title">
-        <source>Contact to support</source>
-        <target state="new">Contact to support</target>
+        <source>Contact support</source>
+        <target state="new">Contact support</target>
         <note>key: ibexa_platform_welcome_page.contact.title</note>
       </trans-unit>
       <trans-unit id="4c881f4c860503bedbef66f45a3500ac13c22621" resname="ibexa_platform_welcome_page.copyright">
@@ -84,8 +84,8 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.header.action</note>
       </trans-unit>
       <trans-unit id="7d9f206306b985903c673b0fde7b661dd69a8169" resname="ibexa_platform_welcome_page.header.content">
-        <source>This is the clean installation coming with Ibexa Digital Experience Platform.</source>
-        <target state="new">This is the clean installation coming with Ibexa Digital Experience Platform.</target>
+        <source>Open-source solution for building custom, scalable websites.</source>
+        <target state="new">Open-source solution for building custom, scalable websites.</target>
         <note>key: ibexa_platform_welcome_page.header.content</note>
       </trans-unit>
       <trans-unit id="ad4d8a3d927782cf037c301c653c0b8d05d57dfe" resname="ibexa_platform_welcome_page.header.title">
@@ -129,9 +129,9 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.training_platform.action</note>
       </trans-unit>
       <trans-unit id="7fb57458ffd0fc2361b8fac031e86c2be993911a" resname="ibexa_platform_welcome_page.training_platform.content">
-        <source xml:space="preserve">Once completed, this wizard will recommend the Ibexa DXP product that best suits your needs and display the base price of the product, including any additional services you have selected
+        <source xml:space="preserve">Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.
 </source>
-        <target xml:space="preserve" state="new">Once completed, this wizard will recommend the Ibexa DXP product that best suits your needs and display the base price of the product, including any additional services you have selected
+        <target xml:space="preserve" state="new">Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.
 </target>
         <note>key: ibexa_platform_welcome_page.training_platform.content</note>
       </trans-unit>
@@ -171,9 +171,9 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.user_documentation.action</note>
       </trans-unit>
       <trans-unit id="b5d01ed1d9c00ea7fa70879f697fa83394bf7fe9" resname="ibexa_platform_welcome_page.user_documentation.content">
-        <source xml:space="preserve">Manage content, products, site and content structure and muchh more using the Ibexa DXP administration interface.
+        <source xml:space="preserve">Manage content, products, site and content structure and much more using the Ibexa DXP administration interface.
 Learn how to administrate your digital store with Ibexa Commerce. Manage products, orders and view statistics.</source>
-        <target xml:space="preserve" state="new">Manage content, products, site and content structure and muchh more using the Ibexa DXP administration interface.
+        <target xml:space="preserve" state="new">Manage content, products, site and content structure and much more using the Ibexa DXP administration interface.
 Learn how to administrate your digital store with Ibexa Commerce. Manage products, orders and view statistics.</target>
         <note>key: ibexa_platform_welcome_page.user_documentation.content</note>
       </trans-unit>

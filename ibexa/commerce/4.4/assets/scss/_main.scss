@@ -95,6 +95,20 @@ body {
         color: $ibexa-welcome-color-dark;
     }
 
+    &--border {
+        color: $ibexa-welcome-color-light;
+        fill: $ibexa-welcome-color-light;
+        border-color: $ibexa-welcome-color-light;
+
+        &:hover {
+            color: $ibexa-welcome-color-light;
+            fill: $ibexa-welcome-color-light;
+            border-color: $ibexa-welcome-color-light;
+            box-shadow: 0 0 0 transparent,
+                0 22px 24px 0 rgba($ibexa-welcome-color-light, 0.2);
+        }
+    }
+
     &--filled {
         color: $ibexa-welcome-color-light;
         fill: $ibexa-welcome-color-light;
