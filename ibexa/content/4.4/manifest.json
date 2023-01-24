@@ -110,7 +110,8 @@
     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
     "#15": "FASTLY_SERVICE_ID=\"\"",
     "#16": "FASTLY_KEY=\"\"",
-    "IBEXA_EDITION": "content"
+    "IBEXA_EDITION": "content",
+    "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias"
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
