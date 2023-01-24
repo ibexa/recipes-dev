@@ -182,7 +182,10 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
         <div class="ibexa-welcome-row">
             <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--tutorials">
                 <div class="ibexa-welcome-circle">
-                    {# TODO: get icon #}
+                    <img
+                        src="{{ asset('build/images/tutorials-icon.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.tutorials.image'|trans|desc('Tutorials') }}"
+                    />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
                     {{ 'ibexa_platform_welcome_page.tutorials.title'|trans|desc('Tutorials') }}
@@ -204,7 +207,10 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
             </div>
             <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--rest-api">
                 <div class="ibexa-welcome-circle">
-                    {# TODO: get icon #}
+                    <img
+                        src="{{ asset('build/images/rest-api.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.rest_api.image'|trans|desc('REST API reference') }}"
+                    />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
                     {{ 'ibexa_platform_welcome_page.rest_api.title'|trans|desc('REST API reference') }}
@@ -226,7 +232,10 @@ At Ibexa, we have been a driving force for B2B digital transformation ever since
             </div>
             <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--php-api">
                 <div class="ibexa-welcome-circle">
-                    {# TODO: get icon #}
+                    <img
+                        src="{{ asset('build/images/php-api.svg') }}"
+                        alt="{{ 'ibexa_platform_welcome_page.php_api.image'|trans|desc('Public PHP API') }}"
+                    />
                 </div>
                 <h3 class="ibexa-welcome-block-header">
                     {{ 'ibexa_platform_welcome_page.php_api.title'|trans|desc('Public PHP API') }}
