@@ -27,9 +27,8 @@
                     </div>
                     <h1 class="ibexa-welcome-section-header">
                         {{ 'ibexa_platform_welcome_page.header.title'|trans({
-                            '%name%': ibexa_render_field(content, 'name'),
                             '%version%': constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')
-                        })|desc('Welcome to %name% %version%')|raw }}
+                        })|desc('Welcome to Ibexa Digital Experience Platform %version%')|raw }}
                     </h1>
                     <p class="ibexa-welcome-paragraph">
                         {{ 'ibexa_platform_welcome_page.header.content'|trans|desc('Digitalize and automate the way you do business.') }}

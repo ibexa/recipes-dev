@@ -124,8 +124,8 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.header.storefront</note>
       </trans-unit>
       <trans-unit id="ad4d8a3d927782cf037c301c653c0b8d05d57dfe" resname="ibexa_platform_welcome_page.header.title">
-        <source>Welcome to %name% %version%</source>
-        <target state="new">Welcome to %name% %version%</target>
+        <source>Welcome to Ibexa Digital Experience Platform %version%</source>
+        <target state="new">Welcome to Ibexa Digital Experience Platform %version%</target>
         <note>key: ibexa_platform_welcome_page.header.title</note>
       </trans-unit>
       <trans-unit id="ba159eb50f6e4ff1c3352bcd079cab5c9a1db821" resname="ibexa_platform_welcome_page.php_api.action">
