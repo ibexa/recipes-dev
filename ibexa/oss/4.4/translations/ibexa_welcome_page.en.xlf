@@ -22,8 +22,8 @@
         <note>key: ibexa_platform_welcome_page.contact.title</note>
       </trans-unit>
       <trans-unit id="4c881f4c860503bedbef66f45a3500ac13c22621" resname="ibexa_platform_welcome_page.copyright">
-        <source><![CDATA[Copyright © %current_year% <a href="http://ibexa.co" target="_blank">Ibexa</a> | Powered by Ibexa DXP]]></source>
-        <target state="new"><![CDATA[Copyright © %current_year% <a href="http://ibexa.co" target="_blank">Ibexa</a> | Powered by Ibexa DXP]]></target>
+        <source><![CDATA[Copyright © %current_year% <a href="http://ibexa.co" rel="noopener" target="_blank">Ibexa</a> | Powered by Ibexa DXP]]></source>
+        <target state="new"><![CDATA[Copyright © %current_year% <a href="http://ibexa.co" rel="noopener" target="_blank">Ibexa</a> | Powered by Ibexa DXP]]></target>
         <note>key: ibexa_platform_welcome_page.copyright</note>
       </trans-unit>
       <trans-unit id="7f9357e012e45e129d8ac53648987ea76e9fcec9" resname="ibexa_platform_welcome_page.developer_documentation.action">
