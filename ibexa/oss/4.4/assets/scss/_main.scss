@@ -122,6 +122,9 @@ body {
 }
 
 .ibexa-welcome-img {
+    display: inline-flex;
+    flex: 1;
+
     &--center {
         align-self: center;
     }
@@ -131,12 +134,14 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .ibexa-welcome-container {
         padding-left: 32px;
         padding-right: 32px;
     }
+}
 
+@media only screen and (max-width: 768px) {
     .ibexa-welcome-row {
         flex-direction: column;
     }

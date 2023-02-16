@@ -28,11 +28,20 @@
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .ibexa-welcome-training-platform {
+        &__img-column {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .ibexa-welcome-training-platform {
         &__block {
             padding-top: 32px;
             padding-bottom: 32px;
+            max-height: 100%;
         }
 
         &__img-column {

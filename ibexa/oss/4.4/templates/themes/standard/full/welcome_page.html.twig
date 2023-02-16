@@ -2,6 +2,10 @@
 
 {% trans_default_domain 'ibexa_welcome_page' %}
 
+{% block meta %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+{% endblock %}
+
 {% block stylesheets %}
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -48,7 +52,7 @@
                         />
                     </button>
                 </div>
-                <div class="ibexa-welcome-column">
+                <div class="ibexa-welcome-column ibexa-welcome-header__img-column">
                     <img
                         class="ibexa-welcome-img ibexa-welcome-img--center"
                         src="{{ asset('build/images/oss.svg') }}"
@@ -165,7 +169,7 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
                             {{ 'ibexa_platform_welcome_page.get_started.action'|trans|desc('Learn more') }}
                         </a>
                     </div>
-                    <div class="ibexa-welcome-column">
+                    <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__img-column">
                         <img
                             class="ibexa-welcome-img ibexa-welcome-img--right"
                             src="{{ asset('build/images/tutorials.svg') }}"

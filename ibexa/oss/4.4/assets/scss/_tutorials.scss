@@ -56,3 +56,26 @@
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .ibexa-welcome-tutorials-and-resources {
+        &__img-column {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ibexa-welcome-tutorials-and-resources {
+        &__block {
+            padding: 30px 22px 16px 48px;
+
+            &--get-started {
+                .ibexa-welcome-link {
+                    margin-left: auto;
+                }
+            }
+
+        }
+    }
+}
