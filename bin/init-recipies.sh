@@ -13,6 +13,6 @@ NEXT_VERSION=$2;
 for package in ibexa/*; do
   if [[ -d "$package/$PREV_VERSION" ]]
   then
-    cp -rf $package/$PREV_VERSION/* "$package/$NEXT_VERSION"
+    cp -rf $package/$PREV_VERSION/. "$package/$NEXT_VERSION"
   fi
 done
