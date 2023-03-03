@@ -101,6 +101,8 @@ framework:
     translator: { fallback: '%locale_fallback%' }
     validation: { enable_annotations: true }
     default_locale: '%locale_fallback%'
-    esi: true
-    fragments: true
+    esi: false
+    # Be certain that APP_SECRET is set to a long, securely random value generated for this project,
+    # before you enable fragments. Never use the default value that you get out of the box.
+    fragments: false
     http_method_override: true
