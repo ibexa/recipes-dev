@@ -1,0 +1,2 @@
+ibexa.order_management:
+    resource: '@IbexaOrderManagementBundle/Resources/config/routing_admin.yaml'
