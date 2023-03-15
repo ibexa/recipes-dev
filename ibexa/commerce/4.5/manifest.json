@@ -76,7 +76,8 @@
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
     "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": ["all"],
     "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"],
-    "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": ["all"]
+    "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": ["all"],
+    "Ibexa\\Bundle\\Storefront\\IbexaOrderManagementBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
