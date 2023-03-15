@@ -103,6 +103,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [4.5](ibexa/migrations/4.5) |  |
 | [ibexa/namespace-compatibility](https://packagist.org/packages/ibexa/namespace-compatibility) | [1.0](ibexa/namespace-compatibility/1.0) |  |
 | [ibexa/oauth2-client](https://packagist.org/packages/ibexa/oauth2-client) | [4.5](ibexa/oauth2-client/4.5) |  |
+| [ibexa/order-management](https://packagist.org/packages/ibexa/order-management) | [4.5](ibexa/order-management/4.5) |  |
 | [ibexa/oss](https://packagist.org/packages/ibexa/oss) | [4.5](ibexa/oss/4.5) | `cms`, `ibexa`, `ibexa-oss`, `ibexaoss` |
 | [ibexa/page-builder](https://packagist.org/packages/ibexa/page-builder) | [4.5](ibexa/page-builder/4.5) |  |
 | [ibexa/permissions](https://packagist.org/packages/ibexa/permissions) | [4.5](ibexa/permissions/4.5) |  |

@@ -565,6 +565,9 @@
             "4.4",
             "4.5"
         ],
+        "ibexa/order-management": [
+            "4.5"
+        ],
         "ibexa/oss": [
             "3.3",
             "4.0",
