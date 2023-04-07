@@ -106,6 +106,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/order-management](https://packagist.org/packages/ibexa/order-management) | [4.5](ibexa/order-management/4.5) |  |
 | [ibexa/oss](https://packagist.org/packages/ibexa/oss) | [4.5](ibexa/oss/4.5) | `cms`, `ibexa`, `ibexa-oss`, `ibexaoss` |
 | [ibexa/page-builder](https://packagist.org/packages/ibexa/page-builder) | [4.5](ibexa/page-builder/4.5) |  |
+| [ibexa/payment](https://packagist.org/packages/ibexa/payment) | [4.5](ibexa/payment/4.5) |  |
 | [ibexa/permissions](https://packagist.org/packages/ibexa/permissions) | [4.5](ibexa/permissions/4.5) |  |
 | [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [4.5](ibexa/personalization/4.5) |  |
 | [ibexa/personalization-client](https://packagist.org/packages/ibexa/personalization-client) | [4.5](ibexa/personalization-client/4.5) |  |

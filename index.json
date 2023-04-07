@@ -585,6 +585,9 @@
             "4.4",
             "4.5"
         ],
+        "ibexa/payment": [
+            "4.5"
+        ],
         "ibexa/permissions": [
             "4.0",
             "4.1",
