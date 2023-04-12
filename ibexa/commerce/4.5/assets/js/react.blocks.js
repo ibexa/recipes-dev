@@ -32,7 +32,7 @@ import { createRoot } from 'react-dom/client';
         }
     }
 
-    const reactBlocks = [...document.querySelectorAll('.ibexa-react-block')];
+    const reactBlocks = [...doc.querySelectorAll('.ibexa-react-block')];
 
     reactBlocks.forEach((reactBlock) => {
         const { componentName, props: componentProps } = reactBlock.dataset;
