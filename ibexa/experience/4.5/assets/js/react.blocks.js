@@ -8,7 +8,7 @@ import { createRoot } from 'react-dom/client';
 
     try {
         context = require.context(
-            '../../page-builder/react/blocks',
+            '../page-builder/react/blocks',
             true,
             /\.js$/
         );
