@@ -38,13 +38,16 @@ Encore.addEntry('welcome-page-js', [
     path.resolve(__dirname, './assets/js/welcome.page.js'),
 ]);
 
+// React Blocks javascript
+Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
+
 Encore.addEntry('app', './assets/app.js');
 
 const projectConfig = Encore.getWebpackConfig();
 
 projectConfig.name = 'app';
 
-module.exports = [ ibexaConfig, ...customConfigs, projectConfig ];
+module.exports = [ibexaConfig, ...customConfigs, projectConfig];
 
 // uncomment this line if you've commented-out the above lines
 // module.exports = [ eZConfig, ibexaConfig, ...customConfigs ];

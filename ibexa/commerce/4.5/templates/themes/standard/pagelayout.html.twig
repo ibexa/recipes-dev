@@ -23,6 +23,8 @@
 </head>
 <body>
 {% block content %}{% endblock %}
-{% block javascripts %}{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('react-blocks-js') }}
+{% endblock %}
 </body>
 </html>

@@ -22,6 +22,10 @@
     "@ckeditor/ckeditor5-theme-lark": "^36.0.1",
     "@ckeditor/ckeditor5-code-block": "^36.0.1"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
