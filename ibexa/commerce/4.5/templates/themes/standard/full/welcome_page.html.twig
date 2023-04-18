@@ -15,7 +15,10 @@
 
 {% block javascripts %}
     {{ encore_entry_script_tags('welcome-page-js') }}
-    {{ encore_entry_script_tags('react-blocks-js') }}
+    
+    {% if encore_entry_exists('react-blocks-js') %}
+        {{ encore_entry_script_tags('react-blocks-js') }}
+    {% endif %}
 {% endblock %}
 
 {% block content %}
