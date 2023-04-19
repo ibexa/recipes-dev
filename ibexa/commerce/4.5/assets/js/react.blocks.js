@@ -4,19 +4,11 @@ import { createRoot } from 'react-dom/client';
 (function (global, doc) {
     const reactComponents = {};
     const cache = {};
-    let context;
-
-    try {
-        context = require.context(
-            '../page-builder/react/blocks',
-            true,
-            /\.js$/
-        );
-    } catch {
-        console.error(
-            'Error while loading react blocks, check if ./page-builder/react/blocks path exist.'
-        );
-    }
+    const context = require.context(
+        '../page-builder/react/blocks',
+        true,
+        /\.js$/
+    );
 
     if (!context) {
         return;
@@ -45,5 +37,11 @@ import { createRoot } from 'react-dom/client';
 
     window.getReactComponent = (name) => {
         return reactComponents[name];
+    };
+
+    window.renderReactComponent = (container, Component, props) => {
+        const reactBlockRoot = createRoot(container);
+
+        reactBlockRoot.render(<Component {...props} />);
     };
 })(window, document);
