@@ -79,7 +79,7 @@
     "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": ["all"],
     "Ibexa\\Bundle\\OrderManagement\\IbexaOrderManagementBundle": ["all"],
     "Ibexa\\Bundle\\Payment\\IbexaPaymentBundle": ["all"],
-    "Ibexa\\Bundle\\Payment\\IbexaShippingBundle": ["all"]
+    "Ibexa\\Bundle\\Shipping\\IbexaShippingBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
