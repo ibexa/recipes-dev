@@ -116,6 +116,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/search](https://packagist.org/packages/ibexa/search) | [4.5](ibexa/search/4.5) |  |
 | [ibexa/segmentation](https://packagist.org/packages/ibexa/segmentation) | [4.5](ibexa/segmentation/4.5) |  |
 | [ibexa/seo](https://packagist.org/packages/ibexa/seo) | [4.5](ibexa/seo/4.5) |  |
+| [ibexa/shipping](https://packagist.org/packages/ibexa/shipping) | [4.5](ibexa/shipping/4.5) |  |
 | [ibexa/site-factory](https://packagist.org/packages/ibexa/site-factory) | [4.5](ibexa/site-factory/4.5) |  |
 | [ibexa/solr](https://packagist.org/packages/ibexa/solr) | [4.5](ibexa/solr/4.5) |  |
 | [ibexa/standard-design](https://packagist.org/packages/ibexa/standard-design) | [4.5](ibexa/standard-design/4.5) |  |
