@@ -6,8 +6,7 @@ const eZConfig = getEzConfig(Encore);
 const customConfigs = require('./ez.webpack.custom.configs.js');
 
 Encore.reset();
-Encore
-    .setOutputPath('public/build/')
+Encore.setOutputPath('public/build/')
     .setPublicPath('/build')
     .enableStimulusBridge('./assets/controllers.json')
     .enableSassLoader()
@@ -16,18 +15,14 @@ Encore
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[ext]',
-        pattern: /\.(png|svg)$/
-    })
-    .configureBabel((config) => {
-        config.plugins.push('@babel/plugin-proposal-class-properties');
+        pattern: /\.(png|svg)$/,
     })
 
     // enables @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
         config.useBuiltIns = 'usage';
         config.corejs = 3;
-    })
-;
+    });
 
 // Welcome page stylesheets
 Encore.addEntry('welcome_page', [
@@ -40,7 +35,7 @@ const projectConfig = Encore.getWebpackConfig();
 
 projectConfig.name = 'app';
 
-module.exports = [ eZConfig, ...customConfigs, projectConfig ];
+module.exports = [eZConfig, ...customConfigs, projectConfig];
 
 // uncomment this line if you've commented-out the above lines
 // module.exports = [ eZConfig, ...customConfigs ];
