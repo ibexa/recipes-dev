@@ -141,8 +141,7 @@
                         "const customConfigs = require('./ibexa.webpack.custom.configs.js');",
                         "",
                         "Encore.reset();",
-                        "Encore",
-                        "    .setOutputPath('public/build/')",
+                        "Encore.setOutputPath('public/build/')",
                         "    .setPublicPath('/build')",
                         "    .enableStimulusBridge('./assets/controllers.json')",
                         "    .enableSassLoader()",
@@ -151,18 +150,14 @@
                         "    .copyFiles({",
                         "        from: './assets/images',",
                         "        to: 'images/[path][name].[ext]',",
-                        "        pattern: /\\.(png|svg)$/",
-                        "    })",
-                        "    .configureBabel((config) => {",
-                        "        config.plugins.push('@babel/plugin-proposal-class-properties');",
+                        "        pattern: /\\.(png|svg)$/,",
                         "    })",
                         "",
                         "    // enables @babel/preset-env polyfills",
                         "    .configureBabelPresetEnv((config) => {",
                         "        config.useBuiltIns = 'usage';",
                         "        config.corejs = 3;",
-                        "    })",
-                        ";",
+                        "    });",
                         "",
                         "// Welcome page stylesheets",
                         "Encore.addEntry('welcome-page-css', [",
@@ -180,7 +175,7 @@
                         "",
                         "projectConfig.name = 'app';",
                         "",
-                        "module.exports = [ eZConfig, ibexaConfig, ...customConfigs, projectConfig ];",
+                        "module.exports = [eZConfig, ibexaConfig, ...customConfigs, projectConfig];",
                         "",
                         "// uncomment this line if you've commented-out the above lines",
                         "// module.exports = [ eZConfig, ibexaConfig, ...customConfigs ];",
@@ -244,7 +239,7 @@
                     "executable": false
                 }
             },
-            "ref": "0ae0c9a6f12ab66275464c363a166cbfe37e93d6"
+            "ref": "c534ec3c28baf19a502cbdc827ef9b8661241546"
         }
     }
 }
