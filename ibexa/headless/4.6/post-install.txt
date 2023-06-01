@@ -16,7 +16,7 @@
 To finish the installation process:
     1. Configure the database connection via <comment>DATABASE_URL</> in your <comment>.env</> file.
     2. Run the following commands:
-       >  <comment>composer recipes:install ibexa/content --force</>
+       >  <comment>composer recipes:install ibexa/headless --force</>
           <warning>This will overwrite some of the files.</warning> If you modified any of these reject and update manually.
        >  <comment>php bin/console ibexa:install</>
        >  <comment>php bin/console ibexa:graphql:generate-schema</>
