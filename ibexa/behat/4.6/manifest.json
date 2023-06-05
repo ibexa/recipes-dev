@@ -6,7 +6,7 @@
     },
     "copy-from-package": {
         "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
-        "behat_ibexa_content.yaml": "behat_ibexa_content.yaml",
+        "behat_ibexa_headless.yaml": "behat_ibexa_headless.yaml",
         "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
         "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
     },
