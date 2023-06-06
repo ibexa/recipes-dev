@@ -1,5 +1,5 @@
 {
-  "aliases": ["ibexa-content", "dxp-content", "cms-content", "content"],
+  "aliases": ["ibexa-headless", "dxp-headless", "cms-headless", "headless"],
   "bundles": {
     "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": ["all"],
     "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": ["all"],
@@ -110,7 +110,7 @@
     "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
     "#15": "FASTLY_SERVICE_ID=\"\"",
     "#16": "FASTLY_KEY=\"\"",
-    "IBEXA_EDITION": "content",
+    "IBEXA_EDITION": "headless",
     "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias"
   },
   "composer-scripts": {
