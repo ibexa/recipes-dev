@@ -5,28 +5,35 @@
         "cms-commerce": "ibexa/commerce",
         "cms-content": "ibexa/content",
         "cms-experience": "ibexa/experience",
+        "cms-headless": "ibexa/headless",
         "cmscommerce": "ibexa/commerce",
         "cmscontent": "ibexa/content",
         "cmsexperience": "ibexa/experience",
+        "cmsheadless": "ibexa/headless",
         "commerce": "ibexa/commerce",
         "content": "ibexa/content",
         "dxp-commerce": "ibexa/commerce",
         "dxp-content": "ibexa/content",
         "dxp-experience": "ibexa/experience",
+        "dxp-headless": "ibexa/headless",
         "dxpcommerce": "ibexa/commerce",
         "dxpcontent": "ibexa/content",
         "dxpexperience": "ibexa/experience",
+        "dxpheadless": "ibexa/headless",
         "experience": "ibexa/experience",
+        "headless": "ibexa/headless",
         "ibexa": "ibexa/oss",
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
+        "ibexa-headless": "ibexa/headless",
         "ibexa-oss": "ibexa/oss",
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
+        "ibexaheadless": "ibexa/headless",
         "ibexaoss": "ibexa/oss"
     },
     "recipes": {
@@ -385,8 +392,7 @@
             "4.2",
             "4.3",
             "4.4",
-            "4.5",
-            "4.6"
+            "4.5"
         ],
         "ibexa/content-forms": [
             "4.0",
@@ -547,6 +553,9 @@
             "4.3",
             "4.4",
             "4.5",
+            "4.6"
+        ],
+        "ibexa/headless": [
             "4.6"
         ],
         "ibexa/http-cache": [

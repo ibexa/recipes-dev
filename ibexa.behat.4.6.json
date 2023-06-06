@@ -13,7 +13,7 @@
                 },
                 "copy-from-package": {
                     "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
-                    "behat_ibexa_content.yaml": "behat_ibexa_content.yaml",
+                    "behat_ibexa_headless.yaml": "behat_ibexa_headless.yaml",
                     "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
                     "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
                 },
@@ -42,7 +42,7 @@
                     "executable": false
                 }
             },
-            "ref": "9fd205faf76a3d7ed5d48c109b7fba16f035ea18"
+            "ref": "85e4e77cb6239bbd288a3a606da78d49f79ef7f3"
         }
     }
 }
