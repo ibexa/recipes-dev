@@ -19,6 +19,7 @@
     "Oneup\\FlysystemBundle\\OneupFlysystemBundle": ["all"],
     "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": ["all"],
     "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
+    "Ibexa\\Bundle\\CorePersistence\\IbexaCorePersistenceBundle": ["all"],
     "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
     "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],
     "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": ["dev", "test", "behat"],
