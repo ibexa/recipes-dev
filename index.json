@@ -421,6 +421,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/core-persistence": [
+            "4.6"
+        ],
         "ibexa/corporate-account": [
             "4.2",
             "4.3",

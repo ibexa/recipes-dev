@@ -80,6 +80,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/content-forms](https://packagist.org/packages/ibexa/content-forms) | [4.6](ibexa/content-forms/4.6) |  |
 | [ibexa/content-tree](https://packagist.org/packages/ibexa/content-tree) | [4.6](ibexa/content-tree/4.6) |  |
 | [ibexa/core](https://packagist.org/packages/ibexa/core) | [4.6](ibexa/core/4.6) |  |
+| [ibexa/core-persistence](https://packagist.org/packages/ibexa/core-persistence) | [4.6](ibexa/core-persistence/4.6) |  |
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.6](ibexa/corporate-account/4.6) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.6](ibexa/cron/4.6) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.6](ibexa/design-engine/4.6) |  |
