@@ -1,4 +1,4 @@
-#ibexa:
+# ibexa:
 #    system:
 #        default:
 #            cdp:
@@ -6,6 +6,11 @@
 #                account_number: 123456
 #                data_export:
 #                    user_data:
+#                        transport: stream_file
+#                        stream_file:
+#                            # Use Stream ID generated during data import from "stream file" in Data Manager
+#                            stream_id: 00000000-00000000-00000000-00000000
+#                    content_data:
 #                        transport: stream_file
 #                        stream_file:
 #                            # Use Stream ID generated during data import from "stream file" in Data Manager
