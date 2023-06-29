@@ -10,6 +10,11 @@
 #                        stream_file:
 #                            # Use Stream ID generated during data import from "stream file" in Data Manager
 #                            stream_id: 00000000-00000000-00000000-00000000
+#                    content_data:
+#                        transport: stream_file
+#                        stream_file:
+#                            # Use Stream ID generated during data import from "stream file" in Data Manager
+#                            stream_id: 00000000-00000000-00000000-00000000
 #
 #                # You can configure multiple activations here. They have to be of type "Ibexa" in Ibexa DXP dashboard.
 #                activations:
