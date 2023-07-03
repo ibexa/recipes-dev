@@ -34,6 +34,11 @@ security:
     #!        in_memory:
     #!            memory: ~
 
+    ## Uncomment authorize access control if you wish to use product as an OAuth2 Server
+    #access_control:
+    #    - { path: ^/authorize/jwks$, roles: ~ }
+    #    - { path: ^/authorize, roles: IS_AUTHENTICATED_REMEMBERED }
+
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
@@ -47,6 +52,16 @@ security:
         ibexa_register_from_invitation:
             pattern: /user/from-invite/register|/from-invite/register
             security: false
+
+        ## Uncomment oauth2_token firewall if you wish to use product as an OAuth2 Server.
+        ## Use oauth2 guard any other (for example ibexa_front) firewall you wish to be
+        ## exposed as OAuth2-available resource. Example:
+        ##    guard:
+        ##        authenticators:
+        ##            - Ibexa\OAuth2Server\Security\Guard\OAuth2Authenticator
+        #oauth2_token:
+        #    pattern: ^/token$
+        #    security: false
 
         # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector
         #ibexa_cdp:
