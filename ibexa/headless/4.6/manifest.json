@@ -112,7 +112,12 @@
     "#15": "FASTLY_SERVICE_ID=\"\"",
     "#16": "FASTLY_KEY=\"\"",
     "IBEXA_EDITION": "headless",
-    "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias"
+    "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias",
+    "#17": "Configure OAuth2 server",
+    "OAUTH2_PUBLIC_KEY_PATH": "",
+    "OAUTH2_PRIVATE_KEY_PATH": "",
+    "OAUTH2_PRIVATE_KEY_PASSPHRASE": "",
+    "OAUTH2_ENCRYPTION_KEY": ""
   },
   "composer-scripts": {
     "cache:clear": "symfony-cmd",
