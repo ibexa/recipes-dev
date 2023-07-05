@@ -1,6 +1,9 @@
 parameters:
     locale_fallback: en
 
+    ibexa.site_access.config.default.user_content_type_identifier: ['user', 'customer', 'member']
+    ibexa.site_access.config.admin_group.user_content_type_identifier: ['user', 'customer', 'member']
+    
     # Identifier used to generate the CSRF token. Commenting this line will result in authentication
     # issues both in AdminUI and REST calls
     ibexa.rest.csrf_token_intention: authenticate
