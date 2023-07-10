@@ -94,7 +94,6 @@ ibexa:
     system:
         default:
             # Parameters for Commerce
-            user_content_type_identifier: ['user', 'customer', 'member']
         admin_group:
             user_content_type_identifier: ['user', 'customer', 'member']
             
@@ -124,7 +123,7 @@ ibexa:
                 default_icon_set: streamlineicons
 
             page_layout: "@ibexadesign/pagelayout.html.twig"
-            user_content_type_identifier: ['user', 'customer']
+            user_content_type_identifier: ['user', 'customer', 'member']
         site:
             languages: [eng-GB]
             user_content_type_identifier: ['customer']
