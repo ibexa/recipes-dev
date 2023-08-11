@@ -127,6 +127,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/storefront](https://packagist.org/packages/ibexa/storefront) | [4.6](ibexa/storefront/4.6) |  |
 | [ibexa/system-info](https://packagist.org/packages/ibexa/system-info) | [4.6](ibexa/system-info/4.6) |  |
 | [ibexa/taxonomy](https://packagist.org/packages/ibexa/taxonomy) | [4.6](ibexa/taxonomy/4.6) |  |
+| [ibexa/test-fixtures](https://packagist.org/packages/ibexa/test-fixtures) | [4.6](ibexa/test-fixtures/4.6) |  |
 | [ibexa/tree-builder](https://packagist.org/packages/ibexa/tree-builder) | [4.6](ibexa/tree-builder/4.6) |  |
 | [ibexa/user](https://packagist.org/packages/ibexa/user) | [4.6](ibexa/user/4.6) |  |
 | [ibexa/version-comparison](https://packagist.org/packages/ibexa/version-comparison) | [4.6](ibexa/version-comparison/4.6) |  |

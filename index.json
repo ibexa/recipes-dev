@@ -792,6 +792,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/test-fixtures": [
+            "4.6"
+        ],
         "ibexa/tree-builder": [
             "4.0",
             "4.1",
