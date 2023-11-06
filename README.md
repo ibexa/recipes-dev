@@ -9,7 +9,7 @@ Here is the repository for `ibexa/*` and `ezsystems/*` packages. In order to use
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "endpoint": "https://flex.ibexa.co"
+            "endpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/main"
         }
     }
 }
