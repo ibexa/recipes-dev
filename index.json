@@ -376,6 +376,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/connector-payum": [
+            "4.6"
+        ],
         "ibexa/connector-unsplash": [
             "4.0",
             "4.1",
