@@ -67,7 +67,8 @@
     "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
     "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
-    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"]
+    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"],
+    "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",

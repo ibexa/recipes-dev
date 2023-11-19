@@ -1,0 +1,10 @@
+ibexa:
+    system:
+        admin_group:
+            site_context:
+                excluded_paths:
+                    - 5 # Users
+                    - 43 # Media
+                    - 48 # Setup
+                    - 55 # Forms
+                    - 56 # Site skeletons
