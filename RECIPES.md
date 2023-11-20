@@ -53,6 +53,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ezsystems/ezplatform-version-comparison](https://packagist.org/packages/ezsystems/ezplatform-version-comparison) | [1.3](ezsystems/ezplatform-version-comparison/1.3) |  |
 | [ezsystems/ezplatform-workflow](https://packagist.org/packages/ezsystems/ezplatform-workflow) | [2.3](ezsystems/ezplatform-workflow/2.3) |  |
 | [ezsystems/ezrecommendation-client](https://packagist.org/packages/ezsystems/ezrecommendation-client) | [2.0](ezsystems/ezrecommendation-client/2.0) |  |
+| [ibexa/activity-log](https://packagist.org/packages/ibexa/activity-log) | [4.6](ibexa/activity-log/4.6) |  |
 | [ibexa/admin-ui](https://packagist.org/packages/ibexa/admin-ui) | [4.6](ibexa/admin-ui/4.6) |  |
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [4.6](ibexa/admin-ui-assets/4.6) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [4.6](ibexa/behat/4.6) |  |

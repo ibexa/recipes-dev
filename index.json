@@ -186,6 +186,9 @@
         "ezsystems/ezrecommendation-client": [
             "2.0"
         ],
+        "ibexa/activity-log": [
+            "4.6"
+        ],
         "ibexa/admin-ui": [
             "4.0",
             "4.1",
