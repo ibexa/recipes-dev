@@ -84,7 +84,8 @@
     "Ibexa\\Bundle\\CorporateAccountCommerceBridge\\IbexaCorporateAccountCommerceBridgeBundle": ["all"],
     "Payum\\Bundle\\PayumBundle\\PayumBundle": ["all"],
     "Ibexa\\Bundle\\ConnectorPayum\\IbexaConnectorPayumBundle": ["all"],
-    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"]
+    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"],
+    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
