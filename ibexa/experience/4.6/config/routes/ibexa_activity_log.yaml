@@ -1,0 +1,6 @@
+ibexa.activity_log:
+    resource: '@IbexaActivityLogBundle/Resources/config/routing.yaml'
+
+ibexa.activity_log.rest:
+    resource: '@IbexaActivityLogBundle/Resources/config/routing/rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'

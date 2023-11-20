@@ -83,7 +83,8 @@
     "Ibexa\\Bundle\\Shipping\\IbexaShippingBundle": ["all"],
     "Ibexa\\Bundle\\CorporateAccountCommerceBridge\\IbexaCorporateAccountCommerceBridgeBundle": ["all"],
     "Payum\\Bundle\\PayumBundle\\PayumBundle": ["all"],
-    "Ibexa\\Bundle\\ConnectorPayum\\IbexaConnectorPayumBundle": ["all"]
+    "Ibexa\\Bundle\\ConnectorPayum\\IbexaConnectorPayumBundle": ["all"],
+    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
