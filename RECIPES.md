@@ -86,6 +86,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [4.6](ibexa/corporate-account/4.6) |  |
 | [ibexa/corporate-account-commerce-bridge](https://packagist.org/packages/ibexa/corporate-account-commerce-bridge) | [4.6](ibexa/corporate-account-commerce-bridge/4.6) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [4.6](ibexa/cron/4.6) |  |
+| [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [4.6](ibexa/dashboard/4.6) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [4.6](ibexa/design-engine/4.6) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [4.6](ibexa/docker/4.6) |  |
 | [ibexa/doctrine-schema](https://packagist.org/packages/ibexa/doctrine-schema) | [4.6](ibexa/doctrine-schema/4.6) |  |

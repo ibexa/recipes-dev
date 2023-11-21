@@ -449,6 +449,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/dashboard": [
+            "4.6"
+        ],
         "ibexa/design-engine": [
             "4.0",
             "4.1",
