@@ -74,7 +74,8 @@
     "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
     "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": ["all"],
     "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle": ["all"],
-    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"]
+    "Ibexa\\Bundle\\ActivityLog\\IbexaActivityLogBundle": ["all"],
+    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/",
