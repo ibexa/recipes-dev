@@ -41,6 +41,7 @@
     "Ibexa\\Bundle\\GraphQL\\IbexaGraphQLBundle": ["all"],
     "Ibexa\\Bundle\\FieldTypeQuery\\IbexaFieldTypeQueryBundle": ["all"],
     "Ibexa\\Bundle\\Search\\IbexaSearchBundle": ["all"],
+    "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],

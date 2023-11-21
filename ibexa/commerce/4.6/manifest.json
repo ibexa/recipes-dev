@@ -54,6 +54,7 @@
     "Ibexa\\Bundle\\Search\\IbexaSearchBundle": ["all"],
     "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": ["all"],
     "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
+    "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": ["all"],
     "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
     "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle": ["dev"],
     "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
