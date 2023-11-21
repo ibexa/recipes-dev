@@ -629,6 +629,9 @@
         "ibexa/namespace-compatibility": [
             "1.0"
         ],
+        "ibexa/notifications": [
+            "4.6"
+        ],
         "ibexa/oauth2-client": [
             "4.0",
             "4.1",

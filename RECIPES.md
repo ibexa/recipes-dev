@@ -108,6 +108,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/measurement](https://packagist.org/packages/ibexa/measurement) | [4.6](ibexa/measurement/4.6) |  |
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [4.6](ibexa/migrations/4.6) |  |
 | [ibexa/namespace-compatibility](https://packagist.org/packages/ibexa/namespace-compatibility) | [1.0](ibexa/namespace-compatibility/1.0) |  |
+| [ibexa/notifications](https://packagist.org/packages/ibexa/notifications) | [4.6](ibexa/notifications/4.6) |  |
 | [ibexa/oauth2-client](https://packagist.org/packages/ibexa/oauth2-client) | [4.6](ibexa/oauth2-client/4.6) |  |
 | [ibexa/oauth2-server](https://packagist.org/packages/ibexa/oauth2-server) | [4.6](ibexa/oauth2-server/4.6) |  |
 | [ibexa/oauth2-server-bundle](https://packagist.org/packages/ibexa/oauth2-server-bundle) | [0.6](ibexa/oauth2-server-bundle/0.6) |  |
