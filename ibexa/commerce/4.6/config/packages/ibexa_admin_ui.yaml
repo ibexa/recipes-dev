@@ -27,6 +27,7 @@ ibexa:
                     - 55 # Forms
                     - 56 # Site skeletons
                     - 60 # Components
+                    - 67 # Dashboards
             subtree_paths:
                 content: /1/2/
                 media: /1/43/
