@@ -1,0 +1,2 @@
+ibexa.dashboard:
+    resource: '@IbexaDashboardBundle/Resources/config/routing/admin.yaml'
