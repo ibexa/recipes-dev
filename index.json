@@ -597,6 +597,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/image-picker": [
+            "4.6"
+        ],
         "ibexa/installer": [
             "4.0",
             "4.1",

@@ -103,6 +103,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/http-cache](https://packagist.org/packages/ibexa/http-cache) | [4.6](ibexa/http-cache/4.6) |  |
 | [ibexa/icons](https://packagist.org/packages/ibexa/icons) | [4.6](ibexa/icons/4.6) |  |
 | [ibexa/image-editor](https://packagist.org/packages/ibexa/image-editor) | [4.6](ibexa/image-editor/4.6) |  |
+| [ibexa/image-picker](https://packagist.org/packages/ibexa/image-picker) | [4.6](ibexa/image-picker/4.6) |  |
 | [ibexa/installer](https://packagist.org/packages/ibexa/installer) | [4.6](ibexa/installer/4.6) |  |
 | [ibexa/measurement](https://packagist.org/packages/ibexa/measurement) | [4.6](ibexa/measurement/4.6) |  |
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [4.6](ibexa/migrations/4.6) |  |
