@@ -74,3 +74,5 @@ ibexa:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
             user_content_type_identifier: ['user', 'customer', 'member']
             default_page: 'dashboard'
+            content:
+                default_ttl: 0
