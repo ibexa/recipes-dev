@@ -760,6 +760,9 @@
             "4.5",
             "4.6"
         ],
+        "ibexa/site-context": [
+            "4.6"
+        ],
         "ibexa/site-factory": [
             "4.0",
             "4.1",
