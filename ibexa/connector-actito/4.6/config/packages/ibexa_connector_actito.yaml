@@ -1,8 +1,10 @@
-## Use below configuration example to set up your e-mail campaigns
+## Use following example to set up your e-mail campaigns
 #ibexa:
 #    system:
 #        default:
 #            connector_actito:
+#                api_key: '%env(ACTITO_API_KEY)%'
+#                entity: my_entity_name
 #                campaign_mapping:
 #                    #
 #                    # This map configures which campaigns are triggered in
