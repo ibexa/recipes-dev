@@ -1,0 +1,17 @@
+## Use following example to set up your e-mail campaigns
+#ibexa:
+#    system:
+#        default:
+#            connector_actito:
+#                api_key: '%env(ACTITO_API_KEY)%'
+#                entity: my_entity_name
+#                campaign_mapping:
+#                    #
+#                    # This map configures which campaigns are triggered in
+#                    # Actito system when particular Notification is emitted
+#                    #
+#                    # Element key is the FQCN of the Notification,
+#                    # "campaign" property has to match campaign name or ID
+#                    #
+#                    Ibexa\Notifications\Value\Notification\OrderConfirmationNotification:
+#                        campaign: order_confirmation_campaign_transactional_eng-GB
