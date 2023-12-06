@@ -75,6 +75,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/commerce-shop-ui](https://packagist.org/packages/ibexa/commerce-shop-ui) | [4.6](ibexa/commerce-shop-ui/4.6) |  |
 | [ibexa/commerce-transaction](https://packagist.org/packages/ibexa/commerce-transaction) | [4.6](ibexa/commerce-transaction/4.6) |  |
 | [ibexa/compatibility-layer](https://packagist.org/packages/ibexa/compatibility-layer) | [4.6](ibexa/compatibility-layer/4.6) |  |
+| [ibexa/connector-actito](https://packagist.org/packages/ibexa/connector-actito) | [4.6](ibexa/connector-actito/4.6) | `actito`, `ibexa-connector-actito`, `ibexaconnectoractito` |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [4.6](ibexa/connector-dam/4.6) |  |
 | [ibexa/connector-payum](https://packagist.org/packages/ibexa/connector-payum) | [4.6](ibexa/connector-payum/4.6) |  |
 | [ibexa/connector-unsplash](https://packagist.org/packages/ibexa/connector-unsplash) | [4.6](ibexa/connector-unsplash/4.6) |  |

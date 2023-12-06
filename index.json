@@ -1,5 +1,6 @@
 {
     "aliases": {
+        "actito": "ibexa/connector-actito",
         "cdp": "ibexa/cdp",
         "cms": "ibexa/oss",
         "cms-commerce": "ibexa/commerce",
@@ -25,12 +26,14 @@
         "ibexa": "ibexa/oss",
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
+        "ibexa-connector-actito": "ibexa/connector-actito",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
         "ibexa-headless": "ibexa/headless",
         "ibexa-oss": "ibexa/oss",
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
+        "ibexaconnectoractito": "ibexa/connector-actito",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
         "ibexaheadless": "ibexa/headless",
@@ -368,6 +371,9 @@
             "4.3",
             "4.4",
             "4.5",
+            "4.6"
+        ],
+        "ibexa/connector-actito": [
             "4.6"
         ],
         "ibexa/connector-dam": [
