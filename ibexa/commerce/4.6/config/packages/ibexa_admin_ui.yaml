@@ -72,7 +72,11 @@ ibexa:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
                 default-config:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
-            user_content_type_identifier: ['user', 'customer', 'member']
+            user_content_type_identifier: ['user', 'customer', 'member', 'editor']
+            user_profile:
+                enabled: true
+                content_types: ['editor']
+                field_groups: ['about', 'contact']
             default_page: 'dashboard'
             content:
                 default_ttl: 0
