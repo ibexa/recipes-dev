@@ -16,6 +16,11 @@
         <target state="new">If you need help, contact our support team</target>
         <note>key: ibexa_platform_welcome_page.contact.content</note>
       </trans-unit>
+      <trans-unit id="3e3436ed63f3022eaa731069cb67f16853abc25c" resname="ibexa_platform_welcome_page.contact.image">
+        <source>Support</source>
+        <target state="new">Support</target>
+        <note>key: ibexa_platform_welcome_page.contact.image</note>
+      </trans-unit>
       <trans-unit id="04d639506956b4106a6e32b13529af399176a4c8" resname="ibexa_platform_welcome_page.contact.title">
         <source>Contact support</source>
         <target state="new">Contact support</target>
@@ -38,6 +43,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
 The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. This includes payments and other integrations to back office systems.</target>
         <note>key: ibexa_platform_welcome_page.developer_documentation.content</note>
       </trans-unit>
+      <trans-unit id="3fa259b47b0e4454bedff6add212f936bcc39676" resname="ibexa_platform_welcome_page.developer_documentation.image">
+        <source>Developer documentation</source>
+        <target state="new">Developer documentation</target>
+        <note>key: ibexa_platform_welcome_page.developer_documentation.image</note>
+      </trans-unit>
       <trans-unit id="b9c6e572005f2c67ffee736b32ed1e76f66dc348" resname="ibexa_platform_welcome_page.developer_documentation.title">
         <source>Developer documentation</source>
         <target state="new">Developer documentation</target>
@@ -52,6 +62,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <source>Ibexa DXP documentation for developers and editors.</source>
         <target state="new">Ibexa DXP documentation for developers and editors.</target>
         <note>key: ibexa_platform_welcome_page.documentation_center.content</note>
+      </trans-unit>
+      <trans-unit id="a6a84c7b2deca139bfacaeaa75e4189179a283ef" resname="ibexa_platform_welcome_page.documentation_center.image">
+        <source>Documentation center</source>
+        <target state="new">Documentation center</target>
+        <note>key: ibexa_platform_welcome_page.documentation_center.image</note>
       </trans-unit>
       <trans-unit id="58a36d07dba1b2ebfaff119763e91bf9930327c7" resname="ibexa_platform_welcome_page.documentation_center.title">
         <source>Documentation center</source>
@@ -73,6 +88,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <target state="new">Whether you're starting your very first project or developing yet another one in a long series, knowledge resources are here to help you accelerate on your goals. Try your hand in quickstarts and tutorials, or explore the references to further enhance your site.</target>
         <note>key: ibexa_platform_welcome_page.get_started.content</note>
       </trans-unit>
+      <trans-unit id="b29e2778b194d45778ae881c8b5d5a77e437edcc" resname="ibexa_platform_welcome_page.get_started.image">
+        <source>Get started</source>
+        <target state="new">Get started</target>
+        <note>key: ibexa_platform_welcome_page.get_started.image</note>
+      </trans-unit>
       <trans-unit id="b094751ea7815be8c67e7d208201ea4c634e4a27" resname="ibexa_platform_welcome_page.get_started.title">
         <source>Get started</source>
         <target state="new">Get started</target>
@@ -83,10 +103,20 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <target state="new">Start your project</target>
         <note>key: ibexa_platform_welcome_page.header.action</note>
       </trans-unit>
+      <trans-unit id="3af689d77f5b91ef64d44df8ffb8d57042e16795" resname="ibexa_platform_welcome_page.header.caret_down">
+        <source>Down</source>
+        <target state="new">Down</target>
+        <note>key: ibexa_platform_welcome_page.header.caret_down</note>
+      </trans-unit>
       <trans-unit id="7d9f206306b985903c673b0fde7b661dd69a8169" resname="ibexa_platform_welcome_page.header.content">
         <source>Open-source solution for building custom, scalable websites.</source>
         <target state="new">Open-source solution for building custom, scalable websites.</target>
         <note>key: ibexa_platform_welcome_page.header.content</note>
+      </trans-unit>
+      <trans-unit id="98c2ffa53627e1a600dc9dc9c1105167b18b4ce5" resname="ibexa_platform_welcome_page.header.image">
+        <source>OSS</source>
+        <target state="new">OSS</target>
+        <note>key: ibexa_platform_welcome_page.header.image</note>
       </trans-unit>
       <trans-unit id="ad4d8a3d927782cf037c301c653c0b8d05d57dfe" resname="ibexa_platform_welcome_page.header.title">
         <source>Welcome to %name% %version%</source>
@@ -103,6 +133,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <target state="new">PHP API services cover all product functionalities and give you endless possibilities to customize your code.</target>
         <note>key: ibexa_platform_welcome_page.php_api.content</note>
       </trans-unit>
+      <trans-unit id="990abf39475ac8ff08a079f9d12ef77bff30fc60" resname="ibexa_platform_welcome_page.php_api.image">
+        <source>Public PHP API</source>
+        <target state="new">Public PHP API</target>
+        <note>key: ibexa_platform_welcome_page.php_api.image</note>
+      </trans-unit>
       <trans-unit id="cfec1821e2e8e4711b762eb7cbc481ec3c9f965d" resname="ibexa_platform_welcome_page.php_api.title">
         <source>Public PHP API</source>
         <target state="new">Public PHP API</target>
@@ -118,6 +153,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <target state="new">As an API-first product, Ibexa DXP focuses on well-structured APIs. REST API endpoints cover most functionalities of the product.</target>
         <note>key: ibexa_platform_welcome_page.rest_api.content</note>
       </trans-unit>
+      <trans-unit id="7fbe0600066941b9adaa962f34bd1901e54f0773" resname="ibexa_platform_welcome_page.rest_api.image">
+        <source>REST API reference</source>
+        <target state="new">REST API reference</target>
+        <note>key: ibexa_platform_welcome_page.rest_api.image</note>
+      </trans-unit>
       <trans-unit id="18a5a05cc386cf7cc6563369a6c81d06ba46e77c" resname="ibexa_platform_welcome_page.rest_api.title">
         <source>REST API reference</source>
         <target state="new">REST API reference</target>
@@ -129,11 +169,14 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.training_platform.action</note>
       </trans-unit>
       <trans-unit id="7fb57458ffd0fc2361b8fac031e86c2be993911a" resname="ibexa_platform_welcome_page.training_platform.content">
-        <source xml:space="preserve">Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.
-</source>
-        <target xml:space="preserve" state="new">Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.
-</target>
+        <source>Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.</source>
+        <target state="new">Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.</target>
         <note>key: ibexa_platform_welcome_page.training_platform.content</note>
+      </trans-unit>
+      <trans-unit id="7c3418ac41f5969bbb7d3973cbd356d321937719" resname="ibexa_platform_welcome_page.training_platform.image">
+        <source>Training platform</source>
+        <target state="new">Training platform</target>
+        <note>key: ibexa_platform_welcome_page.training_platform.image</note>
       </trans-unit>
       <trans-unit id="3d6abc0cf8fb8a9dac536a43c367f2ed43abd0f3" resname="ibexa_platform_welcome_page.training_platform.title">
         <source>Training platform</source>
@@ -149,6 +192,11 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <source>Practical tutorials lead you through the first project to help you learn product basics.</source>
         <target state="new">Practical tutorials lead you through the first project to help you learn product basics.</target>
         <note>key: ibexa_platform_welcome_page.tutorials.content</note>
+      </trans-unit>
+      <trans-unit id="816f2bfe9b1f19502b82cd6d2eb32950fdcd6e46" resname="ibexa_platform_welcome_page.tutorials.image">
+        <source>Tutorials</source>
+        <target state="new">Tutorials</target>
+        <note>key: ibexa_platform_welcome_page.tutorials.image</note>
       </trans-unit>
       <trans-unit id="cb37cf9bdd539b16245fbf59e4816c87bf84fcaa" resname="ibexa_platform_welcome_page.tutorials.title">
         <source>Tutorials</source>
@@ -176,6 +224,11 @@ Learn how to administrate your digital store with Ibexa Commerce. Manage product
         <target xml:space="preserve" state="new">Manage content, products, site and content structure and much more using the Ibexa DXP administration interface.
 Learn how to administrate your digital store with Ibexa Commerce. Manage products, orders and view statistics.</target>
         <note>key: ibexa_platform_welcome_page.user_documentation.content</note>
+      </trans-unit>
+      <trans-unit id="1cb98a441dcbde92ba1e0079ad08f100c038ccfa" resname="ibexa_platform_welcome_page.user_documentation.image">
+        <source>User documentation</source>
+        <target state="new">User documentation</target>
+        <note>key: ibexa_platform_welcome_page.user_documentation.image</note>
       </trans-unit>
       <trans-unit id="d7c608eefa11434e8ab1f5980ed10e6272293420" resname="ibexa_platform_welcome_page.user_documentation.title">
         <source>User documentation</source>
