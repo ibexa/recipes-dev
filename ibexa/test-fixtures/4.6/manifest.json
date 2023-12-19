@@ -10,30 +10,30 @@
     },
     "add-lines": [
         {
-            "file": "config/packages/ibexa.yaml",
+            "file": "config/services.yaml",
             "content": "imports:",
             "position": "top",
             "requires": "ibexa/headless"
         },
         {
-            "file": "config/packages/ibexa.yaml",
+            "file": "config/services.yaml",
             "position": "after_target",
             "target": "imports:",
-            "content": "  - { resource: test_fixtures/headless.yaml }:",
+            "content": "  - { resource: packages/test_fixtures/headless.yaml }:",
             "requires": "ibexa/headless"
         },
         {
-            "file": "config/packages/ibexa.yaml",
+            "file": "config/services.yaml",
             "position": "after_target",
             "target": "imports:",
-            "content": "  - { resource: test_fixtures/experience.yaml }:",
+            "content": "  - { resource: packages/test_fixtures/experience.yaml }:",
             "requires": "ibexa/experience"
         },
         {
-            "file": "config/packages/ibexa.yaml",
+            "file": "config/services.yaml",
             "position": "after_target",
             "target": "imports:",
-            "content": "  - { resource: test_fixtures/commerce.yaml }:",
+            "content": "  - { resource: packages/test_fixtures/commerce.yaml }:",
             "requires": "ibexa/commerce"
         }
     ]
