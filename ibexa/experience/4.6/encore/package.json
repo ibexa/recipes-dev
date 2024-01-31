@@ -9,7 +9,7 @@
     "webpack-notifier": "^1.6.0",
     "react-collapsible": "^2.5.0",
     "sass": "^1.49.7",
-    "sass-loader": "^12.5.0",
+    "sass-loader": "^13.0.0",
     "@babel/runtime": "^7.13.10",
     "postcss-loader": "^4.3.0",
     "raw-loader": "^4.0.1",
