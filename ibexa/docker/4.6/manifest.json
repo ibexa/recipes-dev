@@ -13,7 +13,7 @@
         "COMPOSE_FILE": "doc/docker/base-dev.yml",
         "COMPOSE_DIR": ".",
         "COMPOSE_PROJECT_NAME": "ibexa",
-        "PHP_IMAGE": "ezsystems/php:7.4-v2-node16",
+        "PHP_IMAGE": "ghcr.io/ibexa/docker/php:8.2-node18",
         "NGINX_IMAGE": "nginx:stable",
         "MYSQL_IMAGE": "healthcheck/mariadb",
         "REDIS_IMAGE": "healthcheck/redis",
