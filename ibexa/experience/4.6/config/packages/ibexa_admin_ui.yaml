@@ -46,6 +46,8 @@ ibexa:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog'
                 blog_post:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog_post'
+                editor:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#author'
                 folder:
                     thumbnail: '/bundles/ibexaicons/img/all-icons.svg#folder'
                 form:
