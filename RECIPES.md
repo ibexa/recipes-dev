@@ -56,6 +56,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/activity-log](https://packagist.org/packages/ibexa/activity-log) | [5.0](ibexa/activity-log/5.0) |  |
 | [ibexa/admin-ui](https://packagist.org/packages/ibexa/admin-ui) | [5.0](ibexa/admin-ui/5.0) |  |
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [5.0](ibexa/admin-ui-assets/5.0) |  |
+| [ibexa/app-switcher](https://packagist.org/packages/ibexa/app-switcher) | [5.0](ibexa/app-switcher/5.0) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [5.0](ibexa/behat/5.0) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [5.0](ibexa/calendar/5.0) |  |
 | [ibexa/cart](https://packagist.org/packages/ibexa/cart) | [5.0](ibexa/cart/5.0) |  |
@@ -102,6 +103,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/form-builder](https://packagist.org/packages/ibexa/form-builder) | [5.0](ibexa/form-builder/5.0) |  |
 | [ibexa/graphql](https://packagist.org/packages/ibexa/graphql) | [5.0](ibexa/graphql/5.0) |  |
 | [ibexa/headless](https://packagist.org/packages/ibexa/headless) | [5.0](ibexa/headless/5.0) | `cms-headless`, `cmsheadless`, `dxp-headless`, `dxpheadless`, `headless`, `ibexa-headless`, `ibexaheadless` |
+| [ibexa/headless-assets](https://packagist.org/packages/ibexa/headless-assets) | [5.0](ibexa/headless-assets/5.0) |  |
 | [ibexa/http-cache](https://packagist.org/packages/ibexa/http-cache) | [5.0](ibexa/http-cache/5.0) |  |
 | [ibexa/icons](https://packagist.org/packages/ibexa/icons) | [5.0](ibexa/icons/5.0) |  |
 | [ibexa/image-editor](https://packagist.org/packages/ibexa/image-editor) | [5.0](ibexa/image-editor/5.0) |  |
