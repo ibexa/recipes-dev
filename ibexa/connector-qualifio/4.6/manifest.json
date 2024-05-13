@@ -2,5 +2,8 @@
   "aliases": [],
   "bundles": {
     "Ibexa\\Bundle\\ConnectorQualifio\\IbexaConnectorQualifioBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
   }
 }
