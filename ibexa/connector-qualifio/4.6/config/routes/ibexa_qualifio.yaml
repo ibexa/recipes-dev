@@ -1,0 +1,2 @@
+ibexa.qualifio:
+    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing.yaml'
