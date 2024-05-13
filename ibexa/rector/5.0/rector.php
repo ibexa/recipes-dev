@@ -16,10 +16,10 @@ return static function (RectorConfig $rectorConfig): void {
         ]
     );
 
-    // define sets of rules
+    // define set lists
     $rectorConfig->sets(
         [
-            __DIR__ . '/vendor/ibexa/rector/src/contracts/Sets/ibexa-50.php', // rule set for upgrading to Ibexa DXP 5.0
+            __DIR__ . '/vendor/ibexa/rector/src/contracts/Sets/ibexa-50.php', // set list for upgrading to Ibexa DXP 5.0
         ]
     );
 };
