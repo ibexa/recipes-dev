@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/connector-qualifio": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorQualifio\\IbexaConnectorQualifioBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_qualifio.yaml": {
+                    "contents": [
+                        "ibexa.qualifio:",
+                        "    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5cde22e010972702bcefce7039e5f00090b85f0e"
+        }
+    }
+}

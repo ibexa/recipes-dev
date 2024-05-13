@@ -79,6 +79,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/connector-actito](https://packagist.org/packages/ibexa/connector-actito) | [5.0](ibexa/connector-actito/5.0) | `actito`, `ibexa-connector-actito`, `ibexaconnectoractito` |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [5.0](ibexa/connector-dam/5.0) |  |
 | [ibexa/connector-payum](https://packagist.org/packages/ibexa/connector-payum) | [5.0](ibexa/connector-payum/5.0) |  |
+| [ibexa/connector-qualifio](https://packagist.org/packages/ibexa/connector-qualifio) | [5.0](ibexa/connector-qualifio/5.0) |  |
 | [ibexa/connector-unsplash](https://packagist.org/packages/ibexa/connector-unsplash) | [5.0](ibexa/connector-unsplash/5.0) |  |
 | [ibexa/content](https://packagist.org/packages/ibexa/content) | [4.5](ibexa/content/4.5) | `cms-content`, `cmscontent`, `content`, `dxp-content`, `dxpcontent`, `ibexa-content`, `ibexacontent` |
 | [ibexa/content-forms](https://packagist.org/packages/ibexa/content-forms) | [5.0](ibexa/content-forms/5.0) |  |

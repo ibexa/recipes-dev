@@ -417,6 +417,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-qualifio": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/connector-unsplash": [
             "4.0",
             "4.1",
