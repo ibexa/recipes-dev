@@ -125,6 +125,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [5.0](ibexa/personalization/5.0) |  |
 | [ibexa/personalization-client](https://packagist.org/packages/ibexa/personalization-client) | [5.0](ibexa/personalization-client/5.0) |  |
 | [ibexa/product-catalog](https://packagist.org/packages/ibexa/product-catalog) | [5.0](ibexa/product-catalog/5.0) |  |
+| [ibexa/rector](https://packagist.org/packages/ibexa/rector) | [5.0](ibexa/rector/5.0) |  |
 | [ibexa/rest](https://packagist.org/packages/ibexa/rest) | [5.0](ibexa/rest/5.0) |  |
 | [ibexa/scheduler](https://packagist.org/packages/ibexa/scheduler) | [5.0](ibexa/scheduler/5.0) |  |
 | [ibexa/search](https://packagist.org/packages/ibexa/search) | [5.0](ibexa/search/5.0) |  |
