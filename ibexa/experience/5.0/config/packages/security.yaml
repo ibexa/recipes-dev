@@ -118,10 +118,15 @@ security:
         #        csrf_token_generator: security.csrf.token_manager
         #    logout: ~
 
+        ibexa_rest:
+            pattern: ^/api/ibexa
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            custom_authenticators:
+                - Ibexa\Rest\Security\Authenticator\RestAuthenticator
+
         ibexa_front:
             pattern: ^/
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-            ibexa_rest_session: ~
             form_login:
                 require_previous_session: false
                 enable_csrf: true
