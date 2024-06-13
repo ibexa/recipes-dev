@@ -67,13 +67,8 @@ security:
 
         #ibexa_jwt_graphql:
         #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
-        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-        #    anonymous: ~
-        #    guard:
-        #        authenticators:
-        #            - lexik_jwt_authentication.jwt_token_authenticator
-        #        entry_point: lexik_jwt_authentication.jwt_token_authenticator
         #    stateless: true
+        #    jwt: ~
 
         ibexa_rest:
             pattern: ^/api/ibexa
