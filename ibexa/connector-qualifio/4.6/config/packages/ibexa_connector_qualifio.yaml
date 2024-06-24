@@ -1,0 +1,4 @@
+ibexa_fieldtype_richtext:
+    enabled_attribute_types:
+        - campaign
+        - measurement
