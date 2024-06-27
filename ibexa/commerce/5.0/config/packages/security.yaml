@@ -99,10 +99,10 @@ security:
         #        success_handler: lexik_jwt_authentication.handler.authentication_success
         #        failure_handler: lexik_jwt_authentication.handler.authentication_failure
 
-        #ibexa_jwt_graphql:
-        #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
-        #    stateless: true
-        #    jwt: ~
+        ibexa_jwt_graphql:
+            request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
+            stateless: true
+            jwt: ~
 
         # Uncomment ibexa_oauth2_connect, ibexa_oauth2_front rules and comment ibexa_front firewall
         # to enable OAuth2 authentication
