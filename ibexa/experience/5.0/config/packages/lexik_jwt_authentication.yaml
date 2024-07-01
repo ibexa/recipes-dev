@@ -5,7 +5,7 @@ lexik_jwt_authentication:
     # Disabled by default, because Page builder use an custom extractor
     token_extractors:
         authorization_header:
-            enabled: false
+            enabled: true
         cookie:
             enabled: false
         query_parameter:
