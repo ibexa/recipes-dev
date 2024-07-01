@@ -66,11 +66,11 @@ security:
         #        success_handler: lexik_jwt_authentication.handler.authentication_success
         #        failure_handler: lexik_jwt_authentication.handler.authentication_failure
 
-        ibexa_jwt_graphql:
-            request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
-            provider: ibexa
-            stateless: true
-            jwt: ~
+        #ibexa_jwt_graphql:
+        #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
+        #    provider: ibexa
+        #    stateless: true
+        #    jwt: ~
 
         ibexa_rest:
             pattern: ^/api/ibexa
