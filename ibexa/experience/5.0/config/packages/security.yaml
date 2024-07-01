@@ -78,6 +78,7 @@ security:
         # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
         #ibexa_jwt_rest:
         #    request_matcher: Ibexa\Rest\Security\AuthorizationHeaderRESTRequestMatcher
+        #    provider: ibexa
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    stateless: true
         #    json_login:
@@ -89,13 +90,9 @@ security:
 
         #ibexa_jwt_graphql:
         #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
-        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-        #    anonymous: ~
-        #    guard:
-        #        authenticators:
-        #            - lexik_jwt_authentication.jwt_token_authenticator
-        #        entry_point: lexik_jwt_authentication.jwt_token_authenticator
+        #    provider: ibexa
         #    stateless: true
+        #    jwt: ~
 
         # Uncomment ibexa_oauth2_connect, ibexa_oauth2_front rules and comment ibexa_front firewall
         # to enable OAuth2 authentication
@@ -121,6 +118,7 @@ security:
 
         ibexa_rest:
             pattern: ^/api/ibexa
+            provider: ibexa
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
             context: ibexa
             custom_authenticators:
@@ -128,6 +126,7 @@ security:
 
         ibexa_front:
             pattern: ^/
+            provider: ibexa
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
             context: ibexa
             form_login:
