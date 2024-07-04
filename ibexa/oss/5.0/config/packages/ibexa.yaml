@@ -89,7 +89,14 @@ ibexa:
                 icon_sets:
                     public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
                 default_icon_set: public_icons
-
+            notifier:
+                subscriptions:
+                    Ibexa\Contracts\User\Notification\UserPasswordReset:
+                        channels:
+                            - email
+                    Ibexa\Contracts\User\Notification\UserInvitation:
+                        channels:
+                            - email
         site:
             languages: [eng-GB]
 

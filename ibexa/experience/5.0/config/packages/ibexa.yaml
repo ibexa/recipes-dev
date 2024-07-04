@@ -115,6 +115,14 @@ ibexa:
 
             page_layout: "@ibexadesign/pagelayout.html.twig"
             user_content_type_identifier: ['user']
+            notifier:
+                subscriptions:
+                    Ibexa\Contracts\User\Notification\UserPasswordReset:
+                        channels:
+                            - email
+                    Ibexa\Contracts\User\Notification\UserInvitation:
+                        channels:
+                            - email
         site:
             languages: [eng-GB]
 
