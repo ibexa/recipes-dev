@@ -128,6 +128,9 @@ ibexa:
                     Ibexa\Contracts\User\Notification\UserInvitation:
                         channels:
                             - email
+                    Ibexa\Contracts\FormBuilder\Notifications\FormSubmitted:
+                        channels:
+                            - email
         site:
             languages: [eng-GB]
             user_content_type_identifier: ['customer']
