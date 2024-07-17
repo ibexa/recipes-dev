@@ -43,3 +43,8 @@
 #                id: 'userid'
 #                remote_id: 'identifier'
 #                login: 'login'
+
+ibexa_fieldtype_richtext:
+    enabled_attribute_types:
+        - campaign
+        - measurement
