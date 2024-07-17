@@ -59,6 +59,11 @@
                         "#                id: 'userid'",
                         "#                remote_id: 'identifier'",
                         "#                login: 'login'",
+                        "",
+                        "ibexa_fieldtype_richtext:",
+                        "    enabled_attribute_types:",
+                        "        - campaign",
+                        "        - measurement",
                         ""
                     ],
                     "executable": false
@@ -72,7 +77,7 @@
                     "executable": false
                 }
             },
-            "ref": "6cdbaf2f5d5185d721238d302ebba95a9b9fccb7"
+            "ref": "04375adab2a20f283191a1bf4d19e2e0c85030c8"
         }
     }
 }
