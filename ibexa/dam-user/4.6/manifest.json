@@ -1,9 +1,4 @@
 {
-    "aliases": [],
-    "bundles": {
-        "Ibexa\\Bundle\\DamUser\\IbexaDamUserBundle": ["all"]
-    },
-    "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
-    }
+  "aliases": [],
+  "bundles": {}
 }
