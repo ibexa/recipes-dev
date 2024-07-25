@@ -6,20 +6,18 @@
  */
 declare(strict_types=1);
 
+use Ibexa\Contracts\Rector\Sets\IbexaSetList;
 use Rector\Config\RectorConfig;
 
-return static function (RectorConfig $rectorConfig): void {
-    $rectorConfig->paths(
-        [
-            __DIR__ . '/src', // see if it matches your project structure
-            __DIR__ . '/tests',
-        ]
-    );
-
-    // define set lists
-    $rectorConfig->sets(
-        [
-            __DIR__ . '/vendor/ibexa/rector/src/contracts/Sets/ibexa-50.php', // set list for upgrading to Ibexa DXP 5.0
-        ]
-    );
-};
+return RectorConfig::configure()
+   ->withPaths(
+       [
+           __DIR__ . '/src', // see if it matches your project structure
+           __DIR__ . '/tests'
+       ]
+   )
+   ->withSets(
+       [
+           IbexaSetList::IBEXA_50->value // rule set for upgrading to Ibexa DXP 5.0
+       ]
+   );
