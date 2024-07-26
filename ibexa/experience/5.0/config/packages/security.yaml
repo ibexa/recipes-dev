@@ -131,13 +131,6 @@ security:
             custom_authenticators:
                 - Ibexa\Rest\Security\Authenticator\RestAuthenticator
 
-        ibexa_fragment:
-            pattern: ^/_fragment
-            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-            provider: ibexa
-            custom_authenticators:
-                - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
-
         ibexa_front:
             pattern: ^/
             provider: ibexa
@@ -148,6 +141,8 @@ security:
                 enable_csrf: true
                 login_path: login
                 check_path: login_check
+            custom_authenticators:
+                - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
             entry_point: form_login
             logout:
                 path: logout
