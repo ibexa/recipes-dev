@@ -403,6 +403,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-ai": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/connector-dam": [
             "4.0",
             "4.1",
