@@ -417,6 +417,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-openai": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/connector-payum": [
             "4.6",
             "5.0"
