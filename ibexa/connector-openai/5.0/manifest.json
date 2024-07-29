@@ -1,5 +1,8 @@
 {
   "aliases": [],
+  "env": {
+    "OPENAI_API_KEY": "sk-123456"
+  },
   "bundles": {
     "Ibexa\\Bundle\\ConnectorOpenAi\\IbexaConnectorOpenAiBundle": ["all"]
   }
