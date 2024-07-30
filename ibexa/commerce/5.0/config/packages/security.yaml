@@ -153,6 +153,8 @@ security:
                 enable_csrf: true
                 login_path: login
                 check_path: login_check
+            custom_authenticators:
+                - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
             entry_point: form_login
             logout:
                 path: logout
