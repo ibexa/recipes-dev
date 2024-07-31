@@ -91,6 +91,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/corporate-account](https://packagist.org/packages/ibexa/corporate-account) | [5.0](ibexa/corporate-account/5.0) |  |
 | [ibexa/corporate-account-commerce-bridge](https://packagist.org/packages/ibexa/corporate-account-commerce-bridge) | [5.0](ibexa/corporate-account-commerce-bridge/5.0) |  |
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [5.0](ibexa/cron/5.0) |  |
+| [ibexa/dam-user](https://packagist.org/packages/ibexa/dam-user) | [5.0](ibexa/dam-user/5.0) |  |
 | [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [5.0](ibexa/dashboard/5.0) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [5.0](ibexa/design-engine/5.0) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [5.0](ibexa/docker/5.0) |  |
