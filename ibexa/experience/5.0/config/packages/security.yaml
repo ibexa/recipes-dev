@@ -110,12 +110,13 @@ security:
 
         #ibexa_oauth2_front:
         #    pattern: ^/
+        #    provider: ibexa
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    custom_authenticators:
         #        - Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
         #        - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
         #    entry_point: Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
-        #    context: ibexa_dxp
+        #    context: ibexa
         #    form_login:
         #        require_previous_session: false
         #        enable_csrf: true
