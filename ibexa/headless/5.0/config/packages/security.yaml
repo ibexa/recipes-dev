@@ -71,8 +71,8 @@ security:
         # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector
         #ibexa_cdp:
         #    pattern: /cdp/webhook
-        #    guard:
-        #        authenticator: 'Ibexa\Cdp\Security\CdpRequestAuthenticator'
+        #    custom_authenticators:
+        #        - 'Ibexa\Cdp\Security\CdpRequestAuthenticator'
         #    stateless: true
 
         # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
