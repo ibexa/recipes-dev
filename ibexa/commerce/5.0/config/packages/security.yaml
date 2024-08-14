@@ -120,19 +120,19 @@ security:
         #    pattern: /oauth2/connect/*
         #    security: false
 
-        ibexa_oauth2_front:
-           pattern: ^/
-           provider: ibexa
-           user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-           custom_authenticators:
-               - Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
-               - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
-           entry_point: Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
-           context: ibexa
-           form_login:
-               require_previous_session: false
-               enable_csrf: true
-           logout: ~
+        #ibexa_oauth2_front:
+        #    pattern: ^/
+        #    provider: ibexa
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    custom_authenticators:
+        #        - Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #        - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
+        #    entry_point: Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #    context: ibexa
+        #    form_login:
+        #        require_previous_session: false
+        #        enable_csrf: true
+        #    logout: ~
 
         ibexa_rest:
             pattern: ^/api/ibexa
@@ -142,21 +142,21 @@ security:
             custom_authenticators:
                 - Ibexa\Rest\Security\Authenticator\RestAuthenticator
 
-        # ibexa_front:
-        #     pattern: ^/
-        #     provider: ibexa
-        #     user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-        #     context: ibexa
-        #     form_login:
-        #         require_previous_session: false
-        #         enable_csrf: true
-        #         login_path: login
-        #         check_path: login_check
-        #     custom_authenticators:
-        #         - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
-        #     entry_point: form_login
-        #     logout:
-        #         path: logout
+        ibexa_front:
+            pattern: ^/
+            provider: ibexa
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            context: ibexa
+            form_login:
+                require_previous_session: false
+                enable_csrf: true
+                login_path: login
+                check_path: login_check
+            custom_authenticators:
+                - Ibexa\PageBuilder\Security\EditorialMode\FragmentAuthenticator
+            entry_point: form_login
+            logout:
+                path: logout
 
         main:
             # activate different ways to authenticate
