@@ -129,7 +129,7 @@ security:
             custom_authenticators:
                 - Ibexa\Rest\Security\Authenticator\RestAuthenticator
             # uncomment the line below if you wish the product to act as an Oauth2 Server
-            #oauth2: true
+            oauth2: true
 
         ibexa_front:
             pattern: ^/
