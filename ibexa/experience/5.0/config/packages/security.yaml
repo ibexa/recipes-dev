@@ -70,7 +70,7 @@ security:
 
         # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector
         #ibexa_cdp:
-        #    pattern: /cdp/webhook
+        #    request_matcher: Ibexa\Cdp\Security\RequestMatcher
         #    custom_authenticators:
         #        - 'Ibexa\Cdp\Security\CdpRequestAuthenticator'
         #    stateless: true
