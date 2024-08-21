@@ -154,8 +154,8 @@
         "IBEXA_LOCK_DSN": "flock",
         "IBEXA_VARIATION_HANDLER_IDENTIFIER": "alias",
         "#23": "Configure OAuth2 server",
-        "OAUTH2_PUBLIC_KEY_PATH": "/somewhere/safe/public.key",
-        "OAUTH2_PRIVATE_KEY_PATH": "/somewhere/safe/private.key",
+        "OAUTH2_PUBLIC_KEY_PATH": "/var/www/config/public.key",
+        "OAUTH2_PRIVATE_KEY_PATH": "/var/www/config/private.key",
         "OAUTH2_PRIVATE_KEY_PASSPHRASE": "",
         "OAUTH2_ENCRYPTION_KEY": "54eaa5545f935f9d92c6b1eb1c29b0db9dee68b5"
     },
