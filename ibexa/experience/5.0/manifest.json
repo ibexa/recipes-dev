@@ -9,7 +9,6 @@
         "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle": ["all"],
         "Symfony\\Bundle\\SecurityBundle\\SecurityBundle": ["all"],
         "Symfony\\Bundle\\TwigBundle\\TwigBundle": ["all"],
-        "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": ["all"],
         "Symfony\\Bundle\\MonologBundle\\MonologBundle": ["all"],
         "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": ["all"],
         "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
