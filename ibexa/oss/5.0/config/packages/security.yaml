@@ -79,6 +79,12 @@ security:
         #    stateless: true
         #    jwt: ~
 
+        # If you wish to use http_basic authentication, uncomment the firewall below and adjust the pattern to meet your project's requirements.
+        #ibexa_http_basic:
+        #    pattern: ^/
+        #    http_basic:
+        #        realm: Secured Area
+
         ibexa_rest:
             pattern: ^/api/ibexa
             provider: ibexa
