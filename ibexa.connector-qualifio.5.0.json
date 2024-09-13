@@ -72,12 +72,16 @@
                     "contents": [
                         "ibexa.qualifio:",
                         "    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.qualifio.rest:",
+                        "    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "04375adab2a20f283191a1bf4d19e2e0c85030c8"
+            "ref": "3bd90ab947998997ecc9bdc191a4b7f9ebb64b74"
         }
     }
 }
