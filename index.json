@@ -813,6 +813,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/product-catalog-symbol-attribute": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/rector": [
             "5.0"
         ],
