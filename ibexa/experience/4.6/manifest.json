@@ -29,6 +29,7 @@
         "Knp\\Bundle\\MenuBundle\\KnpMenuBundle": ["all"],
         "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
         "Ibexa\\Bundle\\CorePersistence\\IbexaCorePersistenceBundle": ["all"],
+        "Ibexa\\Bundle\\CoreSearch\\IbexaCoreSearchBundle": ["all"],
         "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": [
             "all"
         ],
