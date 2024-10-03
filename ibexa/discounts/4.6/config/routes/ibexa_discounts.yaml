@@ -4,3 +4,5 @@ ibexa.discounts.rest:
 
 ibexa.discounts.admin:
     resource: '@IbexaDiscountsBundle/Resources/config/routing_admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
