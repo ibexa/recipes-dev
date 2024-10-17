@@ -16,6 +16,7 @@ module.exports = (Encore) => {
             'prop-types': 'PropTypes',
         })
         .enableSassLoader()
+        .enableTypeScriptLoader()
         .enableReactPreset()
         .enableSingleRuntimeChunk();
 
