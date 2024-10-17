@@ -21,7 +21,19 @@
     "@ckeditor/ckeditor5-widget": "^40.1.0",
     "@ckeditor/ckeditor5-theme-lark": "^40.1.0",
     "@ckeditor/ckeditor5-code-block": "^40.1.0",
-    "@svgr/webpack": "^8.1.0"
+    "@svgr/webpack": "^8.1.0",
+    "typescript": "^5.6.3",
+    "ts-loader": "^9.5.1",
+    "ts-config-ibexa": "https://github.com/ibexa/ts-config-ibexa"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "ts-loader": "^9.5.1",
+    "ts-config-ibexa": "https://github.com/ibexa/ts-config-ibexa"
   },
   "license": "UNLICENSED",
   "private": true,
