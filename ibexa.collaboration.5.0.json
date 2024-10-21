@@ -1,0 +1,11 @@
+{
+    "manifests": {
+        "ibexa/collaboration": {
+            "manifest": {
+                "bundles": []
+            },
+            "files": [],
+            "ref": "dd77777171ab033584535f7f3c407ffc4dad7cff"
+        }
+    }
+}
