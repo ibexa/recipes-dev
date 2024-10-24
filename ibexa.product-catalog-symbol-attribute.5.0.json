@@ -3,7 +3,7 @@
         "ibexa/product-catalog-symbol-attribute": {
             "manifest": {
                 "bundles": {
-                    "Ibexa\\Bundle\\ProductCatalogSymbolAttribute\\IbexaProductCatalogSymbolAttributeBundle::class": [
+                    "Ibexa\\Bundle\\ProductCatalogSymbolAttribute\\IbexaProductCatalogSymbolAttributeBundle": [
                         "all"
                     ]
                 },
@@ -29,7 +29,7 @@
                     "executable": false
                 }
             },
-            "ref": "c4167134a9618e95bbd0927a89c601e8e52a0963"
+            "ref": "55f76285a51e15b0092ee872a77a182f6360144d"
         }
     }
 }
