@@ -17,7 +17,7 @@ module.exports = (Encore) => {
         })
         .enableSassLoader()
         .enableTypeScriptLoader((tsConfig) => {
-            tsConfig.configFile = path.resolve(__dirname, 'ibexa.tsconfig.custom.json');
+            tsConfig.configFile = path.resolve(__dirname, 'ibexa.tsconfig.json');
         })
         .enableReactPreset()
         .enableSingleRuntimeChunk();
