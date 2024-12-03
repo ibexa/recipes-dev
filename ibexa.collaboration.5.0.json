@@ -2,10 +2,17 @@
     "manifests": {
         "ibexa/collaboration": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\Collaboration\\IbexaCollaborationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
             },
             "files": [],
-            "ref": "dd77777171ab033584535f7f3c407ffc4dad7cff"
+            "ref": "8bd8049d0146efad71fb1c021c1a9add7d1b1f09"
         }
     }
 }
