@@ -1,0 +1,24 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\FieldTypeRichTextRTEBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "add-lines": [
+    {
+        "file": "composer.json",
+        "content": "\"ckeditor-rte-copy.sh\": \"script\"",
+        "position": "after_target",
+        "target": "\"yarn install\": \"script\","
+    }
+  ],
+  "env": {
+    "#0": "The following values can be obtained in CKEditor Customer Portal > Cloud environments. See https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/real-time-collaboration/real-time-collaboration-integration.html for more details.",
+    "CKEDITOR_LICENSE_KEY": "",
+    "CKEDITOR_ENVIRONMENT_ID": "",
+    "CKEDITOR_ENVIRONMENT_SECRET": "",
+    "CKEDITOR_WEB_SOCKET_URL": ""
+  }
+}
