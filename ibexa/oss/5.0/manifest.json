@@ -6,7 +6,6 @@
     "Symfony\\Bundle\\TwigBundle\\TwigBundle": ["all"],
     "Symfony\\Bundle\\MonologBundle\\MonologBundle": ["all"],
     "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": ["all"],
-    "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": ["all"],
     "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": ["all"],
     "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": ["all"],
     "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle": ["all"],
