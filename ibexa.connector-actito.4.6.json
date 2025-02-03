@@ -1,0 +1,58 @@
+{
+    "manifests": {
+        "ibexa/connector-actito": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorActito\\IbexaConnectorActitoBundle": [
+                        "all"
+                    ]
+                },
+                "env": {
+                    "#1": "Ask your IT/Admin to create API User in Actito Dashboard and put generated API Key here",
+                    "ACTITO_API_KEY": "1234567890"
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connector_actito.yaml": {
+                    "contents": [
+                        "## Use following example to set up your e-mail campaigns",
+                        "#ibexa:",
+                        "#    system:",
+                        "#        default:",
+                        "#            connector_actito:",
+                        "#                api_key: '%env(ACTITO_API_KEY)%'",
+                        "#                entity: my_entity_name",
+                        "#                campaign_mapping:",
+                        "#                    #",
+                        "#                    # This map configures which campaigns are triggered in",
+                        "#                    # Actito system when particular Notification is emitted",
+                        "#                    #",
+                        "#                    # Element key is the FQCN of the Notification,",
+                        "#                    # \"campaign\" property has to match campaign name or ID",
+                        "#                    #",
+                        "#                    Ibexa\\Contracts\\OrderManagement\\Notification\\OrderStatusChange:",
+                        "#                        campaign: example_campaign_name_order_status_change",
+                        "#",
+                        "#                    Ibexa\\Contracts\\Payment\\Notification\\PaymentStatusChange:",
+                        "#                        campaign: example_campaign_name_payment_status_change",
+                        "#",
+                        "#                    Ibexa\\Contracts\\Shipping\\Notification\\ShipmentStatusChange:",
+                        "#                        campaign: example_campaign_name_shipment_status_change",
+                        "#",
+                        "#                    Ibexa\\Contracts\\User\\Notification\\UserPasswordReset:",
+                        "#                        campaign: example_campaign_name_user_password_reset",
+                        "#",
+                        "#                    Ibexa\\Contracts\\User\\Notification\\UserRegister:",
+                        "#                        campaign: example_campaign_name_user_register",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3c94ade96ad13dba67875b2da83cc605a67860bd"
+        }
+    }
+}
