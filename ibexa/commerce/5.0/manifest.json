@@ -8,9 +8,6 @@
         "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": ["all"],
         "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle": ["all"],
         "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle": ["all"],
-        "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
-            "all"
-        ],
         "FOS\\JsRoutingBundle\\FOSJsRoutingBundle": ["all"],
         "JMS\\TranslationBundle\\JMSTranslationBundle": ["all"],
         "Oneup\\FlysystemBundle\\OneupFlysystemBundle": ["all"],
