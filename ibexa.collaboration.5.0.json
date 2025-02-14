@@ -11,8 +11,26 @@
                     "config/": "%CONFIG_DIR%/"
                 }
             },
-            "files": [],
-            "ref": "8bd8049d0146efad71fb1c021c1a9add7d1b1f09"
+            "files": {
+                "config/routes/ibexa_collaboration.yaml": {
+                    "contents": [
+                        "ibexa.collaboration:",
+                        "    resource: '@IbexaCollaborationBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.rest.collaboration:",
+                        "    resource: '@IbexaCollaborationBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        "",
+                        "ibexa.collaboration.routing_admin:",
+                        "    resource: '@IbexaCollaborationBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5064f6c91f9a5f7f0416ae923ba8790006c82b04"
         }
     }
 }
