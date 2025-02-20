@@ -118,7 +118,7 @@ ibexa:
 
 framework:
     translator: { fallback: '%locale_fallback%' }
-    validation: { enable_annotations: true }
+    validation: { enable_attributes: true }
     default_locale: '%locale_fallback%'
     esi: true
     fragments: true
