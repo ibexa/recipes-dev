@@ -1,0 +1,49 @@
+{
+    "manifests": {
+        "ibexa/test-fixtures": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\TestFixtures\\IbexaTestFixturesBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-package": {
+                    "config/content.yaml": "%CONFIG_DIR%/packages/test_fixtures/content.yaml",
+                    "config/experience.yaml": "%CONFIG_DIR%/packages/test_fixtures/experience.yaml",
+                    "config/commerce.yaml": "%CONFIG_DIR%/packages/test_fixtures/commerce.yaml"
+                },
+                "add-lines": [
+                    {
+                        "file": "config/services.yaml",
+                        "content": "imports:",
+                        "position": "top",
+                        "requires": "ibexa/content"
+                    },
+                    {
+                        "file": "config/services.yaml",
+                        "position": "after_target",
+                        "target": "imports:",
+                        "content": "  - { resource: packages/test_fixtures/content.yaml }:",
+                        "requires": "ibexa/content"
+                    },
+                    {
+                        "file": "config/services.yaml",
+                        "position": "after_target",
+                        "target": "imports:",
+                        "content": "  - { resource: packages/test_fixtures/experience.yaml }:",
+                        "requires": "ibexa/experience"
+                    },
+                    {
+                        "file": "config/services.yaml",
+                        "position": "after_target",
+                        "target": "imports:",
+                        "content": "  - { resource: packages/test_fixtures/commerce.yaml }:",
+                        "requires": "ibexa/commerce"
+                    }
+                ]
+            },
+            "files": [],
+            "ref": "85abc6e1d46df9bf8e7817f095f29156dbef3c1e"
+        }
+    }
+}
