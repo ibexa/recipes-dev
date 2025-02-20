@@ -97,7 +97,6 @@ security:
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
             context: ibexa
             form_login:
-                require_previous_session: false
                 enable_csrf: true
                 login_path: login
                 check_path: login_check
