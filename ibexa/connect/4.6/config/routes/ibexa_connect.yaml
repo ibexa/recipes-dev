@@ -1,5 +1,0 @@
-ibexa.connect.rest.admin:
-    resource: '@IbexaConnectBundle/Resources/config/routing/rest_admin.yaml'
-    prefix: '%ibexa.rest.path_prefix%'
-    defaults:
-        siteaccess_group_whitelist: '%admin_group_name%'

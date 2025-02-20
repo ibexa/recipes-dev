@@ -11,8 +11,5 @@
   },
   "bundles": {
     "Ibexa\\Bundle\\Connect\\IbexaConnectBundle": ["all"]
-  },
-  "copy-from-recipe": {
-    "config/": "%CONFIG_DIR%/"
   }
 }
