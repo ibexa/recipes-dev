@@ -23,27 +23,27 @@
                         "file": "config/services.yaml",
                         "position": "after_target",
                         "target": "imports:",
-                        "content": "  - { resource: packages/test_fixtures/headless.yaml }:",
+                        "content": "  - { resource: packages/test_fixtures/headless.yaml }",
                         "requires": "ibexa/headless"
                     },
                     {
                         "file": "config/services.yaml",
                         "position": "after_target",
                         "target": "imports:",
-                        "content": "  - { resource: packages/test_fixtures/experience.yaml }:",
+                        "content": "  - { resource: packages/test_fixtures/experience.yaml }",
                         "requires": "ibexa/experience"
                     },
                     {
                         "file": "config/services.yaml",
                         "position": "after_target",
                         "target": "imports:",
-                        "content": "  - { resource: packages/test_fixtures/commerce.yaml }:",
+                        "content": "  - { resource: packages/test_fixtures/commerce.yaml }",
                         "requires": "ibexa/commerce"
                     }
                 ]
             },
             "files": [],
-            "ref": "eeb2d568787cd8658db8454383d11c78a42be21f"
+            "ref": "deabc2433585a4beaf06338f6075148ea9d7c342"
         }
     }
 }
