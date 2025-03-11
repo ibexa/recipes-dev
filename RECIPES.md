@@ -97,6 +97,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [5.0](ibexa/dashboard/5.0) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [5.0](ibexa/design-engine/5.0) |  |
 | [ibexa/discounts](https://packagist.org/packages/ibexa/discounts) | [5.0](ibexa/discounts/5.0) |  |
+| [ibexa/discounts-codes](https://packagist.org/packages/ibexa/discounts-codes) | [5.0](ibexa/discounts-codes/5.0) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [5.0](ibexa/docker/5.0) |  |
 | [ibexa/doctrine-schema](https://packagist.org/packages/ibexa/doctrine-schema) | [5.0](ibexa/doctrine-schema/5.0) |  |
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [5.0](ibexa/elasticsearch/5.0) |  |
