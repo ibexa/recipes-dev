@@ -6,3 +6,5 @@ ibexa:
                     token: '%env(string:IBEXA_CONNECT_TOKEN)%'
                     host: '%env(string:IBEXA_CONNECT_HOST)%'
                     api_path: '%env(string:IBEXA_CONNECT_API_PATH)%'
+                config:
+                    team_id: '%env(string:IBEXA_CONNECT_TEAM_ID)%'
