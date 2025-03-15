@@ -27,8 +27,6 @@
 # To get started with security, check out the documentation:
 # https://symfony.com/doc/current/security.html
 security:
-    enable_authenticator_manager: true
-
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
 
@@ -130,7 +128,6 @@ security:
         #    entry_point: Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
         #    context: ibexa
         #    form_login:
-        #        require_previous_session: false
         #        enable_csrf: true
         #    logout: ~
 
@@ -156,7 +153,6 @@ security:
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
             context: ibexa
             form_login:
-                require_previous_session: false
                 enable_csrf: true
                 login_path: login
                 check_path: login_check
