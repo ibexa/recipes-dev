@@ -148,13 +148,7 @@ framework:
             limit: 1
             interval: '5 minutes'
             lock_factory: 'lock.corporate_account_application.factory'
-        discount_code_applying:
-            policy: 'fixed_window'
-            limit: 20
-            interval: '1 minute'
-            lock_factory: 'lock.discount_code_applying.factory'
 
     lock:
         default: '%env(LOCK_DSN)%'
         corporate_account_application: '%env(IBEXA_LOCK_DSN)%'
-        discount_code_applying: '%env(IBEXA_LOCK_DSN)%'
