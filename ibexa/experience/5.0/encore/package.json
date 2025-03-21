@@ -38,6 +38,7 @@
     "dev-server": "encore dev-server",
     "dev": "encore dev",
     "watch": "encore dev --watch",
-    "build": "encore production --progress"
+    "build": "encore production --progress",
+    "ibexa:ckeditor-rte:install": "if [ -d vendor/ibexa/fieldtype-richtext-rte ]; then yarn --cwd vendor/ibexa/fieldtype-richtext-rte install; fi"
   }
 }
