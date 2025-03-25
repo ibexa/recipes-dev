@@ -1,0 +1,15 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\FieldTypeRichTextRTEBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "add-lines": [{
+    "file": "composer.json",
+    "content": "\"test\": \"script-aaaa\"",
+    "position": "after_target",
+    "target": "\"yarn install\": \"script\","
+  }]
+}
