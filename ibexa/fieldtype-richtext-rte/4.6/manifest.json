@@ -1,7 +1,7 @@
 {
   "aliases": [],
   "bundles": {
-    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\FieldTypeRichTextRTEBundle": ["all"]
+    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\IbexaFieldTypeRichTextRTEBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
@@ -9,7 +9,7 @@
   "add-lines": [
     {
         "file": "composer.json",
-        "content": "\"ckeditor-rte-copy.sh\": \"script\"",
+        "content": "\"yarn --cwd vendor\/ibexa\/fieldtype-richtext-rte install\": \"script\",",
         "position": "after_target",
         "target": "\"yarn install\": \"script\","
     }
