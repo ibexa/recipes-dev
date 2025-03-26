@@ -403,6 +403,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connect": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/connector-actito": [
             "4.6",
             "5.0"
