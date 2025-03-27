@@ -136,7 +136,7 @@ ibexa:
             user_content_type_identifier: ['customer']
             user_registration:
                 user_type_identifier: 'customer'
-                group_id: 57
+                group_remote_id: ibexa_customer_group
 
         corporate_group:
             languages: [eng-GB]
