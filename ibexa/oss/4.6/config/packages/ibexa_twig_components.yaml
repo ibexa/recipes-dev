@@ -1,24 +1,8 @@
-## Uncomment configuration below if you wish to configure twig components
+## Uncomment and change configuration below if you wish to configure twig components
 
 #ibexa_twig_components:
 #    example_components_group:
-#        example_template_component:
-#            type: template
-#            arguments:
-#                template: 'example.html.twig'
 #        example_html_component:
 #            type: html
 #            arguments:
 #                content: 'some example html content'
-#        example_script_component:
-#            type: script
-#            arguments:
-#                src: 'some example src'
-#        example_controller_component:
-#            type: controller
-#            arguments:
-#                controller: 'App\Controller\ExampleController::exampleAction'
-#        example_stylesheet_component:
-#            type: stylesheet
-#            arguments:
-#                href: 'some example href'
