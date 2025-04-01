@@ -109,6 +109,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [5.0](ibexa/fieldtype-page/5.0) |  |
 | [ibexa/fieldtype-query](https://packagist.org/packages/ibexa/fieldtype-query) | [5.0](ibexa/fieldtype-query/5.0) |  |
 | [ibexa/fieldtype-richtext](https://packagist.org/packages/ibexa/fieldtype-richtext) | [5.0](ibexa/fieldtype-richtext/5.0) |  |
+| [ibexa/fieldtype-richtext-rte](https://packagist.org/packages/ibexa/fieldtype-richtext-rte) | [5.0](ibexa/fieldtype-richtext-rte/5.0) |  |
 | [ibexa/form-builder](https://packagist.org/packages/ibexa/form-builder) | [5.0](ibexa/form-builder/5.0) |  |
 | [ibexa/graphql](https://packagist.org/packages/ibexa/graphql) | [5.0](ibexa/graphql/5.0) |  |
 | [ibexa/headless](https://packagist.org/packages/ibexa/headless) | [5.0](ibexa/headless/5.0) | `cms-headless`, `cmsheadless`, `dxp-headless`, `dxpheadless`, `headless`, `ibexa-headless`, `ibexaheadless` |

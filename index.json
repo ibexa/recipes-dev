@@ -643,6 +643,10 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/fieldtype-richtext-rte": [
+            "4.6",
+            "5.0"
+        ],
         "ibexa/form-builder": [
             "4.0",
             "4.1",
