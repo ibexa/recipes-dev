@@ -1,3 +1,84 @@
 {
-    "extends": "@ibexa/ts-config"
+    "extends": "@ibexa/ts-config",
+    "include": [
+        "vendor/ibexa/**/*.ts",
+        "vendor/ibexa/**/*.tsx"
+    ],
+    "exclude": [
+        "vendor/ibexa/**/node_modules/**/*.ts",
+        "vendor/ibexa/**/vendors/**/*.ts"
+    ],
+    "compilerOptions": {
+        "paths": {
+            "@ibexa-tree-builder/*": [
+                "./vendor/ibexa/tree-builder/*"
+            ],
+            "@ibexa-taxonomy/*": [
+                "./vendor/ibexa/taxonomy/*"
+            ],
+            "@ibexa-shipping/*": [
+                "./vendor/ibexa/shipping/*"
+            ],
+            "@ibexa-seo/*": [
+                "./vendor/ibexa/seo/*"
+            ],
+            "@ibexa-product-catalog/*": [
+                "./vendor/ibexa/product-catalog/*"
+            ],
+            "@ibexa-page-builder/*": [
+                "./vendor/ibexa/page-builder/*"
+            ],
+            "@ibexa-order-management/*": [
+                "./vendor/ibexa/order-management/*"
+            ],
+            "@ibexa-image-picker/*": [
+                "./vendor/ibexa/image-picker/*"
+            ],
+            "@ibexa-headless-assets/*": [
+                "./vendor/ibexa/headless-assets/*"
+            ],
+            "@ibexa-dashboard/*": [
+                "./vendor/ibexa/dashboard/*"
+            ],
+            "@ibexa-corporate-account/*": [
+                "./vendor/ibexa/corporate-account/*"
+            ],
+            "@ibexa-content-tree/*": [
+                "./vendor/ibexa/content-tree/*"
+            ],
+            "@ibexa-connector-qualifio/*": [
+                "./vendor/ibexa/connector-qualifio/*"
+            ],
+            "@ibexa-connect/*": [
+                "./vendor/ibexa/connect/*"
+            ],
+            "@ibexa-checkout/*": [
+                "./vendor/ibexa/checkout/*"
+            ],
+            "@ibexa-cart/*": [
+                "./vendor/ibexa/cart/*"
+            ],
+            "@react-dom/*": [
+                "./public/bundles/ibexaadminuiassets/vendors/react-dom/*"
+            ],
+            "@ibexa-admin-ui-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/*"
+            ],
+            "@ds-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-assets/dist/*"
+            ],
+            "@ds-components/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-components/dist/*"
+            ],
+            "@ibexa-admin-ui/*": [
+                "./vendor/ibexa/admin-ui/*"
+            ],
+            "@ibexa-admin-ui-helpers/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/Resources/public/js/scripts/helpers/*"
+            ],
+            "@ibexa-admin-ui-modules/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/ui-dev/src/modules/*"
+            ]
+        }
+    }
 }
