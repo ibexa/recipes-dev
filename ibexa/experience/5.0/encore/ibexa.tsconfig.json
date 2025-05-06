@@ -6,7 +6,8 @@
     ],
     "exclude": [
         "vendor/ibexa/**/node_modules/**/*.ts",
-        "vendor/ibexa/**/vendors/**/*.ts"
+        "vendor/ibexa/**/vendors/**/*.ts",
+        "vendor/ibexa/**/vendors/**/*.tsx"
     ],
     "compilerOptions": {
         "paths": {
