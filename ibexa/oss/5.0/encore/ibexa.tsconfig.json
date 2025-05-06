@@ -1,3 +1,33 @@
 {
-    "extends": "@ibexa/ts-config"
+    "extends": "@ibexa/ts-config",
+    "include": [
+        "vendor/ibexa/**/*.ts",
+        "vendor/ibexa/**/*.tsx"
+    ],
+    "exclude": [
+        "vendor/ibexa/**/node_modules/**/*.ts",
+        "vendor/ibexa/**/vendors/**/*.ts"
+    ],
+    "compilerOptions": {
+        "paths": {
+            "@ids-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-assets/dist/*"
+            ],
+            "@ids-components/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-components/dist/*"
+            ],
+            "@ibexa-admin-ui-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/*"
+            ],
+            "@ibexa-admin-ui-helpers/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/Resources/public/js/scripts/helpers/*"
+            ],
+            "@ibexa-admin-ui-modules/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/ui-dev/src/modules/*"
+            ],
+            "@ibexa-admin-ui/*": [
+                "./vendor/ibexa/admin-ui/*"
+            ]
+        }
+    }
 }
