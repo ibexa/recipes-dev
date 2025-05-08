@@ -10,7 +10,6 @@ const {
 Encore.reset();
 Encore.setOutputPath('public/build/')
     .setPublicPath('/build')
-    .enableStimulusBridge('./assets/controllers.json')
     .enableSassLoader()
     .enableReactPreset()
     .enableSingleRuntimeChunk()

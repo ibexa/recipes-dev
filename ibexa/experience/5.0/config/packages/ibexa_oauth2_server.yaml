@@ -64,7 +64,12 @@
 #    # Configures different persistence methods that can be used by the bundle for saving client and token data.
 #    # Only one persistence method can be configured at a time.
 #    persistence:
-#        custom: ibexa
+#        custom:
+#            access_token_manager: Ibexa\OAuth2Server\Manager\AccessTokenManager
+#            authorization_code_manager: Ibexa\OAuth2Server\Manager\AuthorizationCodeManager
+#            client_manager: Ibexa\OAuth2Server\Manager\ClientManager
+#            refresh_token_manager: Ibexa\OAuth2Server\Manager\RefreshTokenManager
+#            credentials_revoker: Ibexa\OAuth2Server\CredentialsRevoker\TokenRevoker
 #
 #    # Set a custom prefix that replaces the default 'ROLE_OAUTH2_' role prefix
 #    role_prefix:          ROLE_OAUTH2_

@@ -7,7 +7,6 @@ const customConfigs = require('./ibexa.webpack.custom.configs.js');
 Encore.reset();
 Encore.setOutputPath('public/build/')
     .setPublicPath('/build')
-    .enableStimulusBridge('./assets/controllers.json')
     .enableSassLoader()
     .enableReactPreset()
     .enableSingleRuntimeChunk()
