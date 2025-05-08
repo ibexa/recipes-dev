@@ -1,0 +1,2 @@
+ibexa.storybook:
+  resource: '@IbexaDesignSystemStorybookBundle/Resources/config/routing.yaml'

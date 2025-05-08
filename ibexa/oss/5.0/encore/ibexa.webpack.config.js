@@ -19,6 +19,9 @@ module.exports = (Encore) => {
         .enableTypeScriptLoader((tsConfig) => {
             tsConfig.configFile = path.resolve(__dirname, 'tsconfig.json');
         })
+        .enableForkedTypeScriptTypesChecking((tsConfig) => {
+            tsConfig.async = true;
+        })
         .enableReactPreset()
         .enableSingleRuntimeChunk();
 
