@@ -1,3 +1,67 @@
 {
-    "extends": "@ibexa/ts-config"
+    "extends": "@ibexa/ts-config",
+    "include": [
+        "vendor/ibexa/**/*.ts",
+        "vendor/ibexa/**/*.tsx"
+    ],
+    "exclude": [
+        "vendor/ibexa/**/node_modules/**/*.ts",
+        "vendor/ibexa/**/vendors/**/*.ts",
+        "vendor/ibexa/**/vendors/**/*.tsx"
+    ],
+    "compilerOptions": {
+        "paths": {
+            "@ids-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/*"
+            ],
+            "@ids-components/*": [
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-components/dist/*"
+            ],
+            "@ibexa-admin-ui-assets/*": [
+                "./vendor/ibexa/admin-ui-assets/*"
+            ],
+            "@ibexa-admin-ui-helpers/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/Resources/public/js/scripts/helpers/*"
+            ],
+            "@ibexa-admin-ui-modules/*": [
+                "./vendor/ibexa/admin-ui/src/bundle/ui-dev/src/modules/*"
+            ],
+            "@ibexa-admin-ui/*": [
+                "./vendor/ibexa/admin-ui/*"
+            ],
+            "@ibexa-connect/*": [
+                "./vendor/ibexa/connect/*"
+            ],
+            "@ibexa-content-tree/*": [
+                "./vendor/ibexa/content-tree/*"
+            ],
+            "@ibexa-corporate-account/*": [
+                "./vendor/ibexa/corporate-account/*"
+            ],
+            "@ibexa-dashboard/*": [
+                "./vendor/ibexa/dashboard/*"
+            ],
+            "@ibexa-headless-assets/*": [
+                "./vendor/ibexa/headless-assets/*"
+            ],
+            "@ibexa-image-picker/*": [
+                "./vendor/ibexa/image-picker/*"
+            ],
+            "@ibexa-page-builder/*": [
+                "./vendor/ibexa/page-builder/*"
+            ],
+            "@ibexa-product-catalog/*": [
+                "./vendor/ibexa/product-catalog/*"
+            ],
+            "@ibexa-seo/*": [
+                "./vendor/ibexa/seo/*"
+            ],
+            "@ibexa-taxonomy/*": [
+                "./vendor/ibexa/taxonomy/*"
+            ],
+            "@ibexa-tree-builder/*": [
+                "./vendor/ibexa/tree-builder/*"
+            ]
+        }
+    }
 }
