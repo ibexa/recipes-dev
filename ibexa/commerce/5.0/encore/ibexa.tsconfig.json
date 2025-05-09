@@ -12,10 +12,10 @@
     "compilerOptions": {
         "paths": {
             "@ids-assets/*": [
-                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-assets/dist/*"
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/*"
             ],
             "@ids-components/*": [
-                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/design-system-components/dist/*"
+                "./vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-components/dist/*"
             ],
             "@ibexa-admin-ui-assets/*": [
                 "./vendor/ibexa/admin-ui-assets/*"
