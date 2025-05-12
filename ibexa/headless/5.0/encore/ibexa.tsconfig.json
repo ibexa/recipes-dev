@@ -1,13 +1,11 @@
 {
     "extends": "@ibexa/ts-config",
     "include": [
-        "vendor/ibexa/**/*.ts",
-        "vendor/ibexa/**/*.tsx"
+        "vendor/ibexa/**/*"
     ],
     "exclude": [
-        "vendor/ibexa/**/node_modules/**/*.ts",
-        "vendor/ibexa/**/vendors/**/*.ts",
-        "vendor/ibexa/**/vendors/**/*.tsx"
+        "vendor/ibexa/**/node_modules/**/*",
+        "vendor/ibexa/**/vendors/**/*"
     ],
     "compilerOptions": {
         "paths": {
