@@ -11,6 +11,7 @@
         "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
     },
     "copy-from-recipe": {
-        "config/": "%CONFIG_DIR%/"
+        "config/": "%CONFIG_DIR%/",
+        ".env.behat": ".env.behat"
     }
 }
