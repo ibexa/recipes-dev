@@ -167,6 +167,7 @@
         "yarn install": "script",
         "ibexa:encore:compile --config-name app": "symfony-cmd",
         "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
+        "node ibexa.tsconfig.manager.mjs": "script",
         "ibexa:encore:compile": "symfony-cmd"
     }
 }
