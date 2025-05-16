@@ -1,11 +1,10 @@
-@import 'normalize.css';
-@import 'custom-normalize';
-@import 'variables';
+@use 'normalize.css';
+@use 'custom-normalize';
 
-@import 'main';
-@import 'header';
-@import 'documentation';
-@import 'tutorials';
-@import 'training';
-@import 'contact';
-@import 'footer';
+@use 'main';
+@use 'header';
+@use 'documentation';
+@use 'tutorials';
+@use 'training';
+@use 'contact';
+@use 'footer';
