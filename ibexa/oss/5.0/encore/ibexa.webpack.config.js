@@ -5,6 +5,8 @@ const configSetups = require('./var/encore/ibexa.config.setup.js');
 const path = require('path');
 
 module.exports = (Encore) => {
+    process.env.NODE_ENV ??= Encore.isProduction() ? 'production' : 'development';
+
     Encore.setOutputPath('public/assets/ibexa/build')
         .setPublicPath('/assets/ibexa/build')
         .addExternals({
