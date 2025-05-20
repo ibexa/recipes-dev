@@ -82,6 +82,7 @@
         "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": ["all"],
         "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
         "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
+        "Ibexa\\Bundle\\ProductCatalogDateTimeAttribute\\IbexaProductCatalogDateTimeAttributeBundle": ["all"],
         "Ibexa\\Bundle\\Cart\\IbexaCartBundle": ["all"],
         "Ibexa\\Bundle\\Checkout\\IbexaCheckoutBundle": ["all"],
         "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
