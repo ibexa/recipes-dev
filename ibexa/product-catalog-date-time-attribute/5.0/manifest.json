@@ -1,9 +1,4 @@
 {
   "aliases": [],
-  "bundles": {
-    "Ibexa\\Bundle\\ProductCatalogDateTimeAttribute\\IbexaProductCatalogDateTimeAttributeBundle": ["all"]
-  },
-  "copy-from-recipe": {
-    "config/": "%CONFIG_DIR%/"
-  }
+  "bundles": {}
 }
