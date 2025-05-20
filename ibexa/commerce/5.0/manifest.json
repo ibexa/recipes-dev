@@ -83,6 +83,8 @@
         "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
         "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
         "Ibexa\\Bundle\\Cart\\IbexaCartBundle": ["all"],
+        "Ibexa\\Bundle\\Collaboration\\IbexaCollaborationBundle": ["all"],
+        "Ibexa\\Bundle\\Share\\IbexaShareBundle": ["all"],
         "Ibexa\\Bundle\\Checkout\\IbexaCheckoutBundle": ["all"],
         "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
         "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],

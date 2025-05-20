@@ -75,6 +75,8 @@
         ],
         "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": ["all"],
         "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": ["all"],
+        "Ibexa\\Bundle\\Collaboration\\IbexaCollaborationBundle": ["all"],
+        "Ibexa\\Bundle\\Share\\IbexaShareBundle": ["all"],
         "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle": ["all"],
         "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": ["all"],
         "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": ["all"],
