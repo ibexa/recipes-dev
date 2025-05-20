@@ -69,6 +69,8 @@
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
+        "Ibexa\\Bundle\\ConnectorAi\\IbexaConnectorAiBundle": ["all"],
+        "Ibexa\\Bundle\\ConnectorOpenAi\\IbexaConnectorOpenAiBundle": ["all"],
         "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": ["all"],
         "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
         "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": ["all"],

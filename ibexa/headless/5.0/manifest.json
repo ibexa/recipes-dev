@@ -59,6 +59,8 @@
         "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": ["all"],
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
+        "Ibexa\\Bundle\\ConnectorAi\\IbexaConnectorAiBundle": ["all"],
+        "Ibexa\\Bundle\\ConnectorOpenAi\\IbexaConnectorOpenAiBundle": ["all"],
         "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": ["all"],
         "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": ["all"],
         "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": ["all"],
