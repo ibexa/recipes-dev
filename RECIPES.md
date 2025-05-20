@@ -153,6 +153,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/taxonomy](https://packagist.org/packages/ibexa/taxonomy) | [5.0](ibexa/taxonomy/5.0) |  |
 | [ibexa/test-fixtures](https://packagist.org/packages/ibexa/test-fixtures) | [5.0](ibexa/test-fixtures/5.0) |  |
 | [ibexa/tree-builder](https://packagist.org/packages/ibexa/tree-builder) | [5.0](ibexa/tree-builder/5.0) |  |
+| [ibexa/twig-components](https://packagist.org/packages/ibexa/twig-components) | [5.0](ibexa/twig-components/5.0) |  |
 | [ibexa/user](https://packagist.org/packages/ibexa/user) | [5.0](ibexa/user/5.0) |  |
 | [ibexa/version-comparison](https://packagist.org/packages/ibexa/version-comparison) | [5.0](ibexa/version-comparison/5.0) |  |
 | [ibexa/workflow](https://packagist.org/packages/ibexa/workflow) | [5.0](ibexa/workflow/5.0) |  |
