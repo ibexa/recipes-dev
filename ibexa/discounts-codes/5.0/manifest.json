@@ -1,8 +1,6 @@
 {
   "aliases": [],
-  "bundles": {
-    "Ibexa\\Bundle\\DiscountsCodes\\IbexaDiscountsCodesBundle": ["all"]
-  },
+  "bundles": {},
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
   }
