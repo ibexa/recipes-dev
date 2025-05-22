@@ -110,9 +110,8 @@ ibexa:
 
             assets:
                 icon_sets:
-                    public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
-                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
-                default_icon_set: streamlineicons
+                    ids_icons: /bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg
+                default_icon_set: ids_icons
 
             page_layout: "@ibexadesign/pagelayout.html.twig"
             user_content_type_identifier: ['user', 'customer', 'member']

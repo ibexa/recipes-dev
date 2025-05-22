@@ -83,8 +83,8 @@ ibexa:
 
             assets:
                 icon_sets:
-                    public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
-                default_icon_set: public_icons
+                    ids_icons: /bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg
+                default_icon_set: ids_icons
             notifier:
                 subscriptions:
                     Ibexa\Contracts\User\Notification\UserPasswordReset:
