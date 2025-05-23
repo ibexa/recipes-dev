@@ -1,10 +1,6 @@
 parameters:
     locale_fallback: en
 
-    # Identifier used to generate the CSRF token. Commenting this line will result in authentication
-    # issues both in AdminUI and REST calls
-    ibexa.rest.csrf_token_intention: authenticate
-
     # You can uncomment following parameters to override the setting.
     # Their values correspond to the defaults being used.
 
