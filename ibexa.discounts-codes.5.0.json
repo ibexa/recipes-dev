@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "ibexa/discounts-codes": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\DiscountsCodes\\IbexaDiscountsCodesBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_discounts_codes.yaml": {
+                    "contents": [
+                        "ibexa.discounts_codes.rest:",
+                        "    resource: '@IbexaDiscountsCodesBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5847861326c54e68182fdf44618130027e84f196"
+        }
+    }
+}
