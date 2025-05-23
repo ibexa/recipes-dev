@@ -3,10 +3,10 @@ framework:
     form:
         csrf_protection:
             token_id: submit
+            field_attr: {}
 
     csrf_protection:
         stateless_token_ids:
             - submit
-            # Stateless CSRF protection is temporary not supported by ibexa/admin-ui
-            # - authenticate
+            - authenticate
             - logout
