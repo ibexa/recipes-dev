@@ -96,9 +96,9 @@
   "add-lines": [
     {
       "file": "composer.json",
-      "content": "\"yarn ibexa-generate-tsconfig\": \"script\",",
+      "content": "        \"yarn-ibexa-generate-tsconfig\": \"yarn ibexa-generate-tsconfig\",",
       "position": "after_target",
-      "target": "\"yarn install\": \"script\","
-    }
+      "target": "        \"yarn install\": \"script\""
+  }
   ]
 }
