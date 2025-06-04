@@ -35,45 +35,45 @@ ibexa:
                 siteaccess_list: [site]
             assets:
                 icon_sets:
-                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
-                default_icon_set: streamlineicons
+                    ids_icons: /bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg
+                default_icon_set: ids_icons
             content_type:
                 about:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#about'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#info-square'
                 article:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#article'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#file-text'
                 blog:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#app-blog'
                 blog_post:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog_post'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#note-blog'
                 editor:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#author'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#user-editor'
                 folder:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#folder'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#folder'
                 form:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#form'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#form-checkbox-square'
                 place:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#place'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#pin-location'
                 product:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#product'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#product'
                 field:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#field'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#form-input'
                 user:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#user'
                 user_group:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user_group'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#user-group'
                 file:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#file'
                 gallery:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#gallery'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#image-gallery'
                 image:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#image'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#image'
                 video:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#video'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#video-play'
                 landing_page:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#layout-navbar'
                 default-config:
-                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#file'
             user_content_type_identifier: ['user', 'editor']
             user_profile:
                 enabled: true
