@@ -53,7 +53,7 @@ ibexa:
                 form:
                     thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#form-checkbox-square'
                 place:
-                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#place' # TODO: missing icon
+                    thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#pin-location'
                 product:
                     thumbnail: '/bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg#product'
                 field:
