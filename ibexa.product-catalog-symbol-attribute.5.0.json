@@ -12,7 +12,7 @@
                 }
             },
             "files": {
-                "config/ibexa_product_catalog_symbol_attribute.yaml": {
+                "config/packages/ibexa_product_catalog_symbol_attribute.yaml": {
                     "contents": [
                         "# Example configuration for a custom symbol attribute:",
                         "",
@@ -29,7 +29,7 @@
                     "executable": false
                 }
             },
-            "ref": "55f76285a51e15b0092ee872a77a182f6360144d"
+            "ref": "70461e059685a964beb4750f8653a3dbb2329697"
         }
     }
 }
