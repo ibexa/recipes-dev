@@ -28,10 +28,6 @@ ibexa:
             subtree_paths:
                 content: /1/2/
                 media: /1/43/
-            assets:
-                icon_sets:
-                    ids_icons: /bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg
-                default_icon_set: ids_icons
             user_content_type_identifier: ['user', 'editor']
             user_profile:
                 enabled: true

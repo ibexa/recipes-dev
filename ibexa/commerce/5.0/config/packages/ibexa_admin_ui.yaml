@@ -33,10 +33,6 @@ ibexa:
                 media: /1/43/
             page_builder:
                 siteaccess_list: [ site ]
-            assets:
-                icon_sets:
-                    ids_icons: /bundles/ibexaadminuiassets/vendors/ids-assets/dist/img/all-icons.svg
-                default_icon_set: ids_icons
             user_content_type_identifier: ['user', 'customer', 'member', 'editor']
             user_profile:
                 enabled: true
