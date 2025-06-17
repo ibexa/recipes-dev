@@ -1,11 +1,13 @@
-const Encore = require('@symfony/webpack-encore');
 const path = require('path');
-const getIbexaConfig = require('./ibexa.webpack.config.js');
-const ibexaConfig = getIbexaConfig(Encore);
-const customConfigs = require('./ibexa.webpack.custom.configs.js');
-const {
-    isReactBlockPathCreated,
-} = require('./ibexa.webpack.config.react.blocks.js');
+const fs = require('fs');
+
+const Encore = require('@symfony/webpack-encore');
+const enableWebpackSymlinks = require('@ibexa/frontend-config/dev/enable-symlinks');
+const getIbexaConfig = require('@ibexa/frontend-config/webpack-config');
+const customConfigs = require('@ibexa/frontend-config/webpack-config/custom');
+
+const ibexaConfig = getIbexaConfig(Encore, null, enableWebpackSymlinks);
+const isReactBlockPathCreated = fs.existsSync('./assets/page-builder/react/blocks');
 
 Encore.reset();
 Encore.setOutputPath('public/build/')
