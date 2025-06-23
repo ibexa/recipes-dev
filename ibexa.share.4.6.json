@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "ibexa/share": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Share\\IbexaShareBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": [],
+            "ref": "83df38f5c195d3958c6d25043006501090854b0c"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/personalization": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_personalization.yaml": {
+                    "contents": [
+                        "ibexa.personalization:",
+                        "    resource: '@IbexaPersonalizationBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.personalization.rest:",
+                        "    resource: \"@IbexaPersonalizationBundle/Resources/config/routing_rest.yaml\"",
+                        "    prefix:   '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "747ceddb60ed5c80d14b980f5e20a2c2b74de764"
+        }
+    }
+}
