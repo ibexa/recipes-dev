@@ -12,5 +12,4 @@ ibexa:
                 product_list_filters:
                     - product_type
                     - product_availability
-                    - product_price
-
+                    - product_custom_price
