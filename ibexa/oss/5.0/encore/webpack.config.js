@@ -2,9 +2,19 @@ const path = require('path');
 
 const Encore = require('@symfony/webpack-encore');
 const getIbexaConfig = require('@ibexa/frontend-config/webpack-config');
-const customConfigs = require('@ibexa/frontend-config/webpack-config/custom');
+const getCustomConfigs = require('@ibexa/frontend-config/webpack-config/custom');
 
-const ibexaConfig = getIbexaConfig(Encore);
+const bundles = require('./var/encore/ibexa.config.js');
+const managers = require('./var/encore/ibexa.config.manager.js');
+const setups = require('./var/encore/ibexa.config.setup.js');
+const customConfigsPaths = require('./var/encore/ibexa.webpack.custom.config.js');
+
+const ibexaConfig = getIbexaConfig(Encore, {
+    bundles,
+    managers,
+    setups
+});
+const customConfigs = getCustomConfigs(Encore, customConfigsPaths);
 
 Encore.reset();
 Encore.setOutputPath('public/build/')
