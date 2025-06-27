@@ -5,7 +5,8 @@
     ],
     "exclude": [
         "vendor/ibexa/**/node_modules/**/*",
-        "vendor/ibexa/**/vendors/**/*"
+        "vendor/ibexa/**/vendors/**/*",
+        "vendor/ibexa/**/vendor/**/*"
     ],
     "compilerOptions": {
         "paths": {}
