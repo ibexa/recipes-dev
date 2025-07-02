@@ -11,6 +11,9 @@
     "sass-loader": "^12.5.0",
     "file-loader": "^6.0.0"
   },
+  "resolutions": {
+    "@types/glob": "8.1.0"
+  },
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
