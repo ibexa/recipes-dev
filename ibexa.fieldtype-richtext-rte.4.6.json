@@ -1,0 +1,58 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-richtext-rte": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\IbexaFieldTypeRichTextRTEBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "add-lines": [
+                    {
+                        "file": "composer.json",
+                        "content": "\"yarn --cwd vendor/ibexa/fieldtype-richtext-rte install\": \"script\",",
+                        "position": "after_target",
+                        "target": "\"yarn install\": \"script\","
+                    }
+                ],
+                "env": {
+                    "#0": "The following values can be obtained in CKEditor Customer Portal > Cloud environments. See https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/real-time-collaboration/real-time-collaboration-integration.html for more details.",
+                    "CKEDITOR_LICENSE_KEY": "",
+                    "CKEDITOR_ENVIRONMENT_ID": "",
+                    "CKEDITOR_ENVIRONMENT_SECRET": "",
+                    "CKEDITOR_WEB_SOCKET_URL": ""
+                }
+            },
+            "files": {
+                "config/packages/ibexa_fieldtype_richtext_rte.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    system:",
+                        "        admin_group:",
+                        "            fieldtype_richtext_rte:",
+                        "                license_key: '%env(CKEDITOR_LICENSE_KEY)%'",
+                        "                environment_id: '%env(CKEDITOR_ENVIRONMENT_ID)%'",
+                        "                environment_secret: '%env(CKEDITOR_ENVIRONMENT_SECRET)%'",
+                        "                web_socket_url: '%env(CKEDITOR_WEB_SOCKET_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_fieldtype_richtext_rte.yaml": {
+                    "contents": [
+                        "ibexa.fieldtype_richtext_rte.admin:",
+                        "    resource: '@IbexaFieldTypeRichTextRTEBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "40cc51261f6a28082b0163b5772356a57720cf4f"
+        }
+    }
+}
