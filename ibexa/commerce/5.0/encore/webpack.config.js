@@ -11,7 +11,9 @@ Encore.reset();
 Encore.setOutputPath('public/build/')
     .setPublicPath('/build')
     .enableSassLoader()
-    .enableReactPreset()
+    .enableReactPreset((options) => {
+        options.runtime = 'classic';
+    })
     .enableSingleRuntimeChunk()
     .copyFiles({
         from: './assets/images',
