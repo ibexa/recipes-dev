@@ -24,7 +24,9 @@ module.exports = (Encore) => {
         .enableForkedTypeScriptTypesChecking((tsConfig) => {
             tsConfig.async = true;
         })
-        .enableReactPreset()
+        .enableReactPreset((options) => {
+            options.runtime = 'classic';
+        })
         .enableSingleRuntimeChunk();
 
     configSetups.forEach((configSetupPath) => {
