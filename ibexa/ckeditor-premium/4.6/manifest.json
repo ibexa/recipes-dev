@@ -1,0 +1,14 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\CkeditorPremium\\IbexaCkeditorPremiumBundle": ["all"]
+  },
+  "add-lines": [
+    {
+      "file": "composer.json",
+      "content": "\"yarn --cwd vendor\/ibexa\/ckeditor-premium install\": \"script\",",
+      "position": "after_target",
+      "target": "\"yarn install\": \"script\","
+    }
+  ],
+}

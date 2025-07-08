@@ -6,14 +6,6 @@
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
   },
-  "add-lines": [
-    {
-        "file": "composer.json",
-        "content": "\"yarn --cwd vendor\/ibexa\/fieldtype-richtext-rte install\": \"script\",",
-        "position": "after_target",
-        "target": "\"yarn install\": \"script\","
-    }
-  ],
   "env": {
     "#0": "The following values can be obtained in CKEditor Customer Portal > Cloud environments. See https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/real-time-collaboration/real-time-collaboration-integration.html for more details.",
     "CKEDITOR_LICENSE_KEY": "",
