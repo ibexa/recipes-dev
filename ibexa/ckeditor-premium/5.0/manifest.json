@@ -10,5 +10,5 @@
       "position": "after_target",
       "target": "\"yarn install\": \"script\","
     }
-  ],
+  ]
 }
