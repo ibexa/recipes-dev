@@ -65,7 +65,6 @@
             "all"
         ],
         "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": ["all"],
-        "Ibexa\\Bundle\\Icons\\IbexaIconsBundle": ["all"],
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
