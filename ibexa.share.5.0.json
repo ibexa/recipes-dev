@@ -11,8 +11,19 @@
                     "config/": "%CONFIG_DIR%/"
                 }
             },
-            "files": [],
-            "ref": "83df38f5c195d3958c6d25043006501090854b0c"
+            "files": {
+                "config/routes/ibexa_share.yaml": {
+                    "contents": [
+                        "ibexa.share.routing_admin:",
+                        "    resource: '@IbexaShareBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "9ee4f56fde6864e2edf2a33b9e2e256da5097e42"
         }
     }
 }
