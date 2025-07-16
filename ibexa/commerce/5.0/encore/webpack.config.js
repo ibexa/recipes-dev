@@ -1,25 +1,15 @@
-const path = require('path');
 const fs = require('fs');
-
+const path = require('path');
 const Encore = require('@symfony/webpack-encore');
-const getIbexaConfig = require('@ibexa/frontend-config/webpack-config');
-const getCustomConfigs = require('@ibexa/frontend-config/webpack-config/custom');
-
-const bundles = require('./var/encore/ibexa.config.js');
-const managers = require('./var/encore/ibexa.config.manager.js');
-const setups = require('./var/encore/ibexa.config.setup.js');
+const getWebpackConfigs = require('@ibexa/frontend-config/webpack-config/get-configs');
 const customConfigsPaths = require('./var/encore/ibexa.webpack.custom.config.js');
 
-const ibexaConfig = getIbexaConfig(Encore, {
-    bundles,
-    managers,
-    setups
-});
-const customConfigs = getCustomConfigs(Encore, customConfigsPaths);
+const customConfigs = getWebpackConfigs(Encore, customConfigsPaths);
 const isReactBlockPathCreated = fs.existsSync('./assets/page-builder/react/blocks');
 
 Encore.reset();
-Encore.setOutputPath('public/build/')
+Encore
+    .setOutputPath('public/build/')
     .setPublicPath('/build')
     .enableSassLoader()
     .enableReactPreset((options) => {
@@ -31,32 +21,30 @@ Encore.setOutputPath('public/build/')
         to: 'images/[path][name].[ext]',
         pattern: /\.(png|svg)$/,
     })
-
-    // enables @babel/preset-env polyfills
     .configureBabelPresetEnv((config) => {
         config.useBuiltIns = 'usage';
         config.corejs = 3;
     });
 
-// Welcome page stylesheets
-Encore.addEntry('welcome-page-css', [
-    path.resolve(__dirname, './assets/scss/welcome-page.scss'),
-]);
+    // Welcome page stylesheets
+    Encore.addEntry('welcome-page-css', [
+        path.resolve(__dirname, './assets/scss/welcome-page.scss'),
+    ]);
 
-// Welcome page javascripts
-Encore.addEntry('welcome-page-js', [
-    path.resolve(__dirname, './assets/js/welcome.page.js'),
-]);
+    // Welcome page javascripts
+    Encore.addEntry('welcome-page-js', [
+        path.resolve(__dirname, './assets/js/welcome.page.js'),
+    ]);
 
-if (isReactBlockPathCreated) {
-    // React Blocks javascript
-    Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
-}
+    if (isReactBlockPathCreated) {
+        // React Blocks javascript
+        Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
+    }
 
-Encore.addEntry('app', './assets/app.js');
+    Encore.addEntry('app', './assets/app.js');
 
-const projectConfig = Encore.getWebpackConfig();
+    const projectConfig = Encore.getWebpackConfig();
 
-projectConfig.name = 'app';
+    projectConfig.name = 'app';
 
-module.exports = [ibexaConfig, ...customConfigs, projectConfig];
+module.exports = [...customConfigs, projectConfig];
