@@ -130,7 +130,7 @@
         "#8": "- https://symfony.com/doc/4.4/components/cache/adapters/redis_adapter.html#configure-the-connection",
         "#9": "- https://symfony.com/doc/4.4/components/cache/adapters/memcached_adapter.html#configure-the-connection",
         "CACHE_DSN": "localhost",
-        "CACHE_NAMESPACE": "ezp",
+        "CACHE_NAMESPACE": "ibexa",
         "DATABASE_CHARSET": "utf8mb4",
         "DATABASE_COLLATION": "utf8mb4_unicode_520_ci",
         "#10": "Needed by Doctrine Bundle / ORM to prevent it from opening a connection during situations where there is no service yet.",
