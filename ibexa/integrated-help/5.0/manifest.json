@@ -1,0 +1,6 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\IntegratedHelp\\IbexaIntegratedHelpBundle": ["all"]
+  }
+}
