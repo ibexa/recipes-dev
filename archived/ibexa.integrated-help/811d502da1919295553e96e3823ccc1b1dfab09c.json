@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/integrated-help": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\IntegratedHelp\\IbexaIntegratedHelpBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "811d502da1919295553e96e3823ccc1b1dfab09c"
+        }
+    }
+}
