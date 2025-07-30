@@ -103,8 +103,7 @@
         "Ibexa\\Bundle\\SiteContext\\IbexaSiteContextBundle": ["all"],
         "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": ["all"],
         "Ibexa\\Bundle\\AppSwitcher\\IbexaAppSwitcherBundle": ["all"],
-        "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"],
-        "Ibexa\\Bundle\\IntegratedHelp\\IbexaIntegratedHelpBundle": ["all"]
+        "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
