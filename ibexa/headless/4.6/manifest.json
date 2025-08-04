@@ -122,7 +122,7 @@
         "SESSION_HANDLER_ID": "session.handler.native_file",
         "SESSION_SAVE_PATH": "%kernel.project_dir%/var/sessions/%kernel.environment%",
         "SOLR_DSN": "http://localhost:8983/solr",
-        "SOLR_CORE": "collection1",
+        "SOLR_CORE": "core0",
         "#12": "Enable Personalization by setting valid id, key and uri",
         "PERSONALIZATION_CUSTOMER_ID": 0,
         "PERSONALIZATION_LICENSE_KEY": "",
