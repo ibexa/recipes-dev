@@ -26,25 +26,25 @@ Encore
         config.corejs = 3;
     });
 
-    // Welcome page stylesheets
-    Encore.addEntry('welcome-page-css', [
-        path.resolve(__dirname, './assets/scss/welcome-page.scss'),
-    ]);
+// Welcome page stylesheets
+Encore.addEntry('welcome-page-css', [
+    path.resolve(__dirname, './assets/scss/welcome-page.scss'),
+]);
 
-    // Welcome page javascripts
-    Encore.addEntry('welcome-page-js', [
-        path.resolve(__dirname, './assets/js/welcome.page.js'),
-    ]);
+// Welcome page javascripts
+Encore.addEntry('welcome-page-js', [
+    path.resolve(__dirname, './assets/js/welcome.page.js'),
+]);
 
-    if (isReactBlockPathCreated) {
-        // React Blocks javascript
-        Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
-    }
+if (isReactBlockPathCreated) {
+    // React Blocks javascript
+    Encore.addEntry('react-blocks-js', './assets/js/react.blocks.js');
+}
 
-    Encore.addEntry('app', './assets/app.js');
+Encore.addEntry('app', './assets/app.js');
 
-    const projectConfig = Encore.getWebpackConfig();
+const projectConfig = Encore.getWebpackConfig();
 
-    projectConfig.name = 'app';
+projectConfig.name = 'app';
 
 module.exports = [...customConfigs, projectConfig];
