@@ -141,6 +141,7 @@ security:
         ibexa_front:
             pattern: ^/
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            provider: ibexa
             anonymous: ~
             ibexa_rest_session: ~
             form_login:
