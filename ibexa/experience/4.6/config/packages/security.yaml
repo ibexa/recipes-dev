@@ -127,6 +127,7 @@ security:
         #        csrf_token_generator: security.csrf.token_manager
         #    logout: ~
 
+        # Ibexa collaboration
         # Uncomment ibexa_shareable_link firewall to enable external participants authentication including public links
         # Uncomment also `shared` user provider above under security providers key
         #ibexa_shareable_link:
