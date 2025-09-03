@@ -137,7 +137,7 @@ security:
         #    stateless: true
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    guard:
-        #        authenticator: Ibexa\Collaboration\Security\Guard\ShareableLinkAuthenticator
+        #        authenticator: Ibexa\Collaboration\Security\Authenticator\ShareableLinkAuthenticator
 
         ibexa_front:
             pattern: ^/
