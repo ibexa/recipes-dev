@@ -34,6 +34,8 @@ security:
     providers:
         ibexa:
             id: ibexa.security.user_provider
+    #    shared:
+    #        id: Ibexa\Collaboration\Security\User\ShareableLinkUserProvider
     #!        in_memory:
     #!            memory: ~
 
@@ -134,6 +136,18 @@ security:
                 - Ibexa\Rest\Security\Authenticator\RestAuthenticator
             # uncomment the line below if you wish the product to act as an Oauth2 Server
             #oauth2: true
+
+        # Ibexa collaboration
+        # Uncomment ibexa_shareable_link firewall to enable external participants authentication including public links
+        # Uncomment also `shared` user provider above under security providers key
+        #ibexa_shareable_link:
+        #    request_matcher: Ibexa\Collaboration\Security\RequestMatcher\ShareableLinkRequestMatcher
+        #    pattern: ^/
+        #    provider: shared
+        #    stateless: true
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    custom_authenticators:
+        #        - Ibexa\Collaboration\Security\Authenticator\ShareableLinkAuthenticator
 
         ibexa_front:
             pattern: ^/
