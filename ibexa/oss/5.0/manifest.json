@@ -93,7 +93,7 @@
     "yarn ibexa-generate-tsconfig --use-relative-paths": "script",
     "ibexa:encore:compile --config-name app": "symfony-cmd",
     "bazinga:js-translation:dump %PUBLIC_DIR%/assets --merge-domains": "symfony-cmd",
-    "ibexa:encore:compile": "symfony-cmd",
-    "ibexa:encore:compile --frontend-configs-name ibexa,internals,libs,richtext": "symfony-cmd"
+    "ibexa:encore:compile --frontend-configs-name ibexa,internals,libs,richtext": "symfony-cmd",
+    "ibexa:encore:compile": "symfony-cmd"
   }
 }
