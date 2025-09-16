@@ -4,4 +4,6 @@ ibexa:
             share:
                 content_type_groups:
                     - 'Content'
-                    - 'product'
+                excluded_content_types:
+                    - 'tag'
+                    - 'product_category_tag'
