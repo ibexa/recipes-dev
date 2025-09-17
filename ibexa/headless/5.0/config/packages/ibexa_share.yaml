@@ -1,0 +1,9 @@
+ibexa:
+    system:
+        admin_group:
+            share:
+                content_type_groups:
+                    - 'Content'
+                excluded_content_types:
+                    - 'tag'
+                    - 'product_category_tag'
