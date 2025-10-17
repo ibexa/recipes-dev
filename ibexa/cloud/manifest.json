@@ -1,4 +1,6 @@
 {
-    "aliases": [],
-    "bundles": {}
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\ConnectorAi\\IbexaCloudBundle": ["all"]
+  }
 }
