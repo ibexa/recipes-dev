@@ -419,6 +419,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-anthropic": [
+            "5.0"
+        ],
         "ibexa/connector-dam": [
             "4.0",
             "4.1",
