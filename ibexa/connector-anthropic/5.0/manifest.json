@@ -1,0 +1,7 @@
+{
+  "aliases": [],
+  "env": {
+    "ANTHROPIC_API_KEY": "sk-123456"
+  },
+  "bundles": {}
+}
