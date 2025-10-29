@@ -1,7 +1,7 @@
 # Base configuration for Elasticsearch
 parameters:
-    env(ELASTICSEARCH_URL): '%env(ELASTICSEARCH_DSN)%'
-    elasticsearch_dsn: "%env(ELASTICSEARCH_URL)%"
+    env(ELASTICSEARCH_URL): '%env(string:ELASTICSEARCH_DSN)%'
+    elasticsearch_dsn: "%env(string:ELASTICSEARCH_URL)%"
 
 ibexa_elasticsearch:
     connections:
