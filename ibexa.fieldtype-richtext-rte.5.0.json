@@ -22,13 +22,17 @@
                 "config/packages/ibexa_fieldtype_richtext_rte.yaml": {
                     "contents": [
                         "ibexa:",
-                        "    system:",
-                        "        admin_group:",
+                        "    repositories:",
+                        "        default:",
                         "            fieldtype_richtext_rte:",
-                        "                license_key: '%env(CKEDITOR_LICENSE_KEY)%'",
                         "                environment_id: '%env(CKEDITOR_ENVIRONMENT_ID)%'",
                         "                environment_secret: '%env(CKEDITOR_ENVIRONMENT_SECRET)%'",
                         "                web_socket_url: '%env(CKEDITOR_WEB_SOCKET_URL)%'",
+                        "",
+                        "    system:",
+                        "        admin_group:",
+                        "            fieldtype_richtext_rte:",
+                        "                enabled: true",
                         ""
                     ],
                     "executable": false
@@ -44,7 +48,7 @@
                     "executable": false
                 }
             },
-            "ref": "1a8f852b39c6443665bf8a8f86d95a21a5a6af4a"
+            "ref": "e0a48741e82603ec610b4cf24e3715f7780dbbf6"
         }
     }
 }
