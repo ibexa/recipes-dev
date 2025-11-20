@@ -1,0 +1,44 @@
+{
+    "manifests": {
+        "ibexa/share": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Share\\IbexaShareBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_share.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    system:",
+                        "        admin_group:",
+                        "            share:",
+                        "                content_type_groups:",
+                        "                    - 'Content'",
+                        "                excluded_content_types:",
+                        "                    - 'tag'",
+                        "                    - 'product_category_tag'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_share.yaml": {
+                    "contents": [
+                        "ibexa.share.routing_admin:",
+                        "    resource: '@IbexaShareBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a2fef4ec8c6ceae18729caae24281d68b20552a9"
+        }
+    }
+}
