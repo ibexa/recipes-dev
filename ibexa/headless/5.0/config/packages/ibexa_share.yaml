@@ -7,3 +7,4 @@ ibexa:
                 excluded_content_types:
                     - 'tag'
                     - 'product_category_tag'
+                    - 'landing_page'
