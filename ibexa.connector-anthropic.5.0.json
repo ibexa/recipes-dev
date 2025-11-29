@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "ibexa/connector-anthropic": {
+            "manifest": {
+                "env": {
+                    "ANTHROPIC_API_KEY": "sk-123456"
+                },
+                "bundles": []
+            },
+            "files": [],
+            "ref": "cab4e2a1814063ad608cf6f9f58d92d2c4f5a7e9"
+        }
+    }
+}
