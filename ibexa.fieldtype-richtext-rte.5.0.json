@@ -11,8 +11,7 @@
                     "config/": "%CONFIG_DIR%/"
                 },
                 "env": {
-                    "#0": "The following values can be obtained in CKEditor Customer Portal > Cloud environments. See https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/real-time-collaboration/real-time-collaboration-integration.html for more details.",
-                    "CKEDITOR_LICENSE_KEY": "",
+                    "#0": "The following values can be obtained from the Service Portal (https://support.ibexa.co/)",
                     "CKEDITOR_ENVIRONMENT_ID": "",
                     "CKEDITOR_ENVIRONMENT_SECRET": "",
                     "CKEDITOR_WEB_SOCKET_URL": ""
@@ -48,7 +47,7 @@
                     "executable": false
                 }
             },
-            "ref": "e0a48741e82603ec610b4cf24e3715f7780dbbf6"
+            "ref": "5de15b01945a5862c3c9f588b15ea9d9e70abc0f"
         }
     }
 }
