@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "ibexa/product-catalog-date-time-attribute": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ProductCatalogDateTimeAttribute\\IbexaProductCatalogDateTimeAttributeBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": [],
+            "ref": "facb701f18d3eb345aa4bb810425890c073d8ea7"
+        }
+    }
+}
