@@ -1,0 +1,39 @@
+{
+    "manifests": {
+        "ibexa/connector-quable": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorQualifio\\IbexaConnectorQualifioBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connector_quable.yaml": {
+                    "contents": [
+                        "ibexa_connector_quable:",
+                        "    instance_url: ~",
+                        "    api_token: ~",
+                        "    webhook_secret: ~",
+                        "    cache:",
+                        "        enabled: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_connector_quable.yaml": {
+                    "contents": [
+                        "ibexa.quable:",
+                        "    resource: '@IbexaConnectorQuableBundle/bundle/Resources/config/routing.php'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3859c557f08b777268a6e2e8a0227ba64dd73e6f"
+        }
+    }
+}
