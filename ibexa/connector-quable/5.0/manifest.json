@@ -1,7 +1,7 @@
 {
   "aliases": [],
   "bundles": {
-    "Ibexa\\Bundle\\ConnectorQualifio\\IbexaConnectorQualifioBundle": ["all"]
+    "Ibexa\\Bundle\\ConnectorQualifio\\IbexaConnectorQuableBundle": ["all"]
   },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
