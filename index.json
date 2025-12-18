@@ -440,6 +440,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-quable": [
+            "5.0"
+        ],
         "ibexa/connector-qualifio": [
             "4.6",
             "5.0"
