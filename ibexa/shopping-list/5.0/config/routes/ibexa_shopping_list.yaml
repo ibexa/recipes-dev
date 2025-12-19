@@ -1,0 +1,6 @@
+ibexa.shopping_list:
+    resource: '@IbexaShoppingListBundle/Resources/config/routing.php'
+
+ibexa.shopping_list.rest:
+    resource: '@IbexaShoppingListBundle/Resources/config/routing_rest.php'
+    prefix: '%ibexa.rest.path_prefix%'
