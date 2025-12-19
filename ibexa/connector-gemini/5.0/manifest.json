@@ -1,0 +1,7 @@
+{
+  "aliases": [],
+  "env": {
+    "GEMINI_API_KEY": "thisIsNotARealApiKey"
+  },
+  "bundles": {}
+}
