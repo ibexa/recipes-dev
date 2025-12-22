@@ -1,0 +1,53 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-richtext-rte": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\IbexaFieldTypeRichTextRTEBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "#0": "The following values can be obtained from the Service Portal (https://support.ibexa.co/)",
+                    "CKEDITOR_ENVIRONMENT_ID": "",
+                    "CKEDITOR_ENVIRONMENT_SECRET": "",
+                    "CKEDITOR_WEB_SOCKET_URL": ""
+                }
+            },
+            "files": {
+                "config/packages/ibexa_fieldtype_richtext_rte.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    repositories:",
+                        "        default:",
+                        "            fieldtype_richtext_rte:",
+                        "                environment_id: '%env(CKEDITOR_ENVIRONMENT_ID)%'",
+                        "                environment_secret: '%env(CKEDITOR_ENVIRONMENT_SECRET)%'",
+                        "                web_socket_url: '%env(CKEDITOR_WEB_SOCKET_URL)%'",
+                        "",
+                        "    system:",
+                        "        admin_group:",
+                        "            fieldtype_richtext_rte:",
+                        "                enabled: true",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_fieldtype_richtext_rte.yaml": {
+                    "contents": [
+                        "ibexa.fieldtype_richtext_rte.admin:",
+                        "    resource: '@IbexaFieldTypeRichTextRTEBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5de15b01945a5862c3c9f588b15ea9d9e70abc0f"
+        }
+    }
+}

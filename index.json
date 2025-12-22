@@ -1,0 +1,1041 @@
+{
+    "aliases": {
+        "actito": "ibexa/connector-actito",
+        "cdp": "ibexa/cdp",
+        "cms": "ibexa/oss",
+        "cms-commerce": "ibexa/commerce",
+        "cms-content": "ibexa/content",
+        "cms-experience": "ibexa/experience",
+        "cms-headless": "ibexa/headless",
+        "cmscommerce": "ibexa/commerce",
+        "cmscontent": "ibexa/content",
+        "cmsexperience": "ibexa/experience",
+        "cmsheadless": "ibexa/headless",
+        "commerce": "ibexa/commerce",
+        "content": "ibexa/content",
+        "dxp-commerce": "ibexa/commerce",
+        "dxp-content": "ibexa/content",
+        "dxp-experience": "ibexa/experience",
+        "dxp-headless": "ibexa/headless",
+        "dxpcommerce": "ibexa/commerce",
+        "dxpcontent": "ibexa/content",
+        "dxpexperience": "ibexa/experience",
+        "dxpheadless": "ibexa/headless",
+        "experience": "ibexa/experience",
+        "headless": "ibexa/headless",
+        "ibexa": "ibexa/oss",
+        "ibexa-cdp": "ibexa/cdp",
+        "ibexa-commerce": "ibexa/commerce",
+        "ibexa-connector-actito": "ibexa/connector-actito",
+        "ibexa-content": "ibexa/content",
+        "ibexa-experience": "ibexa/experience",
+        "ibexa-headless": "ibexa/headless",
+        "ibexa-oss": "ibexa/oss",
+        "ibexacdp": "ibexa/cdp",
+        "ibexacommerce": "ibexa/commerce",
+        "ibexaconnectoractito": "ibexa/connector-actito",
+        "ibexacontent": "ibexa/content",
+        "ibexaexperience": "ibexa/experience",
+        "ibexaheadless": "ibexa/headless",
+        "ibexaoss": "ibexa/oss"
+    },
+    "recipes": {
+        "ezsystems/behatbundle": [
+            "8.3.x-dev",
+            "9.0.x-dev"
+        ],
+        "ezsystems/date-based-publisher": [
+            "4.3"
+        ],
+        "ezsystems/doctrine-dbal-schema": [
+            "1.0"
+        ],
+        "ezsystems/ez-support-tools": [
+            "2.3"
+        ],
+        "ezsystems/ezcommerce-admin-ui": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-base-design": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-checkout": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-erp-admin": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-fieldtypes": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-order-history": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-page-builder": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-price-engine": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-rest": [
+            "3.3"
+        ],
+        "ezsystems/ezcommerce-shop": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-shop-ui": [
+            "1.0"
+        ],
+        "ezsystems/ezcommerce-transaction": [
+            "1.0"
+        ],
+        "ezsystems/ezplatform-admin-ui": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-admin-ui-assets": [
+            "5.3"
+        ],
+        "ezsystems/ezplatform-calendar": [
+            "1.3"
+        ],
+        "ezsystems/ezplatform-connector-dam": [
+            "1.1"
+        ],
+        "ezsystems/ezplatform-content-forms": [
+            "1.3"
+        ],
+        "ezsystems/ezplatform-core": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-cron": [
+            "3.1"
+        ],
+        "ezsystems/ezplatform-design-engine": [
+            "3.0"
+        ],
+        "ezsystems/ezplatform-ee-installer": [
+            "3.3"
+        ],
+        "ezsystems/ezplatform-elastic-search-engine": [
+            "1.2"
+        ],
+        "ezsystems/ezplatform-form-builder": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-graphql": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-http-cache": [
+            "2.2",
+            "2.3"
+        ],
+        "ezsystems/ezplatform-http-cache-fastly": [
+            "2.0"
+        ],
+        "ezsystems/ezplatform-icons": [
+            "1.0"
+        ],
+        "ezsystems/ezplatform-kernel": [
+            "1.0"
+        ],
+        "ezsystems/ezplatform-matrix-fieldtype": [
+            "2.2"
+        ],
+        "ezsystems/ezplatform-page-builder": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-page-fieldtype": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-permissions": [
+            "1.1"
+        ],
+        "ezsystems/ezplatform-personalization": [
+            "1.0"
+        ],
+        "ezsystems/ezplatform-query-fieldtype": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-rest": [
+            "1.3"
+        ],
+        "ezsystems/ezplatform-richtext": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-search": [
+            "1.2"
+        ],
+        "ezsystems/ezplatform-segmentation": [
+            "1.1"
+        ],
+        "ezsystems/ezplatform-site-factory": [
+            "1.3"
+        ],
+        "ezsystems/ezplatform-solr-search-engine": [
+            "3.3"
+        ],
+        "ezsystems/ezplatform-standard-design": [
+            "0.3"
+        ],
+        "ezsystems/ezplatform-user": [
+            "2.3"
+        ],
+        "ezsystems/ezplatform-version-comparison": [
+            "1.3"
+        ],
+        "ezsystems/ezplatform-workflow": [
+            "2.3"
+        ],
+        "ezsystems/ezrecommendation-client": [
+            "2.0"
+        ],
+        "ibexa/activity-log": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/admin-ui": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/admin-ui-assets": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/app-switcher": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/behat": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/calendar": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/cart": [
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/cdp": [
+            "1.0",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/checkout": [
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/ckeditor-premium": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/collaboration": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce": [
+            "3.3",
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-admin-ui": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-base-design": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-checkout": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-erp-admin": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-fieldtypes": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-order-history": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-page-builder": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-price-engine": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-rest": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-shop": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-shop-ui": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/commerce-transaction": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/compatibility-layer": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connect": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-actito": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-ai": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-anthropic": [
+            "5.0"
+        ],
+        "ibexa/connector-dam": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-openai": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-payum": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-quable": [
+            "5.0"
+        ],
+        "ibexa/connector-qualifio": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/connector-unsplash": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/content": [
+            "3.3",
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5"
+        ],
+        "ibexa/content-forms": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/content-tree": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/core": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/core-persistence": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/core-search": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/corporate-account": [
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/corporate-account-commerce-bridge": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/cron": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/dam-user": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/dashboard": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/design-engine": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/discounts": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/discounts-codes": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/docker": [
+            "0.1",
+            "0.2",
+            "3.3",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/doctrine-schema": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/elasticsearch": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/experience": [
+            "3.3",
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fastly": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-address": [
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-matrix": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-page": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-query": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-richtext": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/fieldtype-richtext-rte": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/form-builder": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/graphql": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/headless": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/headless-assets": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/http-cache": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/icons": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/image-editor": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/image-picker": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/installer": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/integrated-help": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/measurement": [
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/migrations": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/namespace-compatibility": [
+            "1.0"
+        ],
+        "ibexa/notifications": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/oauth2-client": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/oauth2-server": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/oauth2-server-bundle": [
+            "0.6"
+        ],
+        "ibexa/order-management": [
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/oss": [
+            "3.3",
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/page-builder": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/payment": [
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/permissions": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/personalization": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/personalization-client": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/product-catalog": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/product-catalog-date-time-attribute": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/product-catalog-symbol-attribute": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/rector": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/rest": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/scheduler": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/search": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/segmentation": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/seo": [
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/share": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/shipping": [
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/site-context": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/site-factory": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/solr": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/standard-design": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/storefront": [
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/system-info": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/taxonomy": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/test-fixtures": [
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/tree-builder": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/twig-components": [
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/user": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/version-comparison": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ],
+        "ibexa/workflow": [
+            "4.0",
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4",
+            "4.5",
+            "4.6",
+            "5.0"
+        ]
+    },
+    "recipe-conflicts": [],
+    "versions": [],
+    "branch": "master",
+    "is_contrib": false,
+    "_links": {
+        "repository": "github.com/ibexa/recipes-dev",
+        "origin_template": "{package}:{version}@github.com/ibexa/recipes-dev:master",
+        "recipe_template": "https://raw.githubusercontent.com/ibexa/recipes-dev/flex/pull-231/{package_dotted}.{version}.json",
+        "recipe_template_relative": "{package_dotted}.{version}.json",
+        "archived_recipes_template": "https://raw.githubusercontent.com/ibexa/recipes-dev/flex/pull-231/archived/{package_dotted}/{ref}.json",
+        "archived_recipes_template_relative": "archived/{package_dotted}/{ref}.json"
+    }
+}
