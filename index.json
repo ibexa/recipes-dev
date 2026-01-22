@@ -432,6 +432,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/connector-gemini": [
+            "5.0"
+        ],
         "ibexa/connector-openai": [
             "4.6",
             "5.0"

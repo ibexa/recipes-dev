@@ -83,6 +83,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/connector-ai](https://packagist.org/packages/ibexa/connector-ai) | [5.0](ibexa/connector-ai/5.0) |  |
 | [ibexa/connector-anthropic](https://packagist.org/packages/ibexa/connector-anthropic) | [5.0](ibexa/connector-anthropic/5.0) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [5.0](ibexa/connector-dam/5.0) |  |
+| [ibexa/connector-gemini](https://packagist.org/packages/ibexa/connector-gemini) | [5.0](ibexa/connector-gemini/5.0) |  |
 | [ibexa/connector-openai](https://packagist.org/packages/ibexa/connector-openai) | [5.0](ibexa/connector-openai/5.0) |  |
 | [ibexa/connector-payum](https://packagist.org/packages/ibexa/connector-payum) | [5.0](ibexa/connector-payum/5.0) |  |
 | [ibexa/connector-quable](https://packagist.org/packages/ibexa/connector-quable) | [5.0](ibexa/connector-quable/5.0) |  |
