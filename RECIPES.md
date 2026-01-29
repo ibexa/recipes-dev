@@ -149,6 +149,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/seo](https://packagist.org/packages/ibexa/seo) | [5.0](ibexa/seo/5.0) |  |
 | [ibexa/share](https://packagist.org/packages/ibexa/share) | [5.0](ibexa/share/5.0) |  |
 | [ibexa/shipping](https://packagist.org/packages/ibexa/shipping) | [5.0](ibexa/shipping/5.0) |  |
+| [ibexa/shopping-list](https://packagist.org/packages/ibexa/shopping-list) | [5.0](ibexa/shopping-list/5.0) |  |
 | [ibexa/site-context](https://packagist.org/packages/ibexa/site-context) | [5.0](ibexa/site-context/5.0) |  |
 | [ibexa/site-factory](https://packagist.org/packages/ibexa/site-factory) | [5.0](ibexa/site-factory/5.0) |  |
 | [ibexa/solr](https://packagist.org/packages/ibexa/solr) | [5.0](ibexa/solr/5.0) |  |
