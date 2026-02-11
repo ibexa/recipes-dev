@@ -18,7 +18,7 @@ doctrine:
                 charset: '%env(string:DFS_DATABASE_CHARSET)%'
                 default_table_options:
                     charset: '%env(string:DFS_DATABASE_CHARSET)%'
-                    collate: '%env(string:DFS_DATABASE_COLLATION)%' # comment out if you are using PostgreSQL
+                    collate: '%env(string:DFS_DATABASE_COLLATION)%'
                 url: '%env(string:DFS_DATABASE_URL)%'
 
 # define the flysystem handler
