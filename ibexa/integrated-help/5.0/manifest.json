@@ -3,6 +3,9 @@
   "bundles": {
     "Ibexa\\Bundle\\IntegratedHelp\\IbexaIntegratedHelpBundle": ["all"]
   },
+  "copy-from-package": {
+    "config/packages/ibexa_integrated_help_tours.yaml": "%CONFIG_DIR%/packages/ibexa_integrated_help_tours.yaml"
+  },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
   }
