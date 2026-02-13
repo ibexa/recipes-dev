@@ -1,0 +1,3 @@
+when@test:
+    framework:
+        csrf_protection: false
