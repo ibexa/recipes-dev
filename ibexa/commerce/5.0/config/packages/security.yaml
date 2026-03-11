@@ -100,6 +100,14 @@ security:
         #        success_handler: lexik_jwt_authentication.handler.authentication_success
         #        failure_handler: lexik_jwt_authentication.handler.authentication_failure
 
+        # Uncomment `ibexa_jwt_mcp` rule if you are using Ibexa MCP
+        #ibexa_jwt_mcp:
+        #    request_matcher: Ibexa\Mcp\Security\McpRequestMatcher
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    provider: ibexa
+        #    stateless: true
+        #    jwt: ~
+
         #ibexa_jwt_rest.api:
         #    request_matcher: Ibexa\Rest\Security\AuthorizationHeaderRESTRequestMatcher
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
