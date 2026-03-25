@@ -33,6 +33,14 @@
                     ],
                     "executable": false
                 },
+                "config/routes/behat/graphiql.yaml": {
+                    "contents": [
+                        "overblog_graphiql:",
+                        "    resource: \"@OverblogGraphiQLBundle/Resources/config/routing.xml\"",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/routes/behat/ibexa_behat.yaml": {
                     "contents": [
                         "ibexa.behat:",
@@ -42,7 +50,7 @@
                     "executable": false
                 }
             },
-            "ref": "85e4e77cb6239bbd288a3a606da78d49f79ef7f3"
+            "ref": "6c6a6d5482427cbd281b65c343a5543074174f5f"
         }
     }
 }
