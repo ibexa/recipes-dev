@@ -987,6 +987,9 @@
             "4.6",
             "5.0"
         ],
+        "ibexa/translations-management": [
+            "5.0"
+        ],
         "ibexa/tree-builder": [
             "4.0",
             "4.1",

@@ -158,6 +158,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/system-info](https://packagist.org/packages/ibexa/system-info) | [5.0](ibexa/system-info/5.0) |  |
 | [ibexa/taxonomy](https://packagist.org/packages/ibexa/taxonomy) | [5.0](ibexa/taxonomy/5.0) |  |
 | [ibexa/test-fixtures](https://packagist.org/packages/ibexa/test-fixtures) | [5.0](ibexa/test-fixtures/5.0) |  |
+| [ibexa/translations-management](https://packagist.org/packages/ibexa/translations-management) | [5.0](ibexa/translations-management/5.0) |  |
 | [ibexa/tree-builder](https://packagist.org/packages/ibexa/tree-builder) | [5.0](ibexa/tree-builder/5.0) |  |
 | [ibexa/twig-components](https://packagist.org/packages/ibexa/twig-components) | [5.0](ibexa/twig-components/5.0) |  |
 | [ibexa/user](https://packagist.org/packages/ibexa/user) | [5.0](ibexa/user/5.0) |  |
