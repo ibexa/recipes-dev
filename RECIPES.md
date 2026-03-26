@@ -124,6 +124,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/image-picker](https://packagist.org/packages/ibexa/image-picker) | [5.0](ibexa/image-picker/5.0) |  |
 | [ibexa/installer](https://packagist.org/packages/ibexa/installer) | [5.0](ibexa/installer/5.0) |  |
 | [ibexa/integrated-help](https://packagist.org/packages/ibexa/integrated-help) | [5.0](ibexa/integrated-help/5.0) |  |
+| [ibexa/mcp](https://packagist.org/packages/ibexa/mcp) | [5.0](ibexa/mcp/5.0) |  |
 | [ibexa/measurement](https://packagist.org/packages/ibexa/measurement) | [5.0](ibexa/measurement/5.0) |  |
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [5.0](ibexa/migrations/5.0) |  |
 | [ibexa/namespace-compatibility](https://packagist.org/packages/ibexa/namespace-compatibility) | [1.0](ibexa/namespace-compatibility/1.0) |  |
