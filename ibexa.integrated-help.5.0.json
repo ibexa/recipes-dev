@@ -6,10 +6,26 @@
                     "Ibexa\\Bundle\\IntegratedHelp\\IbexaIntegratedHelpBundle": [
                         "all"
                     ]
+                },
+                "copy-from-package": {
+                    "config/packages/ibexa_integrated_help_tours.yaml": "%CONFIG_DIR%/packages/ibexa_integrated_help_tours.yaml"
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
                 }
             },
-            "files": [],
-            "ref": "811d502da1919295553e96e3823ccc1b1dfab09c"
+            "files": {
+                "config/routes/ibexa_integrated_help.yaml": {
+                    "contents": [
+                        "ibexa.integrated_help.rest:",
+                        "    resource: '@IbexaIntegratedHelpBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "640301bb0d62506826acb3b21b6a772eccdfc534"
         }
     }
 }
