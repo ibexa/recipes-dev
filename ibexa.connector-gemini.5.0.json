@@ -1,0 +1,14 @@
+{
+    "manifests": {
+        "ibexa/connector-gemini": {
+            "manifest": {
+                "env": {
+                    "GEMINI_API_KEY": "thisIsNotARealApiKey"
+                },
+                "bundles": []
+            },
+            "files": [],
+            "ref": "e0abb519b0362af1c581d87db9bd91461531ed8d"
+        }
+    }
+}
