@@ -1,0 +1,8 @@
+ibexa.connector.ai.rest:
+    resource: '@IbexaConnectorAiBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'
+
+ibexa.connector.ai.admin:
+    resource: '@IbexaConnectorAiBundle/Resources/config/routing_admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'

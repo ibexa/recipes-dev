@@ -1,0 +1,29 @@
+## Use following example to set up your e-mail campaigns
+#ibexa:
+#    system:
+#        default:
+#            connector_actito:
+#                api_key: '%env(ACTITO_API_KEY)%'
+#                entity: my_entity_name
+#                campaign_mapping:
+#                    #
+#                    # This map configures which campaigns are triggered in
+#                    # Actito system when particular Notification is emitted
+#                    #
+#                    # Element key is the FQCN of the Notification,
+#                    # "campaign" property has to match campaign name or ID
+#                    #
+#                    Ibexa\Contracts\OrderManagement\Notification\OrderStatusChange:
+#                        campaign: example_campaign_name_order_status_change
+#
+#                    Ibexa\Contracts\Payment\Notification\PaymentStatusChange:
+#                        campaign: example_campaign_name_payment_status_change
+#
+#                    Ibexa\Contracts\Shipping\Notification\ShipmentStatusChange:
+#                        campaign: example_campaign_name_shipment_status_change
+#
+#                    Ibexa\Contracts\User\Notification\UserPasswordReset:
+#                        campaign: example_campaign_name_user_password_reset
+#
+#                    Ibexa\Contracts\User\Notification\UserRegister:
+#                        campaign: example_campaign_name_user_register

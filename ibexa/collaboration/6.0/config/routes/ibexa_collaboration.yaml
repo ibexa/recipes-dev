@@ -1,0 +1,11 @@
+ibexa.collaboration:
+    resource: '@IbexaCollaborationBundle/Resources/config/routing.yaml'
+
+ibexa.rest.collaboration:
+    resource: '@IbexaCollaborationBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'
+
+ibexa.collaboration.routing_admin:
+    resource: '@IbexaCollaborationBundle/Resources/config/routing_admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'

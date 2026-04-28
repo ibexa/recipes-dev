@@ -1,0 +1,4 @@
+ibexa.share.routing_admin:
+    resource: '@IbexaShareBundle/Resources/config/routing_admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'

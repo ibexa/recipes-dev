@@ -1,0 +1,15 @@
+{
+  "aliases": [],
+  "bundles": {
+    "Ibexa\\Bundle\\FieldTypeRichTextRTE\\IbexaFieldTypeRichTextRTEBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "#0": "The following values can be obtained from the Service Portal (https://support.ibexa.co/)",
+    "CKEDITOR_ENVIRONMENT_ID": "",
+    "CKEDITOR_ENVIRONMENT_SECRET": "",
+    "CKEDITOR_WEB_SOCKET_URL": ""
+  }
+}

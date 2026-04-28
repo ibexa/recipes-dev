@@ -1,0 +1,10 @@
+# Example configuration for a custom symbol attribute:
+
+#ibexa_product_catalog_symbol_attribute:
+#    formats:
+#        mpn:
+#            name: 'Manufacturer Part Number'
+#            pattern: '/^.*$/'
+#            examples:
+#                - '2N6405G'
+#                - '2N6071BG'

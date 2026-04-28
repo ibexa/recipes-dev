@@ -1,0 +1,6 @@
+ibexa.qualifio:
+    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing.yaml'
+
+ibexa.qualifio.rest:
+    resource: '@IbexaConnectorQualifioBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'

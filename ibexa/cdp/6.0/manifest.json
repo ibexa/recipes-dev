@@ -1,0 +1,13 @@
+{
+    "aliases": ["ibexa-cdp", "cdp"],
+    "bundles": {
+        "Ibexa\\Bundle\\Cdp\\IbexaCdpBundle": ["all"]
+    },
+    "env": {
+        "CDP_ACTIVATION_CLIENT_ID": "123456",
+        "CDP_ACTIVATION_CLIENT_SECRET": "abcdef"
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}

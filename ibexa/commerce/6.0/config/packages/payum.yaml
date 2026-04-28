@@ -1,0 +1,9 @@
+payum:
+    storages:
+        Ibexa\Payment\Values\Payment:
+            custom: Ibexa\ConnectorPayum\Storage\Payment
+
+    security:
+        token_storage:
+            Ibexa\ConnectorPayum\Token\PaymentToken:
+                doctrine: orm

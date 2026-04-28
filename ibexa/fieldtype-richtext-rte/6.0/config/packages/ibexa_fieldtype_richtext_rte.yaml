@@ -1,0 +1,12 @@
+ibexa:
+    repositories:
+        default:
+            fieldtype_richtext_rte:
+                environment_id: '%env(CKEDITOR_ENVIRONMENT_ID)%'
+                environment_secret: '%env(CKEDITOR_ENVIRONMENT_SECRET)%'
+                web_socket_url: '%env(CKEDITOR_WEB_SOCKET_URL)%'
+
+    system:
+        admin_group:
+            fieldtype_richtext_rte:
+                enabled: true

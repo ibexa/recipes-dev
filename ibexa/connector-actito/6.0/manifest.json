@@ -1,0 +1,13 @@
+{
+  "aliases": ["ibexa-connector-actito", "actito"],
+  "bundles": {
+    "Ibexa\\Bundle\\ConnectorActito\\IbexaConnectorActitoBundle": ["all"]
+  },
+  "env": {
+    "#1": "Ask your IT/Admin to create API User in Actito Dashboard and put generated API Key here",
+    "ACTITO_API_KEY": "1234567890"
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  }
+}

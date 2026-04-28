@@ -1,0 +1,171 @@
+#security:
+#    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+#    providers:
+#        in_memory: { memory: ~ }
+#    firewalls:
+#        dev:
+#            pattern: ^/(_(profiler|wdt)|css|images|js)/
+#            security: false
+#        main:
+#            anonymous: true
+#
+#            # activate different ways to authenticate
+#
+#            # http_basic: true
+#            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+#
+#            # form_login: true
+#            # https://symfony.com/doc/current/security/form_login_setup.html
+#
+#    # Easy way to control access for large sections of your site
+#    # Note: Only the *first* access control that matches will be used
+#    access_control:
+#        # - { path: ^/admin, roles: ROLE_ADMIN }
+#        # - { path: ^/profile, roles: ROLE_USER }
+#
+
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+    password_hashers:
+        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        ibexa:
+            id: ibexa.security.user_provider
+    #    shared:
+    #        id: Ibexa\Collaboration\Security\User\ShareableLinkUserProvider
+    #!        in_memory:
+    #!            memory: ~
+
+    ## Uncomment authorize access control if you wish to use product as an OAuth2 Server
+    #access_control:
+    #    - { path: ^/authorize/jwks$, roles: ~ }
+    #    - { path: ^/authorize, roles: IS_AUTHENTICATED_REMEMBERED }
+
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        ibexa_forgot_password:
+            pattern: /user/(forgot-password|reset-password)
+            security: false
+
+        ibexa_register_from_invitation:
+            pattern: /user/from-invite/register|/from-invite/register
+            security: false
+
+        ## Uncomment oauth2_token firewall if you wish to use product as an OAuth2 Server.
+        ## Use oauth2 guard any other (for example ibexa_front) firewall you wish to be
+        ## exposed as OAuth2-available resource. Example:
+        ##    guard:
+        ##        authenticators:
+        ##            - Ibexa\OAuth2Server\Security\Guard\OAuth2Authenticator
+        #oauth2_token:
+        #    pattern: ^/token$
+        #    security: false
+
+        # Uncomment `ibexa_cdp` rule if you are using Ibexa CDP connector
+        #ibexa_cdp:
+        #    request_matcher: Ibexa\Cdp\Security\RequestMatcher
+        #    custom_authenticators:
+        #        - 'Ibexa\Cdp\Security\CdpRequestAuthenticator'
+        #    stateless: true
+
+        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
+        #ibexa_jwt_rest:
+        #    request_matcher: Ibexa\Rest\Security\JWTTokenCreationRESTRequestMatcher
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    stateless: true
+        #    provider: ibexa
+        #    json_login:
+        #        check_path: ibexa.rest.create_token
+        #        username_path: JWTInput.username
+        #        password_path: JWTInput.password
+        #        success_handler: lexik_jwt_authentication.handler.authentication_success
+        #        failure_handler: lexik_jwt_authentication.handler.authentication_failure
+
+        #ibexa_jwt_rest.api:
+        #    request_matcher: Ibexa\Rest\Security\AuthorizationHeaderRESTRequestMatcher
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    provider: ibexa
+        #    stateless: true
+        #    jwt: ~
+
+        #ibexa_jwt_graphql:
+        #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
+        #    provider: ibexa
+        #    stateless: true
+        #    jwt: ~
+
+        # Uncomment ibexa_oauth2_connect, ibexa_oauth2_front rules and comment ibexa_front firewall
+        # to enable OAuth2 authentication
+
+        #ibexa_oauth2_connect:
+        #    pattern: /oauth2/connect/*
+        #    security: false
+
+        #ibexa_oauth2_front:
+        #    pattern: ^/
+        #    provider: ibexa
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    custom_authenticators:
+        #        - Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #    entry_point: Ibexa\Bundle\OAuth2Client\Security\Authenticator\OAuth2Authenticator
+        #    context: ibexa
+        #    form_login:
+        #        enable_csrf: true
+        #    logout: ~
+
+        # If you wish to use http_basic authentication, uncomment the firewall below and adjust the pattern to meet your project's requirements.
+        #ibexa_http_basic:
+        #    pattern: ^/
+        #    http_basic:
+        #        realm: Secured Area
+
+        ibexa_rest:
+            pattern: ^/api/ibexa
+            provider: ibexa
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            context: ibexa
+            custom_authenticators:
+                - Ibexa\Rest\Security\Authenticator\RestAuthenticator
+            # uncomment the line below if you wish the product to act as an Oauth2 Server
+            #oauth2: true
+
+        # Ibexa collaboration
+        # Uncomment ibexa_shareable_link firewall to enable external participants authentication including public links
+        # Uncomment also `shared` user provider above under security providers key
+        #ibexa_shareable_link:
+        #    request_matcher: Ibexa\Collaboration\Security\RequestMatcher\ShareableLinkRequestMatcher
+        #    pattern: ^/
+        #    provider: shared
+        #    stateless: true
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+        #    custom_authenticators:
+        #        - Ibexa\Collaboration\Security\Authenticator\ShareableLinkAuthenticator
+
+        ibexa_front:
+            pattern: ^/
+            provider: ibexa
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            context: ibexa
+            form_login:
+                enable_csrf: true
+                login_path: login
+                check_path: login_check
+            entry_point: form_login
+            logout:
+                path: logout
+
+        main:
+            # activate different ways to authenticate
+
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # https://symfony.com/doc/current/security/form_login_setup.html
+            #form_login: ~

@@ -1,0 +1,8 @@
+{
+  "aliases": [],
+  "bundles": {},
+  "copy-from-recipe": {
+    "rector.config.js": "rector.config.js",
+    "rector.php": "rector.php"
+  }
+}
