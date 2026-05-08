@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "ibexa/mcp": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Mcp\\IbexaMcpBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_mcp.yaml": {
+                    "contents": [
+                        "ibexa_mcp:",
+                        "    resource: .",
+                        "    type: ibexa_mcp",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "dd36cd2f36ece68b1b43b968cb2739842905abb3"
+        }
+    }
+}
