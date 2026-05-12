@@ -14,7 +14,10 @@
             "files": {
                 "config/packages/ibexa_connector_quable.yaml": {
                     "contents": [
-                        "# ibexa_connector_quable:",
+                        "ibexa_connector_quable:",
+                        "    ### Fill in connection details and you can remove \"enabled\" field. It will become enabled automatically.",
+                        "    enabled: false",
+                        "",
                         "    # instance_url: ~",
                         "    # api_token: ~",
                         "    # webhook_secret: ~",
@@ -31,7 +34,7 @@
                     "executable": false
                 }
             },
-            "ref": "4522d7474481c877da193eabaaf0ceaebb76ec19"
+            "ref": "37e4d8317418ab65cde19066e169fc0652141833"
         }
     }
 }
