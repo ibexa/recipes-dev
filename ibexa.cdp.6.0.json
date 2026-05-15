@@ -9,7 +9,9 @@
                 },
                 "env": {
                     "CDP_ACTIVATION_CLIENT_ID": "123456",
-                    "CDP_ACTIVATION_CLIENT_SECRET": "abcdef"
+                    "CDP_ACTIVATION_CLIENT_SECRET": "abcdef",
+                    "CDP_MEMBERSHIP_ACTIVATION_ID": "activation-id",
+                    "CDP_MEMBERSHIP_API_KEY": "api-key"
                 },
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%/"
@@ -49,6 +51,16 @@
                         "#                        client_secret: '%env(CDP_ACTIVATION_CLIENT_SECRET)%'",
                         "#                        # Segment Group where CDP data will be imported to",
                         "#                        segment_group_identifier: example_segment_group_identifier",
+                        "#",
+                        "#                # Uncomment to enable resolving segments for anonymous visitors via the Membership API",
+                        "#                membership:",
+                        "#                    # Base URL for the Membership API",
+                        "#                    base_url: 'https://cdp-api.raptorsmartadvisor.com'",
+                        "#                    # Timeout in seconds for Membership API requests",
+                        "#                    timeout: 5",
+                        "#                    # Credentials sent as X-ACTIVATION-ID and X-API-KEY headers",
+                        "#                    activation_id: '%env(CDP_MEMBERSHIP_ACTIVATION_ID)%'",
+                        "#                    api_key: '%env(CDP_MEMBERSHIP_API_KEY)%'",
                         "#",
                         "#ibexa_cdp:",
                         "#    data_export:",
@@ -104,7 +116,7 @@
                     "executable": false
                 }
             },
-            "ref": "4fc38fe0f6afb1def11dd5776dedc4020be48cde"
+            "ref": "4b2030996b00c75c7578e23d4bcdbbf55c9df174"
         }
     }
 }
