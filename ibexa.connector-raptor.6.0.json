@@ -1,0 +1,43 @@
+{
+    "manifests": {
+        "ibexa/connector-raptor": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorRaptor\\IbexaConnectorRaptorBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connector_raptor.yaml": {
+                    "contents": [
+                        "## Raptor Connector Configuration",
+                        "##",
+                        "## This configuration enables Raptor Smart Advisor integration for product recommendations.",
+                        "## To get started:",
+                        "## 1. Sign up for Raptor at https://www.raptorsmartadvisor.com/",
+                        "## 2. Obtain your Customer ID and API Key from Raptor Control Panel",
+                        "",
+                        "#ibexa:",
+                        "#    system:",
+                        "#        default:",
+                        "#            connector_raptor:",
+                        "#                enabled: true",
+                        "#                # Customer ID from Raptor Control Panel",
+                        "#                customer_id: ''",
+                        "#                # API Key for Recommendations API from Raptor Control Panel",
+                        "#                recommendations_api_key: ''",
+                        "#                # Tracking type: 'client' (JavaScript-based) or 'server' (server-side tracking)",
+                        "#                tracking_type: 'client'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "075bd3b6db7735d54cdb2e370dc42c3337bcb6a4"
+        }
+    }
+}
