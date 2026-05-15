@@ -30,6 +30,16 @@
 #                        # Segment Group where CDP data will be imported to
 #                        segment_group_identifier: example_segment_group_identifier
 #
+#                # Uncomment to enable resolving segments for anonymous visitors via the Membership API
+#                membership:
+#                    # Base URL for the Membership API
+#                    base_url: 'https://cdp-api.raptorsmartadvisor.com'
+#                    # Timeout in seconds for Membership API requests
+#                    timeout: 5
+#                    # Credentials sent as X-ACTIVATION-ID and X-API-KEY headers
+#                    activation_id: '%env(CDP_MEMBERSHIP_ACTIVATION_ID)%'
+#                    api_key: '%env(CDP_MEMBERSHIP_API_KEY)%'
+#
 #ibexa_cdp:
 #    data_export:
 #        schedule:
