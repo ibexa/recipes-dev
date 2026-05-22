@@ -18,7 +18,8 @@
                     "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
                 },
                 "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%/"
+                    "config/": "%CONFIG_DIR%/",
+                    "tests/": "tests/"
                 }
             },
             "files": {
@@ -48,9 +49,30 @@
                         ""
                     ],
                     "executable": false
+                },
+                "tests/bootstrap.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Symfony\\Component\\Dotenv\\Dotenv;",
+                        "",
+                        "require_once dirname(__DIR__) . '/vendor/autoload.php';",
+                        "",
+                        "if (method_exists(Dotenv::class, 'bootEnv')) {",
+                        "    (new Dotenv())->bootEnv(dirname(__DIR__) . '/.env');",
+                        "}",
+                        "",
+                        "if ($_SERVER['APP_DEBUG']) {",
+                        "    umask(0000);",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "6c6a6d5482427cbd281b65c343a5543074174f5f"
+            "ref": "1428df1cdf5f2cc089c59b708dc8cc984e33abf0"
         }
     }
 }
