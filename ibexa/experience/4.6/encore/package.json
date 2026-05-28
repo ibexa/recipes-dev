@@ -29,7 +29,8 @@
     "react-dom": "^18.2.0"
   },
   "resolutions": {
-    "@types/glob": "8.1.0"
+    "@types/glob": "8.1.0",
+    "webpack-sources": "^3.5.0"
   },
   "license": "UNLICENSED",
   "private": true,
