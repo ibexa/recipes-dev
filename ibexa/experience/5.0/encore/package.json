@@ -26,7 +26,8 @@
     "typescript": "^5.6.3",
     "webpack-cli": "^6.0.1",
     "webpack-notifier": "^1.6.0",
-    "webpack": "^5.99.7"
+    "webpack": "^5.99.7",
+    "rtlcss": "^4.3.0"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -41,7 +42,8 @@
     "build": "encore production --progress",
     "ibexa:dev": "encore dev --config ./node_modules/@ibexa/frontend-config/ibexa.webpack.${configName:-all}.configs",
     "ibexa:watch": "encore dev --watch --config ./node_modules/@ibexa/frontend-config/ibexa.webpack.${configName:-all}.configs",
-    "ibexa:build": "encore production --progress --config ./node_modules/@ibexa/frontend-config/ibexa.webpack.${configName:-all}.configs"
+    "ibexa:build": "encore production --progress --config ./node_modules/@ibexa/frontend-config/ibexa.webpack.${configName:-all}.configs",
+    "ibexa:build-rtl-css": "node node_modules/@ibexa/frontend-config/ibexa.cli.rtlcss.build.js"
   },
   "packageManager": "yarn@1.22.22"
 }
