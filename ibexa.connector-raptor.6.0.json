@@ -35,9 +35,17 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/routes/ibexa_connector_raptor.yaml": {
+                    "contents": [
+                        "ibexa.connector_raptor:",
+                        "    resource: '@IbexaConnectorRaptorBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "075bd3b6db7735d54cdb2e370dc42c3337bcb6a4"
+            "ref": "27640b722e016260cd0c5a6aa6a9100bdbbe4d79"
         }
     }
 }
