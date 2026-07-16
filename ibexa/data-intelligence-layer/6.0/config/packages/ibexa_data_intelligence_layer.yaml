@@ -1,0 +1,15 @@
+ibexa:
+    repositories:
+        default:
+            mcp:
+                data_intelligence_layer:
+                    enabled: true
+                    path: /mcp/data-intelligence
+                    description: 'Ibexa Data Intelligence Layer (DIL) MCP server for Ibexa DXP. Exposes content management metrics — freshness/staleness and translation/localization coverage — for CMS content audit, editorial prioritization, and SEO/i18n reporting over Ibexa content items.'
+                    instructions: 'Use dil_discover_metrics first to see which metricId values (e.g. content.freshness_score, content.translation) are available, then dil_get_metric / dil_list_entity_metrics to read them for a single content item. For filtered listings across many content items, run a report via dil_run_report (dil_discover_metrics lists the reports of each metric and their parameter schemas). entityId is always the Ibexa contentId; entityType is currently always "content"; subtree filters take content-tree location path prefixes (e.g. /1/2/, where 1 is the root/homepage). For translation backlog and coverage, prefer drift (source edits since last translation) over daysBehind/averageStalenessDays, which can understate staleness.'
+                    # Hostnames allowed by the MCP DNS rebinding protection middleware. Use `null` to allow all hosts. Adapt to your needs
+                    # allowed_hosts: ['127.0.0.1', 'localhost', '::1']
+                    discovery_cache: ibexa.cache_pool
+                    session:
+                        type: psr16
+                        service: ibexa.cache_pool
