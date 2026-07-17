@@ -101,6 +101,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/cron](https://packagist.org/packages/ibexa/cron) | [6.0](../../../tree/main/ibexa/cron/6.0) |  |
 | [ibexa/dam-user](https://packagist.org/packages/ibexa/dam-user) | [6.0](../../../tree/main/ibexa/dam-user/6.0) |  |
 | [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [6.0](../../../tree/main/ibexa/dashboard/6.0) |  |
+| [ibexa/data-intelligence-layer](https://packagist.org/packages/ibexa/data-intelligence-layer) | [6.0](../../../tree/main/ibexa/data-intelligence-layer/6.0) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [6.0](../../../tree/main/ibexa/design-engine/6.0) |  |
 | [ibexa/discounts](https://packagist.org/packages/ibexa/discounts) | [6.0](../../../tree/main/ibexa/discounts/6.0) |  |
 | [ibexa/discounts-codes](https://packagist.org/packages/ibexa/discounts-codes) | [6.0](../../../tree/main/ibexa/discounts-codes/6.0) |  |

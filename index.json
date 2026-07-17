@@ -590,6 +590,9 @@
             "5.0",
             "6.0"
         ],
+        "ibexa/data-intelligence-layer": [
+            "6.0"
+        ],
         "ibexa/design-engine": [
             "4.0",
             "4.1",
