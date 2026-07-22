@@ -3,6 +3,6 @@
   "bundles": {},
   "copy-from-package": {
     ".agents/skills/external/": ".agents/skills/",
-   "./.agents/skills/external/ibexa-documentation/SKILL.md": ".claude/skills/ibexa-documentation/SKILL.md"
+   "./.agents/skills/external/ibexa-documentation/": ".claude/skills/ibexa-documentation/"
   }
 }
