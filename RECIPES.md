@@ -103,6 +103,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/dashboard](https://packagist.org/packages/ibexa/dashboard) | [6.0](../../../tree/main/ibexa/dashboard/6.0) |  |
 | [ibexa/data-intelligence-layer](https://packagist.org/packages/ibexa/data-intelligence-layer) | [6.0](../../../tree/main/ibexa/data-intelligence-layer/6.0) |  |
 | [ibexa/design-engine](https://packagist.org/packages/ibexa/design-engine) | [6.0](../../../tree/main/ibexa/design-engine/6.0) |  |
+| [ibexa/design-system-twig](https://packagist.org/packages/ibexa/design-system-twig) | [6.0](../../../tree/main/ibexa/design-system-twig/6.0) |  |
 | [ibexa/discounts](https://packagist.org/packages/ibexa/discounts) | [6.0](../../../tree/main/ibexa/discounts/6.0) |  |
 | [ibexa/discounts-codes](https://packagist.org/packages/ibexa/discounts-codes) | [6.0](../../../tree/main/ibexa/discounts-codes/6.0) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [6.0](../../../tree/main/ibexa/docker/6.0) |  |

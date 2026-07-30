@@ -604,6 +604,9 @@
             "5.0",
             "6.0"
         ],
+        "ibexa/design-system-twig": [
+            "6.0"
+        ],
         "ibexa/discounts": [
             "4.6",
             "5.0",
