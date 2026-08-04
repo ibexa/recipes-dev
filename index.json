@@ -641,6 +641,9 @@
             "5.0",
             "6.0"
         ],
+        "ibexa/documentation-developer": [
+            "5.0"
+        ],
         "ibexa/elasticsearch": [
             "4.0",
             "4.1",

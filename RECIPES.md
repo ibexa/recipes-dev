@@ -108,6 +108,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/discounts-codes](https://packagist.org/packages/ibexa/discounts-codes) | [6.0](../../../tree/main/ibexa/discounts-codes/6.0) |  |
 | [ibexa/docker](https://packagist.org/packages/ibexa/docker) | [6.0](../../../tree/main/ibexa/docker/6.0) |  |
 | [ibexa/doctrine-schema](https://packagist.org/packages/ibexa/doctrine-schema) | [6.0](../../../tree/main/ibexa/doctrine-schema/6.0) |  |
+| [ibexa/documentation-developer](https://packagist.org/packages/ibexa/documentation-developer) | [5.0](../../../tree/main/ibexa/documentation-developer/5.0) |  |
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [6.0](../../../tree/main/ibexa/elasticsearch/6.0) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [6.0](../../../tree/main/ibexa/experience/6.0) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
 | [ibexa/fastly](https://packagist.org/packages/ibexa/fastly) | [6.0](../../../tree/main/ibexa/fastly/6.0) |  |
