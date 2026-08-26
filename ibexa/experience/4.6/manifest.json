@@ -12,6 +12,7 @@
         "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": ["all"],
         "Symfony\\Bundle\\MonologBundle\\MonologBundle": ["all"],
         "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle": ["all"],
+        "Gregwar\\CaptchaBundle\\GregwarCaptchaBundle": ["all"],
         "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle": [
             "all"
         ],
