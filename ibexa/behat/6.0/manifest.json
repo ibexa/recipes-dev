@@ -1,14 +1,23 @@
 {
     "aliases": [],
     "bundles": {
-        "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": ["test", "behat"],
-        "Ibexa\\Bundle\\Behat\\IbexaBehatBundle": ["behat"]
+        "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
+            "test",
+            "behat"
+        ],
+        "Ibexa\\Bundle\\Behat\\IbexaBehatBundle": [
+            "behat"
+        ]
     },
     "copy-from-package": {
         "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
         "behat_ibexa_headless.yaml": "behat_ibexa_headless.yaml",
         "behat_ibexa_experience.yaml": "behat_ibexa_experience.yaml",
-        "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml"
+        "behat_ibexa_commerce.yaml": "behat_ibexa_commerce.yaml",
+        "behat_ibexa_oss.php": "behat_ibexa_oss.php",
+        "behat_ibexa_headless.php": "behat_ibexa_headless.php",
+        "behat_ibexa_experience.php": "behat_ibexa_experience.php",
+        "behat_ibexa_commerce.php": "behat_ibexa_commerce.php"
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
