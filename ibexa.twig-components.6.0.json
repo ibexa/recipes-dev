@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "ibexa/twig-components": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": [],
+            "ref": "f2a0508673feab7662ca3bea9e3163f37f09bb09"
+        }
+    }
+}

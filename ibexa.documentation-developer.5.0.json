@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/documentation-developer": {
+            "manifest": {
+                "bundles": [],
+                "copy-from-package": {
+                    ".agents/skills/external/": ".agents/skills/",
+                    "./.agents/skills/external/ibexa-documentation/": ".claude/skills/ibexa-documentation/"
+                }
+            },
+            "files": [],
+            "ref": "5345de0a2aa763eea405f3a4dea6bf5633a05f07"
+        }
+    }
+}
