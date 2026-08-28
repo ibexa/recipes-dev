@@ -1,13 +1,8 @@
 {
     "aliases": [],
     "bundles": {
-        "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": [
-            "test",
-            "behat"
-        ],
-        "Ibexa\\Bundle\\Behat\\IbexaBehatBundle": [
-            "behat"
-        ]
+        "FriendsOfBehat\\SymfonyExtension\\Bundle\\FriendsOfBehatSymfonyExtensionBundle": ["test", "behat"],
+        "Ibexa\\Bundle\\Behat\\IbexaBehatBundle": ["behat"]
     },
     "copy-from-package": {
         "behat_ibexa_oss.yaml": "behat_ibexa_oss.yaml",
