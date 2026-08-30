@@ -5,3 +5,7 @@ ibexa.page_builder:
 
 ibexa.page_builder_preview:
     resource: '@IbexaPageBuilderBundle/Resources/config/routing_preview.yaml'
+
+ibexa.page_builder.rest:
+    resource: '@IbexaPageBuilderBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'
