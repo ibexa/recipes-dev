@@ -104,7 +104,7 @@
         "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": ["all"],
         "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"],
         "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": ["all"],
-        "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundleBundle": ["all"]
+        "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
