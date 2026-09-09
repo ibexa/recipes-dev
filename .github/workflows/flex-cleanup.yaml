@@ -8,10 +8,10 @@ on:
 jobs:
     flex-cleanup:
         name: Cleanup Flex testing endpoint
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-26.04
         steps:
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v7
 
             - name: Cleanup Flex testing endpoint
               run: git push origin :flex/pull-${{ github.event.number }} || true
