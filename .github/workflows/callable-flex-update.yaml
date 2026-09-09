@@ -18,7 +18,7 @@ on:
 jobs:
     flex-update:
         name: Update Flex endpoint
-        runs-on: Ubuntu-latest
+        runs-on: ubuntu-26.04
 
         steps:
             -
