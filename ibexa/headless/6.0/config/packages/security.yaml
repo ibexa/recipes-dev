@@ -75,7 +75,7 @@ security:
         #        - 'Ibexa\Cdp\Security\CdpRequestAuthenticator'
         #    stateless: true
 
-        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
+        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST, and/or GraphQL, and/or MCP
         #ibexa_jwt_rest:
         #    request_matcher: Ibexa\Rest\Security\JWTTokenCreationRESTRequestMatcher
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
@@ -97,6 +97,13 @@ security:
 
         #ibexa_jwt_graphql:
         #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
+        #    provider: ibexa
+        #    stateless: true
+        #    jwt: ~
+
+        #ibexa_jwt_mcp:
+        #    request_matcher: Ibexa\Mcp\Security\McpRequestMatcher
+        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
         #    provider: ibexa
         #    stateless: true
         #    jwt: ~
