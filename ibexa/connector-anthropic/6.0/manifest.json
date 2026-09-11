@@ -3,5 +3,7 @@
   "env": {
     "ANTHROPIC_API_KEY": "sk-123456"
   },
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\ConnectorAnthropic\\IbexaConnectorAnthropicBundle": ["all"]
+  }
 }
