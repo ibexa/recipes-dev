@@ -97,7 +97,8 @@
         "Ibexa\\Bundle\\TwigComponents\\IbexaTwigComponentsBundle": ["all"],
         "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": ["all"],
         "Ibexa\\Bundle\\TranslationsManagement\\IbexaTranslationsManagementBundle": ["all"],
-        "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": ["all"]
+        "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": ["all"],
+        "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": ["all"]
     },
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/",
