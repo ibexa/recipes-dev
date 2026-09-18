@@ -1,0 +1,16 @@
+{
+  "aliases": ["ibexa-connector-ai-assistant", "ai-assistant"],
+  "bundles": {
+    "Ibexa\\Bundle\\ConnectorAiAssistant\\IbexaConnectorAiAssistantBundle": ["all"]
+  },
+  "env": {
+    "#1": "Connection to the Ibexa Orchestration Engine instance backing the AI Assistant",
+    "OE_API_BASE_URL": "https://orchestration-engine.example.com",
+    "OE_USERNAME": "",
+    "OE_PASSWORD": "",
+    "OE_AGENT_ID": "0"
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  }
+}
