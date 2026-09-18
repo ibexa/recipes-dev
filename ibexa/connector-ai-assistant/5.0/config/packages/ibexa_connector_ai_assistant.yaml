@@ -1,12 +1,13 @@
-## The AI Assistant connects to an Ibexa Orchestration Engine instance. By default it reads the
-## OE_API_BASE_URL, OE_USERNAME, OE_PASSWORD and OE_AGENT_ID environment variables, so setting
-## those in .env.local is enough.
+## The AI Assistant connects to an Ibexa Orchestration Engine instance. Fill in the OE_*
+## variables in .env.local, or replace the placeholders below with literal values.
 ##
-## Uncomment the following to configure the connection explicitly, either with literal values
-## or with environment variables of your own:
-#ibexa_connector_ai_assistant:
-#    orchestration_engine:
-#        base_url: '%env(OE_API_BASE_URL)%'
-#        username: '%env(OE_USERNAME)%'
-#        password: '%env(OE_PASSWORD)%'
-#        agent_id: '%env(int:OE_AGENT_ID)%'
+## Note the int: processor on agent_id — without it the identifier arrives as a string
+## and the configuration is rejected.
+##
+## Left empty, the assistant stays disabled.
+ibexa_connector_ai_assistant:
+    orchestration_engine:
+        base_url: '%env(OE_API_BASE_URL)%'
+        username: '%env(OE_USERNAME)%'
+        password: '%env(OE_PASSWORD)%'
+        agent_id: '%env(int:OE_AGENT_ID)%'
