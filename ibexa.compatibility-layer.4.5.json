@@ -1,0 +1,245 @@
+{
+    "manifests": {
+        "ibexa/compatibility-layer": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\CompatibilityLayer\\IbexaCompatibilityLayerBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/",
+                    "encore/": "/",
+                    "src/": "%SRC_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_compatibility_layer.yaml": {
+                    "contents": [
+                        "webpack_encore:",
+                        "    builds:",
+                        "        ezplatform: \"%kernel.project_dir%/public/assets/ezplatform/build\"",
+                        "",
+                        "framework:",
+                        "    assets:",
+                        "        json_manifest_path: ~",
+                        "        packages:",
+                        "            ezplatform:",
+                        "                json_manifest_path: '%kernel.project_dir%/public/assets/ezplatform/build/manifest.json'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/deprecated/ibexa_compatibility_layer_commerce.yaml": {
+                    "contents": [
+                        "ibexa.compatibility_layer.commerce:",
+                        "    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_commerce.yaml'",
+                        "",
+                        "# Uncomment if you are using ibexa/commerce-* packages",
+                        "# ibexa.compatibility_layer.commerce.legacy_commerce:",
+                        "#    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_commerce_legacy_commerce.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/deprecated/ibexa_compatibility_layer_content.yaml": {
+                    "contents": [
+                        "ibexa.compatibility_layer.content:",
+                        "    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_content.yaml'",
+                        "",
+                        "# Uncomment if you are using ibexa/commerce-* packages",
+                        "# ibexa.compatibility_layer.content.legacy_commerce:",
+                        "#    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_content_legacy_commerce.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/deprecated/ibexa_compatibility_layer_experience.yaml": {
+                    "contents": [
+                        "ibexa.compatibility_layer.experience:",
+                        "    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_experience.yaml'",
+                        "",
+                        "# Uncomment if you are using ibexa/commerce-* packages",
+                        "# ibexa.compatibility_layer.experience.legacy_commerce:",
+                        "#    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_experience_legacy_commerce.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/deprecated/ibexa_compatibility_layer_oss.yaml": {
+                    "contents": [
+                        "ibexa.compatibility_layer.oss:",
+                        "    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_oss.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/ez.webpack.config.js": {
+                    "contents": [
+                        "const bundles = require('./var/encore/ibexa.config.js');",
+                        "const ibexaConfigManager = require('./ibexa.webpack.config.manager.js');",
+                        "const configManagers = require('./var/encore/ibexa.config.manager.js');",
+                        "const configSetups = require('./var/encore/ibexa.config.setup.js');",
+                        "const path = require('path');",
+                        "",
+                        "module.exports = (Encore) => {",
+                        "    Encore.setOutputPath('public/assets/ezplatform/build')",
+                        "        .setPublicPath('/assets/ezplatform/build')",
+                        "        .addExternals({",
+                        "            react: 'React',",
+                        "            'react-dom': 'ReactDOM',",
+                        "            moment: 'moment',",
+                        "            'popper.js': 'Popper',",
+                        "            alloyeditor: 'AlloyEditor',",
+                        "            'prop-types': 'PropTypes',",
+                        "        })",
+                        "        .enableSassLoader()",
+                        "        .enableReactPreset()",
+                        "        .enableSingleRuntimeChunk();",
+                        "",
+                        "    configSetups.forEach((configSetupPath) => {",
+                        "        const setupConfig = require(configSetupPath);",
+                        "",
+                        "        setupConfig(Encore);",
+                        "    });",
+                        "",
+                        "    bundles.forEach((configPath) => {",
+                        "        const addEntries = require(configPath);",
+                        "",
+                        "        addEntries(Encore);",
+                        "    });",
+                        "",
+                        "    const eZConfig = Encore.getWebpackConfig();",
+                        "",
+                        "    eZConfig.name = 'ezplatform';",
+                        "",
+                        "    eZConfig.module.rules[4].oneOf[1].use[1].options.url = false;",
+                        "    eZConfig.module.rules[1].oneOf[1].use[1].options.url = false;",
+                        "",
+                        "    configManagers.forEach((configManagerPath) => {",
+                        "        const configManager = require(configManagerPath);",
+                        "",
+                        "        configManager(eZConfig, ibexaConfigManager);",
+                        "    });",
+                        "",
+                        "    Encore.reset();",
+                        "",
+                        "    return eZConfig;",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/webpack.config.js": {
+                    "contents": [
+                        "const Encore = require('@symfony/webpack-encore');",
+                        "const path = require('path');",
+                        "const getEzConfig = require('./ez.webpack.config.js');",
+                        "const getIbexaConfig = require('./ibexa.webpack.config.js');",
+                        "const eZConfig = getEzConfig(Encore);",
+                        "const ibexaConfig = getIbexaConfig(Encore);",
+                        "const customConfigs = require('./ibexa.webpack.custom.configs.js');",
+                        "",
+                        "Encore.reset();",
+                        "Encore.setOutputPath('public/build/')",
+                        "    .setPublicPath('/build')",
+                        "    .enableStimulusBridge('./assets/controllers.json')",
+                        "    .enableSassLoader()",
+                        "    .enableReactPreset()",
+                        "    .enableSingleRuntimeChunk()",
+                        "    .copyFiles({",
+                        "        from: './assets/images',",
+                        "        to: 'images/[path][name].[ext]',",
+                        "        pattern: /\\.(png|svg)$/,",
+                        "    })",
+                        "",
+                        "    // enables @babel/preset-env polyfills",
+                        "    .configureBabelPresetEnv((config) => {",
+                        "        config.useBuiltIns = 'usage';",
+                        "        config.corejs = 3;",
+                        "    });",
+                        "",
+                        "// Welcome page stylesheets",
+                        "Encore.addEntry('welcome-page-css', [",
+                        "    path.resolve(__dirname, './assets/scss/welcome-page.scss'),",
+                        "]);",
+                        "",
+                        "// Welcome page javascripts",
+                        "Encore.addEntry('welcome-page-js', [",
+                        "    path.resolve(__dirname, './assets/js/welcome.page.js'),",
+                        "]);",
+                        "",
+                        "Encore.addEntry('app', './assets/app.js');",
+                        "",
+                        "const projectConfig = Encore.getWebpackConfig();",
+                        "",
+                        "projectConfig.name = 'app';",
+                        "",
+                        "module.exports = [eZConfig, ibexaConfig, ...customConfigs, projectConfig];",
+                        "",
+                        "// uncomment this line if you've commented-out the above lines",
+                        "// module.exports = [ eZConfig, ibexaConfig, ...customConfigs ];",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "src/Kernel.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "declare(strict_types=1);",
+                        "",
+                        "namespace App;",
+                        "",
+                        "use Ibexa\\Bundle\\CompatibilityLayer\\Kernel\\BundleCompatibilityTrait;",
+                        "use Ibexa\\Bundle\\SystemInfo\\DependencyInjection\\IbexaSystemInfoExtension;",
+                        "use Symfony\\Bundle\\FrameworkBundle\\Kernel\\MicroKernelTrait;",
+                        "use Symfony\\Component\\DependencyInjection\\Loader\\Configurator\\ContainerConfigurator;",
+                        "use Symfony\\Component\\HttpKernel\\Kernel as BaseKernel;",
+                        "use Symfony\\Component\\Routing\\Loader\\Configurator\\RoutingConfigurator;",
+                        "",
+                        "class Kernel extends BaseKernel",
+                        "{",
+                        "    use MicroKernelTrait;",
+                        "    use BundleCompatibilityTrait;",
+                        "",
+                        "    protected function configureContainer(ContainerConfigurator $container): void",
+                        "    {",
+                        "        $container->import('../config/{packages}/*.yaml');",
+                        "        $container->import('../config/{packages}/' . $this->environment . '/*.yaml');",
+                        "",
+                        "        if (is_file(\\dirname(__DIR__) . '/config/services.yaml')) {",
+                        "            $container->import('../config/services.yaml');",
+                        "            $container->import('../config/{services}_' . $this->environment . '.yaml');",
+                        "        } else {",
+                        "            $container->import('../config/{services}.php');",
+                        "        }",
+                        "    }",
+                        "",
+                        "    protected function configureRoutes(RoutingConfigurator $routes): void",
+                        "    {",
+                        "        $routes->import('../config/{routes}/' . $this->environment . '/*.yaml');",
+                        "        $routes->import('../config/{routes}/*.yaml');",
+                        "",
+                        "        if (is_file(\\dirname(__DIR__) . '/config/routes.yaml')) {",
+                        "            $routes->import('../config/routes.yaml');",
+                        "        } else {",
+                        "            $routes->import('../config/{routes}.php');",
+                        "        }",
+                        "",
+                        "        // Compatibility Layer",
+                        "        $edition = IbexaSystemInfoExtension::getEditionByPackages();",
+                        "        if (is_file(\\dirname(__DIR__) . '/config/routes/deprecated/ibexa_compatibility_layer_' . $edition . '.yaml')) {",
+                        "            $routes->import('../config/routes/deprecated/ibexa_compatibility_layer_' . $edition . '.yaml');",
+                        "        }",
+                        "    }",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c534ec3c28baf19a502cbdc827ef9b8661241546"
+        }
+    }
+}
