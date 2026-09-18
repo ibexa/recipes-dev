@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/admin-ui-extras": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\AdminUiExtras\\IbexaAdminUiExtrasBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "2b902e1d9bd020bc21a013d3519fb3e255e24c61"
+        }
+    }
+}

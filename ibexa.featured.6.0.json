@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "ibexa/featured": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_featured.yaml": {
+                    "contents": [
+                        "ibexa.featured:",
+                        "    resource: '@IbexaFeaturedBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "10baf659b46a36c0a12175393574b574bf24f210"
+        }
+    }
+}
