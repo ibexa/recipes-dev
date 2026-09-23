@@ -1,0 +1,13 @@
+## The AI Assistant connects to an Ibexa Orchestration Engine instance. Fill in the OE_*
+## variables in .env.local, or replace the placeholders below with literal values.
+##
+## Note the int: processor on agent_id — without it the identifier arrives as a string
+## and the configuration is rejected.
+##
+## Left empty, the assistant stays disabled.
+ibexa_connector_ai_assistant:
+    orchestration_engine:
+        base_url: '%env(OE_API_BASE_URL)%'
+        username: '%env(OE_USERNAME)%'
+        password: '%env(OE_PASSWORD)%'
+        agent_id: '%env(int:OE_AGENT_ID)%'
