@@ -81,6 +81,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/connect](https://packagist.org/packages/ibexa/connect) | [6.0](../../../tree/main/ibexa/connect/6.0) |  |
 | [ibexa/connector-actito](https://packagist.org/packages/ibexa/connector-actito) | [6.0](../../../tree/main/ibexa/connector-actito/6.0) | `actito`, `ibexa-connector-actito`, `ibexaconnectoractito` |
 | [ibexa/connector-ai](https://packagist.org/packages/ibexa/connector-ai) | [6.0](../../../tree/main/ibexa/connector-ai/6.0) |  |
+| [ibexa/connector-ai-assistant](https://packagist.org/packages/ibexa/connector-ai-assistant) | [6.0](../../../tree/main/ibexa/connector-ai-assistant/6.0) | `ai-assistant`, `aiassistant`, `ibexa-connector-ai-assistant`, `ibexaconnectoraiassistant` |
 | [ibexa/connector-anthropic](https://packagist.org/packages/ibexa/connector-anthropic) | [6.0](../../../tree/main/ibexa/connector-anthropic/6.0) |  |
 | [ibexa/connector-dam](https://packagist.org/packages/ibexa/connector-dam) | [6.0](../../../tree/main/ibexa/connector-dam/6.0) |  |
 | [ibexa/connector-gemini](https://packagist.org/packages/ibexa/connector-gemini) | [6.0](../../../tree/main/ibexa/connector-gemini/6.0) |  |

@@ -1,0 +1,45 @@
+{
+    "manifests": {
+        "ibexa/connector-ai-assistant": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorAiAssistant\\IbexaConnectorAiAssistantBundle": [
+                        "all"
+                    ]
+                },
+                "env": {
+                    "#1": "Connection to the Ibexa Orchestration Engine instance backing the AI Assistant",
+                    "OE_API_BASE_URL": "https://orchestration-engine.example.com",
+                    "OE_USERNAME": "",
+                    "OE_PASSWORD": "",
+                    "OE_AGENT_ID": "0"
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connector_ai_assistant.yaml": {
+                    "contents": [
+                        "## The AI Assistant connects to an Ibexa Orchestration Engine instance. Fill in the OE_*",
+                        "## variables in .env.local, or replace the placeholders below with literal values.",
+                        "##",
+                        "## Note the int: processor on agent_id \u2014 without it the identifier arrives as a string",
+                        "## and the configuration is rejected.",
+                        "##",
+                        "## Left empty, the assistant stays disabled.",
+                        "ibexa_connector_ai_assistant:",
+                        "    orchestration_engine:",
+                        "        base_url: '%env(OE_API_BASE_URL)%'",
+                        "        username: '%env(OE_USERNAME)%'",
+                        "        password: '%env(OE_PASSWORD)%'",
+                        "        agent_id: '%env(int:OE_AGENT_ID)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c77f8f7d90f32d03ca495ff546e041eaf93128f3"
+        }
+    }
+}

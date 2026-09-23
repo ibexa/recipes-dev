@@ -1,6 +1,8 @@
 {
     "aliases": {
         "actito": "ibexa/connector-actito",
+        "ai-assistant": "ibexa/connector-ai-assistant",
+        "aiassistant": "ibexa/connector-ai-assistant",
         "cdp": "ibexa/cdp",
         "cms": "ibexa/oss",
         "cms-commerce": "ibexa/commerce",
@@ -27,6 +29,7 @@
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-connector-actito": "ibexa/connector-actito",
+        "ibexa-connector-ai-assistant": "ibexa/connector-ai-assistant",
         "ibexa-connector-raptor": "ibexa/connector-raptor",
         "ibexa-content": "ibexa/content",
         "ibexa-experience": "ibexa/experience",
@@ -35,6 +38,7 @@
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexaconnectoractito": "ibexa/connector-actito",
+        "ibexaconnectoraiassistant": "ibexa/connector-ai-assistant",
         "ibexaconnectorraptor": "ibexa/connector-raptor",
         "ibexacontent": "ibexa/content",
         "ibexaexperience": "ibexa/experience",
@@ -447,6 +451,10 @@
         ],
         "ibexa/connector-ai": [
             "4.6",
+            "5.0",
+            "6.0"
+        ],
+        "ibexa/connector-ai-assistant": [
             "5.0",
             "6.0"
         ],
