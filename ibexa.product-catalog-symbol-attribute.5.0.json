@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "ibexa/product-catalog-symbol-attribute": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ProductCatalogSymbolAttribute\\IbexaProductCatalogSymbolAttributeBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_product_catalog_symbol_attribute.yaml": {
+                    "contents": [
+                        "# Example configuration for a custom symbol attribute:",
+                        "",
+                        "#ibexa_product_catalog_symbol_attribute:",
+                        "#    formats:",
+                        "#        mpn:",
+                        "#            name: 'Manufacturer Part Number'",
+                        "#            pattern: '/^.*$/'",
+                        "#            examples:",
+                        "#                - '2N6405G'",
+                        "#                - '2N6071BG'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "70461e059685a964beb4750f8653a3dbb2329697"
+        }
+    }
+}
