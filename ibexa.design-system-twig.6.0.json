@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/design-system-twig": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\DesignSystemTwig\\IbexaDesignSystemTwigBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "a073b5962b8eb460acd3985872810378802c95e8"
+        }
+    }
+}
