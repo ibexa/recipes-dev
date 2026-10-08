@@ -1,0 +1,44 @@
+{
+    "manifests": {
+        "ibexa/discounts-codes": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\DiscountsCodes\\IbexaDiscountsCodesBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_discounts_codes.yaml": {
+                    "contents": [
+                        "framework:",
+                        "    rate_limiter:",
+                        "        discount_code_applying:",
+                        "            policy: 'fixed_window'",
+                        "            limit: 20",
+                        "            interval: '1 minute'",
+                        "            lock_factory: 'lock.discount_code_applying.factory'",
+                        "",
+                        "    lock:",
+                        "        discount_code_applying: '%env(IBEXA_LOCK_DSN)%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_discounts_codes.yaml": {
+                    "contents": [
+                        "ibexa.discounts_codes.rest:",
+                        "    resource: '@IbexaDiscountsCodesBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c17e0c7b6a9db906604745e25dc5ddab4f5b2014"
+        }
+    }
+}
