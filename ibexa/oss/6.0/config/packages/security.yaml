@@ -51,7 +51,7 @@ security:
             pattern: /user/from-invite/register|/from-invite/register
             security: false
 
-        # Uncomment the rules below to enable JSON Web Token (JWT) authentication for REST and/or GraphQL
+        # Uncomment the rules below to enable JSON Web Token (JWT) creation for REST and JWT authentication for GraphQL; REST bearer validation is `jwt: ~` on the ibexa_rest firewall below
         #ibexa_jwt_rest:
         #    request_matcher: Ibexa\Rest\Security\JWTTokenCreationRESTRequestMatcher
         #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
@@ -63,13 +63,6 @@ security:
         #        password_path: JWTInput.password
         #        success_handler: lexik_jwt_authentication.handler.authentication_success
         #        failure_handler: lexik_jwt_authentication.handler.authentication_failure
-
-        #ibexa_jwt_rest.api:
-        #    request_matcher: Ibexa\Rest\Security\AuthorizationHeaderRESTRequestMatcher
-        #    user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
-        #    provider: ibexa
-        #    stateless: true
-        #    jwt: ~
 
         #ibexa_jwt_graphql:
         #    request_matcher: Ibexa\GraphQL\Security\NonAdminGraphQLRequestMatcher
@@ -83,7 +76,33 @@ security:
         #    http_basic:
         #        realm: Secured Area
 
+        # REST API: two firewalls, in this order; both must precede ibexa_front (the first matching firewall wins).
+        #  - ibexa_rest: requests under /api/ibexa (v2 and v3) carrying an Authorization header. Stateless:
+        #    no session, no Set-Cookie, no CSRF check. Enable ONE token validator below.
+        #  - ibexa_rest_session: every other /api/ibexa request, cookie-based, in the shared "ibexa" context,
+        #    used by the back office's own REST calls (CSRF applies there).
         ibexa_rest:
+            request_matcher: Ibexa\ApiPlatform\Security\AuthorizationHeaderRequestMatcher
+            provider: ibexa
+            user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
+            stateless: true
+            # OpenID Connect access tokens from any OIDC provider (Keycloak is the reference); requires web-token/jwt-library.
+            # The claim must resolve through the user provider: "ibexa" loads users by login, ibexa.security.user_provider.email by email.
+            #access_token:
+            #    token_handler:
+            #        oidc:
+            #            discovery: { base_uri: '%env(OIDC_DISCOVERY_URI)%', cache: { id: cache.app } }
+            #            algorithms: ['RS256']
+            #            audience: '%env(OIDC_AUDIENCE)%'
+            #            issuers: ['%env(OIDC_ISSUER)%']
+            #            claim: '%env(OIDC_USER_CLAIM)%'
+            #    token_extractors: header
+            # JSON Web Tokens created through the ibexa_jwt_rest firewall above:
+            #jwt: ~
+            # Tokens issued by the product acting as an OAuth2 Server (ibexa/oauth2-server):
+            #oauth2: true
+
+        ibexa_rest_session:
             pattern: ^/api/ibexa
             provider: ibexa
             user_checker: Ibexa\Core\MVC\Symfony\Security\UserChecker
