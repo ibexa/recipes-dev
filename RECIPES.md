@@ -56,6 +56,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/activity-log](https://packagist.org/packages/ibexa/activity-log) | [6.0](../../../tree/main/ibexa/activity-log/6.0) |  |
 | [ibexa/admin-ui](https://packagist.org/packages/ibexa/admin-ui) | [6.0](../../../tree/main/ibexa/admin-ui/6.0) |  |
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [6.0](../../../tree/main/ibexa/admin-ui-assets/6.0) |  |
+| [ibexa/admin-ui-extras](https://packagist.org/packages/ibexa/admin-ui-extras) | [6.0](../../../tree/main/ibexa/admin-ui-extras/6.0) |  |
 | [ibexa/app-switcher](https://packagist.org/packages/ibexa/app-switcher) | [6.0](../../../tree/main/ibexa/app-switcher/6.0) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [6.0](../../../tree/main/ibexa/behat/6.0) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [6.0](../../../tree/main/ibexa/calendar/6.0) |  |
@@ -113,6 +114,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/elasticsearch](https://packagist.org/packages/ibexa/elasticsearch) | [6.0](../../../tree/main/ibexa/elasticsearch/6.0) |  |
 | [ibexa/experience](https://packagist.org/packages/ibexa/experience) | [6.0](../../../tree/main/ibexa/experience/6.0) | `cms-experience`, `cmsexperience`, `dxp-experience`, `dxpexperience`, `experience`, `ibexa-experience`, `ibexaexperience` |
 | [ibexa/fastly](https://packagist.org/packages/ibexa/fastly) | [6.0](../../../tree/main/ibexa/fastly/6.0) |  |
+| [ibexa/featured](https://packagist.org/packages/ibexa/featured) | [6.0](../../../tree/main/ibexa/featured/6.0) |  |
 | [ibexa/fieldtype-address](https://packagist.org/packages/ibexa/fieldtype-address) | [6.0](../../../tree/main/ibexa/fieldtype-address/6.0) |  |
 | [ibexa/fieldtype-matrix](https://packagist.org/packages/ibexa/fieldtype-matrix) | [6.0](../../../tree/main/ibexa/fieldtype-matrix/6.0) |  |
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [6.0](../../../tree/main/ibexa/fieldtype-page/6.0) |  |

@@ -223,6 +223,9 @@
             "5.0",
             "6.0"
         ],
+        "ibexa/admin-ui-extras": [
+            "6.0"
+        ],
         "ibexa/app-switcher": [
             "4.6",
             "5.0",
@@ -684,6 +687,9 @@
             "4.5",
             "4.6",
             "5.0",
+            "6.0"
+        ],
+        "ibexa/featured": [
             "6.0"
         ],
         "ibexa/fieldtype-address": [
