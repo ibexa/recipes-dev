@@ -46,3 +46,7 @@ ibexa:
                 subscriptions:
                     Ibexa\AdminUi\Notifier\Notification\UserPasswordReset:
                         channels: [ email ]
+                    Ibexa\AdminUi\Notifier\Notification\UserInvitation:
+                        channels: [ email ]
+                    Ibexa\Contracts\FormBuilder\Notifications\FormSubmitted:
+                        channels: [ email ]
