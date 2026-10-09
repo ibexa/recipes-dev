@@ -1,0 +1,44 @@
+{
+    "manifests": {
+        "ibexa/rector": {
+            "manifest": {
+                "bundles": [],
+                "copy-from-recipe": {
+                    "rector.php": "rector.php"
+                }
+            },
+            "files": {
+                "rector.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "/**",
+                        " * @copyright Copyright (C) Ibexa AS. All rights reserved.",
+                        " * @license For full copyright and license information view LICENSE file distributed with this source code.",
+                        " */",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Ibexa\\Contracts\\Rector\\Sets\\IbexaSetList;",
+                        "use Rector\\Config\\RectorConfig;",
+                        "",
+                        "return RectorConfig::configure()",
+                        "   ->withPaths(",
+                        "       [",
+                        "           __DIR__ . '/src', // see if it matches your project structure",
+                        "           __DIR__ . '/tests'",
+                        "       ]",
+                        "   )",
+                        "   ->withSets(",
+                        "       [",
+                        "           IbexaSetList::IBEXA_46->value // rule set for upgrading to Ibexa DXP 4.6",
+                        "       ]",
+                        "   );",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "068e019ab261974c9825762985c5989d39ea55be"
+        }
+    }
+}
