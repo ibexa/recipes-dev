@@ -144,7 +144,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/page-builder](https://packagist.org/packages/ibexa/page-builder) | [6.0](../../../tree/main/ibexa/page-builder/6.0) |  |
 | [ibexa/payment](https://packagist.org/packages/ibexa/payment) | [6.0](../../../tree/main/ibexa/payment/6.0) |  |
 | [ibexa/permissions](https://packagist.org/packages/ibexa/permissions) | [6.0](../../../tree/main/ibexa/permissions/6.0) |  |
-| [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [6.0](../../../tree/main/ibexa/personalization/6.0) |  |
+| [ibexa/personalization](https://packagist.org/packages/ibexa/personalization) | [5.0](../../../tree/main/ibexa/personalization/5.0) |  |
 | [ibexa/personalization-client](https://packagist.org/packages/ibexa/personalization-client) | [6.0](../../../tree/main/ibexa/personalization-client/6.0) |  |
 | [ibexa/product-catalog](https://packagist.org/packages/ibexa/product-catalog) | [6.0](../../../tree/main/ibexa/product-catalog/6.0) |  |
 | [ibexa/product-catalog-date-time-attribute](https://packagist.org/packages/ibexa/product-catalog-date-time-attribute) | [6.0](../../../tree/main/ibexa/product-catalog-date-time-attribute/6.0) |  |
