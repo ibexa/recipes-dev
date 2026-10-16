@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const Encore = require('@symfony/webpack-encore');
+const Encore = require('@symfony/webpack-encore').default;
 const getWebpackConfigs = require('@ibexa/frontend-config/webpack-config/get-configs');
 const customConfigsPaths = require('./var/encore/ibexa.webpack.custom.config.js');
 
@@ -21,9 +21,8 @@ Encore
         to: 'images/[path][name].[ext]',
         pattern: /\.(png|svg)$/,
     })
-    .configureBabelPresetEnv((config) => {
-        config.useBuiltIns = 'usage';
-        config.corejs = 3;
+    .configureBabel((config) => {
+        config.plugins.push(['polyfill-corejs3', { method: 'usage-global', version: require('core-js/package.json').version }]);
     });
 
 // Welcome page stylesheets
@@ -43,8 +42,10 @@ if (isReactBlockPathCreated) {
 
 Encore.addEntry('app', './assets/app.js');
 
-const projectConfig = Encore.getWebpackConfig();
+const projectConfig = Encore.getWebpackConfig().then((config) => {
+    config.name = 'app';
 
-projectConfig.name = 'app';
+    return config;
+});
 
 module.exports = [...customConfigs, projectConfig];
