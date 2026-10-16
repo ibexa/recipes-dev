@@ -1,0 +1,13 @@
+{
+    "aliases": ["ibexa-api-platform"],
+    "bundles": {
+        "Ibexa\\Bundle\\ApiPlatform\\IbexaApiPlatformBundle": ["all"]
+    },
+    "env": {
+        "#0": "OpenID Connect provider for the stateless REST bearer firewall (ibexa_rest in config/packages/security.yaml)",
+        "OIDC_DISCOVERY_URI": "https://idp.example.com/realms/ibexa/",
+        "OIDC_ISSUER": "https://idp.example.com/realms/ibexa",
+        "OIDC_AUDIENCE": "ibexa-api",
+        "OIDC_USER_CLAIM": "preferred_username"
+    }
+}
