@@ -3349,7 +3349,8 @@
                         "  },",
                         "  \"resolutions\": {",
                         "    \"@types/glob\": \"8.1.0\",",
-                        "    \"webpack-sources\": \"^3.5.0\"",
+                        "    \"webpack-sources\": \"^3.5.0\",",
+                        "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"license\": \"UNLICENSED\",",
                         "  \"private\": true,",
@@ -4048,7 +4049,7 @@
                     "executable": false
                 }
             },
-            "ref": "a4145492d4e445e67de13a2fc9d32400e32cd24e"
+            "ref": "6e9f4ed21c83df0a4485df83418073f63e2902ec"
         }
     }
 }

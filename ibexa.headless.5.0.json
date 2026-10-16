@@ -2767,7 +2767,10 @@
                         "    \"typescript\": \"^5.6.3\",",
                         "    \"webpack-cli\": \"^6.0.1\",",
                         "    \"webpack-notifier\": \"^1.6.0\",",
-                        "    \"webpack\": \"^5.99.7\"",
+                        "    \"webpack\": \">=5.99.7 <5.112.0\"",
+                        "  },",
+                        "  \"resolutions\": {",
+                        "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"dependencies\": {",
                         "    \"react\": \"^19.1.0\",",
@@ -3444,7 +3447,7 @@
                     "executable": false
                 }
             },
-            "ref": "684c255b46c4ce55642065be5d016da160b9b8c9"
+            "ref": "73c5f0b9aba4ecf6ad32bce446ac2cb091305598"
         }
     }
 }
