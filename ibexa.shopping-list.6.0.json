@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "ibexa/shopping-list": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ShoppingList\\IbexaShoppingListBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_shopping_list.yaml": {
+                    "contents": [
+                        "ibexa.shopping_list:",
+                        "    resource: '@IbexaShoppingListBundle/Resources/config/routing.php'",
+                        "",
+                        "ibexa.shopping_list.rest:",
+                        "    resource: '@IbexaShoppingListBundle/Resources/config/routing_rest.php'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "2f20820874e2af79c59ad110062645bacd9b8c65"
+        }
+    }
+}
