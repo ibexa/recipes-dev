@@ -9,7 +9,7 @@
     "@ibexa/frontend-config": "https://github.com/ibexa/frontend-config#IBX-12891",
     "@ibexa/ts-config": "https://github.com/ibexa/ts-config-ibexa#^v1.1.1",
     "@svgr/webpack": "^8.1.0",
-    "@symfony/stimulus-bridge": "^3.0.0",
+    "@symfony/stimulus-bridge": "^4.0.2",
     "@symfony/webpack-encore": "^7.2.0",
     "@types/react-dom": "^19.1.2",
     "@types/react": "^19.1.2",
@@ -29,11 +29,10 @@
     "typescript": "^5.6.3",
     "webpack-cli": "^6.0.1",
     "webpack-notifier": "^1.6.0",
-    "webpack": ">=5.99.7 <5.112.0"
+    "webpack": "^5.99.7"
   },
   "resolutions": {
-    "sass": "<1.106.0",
-    "webpack": "<5.112.0"
+    "sass": "<1.106.0"
   },
   "dependencies": {
     "react": "^19.1.0",
