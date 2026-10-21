@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/connector-ai": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorAi\\IbexaConnectorAiBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_connector_ai.yaml": {
+                    "contents": [
+                        "ibexa.connector.ai.rest:",
+                        "    resource: '@IbexaConnectorAiBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        "",
+                        "ibexa.connector.ai.admin:",
+                        "    resource: '@IbexaConnectorAiBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f41ec3ac64e58633144b060d617e774eb5670e13"
+        }
+    }
+}
