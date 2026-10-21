@@ -7,7 +7,7 @@
     "regenerator-runtime": "^0.13.2",
     "webpack-notifier": "^1.6.0",
     "@babel/preset-react": "^7.0.0",
-    "sass": "^1.49.7",
+    "sass": ">=1.49.7 <1.106.0",
     "sass-loader": "^13.0.0",
     "@babel/runtime": "^7.13.10",
     "postcss-loader": "^4.3.0",
@@ -24,6 +24,7 @@
     "@svgr/webpack": "^8.1.0"
   },
   "resolutions": {
+    "sass": "<1.106.0",
     "@types/glob": "8.1.0",
     "webpack-sources": "^3.5.0",
     "webpack": "<5.112.0"
