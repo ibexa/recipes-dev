@@ -2768,7 +2768,7 @@
                         "    \"react-collapsible\": \"^2.5.0\",",
                         "    \"regenerator-runtime\": \"^0.13.2\",",
                         "    \"sass-loader\": \"^16.0.5\",",
-                        "    \"sass\": \">=1.49.7 <1.106.0\",",
+                        "    \"sass\": \"^1.49.7\",",
                         "    \"style-loader\": \"^2.0.0\",",
                         "    \"ts-loader\": \"^9.5.1\",",
                         "    \"typescript\": \"^5.6.3\",",
@@ -2777,7 +2777,6 @@
                         "    \"webpack\": \">=5.99.7 <5.112.0\"",
                         "  },",
                         "  \"resolutions\": {",
-                        "    \"sass\": \"<1.106.0\",",
                         "    \"webpack\": \"<5.112.0\"",
                         "  },",
                         "  \"dependencies\": {",
@@ -3455,7 +3454,7 @@
                     "executable": false
                 }
             },
-            "ref": "0b0a3aaa40d857d667fb363e83f6730d2499fc3f"
+            "ref": "4b3cf6ba525462090df846592c2cb14c7a86628e"
         }
     }
 }

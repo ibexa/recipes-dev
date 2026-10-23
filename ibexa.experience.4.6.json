@@ -3148,7 +3148,7 @@
                         "    \"regenerator-runtime\": \"^0.13.2\",",
                         "    \"webpack-notifier\": \"^1.6.0\",",
                         "    \"react-collapsible\": \"^2.5.0\",",
-                        "    \"sass\": \">=1.49.7 <1.106.0\",",
+                        "    \"sass\": \"^1.49.7\",",
                         "    \"sass-loader\": \"^13.0.0\",",
                         "    \"@babel/runtime\": \"^7.13.10\",",
                         "    \"postcss-loader\": \"^4.3.0\",",
@@ -3169,7 +3169,6 @@
                         "    \"react-dom\": \"^18.2.0\"",
                         "  },",
                         "  \"resolutions\": {",
-                        "    \"sass\": \"<1.106.0\",",
                         "    \"@types/glob\": \"8.1.0\",",
                         "    \"webpack-sources\": \"^3.5.0\",",
                         "    \"webpack\": \"<5.112.0\"",
@@ -3857,7 +3856,7 @@
                     "executable": false
                 }
             },
-            "ref": "0c64a148bde0c9de6462a00750149b16d3c61415"
+            "ref": "7c2c6eefb28746f786d7bb09c304c23ff1c95980"
         }
     }
 }
