@@ -1,0 +1,11 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-address": {
+            "manifest": {
+                "bundles": []
+            },
+            "files": [],
+            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+        }
+    }
+}
