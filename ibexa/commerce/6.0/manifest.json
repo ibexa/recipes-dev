@@ -68,7 +68,6 @@
         "Overblog\\GraphQLBundle\\OverblogGraphQLBundle": ["all"],
         "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle": ["all"],
         "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": ["all"],
-        "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": ["all"],
         "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"],
         "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": ["all"],
         "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": ["all"],
