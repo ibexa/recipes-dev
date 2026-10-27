@@ -170,9 +170,6 @@
                     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
                         "all"
                     ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
-                        "all"
-                    ],
                     "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": [
                         "all"
                     ],
@@ -3990,7 +3987,7 @@
                     "executable": false
                 }
             },
-            "ref": "ba5c97a858958248e3cd6e0f0756edd9ee73b456"
+            "ref": "6fb008d3a469dfa65a91b58fdefac6f5d4f76da6"
         }
     }
 }

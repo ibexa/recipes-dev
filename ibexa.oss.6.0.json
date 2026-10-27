@@ -134,9 +134,6 @@
                     "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle": [
                         "all"
                     ],
-                    "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle": [
-                        "all"
-                    ],
                     "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle": [
                         "all"
                     ],
@@ -2946,7 +2943,7 @@
                     "executable": false
                 }
             },
-            "ref": "b761dbbd8ad462d6bf493e8a4b0b2c7d9dd2143f"
+            "ref": "26207457046d5522ccae2804f8876966c4f0f5cb"
         }
     }
 }
