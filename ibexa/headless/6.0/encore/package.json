@@ -2,7 +2,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.13.10",
-    "@ckeditor/ckeditor5-dev-utils": "^47.0.0",
+    "@ckeditor/ckeditor5-dev-utils": "^61.1.0",
     "@hotwired/stimulus": "^3.0.0",
     "@ibexa/frontend-config": "https://github.com/ibexa/frontend-config#^v5.0.0",
     "@ibexa/ts-config": "https://github.com/ibexa/ts-config-ibexa#~v1.1.1",
@@ -12,7 +12,7 @@
     "@types/react-dom": "^19.1.2",
     "@types/react": "^19.1.2",
     "@typescript-eslint/typescript-estree": "^8.62.1",
-    "ckeditor5": "^45.0.0",
+    "ckeditor5": "^48.5.1",
     "core-js": "^3.0.0",
     "file-loader": "^6.0.0",
     "fork-ts-checker-webpack-plugin": "^7.0.0",
