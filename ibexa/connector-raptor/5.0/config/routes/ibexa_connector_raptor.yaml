@@ -1,2 +1,0 @@
-ibexa.connector_raptor:
-    resource: '@IbexaConnectorRaptorBundle/Resources/config/routing.yaml'

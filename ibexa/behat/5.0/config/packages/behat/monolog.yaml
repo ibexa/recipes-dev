@@ -1,5 +1,0 @@
-monolog:
-    handlers:
-        travis:
-            type: stream
-            level: error

@@ -1,2 +1,0 @@
-ibexa.quable:
-    resource: '@IbexaConnectorQuableBundle/Resources/config/routing.php'

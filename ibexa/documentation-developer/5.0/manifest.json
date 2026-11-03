@@ -1,8 +1,0 @@
-{
-  "aliases": [],
-  "bundles": {},
-  "copy-from-package": {
-    ".agents/skills/external/": ".agents/skills/",
-   "./.agents/skills/external/ibexa-documentation/": ".claude/skills/ibexa-documentation/"
-  }
-}

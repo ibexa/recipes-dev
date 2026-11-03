@@ -1,9 +1,0 @@
-{
-  "aliases": ["ibexa-connector-raptor", "raptor"],
-  "bundles": {
-    "Ibexa\\Bundle\\ConnectorRaptor\\IbexaConnectorRaptorBundle": ["all"]
-  },
-  "copy-from-recipe": {
-    "config/": "%CONFIG_DIR%/"
-  }
-}

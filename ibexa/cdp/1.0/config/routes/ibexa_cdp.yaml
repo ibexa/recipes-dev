@@ -1,2 +1,0 @@
-ibexa.cdp:
-    resource: '@IbexaCdpBundle/Resources/config/routing.yaml'

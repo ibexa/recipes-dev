@@ -1,2 +1,0 @@
-ibexa.compatibility_layer.experience:
-    resource: '@IbexaCompatibilityLayerBundle/Resources/config/deprecated_routing_experience.yaml'
