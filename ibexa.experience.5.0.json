@@ -2037,6 +2037,10 @@
                         "                subscriptions:",
                         "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserPasswordReset:",
                         "                        channels: [ email ]",
+                        "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserInvitation:",
+                        "                        channels: [ email ]",
+                        "                    Ibexa\\Contracts\\FormBuilder\\Notifications\\FormSubmitted:",
+                        "                        channels: [ email ]",
                         ""
                     ],
                     "executable": false
@@ -3760,7 +3764,7 @@
                     "executable": false
                 }
             },
-            "ref": "fc7410f7b1b6d7b0c7fc4cfcbe5b7bdefa692be0"
+            "ref": "1d195b8614a67aa105f039940e439e70608194eb"
         }
     }
 }

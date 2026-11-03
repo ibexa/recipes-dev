@@ -1819,6 +1819,8 @@
                         "                subscriptions:",
                         "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserPasswordReset:",
                         "                        channels: [ email ]",
+                        "                    Ibexa\\AdminUi\\Notifier\\Notification\\UserInvitation:",
+                        "                        channels: [ email ]",
                         ""
                     ],
                     "executable": false
@@ -2949,7 +2951,7 @@
                     "executable": false
                 }
             },
-            "ref": "cafe38c38ba286ee1717bf9d623a1295b95070cc"
+            "ref": "1dcf7c225c016ba9df5b4aa674bfae501fe03406"
         }
     }
 }
