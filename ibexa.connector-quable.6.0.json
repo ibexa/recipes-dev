@@ -1,0 +1,40 @@
+{
+    "manifests": {
+        "ibexa/connector-quable": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorQuable\\IbexaConnectorQuableBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connector_quable.yaml": {
+                    "contents": [
+                        "ibexa_connector_quable:",
+                        "    ### Fill in connection details and you can remove \"enabled\" field. It will become enabled automatically.",
+                        "    enabled: false",
+                        "",
+                        "    # instance_url: ~",
+                        "    # api_token: ~",
+                        "    # webhook_secret: ~",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_connector_quable.yaml": {
+                    "contents": [
+                        "ibexa.quable:",
+                        "    resource: '@IbexaConnectorQuableBundle/Resources/config/routing.php'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "37e4d8317418ab65cde19066e169fc0652141833"
+        }
+    }
+}

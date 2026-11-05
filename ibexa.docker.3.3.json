@@ -1,0 +1,48 @@
+{
+    "manifests": {
+        "ibexa/docker": {
+            "manifest": {
+                "copy-from-package": {
+                    "scripts/vhost.sh": "bin/vhost.sh",
+                    "docker/": "doc/docker/",
+                    "templates/apache2/": "doc/apache2/",
+                    "templates/nginx/": "doc/nginx/"
+                },
+                "env": {
+                    "#0": "Composer configuration on local:",
+                    "COMPOSER_HOME": "~/.composer",
+                    "#1": "# Docker Compose configuration",
+                    "COMPOSE_FILE": "doc/docker/base-dev.yml",
+                    "COMPOSE_DIR": ".",
+                    "COMPOSE_PROJECT_NAME": "ibexa",
+                    "PHP_IMAGE": "ezsystems/php:7.3-v2-node12",
+                    "NGINX_IMAGE": "nginx:stable",
+                    "MYSQL_IMAGE": "healthcheck/mariadb",
+                    "REDIS_IMAGE": "healthcheck/redis",
+                    "#2": "# Behat / Selenium config",
+                    "#3": "## web host refer to the tip of the setup, so varnish if that is used.",
+                    "SELENIUM_IMAGE": "selenium/standalone-chrome-debug:3.141.59-20210929",
+                    "CHROMIUM_IMAGE": "registry.gitlab.com/dmore/docker-chrome-headless:7.1",
+                    "WEB_HOST": "http://web",
+                    "MINK_DEFAULT_SESSION": "selenium",
+                    "SELENIUM_HOST": "http://selenium:4444/wd/hub",
+                    "CHROMIUM_HOST": "http://chromium:9222",
+                    "#4": "Database configuration for Docker",
+                    "DATABASE_USER": "ezp",
+                    "DATABASE_PASSWORD": "SetYourOwnPassword",
+                    "DATABASE_NAME": "ezp",
+                    "DATABASE_HOST": "db",
+                    "DATABASE_PORT": "3306",
+                    "DATABASE_PLATFORM": "mysql",
+                    "DATABASE_DRIVER": "pdo_mysql",
+                    "#5": "Needed by Doctrine Bundle / ORM to avoid it opening connection during situations where there is no service yet.",
+                    "#6": "See: https://symfony.com/doc/current/reference/configuration/doctrine.html#doctrine-dbal-configuration",
+                    "DATABASE_VERSION": "mariadb-10.3.0",
+                    "DATABASE_URL": "${DATABASE_PLATFORM}://${DATABASE_USER}:${DATABASE_PASSWORD}@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}?serverVersion=${DATABASE_VERSION}"
+                }
+            },
+            "files": [],
+            "ref": "db6bb655cf4e554c0d957f7a94d157000c518127"
+        }
+    }
+}

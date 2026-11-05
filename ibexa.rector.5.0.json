@@ -1,0 +1,74 @@
+{
+    "manifests": {
+        "ibexa/rector": {
+            "manifest": {
+                "bundles": [],
+                "copy-from-recipe": {
+                    "rector.config.js": "rector.config.js",
+                    "rector.php": "rector.php"
+                }
+            },
+            "files": {
+                "rector.config.js": {
+                    "contents": [
+                        "module.exports = {",
+                        "    config: {",
+                        "        paths: [",
+                        "            {",
+                        "                input: 'src/bundle/Resources/public',",
+                        "                output: 'src/bundle/Resources/public',",
+                        "            },",
+                        "            {",
+                        "                input: 'src/bundle/ui-dev/src/modules',",
+                        "                output: 'src/bundle/ui-dev/src/modules',",
+                        "            },",
+                        "        ],",
+                        "        // prettierConfigPath: 'pathToPrettierConfigFile',",
+                        "    },",
+                        "    plugins: (plugins) => {",
+                        "        // modify enabled plugins",
+                        "        return plugins;",
+                        "    },",
+                        "    pluginsConfig: (config) => {",
+                        "        // modify plugins config",
+                        "        return config;",
+                        "    },",
+                        "};",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "rector.php": {
+                    "contents": [
+                        "<?php",
+                        "",
+                        "/**",
+                        " * @copyright Copyright (C) Ibexa AS. All rights reserved.",
+                        " * @license For full copyright and license information view LICENSE file distributed with this source code.",
+                        " */",
+                        "declare(strict_types=1);",
+                        "",
+                        "use Ibexa\\Contracts\\Rector\\Sets\\IbexaSetList;",
+                        "use Rector\\Config\\RectorConfig;",
+                        "",
+                        "return RectorConfig::configure()",
+                        "   ->withPaths(",
+                        "       [",
+                        "           __DIR__ . '/src', // see if it matches your project structure",
+                        "           __DIR__ . '/tests'",
+                        "       ]",
+                        "   )",
+                        "   ->withSets(",
+                        "       [",
+                        "           IbexaSetList::IBEXA_50->value // rule set for upgrading to Ibexa DXP 5.0",
+                        "       ]",
+                        "   );",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "d1d4bba08c4df7af609267ce0cdb25f3cd564ce1"
+        }
+    }
+}
