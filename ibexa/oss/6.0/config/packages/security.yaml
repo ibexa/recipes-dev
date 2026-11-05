@@ -97,7 +97,7 @@ security:
             #            issuers: ['%env(OIDC_ISSUER)%']
             #            claim: '%env(OIDC_USER_CLAIM)%'
             #    token_extractors: header
-            # JSON Web Tokens created through the ibexa_jwt_rest firewall above:
+            # JSON Web Tokens created through the ibexa_jwt_rest firewall above; enable the authorization_header token extractor in config/packages/lexik_jwt_authentication.yaml first, it is disabled by default:
             #jwt: ~
             # Tokens issued by the product acting as an OAuth2 Server (ibexa/oauth2-server):
             #oauth2: true
