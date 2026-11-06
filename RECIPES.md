@@ -57,6 +57,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/admin-ui](https://packagist.org/packages/ibexa/admin-ui) | [6.0](../../../tree/main/ibexa/admin-ui/6.0) |  |
 | [ibexa/admin-ui-assets](https://packagist.org/packages/ibexa/admin-ui-assets) | [6.0](../../../tree/main/ibexa/admin-ui-assets/6.0) |  |
 | [ibexa/admin-ui-extras](https://packagist.org/packages/ibexa/admin-ui-extras) | [6.0](../../../tree/main/ibexa/admin-ui-extras/6.0) |  |
+| [ibexa/api-platform](https://packagist.org/packages/ibexa/api-platform) | [6.0](../../../tree/main/ibexa/api-platform/6.0) | `ibexa-api-platform`, `ibexaapiplatform` |
 | [ibexa/app-switcher](https://packagist.org/packages/ibexa/app-switcher) | [6.0](../../../tree/main/ibexa/app-switcher/6.0) |  |
 | [ibexa/behat](https://packagist.org/packages/ibexa/behat) | [6.0](../../../tree/main/ibexa/behat/6.0) |  |
 | [ibexa/calendar](https://packagist.org/packages/ibexa/calendar) | [6.0](../../../tree/main/ibexa/calendar/6.0) |  |

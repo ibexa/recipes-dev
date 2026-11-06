@@ -26,6 +26,7 @@
         "experience": "ibexa/experience",
         "headless": "ibexa/headless",
         "ibexa": "ibexa/oss",
+        "ibexa-api-platform": "ibexa/api-platform",
         "ibexa-cdp": "ibexa/cdp",
         "ibexa-commerce": "ibexa/commerce",
         "ibexa-connector-actito": "ibexa/connector-actito",
@@ -35,6 +36,7 @@
         "ibexa-experience": "ibexa/experience",
         "ibexa-headless": "ibexa/headless",
         "ibexa-oss": "ibexa/oss",
+        "ibexaapiplatform": "ibexa/api-platform",
         "ibexacdp": "ibexa/cdp",
         "ibexacommerce": "ibexa/commerce",
         "ibexaconnectoractito": "ibexa/connector-actito",
@@ -224,6 +226,9 @@
             "6.0"
         ],
         "ibexa/admin-ui-extras": [
+            "6.0"
+        ],
+        "ibexa/api-platform": [
             "6.0"
         ],
         "ibexa/app-switcher": [
