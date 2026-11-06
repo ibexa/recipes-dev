@@ -77,7 +77,7 @@ security:
         #        realm: Secured Area
 
         # REST API: two firewalls, in this order; both must precede ibexa_front (the first matching firewall wins).
-        #  - ibexa_rest: requests under /api/ibexa (v2 and v3) carrying an Authorization header. Stateless:
+        #  - ibexa_rest: requests under /api/ibexa (v2 and v3) carrying a bearer token (Authorization: Bearer ...; Basic requests fall through to ibexa_rest_session). Stateless:
         #    no session, no Set-Cookie, no CSRF check. Enable ONE token validator below.
         #  - ibexa_rest_session: every other /api/ibexa request, cookie-based, in the shared "ibexa" context,
         #    used by the back office's own REST calls (CSRF applies there).
