@@ -1,4 +1,12 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "ELASTICSEARCH_DSN": "http://localhost:9200"
+  }
 }

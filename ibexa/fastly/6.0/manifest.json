@@ -1,4 +1,15 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\Fastly\\IbexaFastlyBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "#13": "Enable fastly by setting valid service_id and key",
+    "#14": "In order for this to work you also need to have EzSystemsPlatformFastlyCacheBundle installed",
+    "#15": "FASTLY_SERVICE_ID=\"\"",
+    "#16": "FASTLY_KEY=\"\""
+  }
 }

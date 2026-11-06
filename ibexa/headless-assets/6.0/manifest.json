@@ -1,4 +1,6 @@
 {
     "aliases": [],
-    "bundles": {}
+    "bundles": {
+        "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": ["all"]
+    }
 }
