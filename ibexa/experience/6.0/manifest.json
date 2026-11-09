@@ -162,5 +162,8 @@
         "ibexa:encore:compile --frontend-configs-name libs": "symfony-cmd",
         "ibexa:encore:compile --frontend-configs-name richtext": "symfony-cmd",
         "ibexa:encore:compile": "symfony-cmd"
-    }
+    },
+    "gitignore": [
+        "/tsconfig.ibexa.json"
+    ]
 }
