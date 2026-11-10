@@ -118,7 +118,7 @@
         width: 317px;
         height: 510px;
         border-radius: 40px;
-        background: linear-gradient(235.24deg, #8676e1 12.52%, #6d27f4 53.48%, #5d00ff 68.75%);
+        background: $ibexa-welcome-gradient-art;
     }
 
     &__frame-photos {
@@ -236,7 +236,7 @@
         border-radius: 12px;
 
         &--dark {
-            background: rgba(#f1ecfb, 0.1);
+            background: rgba($ibexa-welcome-color-primary-low-10, 0.1);
         }
 
         &--light {

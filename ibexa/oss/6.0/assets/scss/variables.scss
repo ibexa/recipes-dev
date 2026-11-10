@@ -17,16 +17,22 @@ $ibexa-welcome-color-supplementary: #f4f0fc;
 $ibexa-welcome-color-primary-10: #ae92e8;
 $ibexa-welcome-color-primary-5: #cfbef1;
 $ibexa-welcome-color-primary-low: #f0eafe;
+$ibexa-welcome-color-primary-low-10: #f1ecfb;
 $ibexa-welcome-color-primary-low-30: #e8e0fe;
 $ibexa-welcome-color-primary-middle-5: #f8f6fd;
+$ibexa-welcome-color-primary-middle-10: #e7def8;
 $ibexa-welcome-color-primary-middle-20: #e4d9f7;
 $ibexa-welcome-color-neutral-20: #fafafa;
 $ibexa-welcome-color-neutral-50: #ececec;
 $ibexa-welcome-color-line: #cfd0d0;
 $ibexa-welcome-color-base: #f5f6f6;
+$ibexa-welcome-color-art-start: #8676e1;
+$ibexa-welcome-color-art-middle: #6d27f4;
+$ibexa-welcome-color-art-end: #5d00ff;
 
 $ibexa-welcome-gradient-brand: linear-gradient(-16.98deg, $ibexa-welcome-color-brand 40%, $ibexa-welcome-color-brand-light 100%);
 $ibexa-welcome-gradient-brand-hover: linear-gradient(-16.98deg, $ibexa-welcome-color-brand-light 0%, $ibexa-welcome-color-brand 45%);
+$ibexa-welcome-gradient-art: linear-gradient(235.24deg, $ibexa-welcome-color-art-start 12.52%, $ibexa-welcome-color-art-middle 53.48%, $ibexa-welcome-color-art-end 68.75%);
 
 $ibexa-welcome-radius-button: 8px;
 $ibexa-welcome-radius-card: 12px;
