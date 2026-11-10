@@ -338,6 +338,9 @@
                     "ibexa:encore:compile --frontend-configs-name richtext": "symfony-cmd",
                     "ibexa:encore:compile": "symfony-cmd"
                 },
+                "gitignore": [
+                    "/tsconfig.ibexa.json"
+                ],
                 "post-install-output": [
                     "<fg=red>                                                                                              </>",
                     "<fg=red>       ::::     ./.  `..-..`              ``...``               .....`    `....`              </>",
@@ -3239,26 +3242,6 @@
                     ],
                     "executable": false
                 },
-                "encore/ibexa.tsconfig.json": {
-                    "contents": [
-                        "{",
-                        "    \"extends\": \"@ibexa/ts-config\",",
-                        "    \"include\": [",
-                        "        \"vendor/ibexa/**/*\"",
-                        "    ],",
-                        "    \"exclude\": [",
-                        "        \"vendor/ibexa/**/node_modules/**/*\",",
-                        "        \"vendor/ibexa/**/vendors/**/*\",",
-                        "        \"vendor/ibexa/**/vendor/**/*\"",
-                        "    ],",
-                        "    \"compilerOptions\": {",
-                        "        \"paths\": {}",
-                        "    }",
-                        "}",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "encore/package.json": {
                     "contents": [
                         "{",
@@ -3267,8 +3250,8 @@
                         "    \"@babel/runtime\": \"^7.13.10\",",
                         "    \"@ckeditor/ckeditor5-dev-utils\": \"^61.1.0\",",
                         "    \"@hotwired/stimulus\": \"^3.0.0\",",
-                        "    \"@ibexa/frontend-config\": \"https://github.com/ibexa/frontend-config#^v5.0.0\",",
-                        "    \"@ibexa/ts-config\": \"https://github.com/ibexa/ts-config-ibexa#~v1.1.1\",",
+                        "    \"@ibexa/frontend-config\": \"https://github.com/ibexa/frontend-config#^v6.0.0-alpha1\",",
+                        "    \"@ibexa/ts-config\": \"https://github.com/ibexa/ts-config-ibexa#~v2.0.0\",",
                         "    \"@svgr/webpack\": \"^8.1.0\",",
                         "    \"@symfony/stimulus-bridge\": \"^3.0.0\",",
                         "    \"@symfony/webpack-encore\": \"^5.1.0\",",
@@ -3311,6 +3294,16 @@
                         "    \"ibexa:build\": \"encore production --progress --config ./node_modules/@ibexa/frontend-config/ibexa.webpack.${configName:-all}.configs\"",
                         "  },",
                         "  \"packageManager\": \"yarn@1.22.22\"",
+                        "}",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "encore/tsconfig.json": {
+                    "contents": [
+                        "{",
+                        "    \"files\": [],",
+                        "    \"references\": [{ \"path\": \"./tsconfig.ibexa.json\" }]",
                         "}",
                         ""
                     ],
@@ -3997,7 +3990,7 @@
                     "executable": false
                 }
             },
-            "ref": "67a8727f2bc7b6100e760c0347f97b95c92548b0"
+            "ref": "aba951d6842aec64689d83213fada37e89fb8a49"
         }
     }
 }
