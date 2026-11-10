@@ -7,304 +7,311 @@
 {% endblock %}
 
 {% block stylesheets %}
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
     {{ encore_entry_link_tags('welcome-page-css') }}
 {% endblock %}
 
-{% block javascripts %}
-    {{ encore_entry_script_tags('welcome-page-js') }}
-{% endblock %}
-
 {% block content %}
-    <div class="ibexa-welcome-header">
-        <div class="ibexa-welcome-container">
-            <div class="ibexa-welcome-row">
-                <div class="ibexa-welcome-column">
-                    <div class="ibexa-welcome-header__logo">
-                        <img
-                            src="{{ asset('bundles/ibexaadminui/img/ibexa-logo.svg') }}"
-                            alt="Ibexa"
-                            class="logo"
-                        >
-                    </div>
-                    <h1 class="ibexa-welcome-section-header">
-                        {{ 'ibexa_platform_welcome_page.header.title'|trans({
-                            '%version%': constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')
-                        })|desc('Welcome to Ibexa Digital Experience Platform %version%')|raw }}
+    {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
+    {% set version = constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')|split('.')|slice(0, 2)|join('.') %}
+
+    <header class="ibexa-welcome-hero">
+        <div class="ibexa-welcome-hero__background">
+            <img class="ibexa-welcome-hero__knot" src="{{ asset('build/images/welcome/knot.png') }}" alt="" />
+        </div>
+        <div class="ibexa-welcome-container ibexa-welcome-hero__container">
+            <img
+                class="ibexa-welcome-hero__logo"
+                src="{{ asset('build/images/welcome/cohesivo-logo.svg') }}"
+                alt="{{ 'ibexa_platform_welcome_page.hero.logo'|trans|desc('Cohesivo by Ibexa') }}"
+            />
+            <div class="ibexa-welcome-hero__content">
+                <div class="ibexa-welcome-hero__text">
+                    <h1 class="ibexa-welcome-heading ibexa-welcome-hero__title">
+                        {{ 'ibexa_platform_welcome_page.hero.title'|trans|desc('Cohesivo is ready') }}
                     </h1>
-                    <p class="ibexa-welcome-paragraph">
-                        {{ 'ibexa_platform_welcome_page.header.content'|trans|desc('The headless content engine at the core of your digital platform.') }}
+                    <p class="ibexa-welcome-hero__lead">
+                        {{ 'ibexa_platform_welcome_page.hero.lead'|trans|desc('Your installation is complete. Follow the recommended steps below to configure your project and start building.') }}
                     </p>
-                    {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
-                    <a
-                        href="{{ admin_url }}"
-                        class="ibexa-welcome-btn ibexa-welcome-btn--filled"
-                    >
-                        {{ 'ibexa_platform_welcome_page.header.action'|trans|desc('Start your project') }}
+                </div>
+                <div class="ibexa-welcome-hero__actions">
+                    <a href="{{ admin_url }}" class="ibexa-welcome-btn ibexa-welcome-btn--primary">
+                        {{ 'ibexa_platform_welcome_page.hero.go_to_cohesivo'|trans|desc('Go to Cohesivo') }}
                     </a>
-                    <button class="ibexa-welcome-header__go-down">
-                        <img
-                            src="{{ asset('build/images/caret-down.svg') }}"
-                            alt="{{ 'ibexa_platform_welcome_page.header.caret_down'|trans|desc('Down') }}"
-                        />
-                    </button>
-                </div>
-                <div class="ibexa-welcome-column ibexa-welcome-header__img-column">
-                    <img
-                        class="ibexa-welcome-img ibexa-welcome-img--center"
-                        src="{{ asset('build/images/headless.png') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.header.image'|trans|desc('Headless') }}"
-                    />
+                    <a href="https://doc.ibexa.co" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.hero.open_documentation'|trans|desc('Open documentation') }}
+                    </a>
                 </div>
             </div>
+            <div class="ibexa-welcome-hero-art" aria-hidden="true">
+                <div class="ibexa-welcome-hero-art__blob ibexa-welcome-hero-art__blob--1">
+                    <img src="{{ asset('build/images/welcome/ellipse-hero.svg') }}" alt="" />
+                </div>
+                <div class="ibexa-welcome-hero-art__blob ibexa-welcome-hero-art__blob--2">
+                    <img src="{{ asset('build/images/welcome/ellipse-hero.svg') }}" alt="" />
+                </div>
+                <div class="ibexa-welcome-hero-art__frame">
+                    <div class="ibexa-welcome-hero-art__frame-gradient"></div>
+                    <div class="ibexa-welcome-hero-art__frame-photos">
+                        <img class="ibexa-welcome-hero-art__frame-photo ibexa-welcome-hero-art__frame-photo--back" src="{{ asset('build/images/welcome/hero-photo-back.png') }}" alt="" />
+                        <img class="ibexa-welcome-hero-art__frame-photo" src="{{ asset('build/images/welcome/hero-photo.png') }}" alt="" />
+                    </div>
+                    <div class="ibexa-welcome-hero-art__frame-glow"></div>
+                </div>
+                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--translate">
+                    <div class="ibexa-welcome-hero-art__chip-list">
+                        <div class="ibexa-welcome-hero-art__chip-title">Translate &amp; Localise</div>
+                        <div class="ibexa-welcome-hero-art__chip-rows">
+                            {% for flag, language in { 'en': 'English', 'fr': 'French', 'de': 'German', 'es': 'Spanish' } %}
+                                <div class="ibexa-welcome-hero-art__chip-row">
+                                    <div class="ibexa-welcome-hero-art__chip-row-main">
+                                        <img class="ibexa-welcome-hero-art__flag" src="{{ asset('build/images/welcome/flag-' ~ flag ~ '.png') }}" alt="" />
+                                        <div class="ibexa-welcome-hero-art__chip-label">{{ language }}</div>
+                                    </div>
+                                    <div class="ibexa-welcome-hero-art__tick">
+                                        <img src="{{ asset('build/images/welcome/tick.svg') }}" alt="" />
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                {% for chip, label in { 'a': 'Brand A', 'b': 'Brand B', 'c': 'Brand B' } %}
+                    <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--brand ibexa-welcome-hero-art__chip--brand-{{ chip }}">
+                        <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--dark">
+                            <div class="ibexa-welcome-hero-art__chip-icon">
+                                <img src="{{ asset('build/images/welcome/icon-brand.svg') }}" alt="" />
+                            </div>
+                        </div>
+                        {{ label }}
+                    </div>
+                {% endfor %}
+                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--content">
+                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--light">
+                        <div class="ibexa-welcome-hero-art__chip-icon ibexa-welcome-hero-art__chip-icon--content">
+                            <img src="{{ asset('build/images/welcome/icon-content.svg') }}" alt="" />
+                        </div>
+                    </div>
+                    All content in one place
+                </div>
+                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--preview">
+                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--light">
+                        <div class="ibexa-welcome-hero-art__chip-icon ibexa-welcome-hero-art__chip-icon--preview">
+                            <img src="{{ asset('build/images/welcome/icon-preview.svg') }}" alt="" />
+                        </div>
+                    </div>
+                    Preview and publish instantly
+                </div>
+                <img class="ibexa-welcome-hero-art__screenshot" src="{{ asset('build/images/welcome/hero-screenshot.png') }}" alt="" />
+                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--seo">
+                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--plain">
+                        <div class="ibexa-welcome-hero-art__chip-icon">
+                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--1" src="{{ asset('build/images/welcome/sparkle-1.svg') }}" alt="" />
+                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--2" src="{{ asset('build/images/welcome/sparkle-2.svg') }}" alt="" />
+                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--3" src="{{ asset('build/images/welcome/sparkle-3.svg') }}" alt="" />
+                        </div>
+                    </div>
+                    <div class="ibexa-welcome-hero-art__chip-rows">
+                        {% for label in ['SEO optimised', 'GEO optimised'] %}
+                            <div class="ibexa-welcome-hero-art__chip-row">
+                                <div class="ibexa-welcome-hero-art__chip-label ibexa-welcome-hero-art__chip-label--fixed">{{ label }}</div>
+                                <div class="ibexa-welcome-hero-art__tick">
+                                    <img src="{{ asset('build/images/welcome/tick2.svg') }}" alt="" />
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="ibexa-welcome-hero-art__boxes">
+                    <div class="ibexa-welcome-hero-art__box ibexa-welcome-hero-art__box--dashed">
+                        <img src="{{ asset('build/images/welcome/icon-numpad.svg') }}" alt="" width="12" height="12" />
+                    </div>
+                    <div class="ibexa-welcome-hero-art__box ibexa-welcome-hero-art__box--filled">
+                        <img src="{{ asset('build/images/welcome/icon-image.svg') }}" alt="" width="20" height="20" />
+                    </div>
+                </div>
+                <img class="ibexa-welcome-hero-art__cursor" src="{{ asset('build/images/welcome/icon-cursor.svg') }}" alt="" />
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div class="ibexa-welcome-container ibexa-welcome-documentation-hub">
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <h2 class="ibexa-welcome-section-header">
-                    {{ 'ibexa_platform_welcome_page.documentation_hub.title'|trans|desc('Documentation hub') }}
+    <main>
+        <section class="ibexa-welcome-container ibexa-welcome-resources">
+            <div class="ibexa-welcome-resources__header">
+                <h2 class="ibexa-welcome-heading ibexa-welcome-resources__title">
+                    {{ 'ibexa_platform_welcome_page.resources.title'|trans|desc('Developer resources') }}
                 </h2>
-            </div>
-        </div>
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/documentation.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.documentation_center.image'|trans|desc('Documentation center') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.documentation_center.title'|trans|desc('Documentation center') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.documentation_center.content'|trans|desc('Ibexa DXP documentation for developers and editors.') }}
-                </p>
-                <a
-                    href="https://ibexa.co/documentation-center"
-                    class="ibexa-welcome-btn"
-                >
-                    {{ 'ibexa_platform_welcome_page.documentation_center.action'|trans|desc('Discover more') }}
-                </a>
-            </div>
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/user.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.user_documentation.image'|trans|desc('User documentation') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.user_documentation.title'|trans|desc('User documentation') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.user_documentation.content'|trans|desc('Manage content, products, site and content structure and much more using the Ibexa DXP administration interface.
-Learn how to administrate your digital store with Ibexa Commerce. Manage products, orders and view statistics.') }}
-                </p>
-                <a
-                    href="https://doc.ibexa.co/projects/userguide"
-                    class="ibexa-welcome-btn"
-                >
-                    {{ 'ibexa_platform_welcome_page.user_documentation.action'|trans|desc('Discover more') }}
-                </a>
-            </div>
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/development.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.developer_documentation.image'|trans|desc('Developer documentation') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.developer_documentation.title'|trans|desc('Developer documentation') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.developer_documentation.content'|trans|desc('The core documentation covers the majority of functionalities, their configuration and available APIs of Ibexa DXP with references and examples.
-The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. This includes payments and other integrations to back office systems.') }}
-                </p>
-                <a
-                    href="https://doc.ibexa.co"
-                    class="ibexa-welcome-btn"
-                >
-                    {{ 'ibexa_platform_welcome_page.developer_documentation.action'|trans|desc('Discover more') }}
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="ibexa-welcome-container ibexa-welcome-tutorials-and-resources">
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <h2 class="ibexa-welcome-section-header">
-                    {{ 'ibexa_platform_welcome_page.tutorials_and_resources.title'|trans|desc('Tutorials and resources') }}
-                </h2>
-            </div>
-        </div>
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column ibexa-welcome-column--center">
-                <p class="ibexa-welcome-paragraph ibexa-welcome-tutorials-and-resources__subheader">
-                    {{ 'ibexa_platform_welcome_page.tutorials_and_resources.subheader'|trans|desc('Discover the value of Ibexa DXP, our new generation Digital Experience Platform') }}
+                <p class="ibexa-welcome-resources__subtitle">
+                    {{ 'ibexa_platform_welcome_page.resources.subtitle'|trans|desc('Recommended resources to build, configure and extend your project.') }}
                 </p>
             </div>
-        </div>
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column">
-                <div class="ibexa-welcome-row ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--get-started">
-                    <div class="ibexa-welcome-column">
-                        <h3 class="ibexa-welcome-block-header">
-                            {{ 'ibexa_platform_welcome_page.get_started.title'|trans|desc('Get started') }}
-                        </h3>
-                        <p class="ibexa-welcome-paragraph">
-                            {{ 'ibexa_platform_welcome_page.get_started.content'|trans|desc('Whether you\'re starting your very first project or developing yet another one in a long series, knowledge resources are here to help you accelerate on your goals. Try your hand in quickstarts and tutorials, or explore the references to further enhance your site.') }}
-                        </p>
-                        <a
-                            href="https://doc.ibexa.co/en/latest/getting_started/first_steps"
-                            class="ibexa-welcome-link"
-                        >
-                            {{ 'ibexa_platform_welcome_page.get_started.action'|trans|desc('Learn more') }}
+            <div class="ibexa-welcome-resources__grid">
+                <div class="ibexa-welcome-card ibexa-welcome-card--featured">
+                    <div class="ibexa-welcome-card__blob" aria-hidden="true">
+                        <img src="{{ asset('build/images/welcome/ellipse-card.svg') }}" alt="" />
+                    </div>
+                    <div class="ibexa-welcome-card__content">
+                        <div class="ibexa-welcome-card__icon-box">
+                            <svg class="ibexa-welcome-card__icon"><use href="{{ ibexa_icon_path('file-add') }}"></use></svg>
+                        </div>
+                        <div class="ibexa-welcome-card__text">
+                            <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
+                                {{ 'ibexa_platform_welcome_page.resources.first_steps.title'|trans|desc('First steps') }}
+                            </h3>
+                            <p class="ibexa-welcome-card__description">
+                                {{ 'ibexa_platform_welcome_page.resources.first_steps.description'|trans|desc('Set up your content model, templates and SiteAccesses, then replace this welcome page.') }}
+                            </p>
+                        </div>
+                        <a href="https://doc.ibexa.co/en/latest/getting_started/first_steps/" class="ibexa-welcome-btn ibexa-welcome-btn--light">
+                            {{ 'ibexa_platform_welcome_page.resources.first_steps.action'|trans|desc('Explore first steps') }}
                         </a>
                     </div>
-                    <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__img-column">
-                        <img
-                            class="ibexa-welcome-img ibexa-welcome-img--right"
-                            src="{{ asset('build/images/tutorials.svg') }}"
-                            alt="{{ 'ibexa_platform_welcome_page.get_started.image'|trans|desc('Get started') }}"
-                        />
+                    <img class="ibexa-welcome-card__knot" src="{{ asset('build/images/welcome/knot.png') }}" alt="" aria-hidden="true" />
+                </div>
+                <div class="ibexa-welcome-card">
+                    <div class="ibexa-welcome-card__icon-box">
+                        <svg class="ibexa-welcome-card__icon"><use href="{{ ibexa_icon_path('academy') }}"></use></svg>
+                    </div>
+                    <div class="ibexa-welcome-card__text">
+                        <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
+                            {{ 'ibexa_platform_welcome_page.resources.tutorial.title'|trans|desc('Beginner tutorial') }}
+                        </h3>
+                        <p class="ibexa-welcome-card__description">
+                            {{ 'ibexa_platform_welcome_page.resources.tutorial.description'|trans|desc('Build your first site step by step, from content model to frontend templates.') }}
+                        </p>
+                    </div>
+                    <a href="https://doc.ibexa.co/en/latest/tutorials/beginner_tutorial/beginner_tutorial/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.resources.tutorial.action'|trans|desc('Start tutorial') }}
+                    </a>
+                </div>
+                <div class="ibexa-welcome-card">
+                    <div class="ibexa-welcome-card__icon-box">
+                        <svg class="ibexa-welcome-card__icon"><use href="{{ ibexa_icon_path('bell') }}"></use></svg>
+                    </div>
+                    <div class="ibexa-welcome-card__text">
+                        <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
+                            {{ 'ibexa_platform_welcome_page.resources.whats_new.title'|trans({ '%version%': version })|desc('What’s new in %version%') }}
+                        </h3>
+                        <p class="ibexa-welcome-card__description">
+                            {{ 'ibexa_platform_welcome_page.resources.whats_new.description'|trans|desc('See new features, deprecations and breaking changes in this release.') }}
+                        </p>
+                    </div>
+                    <a href="https://doc.ibexa.co/en/latest/release_notes/release_notes/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.resources.whats_new.action'|trans|desc('Read release notes') }}
+                    </a>
+                </div>
+                <div class="ibexa-welcome-card">
+                    <div class="ibexa-welcome-card__icon-box">
+                        <svg class="ibexa-welcome-card__icon"><use href="{{ ibexa_icon_path('file-code') }}"></use></svg>
+                    </div>
+                    <div class="ibexa-welcome-card__text">
+                        <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
+                            {{ 'ibexa_platform_welcome_page.resources.apis.title'|trans|desc('APIs') }}
+                        </h3>
+                        <p class="ibexa-welcome-card__description">
+                            {{ 'ibexa_platform_welcome_page.resources.apis.description'|trans|desc('Build headless experiences and integrations with REST, GraphQL or the PHP API.') }}
+                        </p>
+                    </div>
+                    <a href="https://doc.ibexa.co/en/latest/api/api/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.resources.apis.action'|trans|desc('Explore APIs') }}
+                    </a>
+                </div>
+                <div class="ibexa-welcome-card">
+                    <div class="ibexa-welcome-card__icon-box">
+                        <svg class="ibexa-welcome-card__icon"><use href="{{ ibexa_icon_path('form-check-list') }}"></use></svg>
+                    </div>
+                    <div class="ibexa-welcome-card__text">
+                        <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
+                            {{ 'ibexa_platform_welcome_page.resources.security.title'|trans|desc('Security checklist') }}
+                        </h3>
+                        <p class="ibexa-welcome-card__description">
+                            {{ 'ibexa_platform_welcome_page.resources.security.description'|trans|desc('Review the recommended security measures before you deploy to production.') }}
+                        </p>
+                    </div>
+                    <a href="https://doc.ibexa.co/en/latest/infrastructure_and_maintenance/security/security_checklist/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.resources.security.action'|trans|desc('View checklist') }}
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="ibexa-welcome-container ibexa-welcome-infra">
+            <div class="ibexa-welcome-infra__banner">
+                <img class="ibexa-welcome-infra__blob" src="{{ asset('build/images/welcome/ellipse-infra.svg') }}" alt="" aria-hidden="true" />
+                <div class="ibexa-welcome-infra__content">
+                    <div class="ibexa-welcome-infra__text">
+                        <h2 class="ibexa-welcome-heading ibexa-welcome-infra__title">
+                            {{ 'ibexa_platform_welcome_page.infrastructure.title'|trans|desc('Infrastructure and maintenance') }}
+                        </h2>
+                        <p class="ibexa-welcome-infra__description">
+                            {{ 'ibexa_platform_welcome_page.infrastructure.description'|trans|desc('Set up caching, backups, background tasks and monitoring, so your project is ready for production.') }}
+                        </p>
+                    </div>
+                    <a href="https://doc.ibexa.co/en/latest/infrastructure_and_maintenance/infrastructure_and_maintenance/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                        {{ 'ibexa_platform_welcome_page.infrastructure.action'|trans|desc('Explore guide') }}
+                    </a>
+                </div>
+                <div class="ibexa-welcome-infra__cards" aria-hidden="true">
+                    {% for index in 1..3 %}
+                        <div class="ibexa-welcome-infra__card-shadow ibexa-welcome-infra__card-shadow--{{ index }}"></div>
+                        <div class="ibexa-welcome-infra__card ibexa-welcome-infra__card--{{ index }}">
+                            <img class="ibexa-welcome-infra__card-logo" src="{{ asset('build/images/welcome/infra-logo-' ~ index ~ '.svg') }}" alt="" />
+                            <div class="ibexa-welcome-infra__card-line"></div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ibexa-welcome-help">
+        <div class="ibexa-welcome-help__band">
+            <div class="ibexa-welcome-container">
+                <div class="ibexa-welcome-help__content">
+                    <div class="ibexa-welcome-help__text">
+                        <h2 class="ibexa-welcome-heading ibexa-welcome-help__title">
+                            {{ 'ibexa_platform_welcome_page.help.title'|trans|desc('Need help?') }}
+                        </h2>
+                        <p class="ibexa-welcome-help__description">
+                            {{ 'ibexa_platform_welcome_page.help.description'|trans|desc('Check common installation issues or contact our Support team.') }}
+                        </p>
+                    </div>
+                    <div class="ibexa-welcome-help__actions">
+                        <a href="https://doc.ibexa.co/en/latest/getting_started/troubleshooting/" class="ibexa-welcome-btn ibexa-welcome-btn--light">
+                            {{ 'ibexa_platform_welcome_page.help.troubleshooting'|trans|desc('Troubleshooting') }}
+                        </a>
+                        <a href="https://support.ibexa.co" class="ibexa-welcome-btn ibexa-welcome-btn--text">
+                            {{ 'ibexa_platform_welcome_page.help.support'|trans|desc('Go to support') }}
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ibexa-welcome-row">
-            <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--tutorials">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/tutorials-icon.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.tutorials.image'|trans|desc('Tutorials') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.tutorials.title'|trans|desc('Tutorials') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.tutorials.content'|trans|desc('Practical tutorials lead you through the first project to help you learn product basics.') }}
-                </p>
-                <a
-                    href="https://doc.ibexa.co/en/latest/tutorials/tutorials/"
-                    class="ibexa-welcome-link"
-                >
-                    {{ 'ibexa_platform_welcome_page.tutorials.action'|trans|desc('Learn more') }}
-                </a>
-            </div>
-            <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--rest-api">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/rest-api.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.rest_api.image'|trans|desc('REST API reference') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.rest_api.title'|trans|desc('REST API reference') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.rest_api.content'|trans|desc('As an API-first product, Ibexa DXP focuses on well-structured APIs. REST API endpoints cover most functionalities of the product.') }}
-                </p>
-                <a
-                    href="https://doc.ibexa.co/en/latest/api/rest_api/rest_api_reference/rest_api_reference.html"
-                    class="ibexa-welcome-link"
-                >
-                    {{ 'ibexa_platform_welcome_page.rest_api.action'|trans|desc('Learn more') }}
-                </a>
-            </div>
-            <div class="ibexa-welcome-column ibexa-welcome-tutorials-and-resources__block ibexa-welcome-tutorials-and-resources__block--php-api">
-                <div class="ibexa-welcome-circle">
-                    <img
-                        src="{{ asset('build/images/php-api.svg') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.php_api.image'|trans|desc('Public PHP API') }}"
-                    />
-                </div>
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.php_api.title'|trans|desc('Public PHP API') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.php_api.content'|trans|desc('PHP API services cover all product functionalities and give you endless possibilities to customize your code.') }}
-                </p>
-                <a
-                    href="https://doc.ibexa.co/en/latest/api/public_php_api"
-                    class="ibexa-welcome-link"
-                >
-                    {{ 'ibexa_platform_welcome_page.php_api.action'|trans|desc('Learn more') }}
-                </a>
+        <div class="ibexa-welcome-help__copyright">
+            <div class="ibexa-welcome-container ibexa-welcome-help__copyright-inner">
+                <div class="ibexa-welcome-help__line"></div>
+                {{ 'ibexa_platform_welcome_page.copyright'|trans({ '%current_year%': 'now'|date('Y') })|desc('Copyright © %current_year% Ibexa | Powered by Cohesivo CMS') }}
             </div>
         </div>
-    </div>
-
-    <div class="ibexa-welcome-container ibexa-welcome-training-platform">
-        <div class="ibexa-welcome-row ibexa-welcome-training-platform__block">
-            <div class="ibexa-welcome-column ibexa-welcome-training-platform__img-column">
-                <img
-                    src="{{ asset('build/images/training.svg') }}"
-                    alt="{{ 'ibexa_platform_welcome_page.training_platform.image'|trans|desc('Training platform') }}"
-                />
+        <div class="ibexa-welcome-help__decor" aria-hidden="true">
+            <img class="ibexa-welcome-help__blob" src="{{ asset('build/images/welcome/ellipse-footer.svg') }}" alt="" />
+            <div class="ibexa-welcome-help__texture">
+                <img src="{{ asset('build/images/welcome/help-texture.png') }}" alt="" />
             </div>
-            <div class="ibexa-welcome-column">
-                <h3 class="ibexa-welcome-block-header">
-                    {{ 'ibexa_platform_welcome_page.training_platform.title'|trans|desc('Training platform') }}
-                </h3>
-                <p class="ibexa-welcome-paragraph">
-                    {{ 'ibexa_platform_welcome_page.training_platform.content'|trans|desc('Explore the Ibexa Learning Platform for on-demand, self-service courses and certifications.') }}
-                </p>
-                <a
-                    href="https://learn.ibexa.co"
-                    class="ibexa-welcome-btn ibexa-welcome-btn--filled"
-                >
-                    {{ 'ibexa_platform_welcome_page.training_platform.action'|trans|desc('Start the training') }}
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="ibexa-welcome-contact">
-        <div class="ibexa-welcome-container">
-            <div class="ibexa-welcome-row ibexa-welcome-contact__block">
-                <div class="ibexa-welcome-column">
-                    <h3 class="ibexa-welcome-block-header">
-                        {{ 'ibexa_platform_welcome_page.contact.title'|trans|desc('Contact support') }}
-                    </h3>
-                    <p class="ibexa-welcome-paragraph">
-                        {{ 'ibexa_platform_welcome_page.contact.content'|trans|desc('If you need help, contact our support team') }}
-                    </p>
-                    <a
-                        href="https://support.ibexa.co"
-                        class="ibexa-welcome-btn ibexa-welcome-btn--filled"
-                    >
-                        {{ 'ibexa_platform_welcome_page.contact.action'|trans|desc('Go to support') }}
-                    </a>
+            <div class="ibexa-welcome-help__photos">
+                <img class="ibexa-welcome-help__photo ibexa-welcome-help__photo--shadow" src="{{ asset('build/images/welcome/help-photo-shadow.png') }}" alt="" />
+                <img class="ibexa-welcome-help__photo" src="{{ asset('build/images/welcome/help-photo.png') }}" alt="" />
+                <div class="ibexa-welcome-help__photo-blur">
+                    <img src="{{ asset('build/images/welcome/help-photo.png') }}" alt="" />
                 </div>
-                <div class="ibexa-welcome-column">
-                    <img
-                        class="ibexa-welcome-img ibexa-welcome-img--center"
-                        src="{{ asset('build/images/support.png') }}"
-                        alt="{{ 'ibexa_platform_welcome_page.contact.image'|trans|desc('Support') }}"
-                    />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="ibexa-welcome-footer">
-        <div class="ibexa-welcome-container">
-            <div class="ibexa-welcome-row">
-                <div class="ibexa-welcome-column">
-                    <p class="ibexa-welcome-paragraph">
-                        {{ 'ibexa_platform_welcome_page.copyright'|trans({
-                            '%current_year%': "now"|date("Y")
-                        })|desc('Copyright © %current_year% <a href="http://ibexa.co" rel="noopener" target="_blank">Ibexa</a> | Powered by Ibexa DXP')|raw }}
-                    </p>
-                </div>
+                {% for index in 1..2 %}
+                    <div class="ibexa-welcome-help__bubble ibexa-welcome-help__bubble--{{ index }}">
+                        <div class="ibexa-welcome-help__bubble-lines">
+                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--1"></div>
+                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--2"></div>
+                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--3"></div>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </footer>

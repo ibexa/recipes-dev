@@ -1,0 +1,248 @@
+@use 'variables' as *;
+
+.ibexa-welcome-help {
+    position: relative;
+    margin-top: 80px;
+    background: $ibexa-welcome-color-secondary-dark;
+    color: $ibexa-welcome-color-light;
+    overflow: hidden;
+
+    &__band {
+        display: flex;
+        align-items: center;
+        height: 280px;
+        padding: 24px 0;
+
+        .ibexa-welcome-container {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        width: 521px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    &__description {
+        width: 464px;
+        max-width: 100%;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__copyright {
+        height: 53px;
+    }
+
+    &__copyright-inner {
+        padding-top: 16px;
+        color: $ibexa-welcome-color-text-muted;
+        font-size: 14px;
+        line-height: 21px;
+        white-space: nowrap;
+    }
+
+    &__line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 439px;
+        max-width: 100%;
+        border-top: 1px solid rgba($ibexa-welcome-color-line, 0.3);
+    }
+
+    &__decor {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: $ibexa-welcome-container-width;
+        height: 100%;
+        margin-left: calc($ibexa-welcome-container-width / -2);
+        pointer-events: none;
+    }
+
+    &__blob {
+        position: absolute;
+        top: -302px;
+        left: -31px;
+        width: 1970px;
+        height: 1951px;
+        max-width: none;
+        transform: rotate(-90deg);
+    }
+
+    &__texture {
+        position: absolute;
+        top: 47px;
+        left: 221px;
+        width: 1469px;
+        height: 1242px;
+        opacity: 0.1;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: -27.05%;
+            left: -52.93%;
+            width: 152.93%;
+            height: 180.97%;
+            max-width: none;
+        }
+    }
+
+    &__photos {
+        position: absolute;
+        top: 16px;
+        left: 764px;
+        width: 503px;
+        height: 301px;
+    }
+
+    &__photo {
+        position: absolute;
+        top: 18px;
+        left: 43px;
+        width: 447px;
+        height: 298px;
+        object-fit: cover;
+
+        &--shadow {
+            left: 74px;
+            opacity: 0.4;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    &__photo-blur {
+        position: absolute;
+        top: 18px;
+        left: 321px;
+        width: 154px;
+        height: 298px;
+        opacity: 0.3;
+        filter: blur(17.5px);
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: -190.43%;
+            width: 290.43%;
+            height: 100%;
+            max-width: none;
+        }
+    }
+
+    &__bubble {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background: rgba($ibexa-welcome-color-light, 0.04);
+        backdrop-filter: blur(22.5px);
+        -webkit-backdrop-filter: blur(22.5px);
+        transform: translateY(-50%);
+
+        &--1 {
+            top: calc(50% - 54px);
+            left: -109px;
+        }
+
+        &--2 {
+            top: calc(50% - 14px);
+            left: -29px;
+        }
+    }
+
+    &__bubble-lines {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 121px;
+    }
+
+    &__bubble-line {
+        height: 6px;
+        border-radius: 99px;
+        background: rgba($ibexa-welcome-color-light, 0.4);
+
+        &--1 {
+            width: 96px;
+        }
+
+        &--2 {
+            width: 117px;
+        }
+
+        &--3 {
+            width: 26px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .ibexa-welcome-help {
+        &__decor {
+            left: 32px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .ibexa-welcome-help {
+        &__photos {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ibexa-welcome-help {
+        margin-top: 56px;
+
+        &__band {
+            height: auto;
+            padding: 48px 0;
+        }
+
+        &__content {
+            width: auto;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        &__actions {
+            flex-wrap: wrap;
+        }
+
+        &__copyright-inner {
+            white-space: normal;
+        }
+    }
+}

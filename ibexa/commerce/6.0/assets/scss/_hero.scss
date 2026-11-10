@@ -1,0 +1,482 @@
+@use 'variables' as *;
+
+.ibexa-welcome-hero {
+    position: relative;
+    height: 773px;
+
+    &__background {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background:
+            linear-gradient(22.98deg, $ibexa-welcome-color-supplementary 26.89%, $ibexa-welcome-color-primary-10 100.43%),
+            $ibexa-welcome-color-base;
+    }
+
+    &__knot {
+        position: absolute;
+        top: 91px;
+        left: calc(50% - 288px);
+        width: 1876px;
+        height: 2040px;
+        max-width: none;
+        opacity: 0.1;
+    }
+
+    &__container {
+        height: 100%;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        height: 64px;
+    }
+
+    &__content {
+        position: absolute;
+        top: 252px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        width: 610px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    &__lead {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 12px;
+    }
+}
+
+.ibexa-welcome-hero-art {
+    position: absolute;
+    top: 100px;
+    left: 482px;
+    width: 1106px;
+    height: 656px;
+    pointer-events: none;
+
+    &__blob {
+        position: absolute;
+        width: 369px;
+        height: 376px;
+        transform: rotate(98deg);
+
+        img {
+            position: absolute;
+            top: -200px;
+            left: -200px;
+            width: 768px;
+            height: 775px;
+            max-width: none;
+        }
+
+        &--1 {
+            top: 21px;
+            left: 478px;
+        }
+
+        &--2 {
+            top: 259px;
+            left: 272px;
+        }
+    }
+
+    &__frame {
+        position: absolute;
+        top: 55px;
+        left: 394px;
+        width: 317px;
+        height: 464px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    &__frame-gradient {
+        position: absolute;
+        top: 59px;
+        left: 0;
+        width: 317px;
+        height: 510px;
+        border-radius: 40px;
+        background: linear-gradient(235.24deg, #8676e1 12.52%, #6d27f4 53.48%, #5d00ff 68.75%);
+    }
+
+    &__frame-photos {
+        position: absolute;
+        top: -20px;
+        left: -91px;
+        width: 618px;
+        height: 537px;
+    }
+
+    &__frame-photo {
+        position: absolute;
+        top: -2.07%;
+        left: -6.51%;
+        width: 100.14%;
+        height: 100%;
+        max-width: none;
+
+        &--back {
+            top: 1.05%;
+            left: 3.73%;
+            width: 85.98%;
+            height: 98.95%;
+            opacity: 0.5;
+        }
+    }
+
+    &__frame-glow {
+        position: absolute;
+        top: 395px;
+        left: -109px;
+        width: 535px;
+        height: 310px;
+        border-radius: 40px;
+        background: linear-gradient(-30.09deg, $ibexa-welcome-color-brand 40%, $ibexa-welcome-color-brand-light 100%);
+        opacity: 0.3;
+        filter: blur(75px);
+    }
+
+    &__chip {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px 8px 8px;
+        border-radius: 16px;
+        color: $ibexa-welcome-color-text;
+        font-family: $ibexa-welcome-font-family-alt;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        white-space: nowrap;
+        backdrop-filter: blur(22.5px);
+        -webkit-backdrop-filter: blur(22.5px);
+
+        &--glass {
+            padding: 8px 12px;
+            border: 0.5px solid rgba($ibexa-welcome-color-light, 0.3);
+            background: rgba($ibexa-welcome-color-light, 0.15);
+        }
+
+        &--translate {
+            top: 91px;
+            left: 278px;
+        }
+
+        &--seo {
+            top: 488px;
+            left: 702px;
+        }
+
+        &--brand {
+            width: 111px;
+            color: $ibexa-welcome-color-light;
+        }
+
+        &--brand-a {
+            top: 284px;
+            left: 315px;
+            background: $ibexa-welcome-color-primary;
+        }
+
+        &--brand-b {
+            top: 340px;
+            left: 339px;
+            background: $ibexa-welcome-color-primary-middle;
+        }
+
+        &--brand-c {
+            top: 396px;
+            left: 315px;
+            background: $ibexa-welcome-color-secondary-dark;
+        }
+
+        &--content {
+            top: 154px;
+            left: 676px;
+            background: $ibexa-welcome-color-primary-middle-5;
+        }
+
+        &--preview {
+            top: 225px;
+            left: 648px;
+            background: $ibexa-welcome-color-primary-middle-5;
+        }
+    }
+
+    &__chip-icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 12px;
+
+        &--dark {
+            background: rgba(#f1ecfb, 0.1);
+        }
+
+        &--light {
+            background: $ibexa-welcome-color-primary-middle-20;
+        }
+
+        &--plain {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__chip-icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+
+        img {
+            position: absolute;
+            inset: 9.8%;
+            width: 80.4%;
+            height: 80.4%;
+        }
+
+        &--content img {
+            inset: 9.34% 14.24% 8.78% 15.44%;
+            width: 70.32%;
+            height: 81.88%;
+        }
+
+        &--preview img {
+            inset: 9.74% 9.29% 9.85% 10.3%;
+            width: 80.41%;
+            height: 80.41%;
+        }
+    }
+
+    &__sparkle {
+        position: absolute;
+
+        &--1 {
+            inset: 23.11% 9.37% 22.5% 36.24%;
+            width: 54.39%;
+            height: 54.39%;
+        }
+
+        &--2 {
+            inset: 11.68% 59.92% 65.27% 17.04%;
+            width: 23.04%;
+            height: 23.05%;
+        }
+
+        &--3 {
+            inset: 57.15% 59.47% 11.68% 9.38%;
+            width: 31.15%;
+            height: 31.17%;
+        }
+    }
+
+    &__chip-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 130px;
+        padding-bottom: 3px;
+    }
+
+    &__chip-title {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &__chip-rows {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__chip-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__chip-row-main {
+        display: flex;
+        flex: 1 0 0;
+        align-items: center;
+        gap: 6px;
+        min-width: 1px;
+    }
+
+    &__flag {
+        flex-shrink: 0;
+        width: 20px;
+        height: 16px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    &__chip-label {
+        flex: 1 0 0;
+        min-width: 1px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.3;
+        white-space: normal;
+
+        &--fixed {
+            flex: none;
+            width: 89px;
+        }
+    }
+
+    &__tick {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 14px;
+        height: 14px;
+
+        img {
+            width: 11.67px;
+            height: 11.67px;
+        }
+    }
+
+    &__screenshot {
+        position: absolute;
+        top: 338px;
+        left: 505px;
+        width: 250px;
+        height: 242px;
+        object-fit: cover;
+    }
+
+    &__boxes {
+        position: absolute;
+        top: 53px;
+        left: 690px;
+        width: 94px;
+        height: 64px;
+    }
+
+    &__box {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 7px;
+        backdrop-filter: blur(22.5px);
+        -webkit-backdrop-filter: blur(22.5px);
+
+        &--dashed {
+            top: 0;
+            left: 0;
+            border: 1px dashed $ibexa-welcome-color-light;
+        }
+
+        &--filled {
+            top: 24px;
+            left: 34px;
+            background: $ibexa-welcome-color-primary-low-30;
+        }
+    }
+
+    &__cursor {
+        position: absolute;
+        top: 107px;
+        left: 763px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .ibexa-welcome-hero-art {
+        left: auto;
+        right: 0;
+        transform: scale(0.85);
+        transform-origin: right top;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .ibexa-welcome-hero-art {
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .ibexa-welcome-hero {
+        height: auto;
+        padding-bottom: 80px;
+
+        &__logo,
+        &__content {
+            position: static;
+        }
+
+        &__logo {
+            margin-top: 48px;
+        }
+
+        &__content {
+            margin-top: 140px;
+            max-width: 610px;
+            width: auto;
+        }
+    }
+
+    .ibexa-welcome-hero-art {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ibexa-welcome-hero {
+        padding-bottom: 56px;
+
+        &__content {
+            margin-top: 80px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        &__lead {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        &__actions {
+            flex-wrap: wrap;
+        }
+    }
+}

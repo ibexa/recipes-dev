@@ -1,11 +1,13 @@
+@use '../../vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/scss/variables' with (
+    $assets-base-path: '../'
+);
+@use '../../vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/scss/fonts';
+
 @use 'normalize.css';
 @use 'custom-normalize';
 
-
 @use 'main';
-@use 'header';
-@use 'documentation';
-@use 'tutorials';
-@use 'training';
-@use 'contact';
-@use 'footer';
+@use 'hero';
+@use 'resources';
+@use 'infra';
+@use 'help';
