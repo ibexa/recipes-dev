@@ -1,12 +1,36 @@
-$ibexa-welcome-color-main: #ae1164;
+@use '../../vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/scss/variables' as ids;
 
-$ibexa-welcome-color-dark-600: #0b1117;
-$ibexa-welcome-color-dark: #131c26;
+$ibexa-welcome-font-family: ids.$font-family;
+$ibexa-welcome-font-family-alt: ids.$font-family-alt;
 
-$ibexa-welcome-color-light-600: #f9f9fa;
-$ibexa-welcome-color-light: #ffffff;
+$ibexa-welcome-color-text: #0e1216;
+$ibexa-welcome-color-text-secondary: #131c26;
+$ibexa-welcome-color-text-muted: #b7b8b9;
+$ibexa-welcome-color-light: #fff;
+$ibexa-welcome-color-brand: #4e24a5;
+$ibexa-welcome-color-brand-light: #a582e3;
+$ibexa-welcome-color-primary: #480ba2;
+$ibexa-welcome-color-primary-middle: #7742d5;
+$ibexa-welcome-color-primary-dark: #3a1a7c;
+$ibexa-welcome-color-secondary-dark: #2b1c4c;
+$ibexa-welcome-color-supplementary: #f4f0fc;
+$ibexa-welcome-color-primary-10: #ae92e8;
+$ibexa-welcome-color-primary-5: #cfbef1;
+$ibexa-welcome-color-primary-low: #f0eafe;
+$ibexa-welcome-color-primary-low-30: #e8e0fe;
+$ibexa-welcome-color-primary-middle-5: #f8f6fd;
+$ibexa-welcome-color-primary-middle-20: #e4d9f7;
+$ibexa-welcome-color-neutral-20: #fafafa;
+$ibexa-welcome-color-neutral-50: #ececec;
+$ibexa-welcome-color-line: #cfd0d0;
+$ibexa-welcome-color-base: #f5f6f6;
 
-$ibexa-welcome-color-extra-red: #db0032;
+$ibexa-welcome-gradient-brand: linear-gradient(-16.98deg, $ibexa-welcome-color-brand 40%, $ibexa-welcome-color-brand-light 100%);
+$ibexa-welcome-gradient-brand-hover: linear-gradient(-16.98deg, $ibexa-welcome-color-brand-light 0%, $ibexa-welcome-color-brand 45%);
 
-$ibexa-welcome-transition: cubic-bezier(0.25, 0.8, 0.25, 1);
-$ibexa-welcome-transition-duration: 0.4s;
+$ibexa-welcome-radius-button: 8px;
+$ibexa-welcome-radius-card: 12px;
+$ibexa-welcome-container-width: 1256px;
+
+$ibexa-welcome-transition: ids.$transition-timing-function;
+$ibexa-welcome-transition-duration: ids.$transition-duration;

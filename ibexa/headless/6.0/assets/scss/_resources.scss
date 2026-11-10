@@ -1,0 +1,175 @@
+@use 'variables' as *;
+
+.ibexa-welcome-resources {
+    padding-top: 80px;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    &__subtitle {
+        color: $ibexa-welcome-color-text-secondary;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+    }
+}
+
+.ibexa-welcome-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    border-radius: $ibexa-welcome-radius-card;
+    background: $ibexa-welcome-color-neutral-20;
+    overflow: hidden;
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+        border-radius: 8px;
+        background: rgba(#e7def8, 0.4);
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        fill: $ibexa-welcome-color-brand;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__description {
+        color: $ibexa-welcome-color-text-secondary;
+    }
+
+    &--featured {
+        grid-column: span 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 32px;
+        padding: 40px;
+        border: 1px solid $ibexa-welcome-color-neutral-50;
+        background: $ibexa-welcome-color-primary;
+        color: $ibexa-welcome-color-light;
+    }
+
+    &--featured &__content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        width: 349px;
+    }
+
+    &--featured &__icon-box {
+        background: rgba($ibexa-welcome-color-light, 0.1);
+    }
+
+    &--featured &__icon {
+        fill: $ibexa-welcome-color-light;
+    }
+
+    &--featured &__description {
+        color: $ibexa-welcome-color-light;
+    }
+
+    &__blob {
+        position: absolute;
+        top: -189px;
+        left: 326px;
+        width: 706px;
+        height: 706px;
+
+        img {
+            position: absolute;
+            top: -250px;
+            left: -250px;
+            width: 1206px;
+            height: 1206px;
+            max-width: none;
+        }
+    }
+
+    &__knot {
+        position: absolute;
+        top: -149px;
+        left: 414px;
+        width: 708px;
+        height: 770px;
+        max-width: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ibexa-welcome-resources {
+        &__grid {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    .ibexa-welcome-card {
+        &--featured {
+            grid-column: auto;
+        }
+
+        &--featured &__content {
+            flex-shrink: 1;
+            width: 100%;
+            max-width: 349px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ibexa-welcome-resources {
+        padding-top: 56px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    .ibexa-welcome-card {
+        &__blob,
+        &__knot {
+            display: none;
+        }
+    }
+}
