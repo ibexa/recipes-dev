@@ -59,9 +59,9 @@
                 </div>
                 <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--translate">
                     <div class="ibexa-welcome-hero-art__chip-list">
-                        <div class="ibexa-welcome-hero-art__chip-title">Translate &amp; Localise</div>
+                        <div class="ibexa-welcome-hero-art__chip-title">{{ 'ibexa_platform_welcome_page.hero.art.translate'|trans|desc('Translate & Localise') }}</div>
                         <div class="ibexa-welcome-hero-art__chip-rows">
-                            {% for flag, language in { 'en': 'English', 'fr': 'French', 'de': 'German', 'es': 'Spanish' } %}
+                            {% for flag, language in { 'en': 'ibexa_platform_welcome_page.hero.art.language.en'|trans|desc('English'), 'fr': 'ibexa_platform_welcome_page.hero.art.language.fr'|trans|desc('French'), 'de': 'ibexa_platform_welcome_page.hero.art.language.de'|trans|desc('German'), 'es': 'ibexa_platform_welcome_page.hero.art.language.es'|trans|desc('Spanish') } %}
                                 <div class="ibexa-welcome-hero-art__chip-row">
                                     <div class="ibexa-welcome-hero-art__chip-row-main">
                                         <img class="ibexa-welcome-hero-art__flag" src="{{ asset('build/images/welcome/flag-' ~ flag ~ '.png') }}" alt="" />
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                {% for chip, label in { 'a': 'Brand A', 'b': 'Brand B', 'c': 'Brand C' } %}
+                {% for chip, label in { 'a': 'ibexa_platform_welcome_page.hero.art.brand.a'|trans|desc('Brand A'), 'b': 'ibexa_platform_welcome_page.hero.art.brand.b'|trans|desc('Brand B'), 'c': 'ibexa_platform_welcome_page.hero.art.brand.c'|trans|desc('Brand C') } %}
                     <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--brand ibexa-welcome-hero-art__chip--brand-{{ chip }}">
                         <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--dark">
                             <div class="ibexa-welcome-hero-art__chip-icon">
@@ -91,7 +91,7 @@
                             <img src="{{ asset('build/images/welcome/icon-content.svg') }}" alt="" />
                         </div>
                     </div>
-                    All content in one place
+                    {{ 'ibexa_platform_welcome_page.hero.art.content'|trans|desc('All content in one place') }}
                 </div>
                 <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--preview">
                     <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--light">
@@ -99,7 +99,7 @@
                             <img src="{{ asset('build/images/welcome/icon-preview.svg') }}" alt="" />
                         </div>
                     </div>
-                    Preview and publish instantly
+                    {{ 'ibexa_platform_welcome_page.hero.art.preview'|trans|desc('Preview and publish instantly') }}
                 </div>
                 <img class="ibexa-welcome-hero-art__screenshot" src="{{ asset('build/images/welcome/hero-screenshot.png') }}" alt="" />
                 <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--seo">
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                     <div class="ibexa-welcome-hero-art__chip-rows">
-                        {% for label in ['SEO optimised', 'GEO optimised'] %}
+                        {% for label in ['ibexa_platform_welcome_page.hero.art.seo'|trans|desc('SEO optimised'), 'ibexa_platform_welcome_page.hero.art.geo'|trans|desc('GEO optimised')] %}
                             <div class="ibexa-welcome-hero-art__chip-row">
                                 <div class="ibexa-welcome-hero-art__chip-label ibexa-welcome-hero-art__chip-label--fixed">{{ label }}</div>
                                 <div class="ibexa-welcome-hero-art__tick">
