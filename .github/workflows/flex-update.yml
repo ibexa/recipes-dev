@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - master
+            - "6.0"
 
 defaults:
     run:
@@ -13,4 +14,4 @@ jobs:
     call-flex-update:
         uses: ./.github/workflows/callable-flex-update.yaml
         with:
-            branch: master
+            branch: ${{ github.ref_name }}
