@@ -1,0 +1,22 @@
+$ibexa-welcome-font-path: '../../vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/font';
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('#{$ibexa-welcome-font-path}/Manrope-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('#{$ibexa-welcome-font-path}/Mulish-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('#{$ibexa-welcome-font-path}/Mulish-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}

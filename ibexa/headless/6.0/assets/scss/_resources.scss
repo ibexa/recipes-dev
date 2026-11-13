@@ -1,0 +1,96 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+.ibexa-welcome-resources {
+    padding-top: 80px;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    &__subtitle {
+        color: $ibexa-welcome-color-text-secondary;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+    }
+}
+
+.ibexa-welcome-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    border-radius: $ibexa-welcome-radius-card;
+    background: $ibexa-welcome-color-neutral-20;
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        padding: 8px;
+        border-radius: 8px;
+        background: color.change($ibexa-welcome-color-primary-0, $alpha: 0.4);
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        fill: $ibexa-welcome-color-brand;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__description {
+        color: $ibexa-welcome-color-text-secondary;
+    }
+
+    &--featured {
+        grid-column: span 2;
+        padding: 40px;
+        border: 1px solid $ibexa-welcome-color-neutral-50;
+        background: url('../images/welcome/card-art.webp') right center / auto 100% no-repeat $ibexa-welcome-color-brand;
+        color: $ibexa-welcome-color-light;
+    }
+
+    &--featured &__icon-box {
+        background: color.change($ibexa-welcome-color-light, $alpha: 0.1);
+    }
+
+    &--featured &__icon {
+        fill: $ibexa-welcome-color-light;
+    }
+
+    &--featured &__text {
+        max-width: 349px;
+    }
+
+    &--featured &__description {
+        color: $ibexa-welcome-color-light;
+    }
+}
