@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 html {
@@ -72,8 +73,8 @@ img {
         background: transparent;
 
         &:hover {
-            color: $ibexa-welcome-color-primary-dark;
-            border-color: $ibexa-welcome-color-primary-dark;
+            color: $ibexa-welcome-color-brand-hover;
+            border-color: $ibexa-welcome-color-brand-hover;
         }
     }
 
@@ -84,7 +85,7 @@ img {
 
         &:hover {
             color: $ibexa-welcome-color-light;
-            background: rgba($ibexa-welcome-color-light, 0.1);
+            background: color.change($ibexa-welcome-color-light, $alpha: 0.1);
         }
     }
 
