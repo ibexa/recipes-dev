@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables' as *;
 
 .ibexa-welcome-help {
@@ -69,7 +70,7 @@
         left: 0;
         width: 439px;
         max-width: 100%;
-        border-top: 1px solid rgba($ibexa-welcome-color-line, 0.3);
+        border-top: 1px solid color.change($ibexa-welcome-color-neutral-80, $alpha: 0.3);
     }
 
     &__art {
