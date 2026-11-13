@@ -1,0 +1,44 @@
+{
+    "manifests": {
+        "ibexa/connect": {
+            "manifest": {
+                "env": {
+                    "IBEXA_CONNECT_HOST": "https://connect.ibexa.co",
+                    "IBEXA_CONNECT_API_PATH": "/api/v2/",
+                    "#1": "Token can be created in the user's profile in Ibexa Connect, under the 'API ACCESS' section.",
+                    "IBEXA_CONNECT_TOKEN": "12345",
+                    "#2": "Use the URL below to read more on Ibexa Connect teams.",
+                    "#3": "https://doc.ibexa.co/projects/connect/en/latest/access_management/teams/",
+                    "IBEXA_CONNECT_TEAM_ID": "12345"
+                },
+                "bundles": {
+                    "Ibexa\\Bundle\\Connect\\IbexaConnectBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_connect.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    system:",
+                        "        default:",
+                        "            connect:",
+                        "                client:",
+                        "                    token: '%env(string:IBEXA_CONNECT_TOKEN)%'",
+                        "                    host: '%env(string:IBEXA_CONNECT_HOST)%'",
+                        "                    api_path: '%env(string:IBEXA_CONNECT_API_PATH)%'",
+                        "                config:",
+                        "                    team_id: '%env(string:IBEXA_CONNECT_TEAM_ID)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "75bbd44c7a581f91531be95c67362236efb38ebd"
+        }
+    }
+}

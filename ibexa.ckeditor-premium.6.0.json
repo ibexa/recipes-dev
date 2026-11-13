@@ -1,0 +1,23 @@
+{
+    "manifests": {
+        "ibexa/ckeditor-premium": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\CkeditorPremium\\IbexaCkeditorPremiumBundle": [
+                        "all"
+                    ]
+                },
+                "add-lines": [
+                    {
+                        "file": "composer.json",
+                        "content": "\"yarn --cwd vendor/ibexa/ckeditor-premium install\": \"script\",",
+                        "position": "after_target",
+                        "target": "\"yarn install\": \"script\","
+                    }
+                ]
+            },
+            "files": [],
+            "ref": "c79336d537e69208729a72b921379c43ec943d92"
+        }
+    }
+}
