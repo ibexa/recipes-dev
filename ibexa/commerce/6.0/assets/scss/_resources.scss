@@ -94,34 +94,3 @@
         color: $ibexa-welcome-color-light;
     }
 }
-
-@media only screen and (max-width: 992px) {
-    .ibexa-welcome-resources {
-        &__grid {
-            grid-template-columns: minmax(0, 1fr);
-        }
-    }
-
-    .ibexa-welcome-card {
-        &--featured {
-            grid-column: auto;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .ibexa-welcome-resources {
-        padding-top: 56px;
-
-        &__title {
-            font-size: 32px;
-            line-height: 44px;
-        }
-    }
-
-    .ibexa-welcome-card {
-        &--featured {
-            background-image: none;
-        }
-    }
-}
