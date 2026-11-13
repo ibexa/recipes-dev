@@ -25,14 +25,13 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
-        width: 521px;
+        max-width: 521px;
     }
 
     &__text {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        overflow-wrap: break-word;
     }
 
     &__title {
@@ -41,8 +40,7 @@
     }
 
     &__description {
-        width: 464px;
-        max-width: 100%;
+        max-width: 464px;
     }
 
     &__actions {
@@ -57,20 +55,20 @@
     }
 
     &__copyright-inner {
-        padding-top: 16px;
         color: $ibexa-welcome-color-text-muted;
         font-size: 14px;
         line-height: 21px;
         white-space: nowrap;
-    }
 
-    &__line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 439px;
-        max-width: 100%;
-        border-top: 1px solid color.change($ibexa-welcome-color-neutral-80, $alpha: 0.3);
+        &::before {
+            content: '';
+            display: block;
+            width: 439px;
+            max-width: 100%;
+            height: 1px;
+            margin-bottom: 15px;
+            background: color.change($ibexa-welcome-color-neutral-80, $alpha: 0.3);
+        }
     }
 
     &__art {
@@ -100,10 +98,6 @@
         &__band {
             height: auto;
             padding: 48px 0;
-        }
-
-        &__content {
-            width: auto;
         }
 
         &__title {

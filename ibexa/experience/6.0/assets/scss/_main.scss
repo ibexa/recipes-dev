@@ -1,6 +1,12 @@
 @use 'sass:color';
 @use 'variables' as *;
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -13,11 +19,17 @@ body {
     font-size: 16px;
     line-height: 24px;
     overflow-x: hidden;
+    overflow-wrap: break-word;
 }
 
 h1,
 h2,
-h3,
+h3 {
+    margin: 0;
+    font-family: $ibexa-welcome-font-family-alt;
+    font-weight: 600;
+}
+
 p {
     margin: 0;
 }
@@ -30,11 +42,6 @@ img {
     position: relative;
     max-width: $ibexa-welcome-container-width;
     margin: 0 auto;
-}
-
-.ibexa-welcome-heading {
-    font-family: $ibexa-welcome-font-family-alt;
-    font-weight: 600;
 }
 
 .ibexa-welcome-btn {
@@ -62,7 +69,6 @@ img {
         background: $ibexa-welcome-gradient-brand;
 
         &:hover {
-            color: $ibexa-welcome-color-light;
             background: $ibexa-welcome-gradient-brand-hover;
         }
     }
@@ -70,7 +76,6 @@ img {
     &--secondary {
         color: $ibexa-welcome-color-brand;
         border-color: $ibexa-welcome-color-brand;
-        background: transparent;
 
         &:hover {
             color: $ibexa-welcome-color-brand-hover;
@@ -81,10 +86,8 @@ img {
     &--light {
         color: $ibexa-welcome-color-light;
         border-color: $ibexa-welcome-color-light;
-        background: transparent;
 
         &:hover {
-            color: $ibexa-welcome-color-light;
             background: color.change($ibexa-welcome-color-light, $alpha: 0.1);
         }
     }
@@ -93,11 +96,9 @@ img {
         height: auto;
         padding: 0;
         border: 0;
-        border-radius: 4px;
         color: $ibexa-welcome-color-light;
 
         &:hover {
-            color: $ibexa-welcome-color-light;
             text-decoration: underline;
         }
     }
