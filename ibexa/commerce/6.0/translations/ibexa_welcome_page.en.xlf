@@ -31,66 +31,6 @@
         <target state="new">Troubleshooting</target>
         <note>key: ibexa_platform_welcome_page.help.troubleshooting</note>
       </trans-unit>
-      <trans-unit id="5c10d556af609b69508c1f8c2888322470995123" resname="ibexa_platform_welcome_page.hero.art.brand.a">
-        <source>Brand A</source>
-        <target state="new">Brand A</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.brand.a</note>
-      </trans-unit>
-      <trans-unit id="d208ba164c6e986ac6f56d7ac02ee151f1ce5bd8" resname="ibexa_platform_welcome_page.hero.art.brand.b">
-        <source>Brand B</source>
-        <target state="new">Brand B</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.brand.b</note>
-      </trans-unit>
-      <trans-unit id="1b0fe633aa8f83d99c671ee2a6db4720223e028d" resname="ibexa_platform_welcome_page.hero.art.brand.c">
-        <source>Brand C</source>
-        <target state="new">Brand C</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.brand.c</note>
-      </trans-unit>
-      <trans-unit id="090fd147bd14105a5193a786dab7648587727e28" resname="ibexa_platform_welcome_page.hero.art.content">
-        <source>All content in one place</source>
-        <target state="new">All content in one place</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.content</note>
-      </trans-unit>
-      <trans-unit id="48fef4455e484534e93cd2cee93a8d4ead8de25e" resname="ibexa_platform_welcome_page.hero.art.geo">
-        <source>GEO optimised</source>
-        <target state="new">GEO optimised</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.geo</note>
-      </trans-unit>
-      <trans-unit id="fd2efa1970ce94de4e9e4933c96b9139d10cdb6e" resname="ibexa_platform_welcome_page.hero.art.language.de">
-        <source>German</source>
-        <target state="new">German</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.language.de</note>
-      </trans-unit>
-      <trans-unit id="e578d682366b9eeb6fb1d2aab6a26dd20029ad50" resname="ibexa_platform_welcome_page.hero.art.language.en">
-        <source>English</source>
-        <target state="new">English</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.language.en</note>
-      </trans-unit>
-      <trans-unit id="b12dfec3e1f966fbc21ee0976f61cf435ae574db" resname="ibexa_platform_welcome_page.hero.art.language.es">
-        <source>Spanish</source>
-        <target state="new">Spanish</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.language.es</note>
-      </trans-unit>
-      <trans-unit id="4b1d0ecb9f24ea3678542af08e0384c72d05bb77" resname="ibexa_platform_welcome_page.hero.art.language.fr">
-        <source>French</source>
-        <target state="new">French</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.language.fr</note>
-      </trans-unit>
-      <trans-unit id="73ba8082e84416e19cd31d37db19da511b1b19cb" resname="ibexa_platform_welcome_page.hero.art.preview">
-        <source>Preview and publish instantly</source>
-        <target state="new">Preview and publish instantly</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.preview</note>
-      </trans-unit>
-      <trans-unit id="4cc77f6afc8a87b615e9b84291c8697cb96cde4c" resname="ibexa_platform_welcome_page.hero.art.seo">
-        <source>SEO optimised</source>
-        <target state="new">SEO optimised</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.seo</note>
-      </trans-unit>
-      <trans-unit id="8cd8dccda3f421a01f5ce707776c22bbda9e4238" resname="ibexa_platform_welcome_page.hero.art.translate">
-        <source>Translate &amp; Localise</source>
-        <target state="new">Translate &amp; Localise</target>
-        <note>key: ibexa_platform_welcome_page.hero.art.translate</note>
-      </trans-unit>
       <trans-unit id="497d5e21605219b054c0a854ae0ef681b9b03a99" resname="ibexa_platform_welcome_page.hero.go_to_cohesivo">
         <source>Go to Cohesivo</source>
         <target state="new">Go to Cohesivo</target>

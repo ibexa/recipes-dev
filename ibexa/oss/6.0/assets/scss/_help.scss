@@ -8,6 +8,7 @@
     overflow: hidden;
 
     &__band {
+        position: relative;
         display: flex;
         align-items: center;
         height: 280px;
@@ -50,6 +51,7 @@
     }
 
     &__copyright {
+        position: relative;
         height: 53px;
     }
 
@@ -70,150 +72,21 @@
         border-top: 1px solid rgba($ibexa-welcome-color-line, 0.3);
     }
 
-    &__decor {
+    &__art {
         position: absolute;
         top: 0;
         left: 50%;
-        width: $ibexa-welcome-container-width;
-        height: 100%;
-        margin-left: calc($ibexa-welcome-container-width / -2);
-        pointer-events: none;
-    }
-
-    &__blob {
-        position: absolute;
-        top: -302px;
-        left: -31px;
-        width: 1970px;
-        height: 1951px;
+        width: 2560px;
+        height: 333px;
+        margin-left: -1280px;
         max-width: none;
-        transform: rotate(-90deg);
-    }
-
-    &__texture {
-        position: absolute;
-        top: 47px;
-        left: 221px;
-        width: 1469px;
-        height: 1242px;
-        opacity: 0.1;
-        overflow: hidden;
-
-        img {
-            position: absolute;
-            top: -27.05%;
-            left: -52.93%;
-            width: 152.93%;
-            height: 180.97%;
-            max-width: none;
-        }
-    }
-
-    &__photos {
-        position: absolute;
-        top: 16px;
-        left: 764px;
-        width: 503px;
-        height: 301px;
-    }
-
-    &__photo {
-        position: absolute;
-        top: 18px;
-        left: 43px;
-        width: 447px;
-        height: 298px;
-        object-fit: cover;
-
-        &--shadow {
-            left: 74px;
-            opacity: 0.4;
-            mix-blend-mode: multiply;
-        }
-    }
-
-    &__photo-blur {
-        position: absolute;
-        top: 18px;
-        left: 321px;
-        width: 154px;
-        height: 298px;
-        opacity: 0.3;
-        filter: blur(17.5px);
-        overflow: hidden;
-
-        img {
-            position: absolute;
-            top: 0;
-            left: -190.43%;
-            width: 290.43%;
-            height: 100%;
-            max-width: none;
-        }
-    }
-
-    &__bubble {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-        border: 1px solid transparent;
-        border-radius: 20px;
-        background: rgba($ibexa-welcome-color-light, 0.04);
-        backdrop-filter: blur(22.5px);
-        -webkit-backdrop-filter: blur(22.5px);
-        transform: translateY(-50%);
-
-        &--1 {
-            top: calc(50% - 54px);
-            left: -109px;
-        }
-
-        &--2 {
-            top: calc(50% - 14px);
-            left: -29px;
-        }
-    }
-
-    &__bubble-lines {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        width: 121px;
-    }
-
-    &__bubble-line {
-        height: 6px;
-        border-radius: 99px;
-        background: rgba($ibexa-welcome-color-light, 0.4);
-
-        &--1 {
-            width: 96px;
-        }
-
-        &--2 {
-            width: 117px;
-        }
-
-        &--3 {
-            width: 26px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1320px) {
-    .ibexa-welcome-help {
-        &__decor {
-            left: 32px;
-            margin-left: 0;
-        }
+        pointer-events: none;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     .ibexa-welcome-help {
-        &__photos {
+        &__art {
             display: none;
         }
     }
