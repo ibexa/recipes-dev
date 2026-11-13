@@ -81,13 +81,11 @@
         gap: 32px;
         padding: 40px;
         border: 1px solid $ibexa-welcome-color-neutral-50;
-        background: $ibexa-welcome-color-primary;
+        background: url('../images/welcome/card-art.webp') right center / auto 100% no-repeat $ibexa-welcome-color-primary;
         color: $ibexa-welcome-color-light;
     }
 
     &--featured &__content {
-        position: relative;
-        z-index: 1;
         display: flex;
         flex-direction: column;
         flex-shrink: 0;
@@ -107,32 +105,6 @@
 
     &--featured &__description {
         color: $ibexa-welcome-color-light;
-    }
-
-    &__blob {
-        position: absolute;
-        top: -189px;
-        left: 326px;
-        width: 706px;
-        height: 706px;
-
-        img {
-            position: absolute;
-            top: -250px;
-            left: -250px;
-            width: 1206px;
-            height: 1206px;
-            max-width: none;
-        }
-    }
-
-    &__knot {
-        position: absolute;
-        top: -149px;
-        left: 414px;
-        width: 708px;
-        height: 770px;
-        max-width: none;
     }
 }
 
@@ -167,9 +139,8 @@
     }
 
     .ibexa-welcome-card {
-        &__blob,
-        &__knot {
-            display: none;
+        &--featured {
+            background-image: none;
         }
     }
 }

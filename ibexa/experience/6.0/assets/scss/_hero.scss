@@ -3,25 +3,9 @@
 .ibexa-welcome-hero {
     position: relative;
     height: 773px;
-
-    &__background {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-        background:
-            linear-gradient(22.98deg, $ibexa-welcome-color-supplementary 26.89%, $ibexa-welcome-color-primary-10 100.43%),
-            $ibexa-welcome-color-base;
-    }
-
-    &__knot {
-        position: absolute;
-        top: 91px;
-        left: calc(50% - 288px);
-        width: 1876px;
-        height: 2040px;
-        max-width: none;
-        opacity: 0.1;
-    }
+    background:
+        linear-gradient(22.98deg, $ibexa-welcome-color-supplementary 26.89%, $ibexa-welcome-color-primary-10 100.43%),
+        $ibexa-welcome-color-base;
 
     &__container {
         height: 100%;
@@ -68,10 +52,11 @@
 
     &__art {
         position: absolute;
-        top: -100px;
-        left: 282px;
-        width: 1506px;
-        height: 1056px;
+        top: 0;
+        left: 50%;
+        width: 3200px;
+        height: 960px;
+        margin-left: -1600px;
         max-width: none;
         pointer-events: none;
     }
@@ -79,16 +64,14 @@
 
 @media only screen and (max-width: 1600px) {
     .ibexa-welcome-hero__art {
-        left: auto;
-        right: -200px;
-        transform: scale(0.85);
-        transform-origin: calc(100% - 200px) 200px;
+        transform: translateX(-332px) scale(0.85);
+        transform-origin: 2560px 100px;
     }
 }
 
 @media only screen and (max-width: 1440px) {
     .ibexa-welcome-hero__art {
-        transform: scale(0.8);
+        transform: translateX(-332px) scale(0.8);
     }
 }
 
