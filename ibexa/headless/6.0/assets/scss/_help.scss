@@ -82,35 +82,3 @@
         pointer-events: none;
     }
 }
-
-@media only screen and (max-width: 1200px) {
-    .ibexa-welcome-help {
-        &__art {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .ibexa-welcome-help {
-        margin-top: 56px;
-
-        &__band {
-            height: auto;
-            padding: 48px 0;
-        }
-
-        &__title {
-            font-size: 28px;
-            line-height: 40px;
-        }
-
-        &__actions {
-            flex-wrap: wrap;
-        }
-
-        &__copyright-inner {
-            white-space: normal;
-        }
-    }
-}

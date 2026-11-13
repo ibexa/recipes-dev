@@ -31,27 +31,3 @@
         line-height: 36px;
     }
 }
-
-@media only screen and (max-width: 992px) {
-    .ibexa-welcome-infra {
-        &__banner {
-            height: auto;
-            background-image: none;
-        }
-
-        &__content {
-            width: auto;
-            max-width: 520px;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .ibexa-welcome-infra {
-        margin-top: 56px;
-
-        &__banner {
-            padding: 32px;
-        }
-    }
-}

@@ -65,38 +65,3 @@
         transform: translateX(-332px) scale(0.8);
     }
 }
-
-@media only screen and (max-width: 1200px) {
-    .ibexa-welcome-hero {
-        height: auto;
-        padding-bottom: 80px;
-    }
-
-    .ibexa-welcome-hero__art {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .ibexa-welcome-hero {
-        padding-bottom: 56px;
-
-        &__content {
-            margin-top: 80px;
-        }
-
-        &__title {
-            font-size: 36px;
-            line-height: 48px;
-        }
-
-        &__lead {
-            font-size: 18px;
-            line-height: 28px;
-        }
-
-        &__actions {
-            flex-wrap: wrap;
-        }
-    }
-}
