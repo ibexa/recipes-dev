@@ -3,36 +3,27 @@
 .ibexa-welcome-hero {
     position: relative;
     height: 773px;
+    padding-top: 48px;
     background:
         linear-gradient(22.98deg, $ibexa-welcome-color-supplementary 26.89%, $ibexa-welcome-color-primary-10 100.43%),
         $ibexa-welcome-color-neutral-30;
 
-    &__container {
-        height: 100%;
-    }
-
     &__logo {
-        position: absolute;
-        top: 48px;
-        left: 0;
         height: 64px;
     }
 
     &__content {
-        position: absolute;
-        top: 252px;
-        left: 0;
         display: flex;
         flex-direction: column;
         gap: 48px;
-        width: 610px;
+        max-width: 610px;
+        margin-top: 140px;
     }
 
     &__text {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        overflow-wrap: break-word;
     }
 
     &__title {
@@ -79,21 +70,6 @@
     .ibexa-welcome-hero {
         height: auto;
         padding-bottom: 80px;
-
-        &__logo,
-        &__content {
-            position: static;
-        }
-
-        &__logo {
-            margin-top: 48px;
-        }
-
-        &__content {
-            margin-top: 140px;
-            max-width: 610px;
-            width: auto;
-        }
     }
 
     .ibexa-welcome-hero__art {

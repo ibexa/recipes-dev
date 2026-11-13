@@ -8,7 +8,6 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
-        overflow-wrap: break-word;
     }
 
     &__title {
@@ -29,7 +28,6 @@
 }
 
 .ibexa-welcome-card {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -38,7 +36,6 @@
     padding: 32px;
     border-radius: $ibexa-welcome-radius-card;
     background: $ibexa-welcome-color-neutral-20;
-    overflow: hidden;
 
     &__icon-box {
         display: flex;
@@ -62,7 +59,6 @@
         flex-direction: column;
         gap: 8px;
         width: 100%;
-        overflow-wrap: break-word;
     }
 
     &__title {
@@ -76,24 +72,10 @@
 
     &--featured {
         grid-column: span 2;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 32px;
         padding: 40px;
         border: 1px solid $ibexa-welcome-color-neutral-50;
         background: url('../images/welcome/card-art.webp') right center / auto 100% no-repeat $ibexa-welcome-color-primary;
         color: $ibexa-welcome-color-light;
-    }
-
-    &--featured &__content {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 24px;
-        width: 349px;
     }
 
     &--featured &__icon-box {
@@ -102,6 +84,10 @@
 
     &--featured &__icon {
         fill: $ibexa-welcome-color-light;
+    }
+
+    &--featured &__text {
+        max-width: 349px;
     }
 
     &--featured &__description {
@@ -119,12 +105,6 @@
     .ibexa-welcome-card {
         &--featured {
             grid-column: auto;
-        }
-
-        &--featured &__content {
-            flex-shrink: 1;
-            width: 100%;
-            max-width: 349px;
         }
     }
 }

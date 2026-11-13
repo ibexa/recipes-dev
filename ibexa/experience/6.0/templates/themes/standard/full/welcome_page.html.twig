@@ -11,11 +11,9 @@
 {% endblock %}
 
 {% block content %}
-    {% set admin_url = url('ibexa.dashboard', { 'siteaccess': 'admin' }) %}
-    {% set version = constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')|split('.')|slice(0, 2)|join('.') %}
-
     <header class="ibexa-welcome-hero">
-        <div class="ibexa-welcome-container ibexa-welcome-hero__container">
+        <img class="ibexa-welcome-hero__art" src="{{ asset('build/images/welcome/hero-art.webp') }}" alt="" width="3200" height="960" />
+        <div class="ibexa-welcome-container">
             <img
                 class="ibexa-welcome-hero__logo"
                 src="{{ asset('build/images/welcome/cohesivo-logo.svg') }}"
@@ -23,7 +21,7 @@
             />
             <div class="ibexa-welcome-hero__content">
                 <div class="ibexa-welcome-hero__text">
-                    <h1 class="ibexa-welcome-heading ibexa-welcome-hero__title">
+                    <h1 class="ibexa-welcome-hero__title">
                         {{ 'ibexa_platform_welcome_page.hero.title'|trans|desc('Cohesivo is ready') }}
                     </h1>
                     <p class="ibexa-welcome-hero__lead">
@@ -31,7 +29,7 @@
                     </p>
                 </div>
                 <div class="ibexa-welcome-hero__actions">
-                    <a href="{{ admin_url }}" class="ibexa-welcome-btn ibexa-welcome-btn--primary">
+                    <a href="{{ url('ibexa.dashboard', { 'siteaccess': 'admin' }) }}" class="ibexa-welcome-btn ibexa-welcome-btn--primary">
                         {{ 'ibexa_platform_welcome_page.hero.go_to_cohesivo'|trans|desc('Go to Cohesivo') }}
                     </a>
                     <a href="https://doc.ibexa.co" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
@@ -39,14 +37,13 @@
                     </a>
                 </div>
             </div>
-            <img class="ibexa-welcome-hero__art" src="{{ asset('build/images/welcome/hero-art.webp') }}" alt="" aria-hidden="true" width="3200" height="960" />
         </div>
     </header>
 
     <main>
         <section class="ibexa-welcome-container ibexa-welcome-resources">
             <div class="ibexa-welcome-resources__header">
-                <h2 class="ibexa-welcome-heading ibexa-welcome-resources__title">
+                <h2 class="ibexa-welcome-resources__title">
                     {{ 'ibexa_platform_welcome_page.resources.title'|trans|desc('Developer resources') }}
                 </h2>
                 <p class="ibexa-welcome-resources__subtitle">
@@ -54,25 +51,15 @@
                 </p>
             </div>
             <div class="ibexa-welcome-resources__grid">
-                <div class="ibexa-welcome-card ibexa-welcome-card--featured">
-                    <div class="ibexa-welcome-card__content">
-                        <div class="ibexa-welcome-card__icon-box">
-                            <svg class="ibexa-welcome-card__icon" aria-hidden="true"><use href="{{ ibexa_icon_path('file-add') }}"></use></svg>
-                        </div>
-                        <div class="ibexa-welcome-card__text">
-                            <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">
-                                {{ 'ibexa_platform_welcome_page.resources.first_steps.title'|trans|desc('First steps') }}
-                            </h3>
-                            <p class="ibexa-welcome-card__description">
-                                {{ 'ibexa_platform_welcome_page.resources.first_steps.description'|trans|desc('Set up your content model, templates and SiteAccesses, then replace this welcome page.') }}
-                            </p>
-                        </div>
-                        <a href="https://doc.ibexa.co/en/latest/getting_started/first_steps/" class="ibexa-welcome-btn ibexa-welcome-btn--light">
-                            {{ 'ibexa_platform_welcome_page.resources.first_steps.action'|trans|desc('Explore first steps') }}
-                        </a>
-                    </div>
-                </div>
                 {% set cards = [
+                    {
+                        featured: true,
+                        icon: 'file-add',
+                        title: 'ibexa_platform_welcome_page.resources.first_steps.title'|trans|desc('First steps'),
+                        description: 'ibexa_platform_welcome_page.resources.first_steps.description'|trans|desc('Set up your content model, templates and SiteAccesses, then replace this welcome page.'),
+                        action: 'ibexa_platform_welcome_page.resources.first_steps.action'|trans|desc('Explore first steps'),
+                        url: 'https://doc.ibexa.co/en/latest/getting_started/first_steps/',
+                    },
                     {
                         icon: 'academy',
                         title: 'ibexa_platform_welcome_page.resources.tutorial.title'|trans|desc('Beginner tutorial'),
@@ -82,7 +69,7 @@
                     },
                     {
                         icon: 'bell',
-                        title: 'ibexa_platform_welcome_page.resources.whats_new.title'|trans({ '%version%': version })|desc('What’s new in %version%'),
+                        title: 'ibexa_platform_welcome_page.resources.whats_new.title'|trans({ '%version%': constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')|split('.')|slice(0, 2)|join('.') })|desc('What’s new in %version%'),
                         description: 'ibexa_platform_welcome_page.resources.whats_new.description'|trans|desc('See new features, deprecations and breaking changes in this release.'),
                         action: 'ibexa_platform_welcome_page.resources.whats_new.action'|trans|desc('Read release notes'),
                         url: 'https://doc.ibexa.co/en/latest/release_notes/release_notes/',
@@ -103,15 +90,15 @@
                     },
                 ] %}
                 {% for card in cards %}
-                    <div class="ibexa-welcome-card">
+                    <div class="ibexa-welcome-card{{ card.featured|default(false) ? ' ibexa-welcome-card--featured' : '' }}">
                         <div class="ibexa-welcome-card__icon-box">
                             <svg class="ibexa-welcome-card__icon" aria-hidden="true"><use href="{{ ibexa_icon_path(card.icon) }}"></use></svg>
                         </div>
                         <div class="ibexa-welcome-card__text">
-                            <h3 class="ibexa-welcome-heading ibexa-welcome-card__title">{{ card.title }}</h3>
+                            <h3 class="ibexa-welcome-card__title">{{ card.title }}</h3>
                             <p class="ibexa-welcome-card__description">{{ card.description }}</p>
                         </div>
-                        <a href="{{ card.url }}" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">{{ card.action }}</a>
+                        <a href="{{ card.url }}" class="ibexa-welcome-btn ibexa-welcome-btn--{{ card.featured|default(false) ? 'light' : 'secondary' }}">{{ card.action }}</a>
                     </div>
                 {% endfor %}
             </div>
@@ -121,7 +108,7 @@
             <div class="ibexa-welcome-infra__banner">
                 <div class="ibexa-welcome-infra__content">
                     <div class="ibexa-welcome-infra__text">
-                        <h2 class="ibexa-welcome-heading ibexa-welcome-infra__title">
+                        <h2 class="ibexa-welcome-infra__title">
                             {{ 'ibexa_platform_welcome_page.infrastructure.title'|trans|desc('Infrastructure and maintenance') }}
                         </h2>
                         <p class="ibexa-welcome-infra__description">
@@ -137,12 +124,12 @@
     </main>
 
     <footer class="ibexa-welcome-help">
-        <img class="ibexa-welcome-help__art" src="{{ asset('build/images/welcome/help-art.webp') }}" alt="" aria-hidden="true" width="2560" height="333" />
+        <img class="ibexa-welcome-help__art" src="{{ asset('build/images/welcome/help-art.webp') }}" alt="" width="2560" height="333" />
         <div class="ibexa-welcome-help__band">
             <div class="ibexa-welcome-container">
                 <div class="ibexa-welcome-help__content">
                     <div class="ibexa-welcome-help__text">
-                        <h2 class="ibexa-welcome-heading ibexa-welcome-help__title">
+                        <h2 class="ibexa-welcome-help__title">
                             {{ 'ibexa_platform_welcome_page.help.title'|trans|desc('Need help?') }}
                         </h2>
                         <p class="ibexa-welcome-help__description">
@@ -162,7 +149,6 @@
         </div>
         <div class="ibexa-welcome-help__copyright">
             <div class="ibexa-welcome-container ibexa-welcome-help__copyright-inner">
-                <div class="ibexa-welcome-help__line"></div>
                 {{ 'ibexa_platform_welcome_page.copyright'|trans({ '%current_year%': 'now'|date('Y') })|desc('Copyright © %current_year% Ibexa | Powered by Cohesivo CMS') }}
             </div>
         </div>
