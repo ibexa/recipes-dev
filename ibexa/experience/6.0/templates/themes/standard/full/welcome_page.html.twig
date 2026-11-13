@@ -42,95 +42,7 @@
                     </a>
                 </div>
             </div>
-            <div class="ibexa-welcome-hero-art" aria-hidden="true">
-                <div class="ibexa-welcome-hero-art__blob ibexa-welcome-hero-art__blob--1">
-                    <img src="{{ asset('build/images/welcome/ellipse-hero.svg') }}" alt="" />
-                </div>
-                <div class="ibexa-welcome-hero-art__blob ibexa-welcome-hero-art__blob--2">
-                    <img src="{{ asset('build/images/welcome/ellipse-hero.svg') }}" alt="" />
-                </div>
-                <div class="ibexa-welcome-hero-art__frame">
-                    <div class="ibexa-welcome-hero-art__frame-gradient"></div>
-                    <div class="ibexa-welcome-hero-art__frame-photos">
-                        <img class="ibexa-welcome-hero-art__frame-photo ibexa-welcome-hero-art__frame-photo--back" src="{{ asset('build/images/welcome/hero-photo-back.png') }}" alt="" />
-                        <img class="ibexa-welcome-hero-art__frame-photo" src="{{ asset('build/images/welcome/hero-photo.png') }}" alt="" />
-                    </div>
-                    <div class="ibexa-welcome-hero-art__frame-glow"></div>
-                </div>
-                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--translate">
-                    <div class="ibexa-welcome-hero-art__chip-list">
-                        <div class="ibexa-welcome-hero-art__chip-title">{{ 'ibexa_platform_welcome_page.hero.art.translate'|trans|desc('Translate & Localise') }}</div>
-                        <div class="ibexa-welcome-hero-art__chip-rows">
-                            {% for flag, language in { 'en': 'ibexa_platform_welcome_page.hero.art.language.en'|trans|desc('English'), 'fr': 'ibexa_platform_welcome_page.hero.art.language.fr'|trans|desc('French'), 'de': 'ibexa_platform_welcome_page.hero.art.language.de'|trans|desc('German'), 'es': 'ibexa_platform_welcome_page.hero.art.language.es'|trans|desc('Spanish') } %}
-                                <div class="ibexa-welcome-hero-art__chip-row">
-                                    <div class="ibexa-welcome-hero-art__chip-row-main">
-                                        <img class="ibexa-welcome-hero-art__flag" src="{{ asset('build/images/welcome/flag-' ~ flag ~ '.png') }}" alt="" />
-                                        <div class="ibexa-welcome-hero-art__chip-label">{{ language }}</div>
-                                    </div>
-                                    <div class="ibexa-welcome-hero-art__tick">
-                                        <img src="{{ asset('build/images/welcome/tick.svg') }}" alt="" />
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                {% for chip, label in { 'a': 'ibexa_platform_welcome_page.hero.art.brand.a'|trans|desc('Brand A'), 'b': 'ibexa_platform_welcome_page.hero.art.brand.b'|trans|desc('Brand B'), 'c': 'ibexa_platform_welcome_page.hero.art.brand.c'|trans|desc('Brand C') } %}
-                    <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--brand ibexa-welcome-hero-art__chip--brand-{{ chip }}">
-                        <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--dark">
-                            <div class="ibexa-welcome-hero-art__chip-icon">
-                                <img src="{{ asset('build/images/welcome/icon-brand.svg') }}" alt="" />
-                            </div>
-                        </div>
-                        {{ label }}
-                    </div>
-                {% endfor %}
-                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--content">
-                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--light">
-                        <div class="ibexa-welcome-hero-art__chip-icon ibexa-welcome-hero-art__chip-icon--content">
-                            <img src="{{ asset('build/images/welcome/icon-content.svg') }}" alt="" />
-                        </div>
-                    </div>
-                    {{ 'ibexa_platform_welcome_page.hero.art.content'|trans|desc('All content in one place') }}
-                </div>
-                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--preview">
-                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--light">
-                        <div class="ibexa-welcome-hero-art__chip-icon ibexa-welcome-hero-art__chip-icon--preview">
-                            <img src="{{ asset('build/images/welcome/icon-preview.svg') }}" alt="" />
-                        </div>
-                    </div>
-                    {{ 'ibexa_platform_welcome_page.hero.art.preview'|trans|desc('Preview and publish instantly') }}
-                </div>
-                <img class="ibexa-welcome-hero-art__screenshot" src="{{ asset('build/images/welcome/hero-screenshot.png') }}" alt="" />
-                <div class="ibexa-welcome-hero-art__chip ibexa-welcome-hero-art__chip--glass ibexa-welcome-hero-art__chip--seo">
-                    <div class="ibexa-welcome-hero-art__chip-icon-box ibexa-welcome-hero-art__chip-icon-box--plain">
-                        <div class="ibexa-welcome-hero-art__chip-icon">
-                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--1" src="{{ asset('build/images/welcome/sparkle-1.svg') }}" alt="" />
-                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--2" src="{{ asset('build/images/welcome/sparkle-2.svg') }}" alt="" />
-                            <img class="ibexa-welcome-hero-art__sparkle ibexa-welcome-hero-art__sparkle--3" src="{{ asset('build/images/welcome/sparkle-3.svg') }}" alt="" />
-                        </div>
-                    </div>
-                    <div class="ibexa-welcome-hero-art__chip-rows">
-                        {% for label in ['ibexa_platform_welcome_page.hero.art.seo'|trans|desc('SEO optimised'), 'ibexa_platform_welcome_page.hero.art.geo'|trans|desc('GEO optimised')] %}
-                            <div class="ibexa-welcome-hero-art__chip-row">
-                                <div class="ibexa-welcome-hero-art__chip-label ibexa-welcome-hero-art__chip-label--fixed">{{ label }}</div>
-                                <div class="ibexa-welcome-hero-art__tick">
-                                    <img src="{{ asset('build/images/welcome/tick2.svg') }}" alt="" />
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="ibexa-welcome-hero-art__boxes">
-                    <div class="ibexa-welcome-hero-art__box ibexa-welcome-hero-art__box--dashed">
-                        <img src="{{ asset('build/images/welcome/icon-numpad.svg') }}" alt="" width="12" height="12" />
-                    </div>
-                    <div class="ibexa-welcome-hero-art__box ibexa-welcome-hero-art__box--filled">
-                        <img src="{{ asset('build/images/welcome/icon-image.svg') }}" alt="" width="20" height="20" />
-                    </div>
-                </div>
-                <img class="ibexa-welcome-hero-art__cursor" src="{{ asset('build/images/welcome/icon-cursor.svg') }}" alt="" />
-            </div>
+            <img class="ibexa-welcome-hero__art" src="{{ asset('build/images/welcome/hero-art.webp') }}" alt="" aria-hidden="true" width="1506" height="1056" />
         </div>
     </header>
 
@@ -264,6 +176,7 @@
     </main>
 
     <footer class="ibexa-welcome-help">
+        <img class="ibexa-welcome-help__art" src="{{ asset('build/images/welcome/help-art.webp') }}" alt="" aria-hidden="true" width="2560" height="333" />
         <div class="ibexa-welcome-help__band">
             <div class="ibexa-welcome-container">
                 <div class="ibexa-welcome-help__content">
@@ -290,28 +203,6 @@
             <div class="ibexa-welcome-container ibexa-welcome-help__copyright-inner">
                 <div class="ibexa-welcome-help__line"></div>
                 {{ 'ibexa_platform_welcome_page.copyright'|trans({ '%current_year%': 'now'|date('Y') })|desc('Copyright © %current_year% Ibexa | Powered by Cohesivo CMS') }}
-            </div>
-        </div>
-        <div class="ibexa-welcome-help__decor" aria-hidden="true">
-            <img class="ibexa-welcome-help__blob" src="{{ asset('build/images/welcome/ellipse-footer.svg') }}" alt="" />
-            <div class="ibexa-welcome-help__texture">
-                <img src="{{ asset('build/images/welcome/help-texture.png') }}" alt="" />
-            </div>
-            <div class="ibexa-welcome-help__photos">
-                <img class="ibexa-welcome-help__photo ibexa-welcome-help__photo--shadow" src="{{ asset('build/images/welcome/help-photo-shadow.png') }}" alt="" />
-                <img class="ibexa-welcome-help__photo" src="{{ asset('build/images/welcome/help-photo.png') }}" alt="" />
-                <div class="ibexa-welcome-help__photo-blur">
-                    <img src="{{ asset('build/images/welcome/help-photo.png') }}" alt="" />
-                </div>
-                {% for index in 1..2 %}
-                    <div class="ibexa-welcome-help__bubble ibexa-welcome-help__bubble--{{ index }}">
-                        <div class="ibexa-welcome-help__bubble-lines">
-                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--1"></div>
-                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--2"></div>
-                            <div class="ibexa-welcome-help__bubble-line ibexa-welcome-help__bubble-line--3"></div>
-                        </div>
-                    </div>
-                {% endfor %}
             </div>
         </div>
     </footer>

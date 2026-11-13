@@ -16,7 +16,7 @@ Encore.setOutputPath('public/build/')
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[ext]',
-        pattern: /\.(png|svg)$/,
+        pattern: /\.(png|svg|webp)$/,
     })
 
     // enables @babel/preset-env polyfills

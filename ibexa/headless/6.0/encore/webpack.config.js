@@ -19,7 +19,7 @@ Encore
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[ext]',
-        pattern: /\.(png|svg)$/,
+        pattern: /\.(png|svg|webp)$/,
     })
     .configureBabelPresetEnv((config) => {
         config.useBuiltIns = 'usage';
