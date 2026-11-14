@@ -46,7 +46,11 @@ jobs:
                 run: |
                     mkdir .github/flex-endpoint
                     git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} ${{ inputs.branch }} $FLEX_BRANCH .github/flex-endpoint ${{ inputs.versions_json }} ${{ inputs.contrib && '--contrib' || '' }}
-                    git switch "$FLEX_BRANCH" || git switch --orphan "$FLEX_BRANCH"
+                    if git show-ref --verify --quiet "refs/remotes/origin/$FLEX_BRANCH"; then
+                        git switch "$FLEX_BRANCH"
+                    else
+                        git switch --orphan "$FLEX_BRANCH"
+                    fi
                     git rm -q --ignore-unmatch *.json
                     mv .github/flex-endpoint/*.json .
                     git add *.json
