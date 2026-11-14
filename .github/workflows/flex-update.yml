@@ -13,5 +13,6 @@ defaults:
 jobs:
     call-flex-update:
         uses: ./.github/workflows/callable-flex-update.yaml
+        secrets: inherit
         with:
             branch: ${{ github.ref_name }}

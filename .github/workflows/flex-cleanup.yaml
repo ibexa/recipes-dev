@@ -10,8 +10,17 @@ jobs:
         name: Cleanup Flex testing endpoint
         runs-on: ubuntu-26.04
         steps:
+            - name: Set up the App token and git identity
+              uses: ibexa/gh-workflows/actions/setup-app-git-identity@main
+              id: bot
+              with:
+                  gh-client-id: ${{ secrets.AUTOMATION_CLIENT_ID }}
+                  gh-client-secret: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
+
             - name: Checkout
               uses: actions/checkout@v7
+              with:
+                  token: ${{ steps.bot.outputs.token }}
 
             - name: Cleanup Flex testing endpoint
               run: git push origin :flex/pull-${{ github.event.number }} || true
