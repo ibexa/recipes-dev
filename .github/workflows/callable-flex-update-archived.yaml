@@ -5,7 +5,7 @@ on:
     workflow_call:
         inputs:
             branch:
-                default: main
+                default: master
                 required: false
                 type: string
 
@@ -34,14 +34,16 @@ jobs:
                     composer install --ansi --no-dev
             -
                 name: Update Flex Archives
+                env:
+                    FLEX_BRANCH: flex/${{ inputs.branch == 'master' && 'main' || inputs.branch }}
                 run: |
                     git switch ${{ inputs.branch }}
 
                     mkdir .github/archived
                     php .github/recipes-checker-main/run generate:archived-recipes . ${{ inputs.branch }} .github/archived
 
-                    git switch flex/main
+                    git switch "$FLEX_BRANCH"
                     cp -a .github/archived .
                     git add archived/
                     git commit -m 'Update Flex archives' || true
-                    git push origin -f flex/main
+                    git push origin -f "$FLEX_BRANCH"
