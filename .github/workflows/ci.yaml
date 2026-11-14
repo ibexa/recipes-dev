@@ -34,7 +34,7 @@ jobs:
               if: "always() && steps.checkout.outcome == 'success'"
               run: |
                   mkdir .github/flex-endpoint
-                  git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} master flex/pull-${{ github.event.number }} .github/flex-endpoint
+                  git ls-tree HEAD */*/* | php .github/recipes-checker-main/run generate:flex-endpoint ${{ github.repository }} ${{ github.base_ref }} flex/pull-${{ github.event.number }} .github/flex-endpoint
                   git stash
                   git switch -c pr
                   git switch --orphan flex/pull-${{ github.event.number }}
