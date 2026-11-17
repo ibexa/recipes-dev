@@ -1,0 +1,12 @@
+# The API Platform profile of Ibexa DXP (formats, error formats, pagination, cache headers, documentation,
+# the stateless default) is prepended by ibexa/api-platform. Every key set here overrides that profile one by one,
+# so keep this file to project-level keys only. Do not set "defaults.stateless": the back office and every
+# session-authenticated REST call rely on the session, see https://github.com/ibexa/api-platform#readme.
+#
+# Keys a project typically overrides:
+#
+# api_platform:
+#     title: 'My project API'
+#     version: '1.0.0'
+#     show_webby: false
+#     enable_swagger_ui: false
