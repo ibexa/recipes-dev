@@ -1,6 +1,8 @@
 {
   "aliases": [],
-  "bundles": {},
+  "bundles": {
+    "Ibexa\\Bundle\\OAuth2Server\\IbexaOAuth2ServerBundle": ["all"]
+  },
   "copy-from-recipe": {
     "config/": "%CONFIG_DIR%/"
   },
