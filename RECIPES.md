@@ -4,6 +4,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 
 | Package | Latest Recipe | Aliases |
 | --- | --- | --- |
+| [api-platform/core](https://packagist.org/packages/api-platform/core) | [4.2](../../../tree/main/api-platform/core/4.2) |  |
 | [ezsystems/behatbundle](https://packagist.org/packages/ezsystems/behatbundle) | [9.0.x-dev](../../../tree/main/ezsystems/behatbundle/9.0.x-dev) |  |
 | [ezsystems/date-based-publisher](https://packagist.org/packages/ezsystems/date-based-publisher) | [4.3](../../../tree/main/ezsystems/date-based-publisher/4.3) |  |
 | [ezsystems/doctrine-dbal-schema](https://packagist.org/packages/ezsystems/doctrine-dbal-schema) | [1.0](../../../tree/main/ezsystems/doctrine-dbal-schema/1.0) |  |

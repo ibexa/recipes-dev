@@ -49,6 +49,9 @@
         "raptor": "ibexa/connector-raptor"
     },
     "recipes": {
+        "api-platform/core": [
+            "4.2"
+        ],
         "ezsystems/behatbundle": [
             "8.3.x-dev",
             "9.0.x-dev"

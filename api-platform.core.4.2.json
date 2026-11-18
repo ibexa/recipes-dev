@@ -1,0 +1,53 @@
+{
+    "manifests": {
+        "api-platform/core": {
+            "manifest": {
+                "bundles": {
+                    "ApiPlatform\\Symfony\\Bundle\\ApiPlatformBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "post-install-output": [
+                    "  * API Platform is configured by <info>ibexa/api-platform</info>:",
+                    "    1. The v3 REST API of the installed packages is served under <info>/api/ibexa/</info>;",
+                    "    2. Browse the documentation at <info>/api/docs</info>;",
+                    "    3. Project-level overrides go to <info>config/packages/api_platform.yaml</info>, see the comments there."
+                ]
+            },
+            "files": {
+                "config/packages/api_platform.yaml": {
+                    "contents": [
+                        "# The API Platform profile of Ibexa DXP (formats, error formats, pagination, cache headers, documentation,",
+                        "# the stateless default) is prepended by ibexa/api-platform. Every key set here overrides that profile one by one,",
+                        "# so keep this file to project-level keys only. Do not set \"defaults.stateless\": the back office and every",
+                        "# session-authenticated REST call rely on the session, see https://github.com/ibexa/api-platform#readme.",
+                        "#",
+                        "# Keys a project typically overrides:",
+                        "#",
+                        "# api_platform:",
+                        "#     title: 'My project API'",
+                        "#     version: '1.0.0'",
+                        "#     show_webby: false",
+                        "#     enable_swagger_ui: false",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/api_platform.yaml": {
+                    "contents": [
+                        "api_platform:",
+                        "    resource: .",
+                        "    type: api_platform",
+                        "    prefix: /api",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "da63f57e40a0eb398f3654091c97ac2008128d16"
+        }
+    }
+}
