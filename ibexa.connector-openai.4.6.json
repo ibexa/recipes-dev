@@ -1,0 +1,18 @@
+{
+    "manifests": {
+        "ibexa/connector-openai": {
+            "manifest": {
+                "env": {
+                    "OPENAI_API_KEY": "sk-123456"
+                },
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorOpenAi\\IbexaConnectorOpenAiBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "5047e77ce50e768e971848f4235a163db5320f82"
+        }
+    }
+}
