@@ -37,9 +37,19 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/routes/ibexa_connector_ai_assistant.yaml": {
+                    "contents": [
+                        "ibexa.connector_ai_assistant.admin:",
+                        "    resource: '@IbexaConnectorAiAssistantBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "c77f8f7d90f32d03ca495ff546e041eaf93128f3"
+            "ref": "520382d25ba5450cfd1d2677a7dfdf4745d0181c"
         }
     }
 }
