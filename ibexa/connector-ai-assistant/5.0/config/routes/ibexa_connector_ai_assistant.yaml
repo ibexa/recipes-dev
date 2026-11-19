@@ -1,0 +1,4 @@
+ibexa.connector_ai_assistant.admin:
+    resource: '@IbexaConnectorAiAssistantBundle/Resources/config/routing_admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
