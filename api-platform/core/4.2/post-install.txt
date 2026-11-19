@@ -1,0 +1,4 @@
+  * API Platform is configured by <info>ibexa/api-platform</info>:
+    1. The v3 REST API of the installed packages is served under <info>/api/ibexa/</info>;
+    2. Browse the documentation at <info>/api/docs</info>;
+    3. Project-level overrides go to <info>config/packages/api_platform.yaml</info>, see the comments there.
