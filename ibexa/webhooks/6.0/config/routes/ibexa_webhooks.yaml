@@ -1,0 +1,8 @@
+ibexa.webhooks:
+    resource: '@IbexaWebhooksBundle/Resources/config/routing.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'
+
+ibexa.rest.webhooks:
+    resource: '@IbexaWebhooksBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'
