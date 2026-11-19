@@ -173,4 +173,5 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/twig-components](https://packagist.org/packages/ibexa/twig-components) | [6.0](../../../tree/main/ibexa/twig-components/6.0) |  |
 | [ibexa/user](https://packagist.org/packages/ibexa/user) | [6.0](../../../tree/main/ibexa/user/6.0) |  |
 | [ibexa/version-comparison](https://packagist.org/packages/ibexa/version-comparison) | [6.0](../../../tree/main/ibexa/version-comparison/6.0) |  |
+| [ibexa/webhooks](https://packagist.org/packages/ibexa/webhooks) | [6.0](../../../tree/main/ibexa/webhooks/6.0) |  |
 | [ibexa/workflow](https://packagist.org/packages/ibexa/workflow) | [6.0](../../../tree/main/ibexa/workflow/6.0) |  |
