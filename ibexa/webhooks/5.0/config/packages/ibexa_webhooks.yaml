@@ -1,7 +1,0 @@
-ibexa_webhooks:
-    secret_key: '%env(base64:WEBHOOK_SECRET_KEY)%'
-    delivery:
-        # Webhooks are delivered asynchronously through a dedicated queue in the Ibexa Messenger table.
-        # Consume it with: php bin/console messenger:consume ibexa_webhook --time-limit=3600
-        # Use 'sync://' to deliver webhooks synchronously within the request instead.
-        transport_dsn: 'doctrine://ibexa.current?table_name=ibexa_messenger_messages&queue_name=ibexa_webhook&auto_setup=false'
