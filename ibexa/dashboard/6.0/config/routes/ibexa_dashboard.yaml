@@ -1,0 +1,4 @@
+ibexa.dashboard:
+    resource: '@IbexaDashboardBundle/Resources/config/routing/admin.yaml'
+    defaults:
+        siteaccess_group_whitelist: '%admin_group_name%'

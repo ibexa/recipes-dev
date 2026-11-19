@@ -1,4 +1,13 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\Solr\\IbexaSolrBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "SOLR_DSN": "http://localhost:8983/solr",
+    "SOLR_CORE": "collection1"
+  }
 }

@@ -1,4 +1,10 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\Core\\IbexaCoreBundle": ["all"],
+    "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": ["all"],
+    "Ibexa\\Bundle\\IO\\IbexaIOBundle": ["all"],
+    "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": ["dev", "test", "behat"],
+    "Ibexa\\Bundle\\RepositoryInstaller\\IbexaRepositoryInstallerBundle": ["all"]
+  }
 }
