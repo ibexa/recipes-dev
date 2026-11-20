@@ -114,8 +114,8 @@ The commerce documentation covers the eCommerce features and APIs of Ibexa DXP. 
         <note>key: ibexa_platform_welcome_page.header.content</note>
       </trans-unit>
       <trans-unit id="98c2ffa53627e1a600dc9dc9c1105167b18b4ce5" resname="ibexa_platform_welcome_page.header.image">
-        <source>Experience</source>
-        <target state="new">Experience</target>
+        <source>Cohesivo</source>
+        <target state="new">Cohesivo</target>
         <note>key: ibexa_platform_welcome_page.header.image</note>
       </trans-unit>
       <trans-unit id="ad4d8a3d927782cf037c301c653c0b8d05d57dfe" resname="ibexa_platform_welcome_page.header.title">
