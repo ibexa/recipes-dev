@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.ibexa-welcome-infra {
+    margin-top: 80px;
+
+    &__banner {
+        position: relative;
+        height: 232px;
+        padding: 32px 48px;
+        border-radius: $ibexa-welcome-radius-card;
+        background: url('../images/welcome/infra-art.webp') right center / auto 100% no-repeat $ibexa-welcome-color-primary-alt-0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        width: 520px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        overflow-wrap: break-word;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

@@ -1,12 +1,29 @@
-$ibexa-welcome-color-main: #ae1164;
+@use '../../vendor/ibexa/admin-ui-assets/src/bundle/Resources/public/vendors/ids-assets/dist/scss/variables' as ids;
 
-$ibexa-welcome-color-dark-600: #0b1117;
-$ibexa-welcome-color-dark: #131c26;
+$ibexa-welcome-font-family: ids.$font-family;
+$ibexa-welcome-font-family-alt: ids.$font-family-alt;
 
-$ibexa-welcome-color-light-600: #f9f9fa;
-$ibexa-welcome-color-light: #ffffff;
+$ibexa-welcome-color-text: ids.$color-neutral-240;
+$ibexa-welcome-color-text-secondary: ids.$color-neutral-230;
+$ibexa-welcome-color-text-muted: ids.$color-neutral-100;
+$ibexa-welcome-color-light: ids.$color-neutral-10;
+$ibexa-welcome-color-brand: ids.$color-primary-80;
+$ibexa-welcome-color-brand-hover: ids.$color-primary-100;
+$ibexa-welcome-color-primary-10: ids.$color-primary-10;
+$ibexa-welcome-color-primary-0: ids.$color-primary-0;
+$ibexa-welcome-color-primary-alt-0: ids.$color-primary_alt-0;
+$ibexa-welcome-color-primary-alt-130: ids.$color-primary_alt-130;
+$ibexa-welcome-color-neutral-20: ids.$color-neutral-20;
+$ibexa-welcome-color-neutral-30: ids.$color-neutral-30;
+$ibexa-welcome-color-neutral-50: ids.$color-neutral-50;
+$ibexa-welcome-color-neutral-80: ids.$color-neutral-80;
 
-$ibexa-welcome-color-extra-red: #db0032;
+$ibexa-welcome-gradient-brand: ids.$gradient-primary-1;
+$ibexa-welcome-gradient-brand-hover: ids.$gradient-primary-2;
 
-$ibexa-welcome-transition: cubic-bezier(0.25, 0.8, 0.25, 1);
-$ibexa-welcome-transition-duration: 0.4s;
+$ibexa-welcome-radius-button: ids.$border-radius-medium;
+$ibexa-welcome-radius-card: ids.$border-radius-large;
+$ibexa-welcome-container-width: 1256px;
+
+$ibexa-welcome-transition: ids.$transition-timing-function;
+$ibexa-welcome-transition-duration: ids.$transition-duration;
