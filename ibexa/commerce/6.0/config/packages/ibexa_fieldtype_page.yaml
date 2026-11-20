@@ -1,0 +1,8 @@
+ibexa_fieldtype_page:
+    reporting:
+        block_usage:
+            # Content types left out of the Page Builder block usage reports. They use Page Builder,
+            # but are not site pages. Remove an entry to count it, or add your own.
+            excluded_content_types:
+                - dashboard_landing_page
+                - customer_portal_page
