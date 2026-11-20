@@ -2,10 +2,43 @@
     "manifests": {
         "ibexa/fastly": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\Fastly\\IbexaFastlyBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "#13": "Enable fastly by setting valid service_id and key",
+                    "#15": "FASTLY_SERVICE_ID=\"\"",
+                    "#16": "FASTLY_KEY=\"\""
+                }
             },
-            "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "files": {
+                "config/packages/ibexa_fastly.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    env(FASTLY_SERVICE_ID): ~",
+                        "    env(FASTLY_KEY): ~",
+                        "    fastly_service_id: '%env(FASTLY_SERVICE_ID)%'",
+                        "    fastly_key: '%env(FASTLY_KEY)%'",
+                        "",
+                        "ibexa:",
+                        "    system:",
+                        "        default:",
+                        "            http_cache:",
+                        "                # If using fastly, 'purge_server' must be set to 'https://api.fastly.com'",
+                        "                fastly:",
+                        "                    service_id: '%fastly_service_id%'",
+                        "                    key: '%fastly_key%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "28fa83cbc97e8df13213f23c4cd47ef0e4655dbe"
         }
     }
 }

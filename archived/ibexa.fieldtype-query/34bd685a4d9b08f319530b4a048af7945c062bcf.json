@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-query": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeQuery\\IbexaFieldTypeQueryBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_fieldtype_query.yaml": {
+                    "contents": [
+                        "ibexa.field_type_query:",
+                        "    resource: '@IbexaFieldTypeQueryBundle/Resources/config/routing/rest.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "34bd685a4d9b08f319530b4a048af7945c062bcf"
+        }
+    }
+}

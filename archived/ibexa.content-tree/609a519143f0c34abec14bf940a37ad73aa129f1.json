@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/content-tree": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "609a519143f0c34abec14bf940a37ad73aa129f1"
+        }
+    }
+}

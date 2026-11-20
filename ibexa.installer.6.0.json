@@ -2,10 +2,14 @@
     "manifests": {
         "ibexa/installer": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle": [
+                        "all"
+                    ]
+                }
             },
             "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "ref": "54181cf8981382486f68ac8eff726d8c07da54c6"
         }
     }
 }

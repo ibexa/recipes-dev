@@ -2,10 +2,26 @@
     "manifests": {
         "ibexa/system-info": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
             },
-            "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "files": {
+                "config/routes/ibexa_system_info.yaml": {
+                    "contents": [
+                        "ibexa.system_info:",
+                        "  resource: '@IbexaSystemInfoBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "99ad460995dcb5e09c8d34beebd5984d980092c0"
         }
     }
 }

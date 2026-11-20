@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/seo": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Seo\\IbexaSeoBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "3032a101f7d8cf3a31393676c05cca52a1c91228"
+        }
+    }
+}

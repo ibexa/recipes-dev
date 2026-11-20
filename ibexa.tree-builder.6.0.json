@@ -2,10 +2,14 @@
     "manifests": {
         "ibexa/tree-builder": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": [
+                        "all"
+                    ]
+                }
             },
             "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "ref": "dab0227071366b9fa339992a6f4c47d9e30730fa"
         }
     }
 }

@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/design-engine": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\DesignEngine\\IbexaDesignEngineBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "e57cb96d3325ebaccca698f904d121d1abb02d49"
+        }
+    }
+}

@@ -2,10 +2,26 @@
     "manifests": {
         "ibexa/search": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\Search\\IbexaSearchBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
             },
-            "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "files": {
+                "config/routes/ibexa_search.yaml": {
+                    "contents": [
+                        "ibexa.search:",
+                        "    resource: '@IbexaSearchBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0f7b0d16116e3a339c46b099dee6c2383ed153cd"
         }
     }
 }

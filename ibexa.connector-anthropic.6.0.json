@@ -5,10 +5,14 @@
                 "env": {
                     "ANTHROPIC_API_KEY": "sk-123456"
                 },
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorAnthropic\\IbexaConnectorAnthropicBundle": [
+                        "all"
+                    ]
+                }
             },
             "files": [],
-            "ref": "cab4e2a1814063ad608cf6f9f58d92d2c4f5a7e9"
+            "ref": "fc84652a4076062a6795b542576c6ee00edd0cf8"
         }
     }
 }

@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/admin-ui": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\AdminUi\\IbexaAdminUiBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_admin_ui.yaml": {
+                    "contents": [
+                        "ibexa.admin_ui:",
+                        "    resource: '@IbexaAdminUiBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.admin_ui.rest:",
+                        "    resource: '@IbexaAdminUiBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1db5932509f1ec14e683bbf35a56a6f2df07d3b8"
+        }
+    }
+}

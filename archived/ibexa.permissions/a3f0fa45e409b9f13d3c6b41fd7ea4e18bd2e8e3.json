@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/permissions": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "a3f0fa45e409b9f13d3c6b41fd7ea4e18bd2e8e3"
+        }
+    }
+}

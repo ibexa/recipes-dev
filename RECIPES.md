@@ -66,6 +66,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/cdp](https://packagist.org/packages/ibexa/cdp) | [6.0](../../../tree/main/ibexa/cdp/6.0) | `cdp`, `ibexa-cdp`, `ibexacdp` |
 | [ibexa/checkout](https://packagist.org/packages/ibexa/checkout) | [6.0](../../../tree/main/ibexa/checkout/6.0) |  |
 | [ibexa/ckeditor-premium](https://packagist.org/packages/ibexa/ckeditor-premium) | [6.0](../../../tree/main/ibexa/ckeditor-premium/6.0) |  |
+| [ibexa/cohesivo](https://packagist.org/packages/ibexa/cohesivo) | [6.0](../../../tree/main/ibexa/cohesivo/6.0) | `cohesivo`, `ibexa-cohesivo`, `ibexacohesivo` |
 | [ibexa/collaboration](https://packagist.org/packages/ibexa/collaboration) | [6.0](../../../tree/main/ibexa/collaboration/6.0) |  |
 | [ibexa/commerce](https://packagist.org/packages/ibexa/commerce) | [6.0](../../../tree/main/ibexa/commerce/6.0) | `cms-commerce`, `cmscommerce`, `commerce`, `dxp-commerce`, `dxpcommerce`, `ibexa-commerce`, `ibexacommerce` |
 | [ibexa/commerce-admin-ui](https://packagist.org/packages/ibexa/commerce-admin-ui) | [6.0](../../../tree/main/ibexa/commerce-admin-ui/6.0) |  |
@@ -135,6 +136,7 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/integrated-help](https://packagist.org/packages/ibexa/integrated-help) | [6.0](../../../tree/main/ibexa/integrated-help/6.0) |  |
 | [ibexa/mcp](https://packagist.org/packages/ibexa/mcp) | [6.0](../../../tree/main/ibexa/mcp/6.0) |  |
 | [ibexa/measurement](https://packagist.org/packages/ibexa/measurement) | [6.0](../../../tree/main/ibexa/measurement/6.0) |  |
+| [ibexa/messenger](https://packagist.org/packages/ibexa/messenger) | [6.0](../../../tree/main/ibexa/messenger/6.0) |  |
 | [ibexa/migrations](https://packagist.org/packages/ibexa/migrations) | [6.0](../../../tree/main/ibexa/migrations/6.0) |  |
 | [ibexa/namespace-compatibility](https://packagist.org/packages/ibexa/namespace-compatibility) | [1.0](../../../tree/main/ibexa/namespace-compatibility/1.0) |  |
 | [ibexa/notifications](https://packagist.org/packages/ibexa/notifications) | [6.0](../../../tree/main/ibexa/notifications/6.0) |  |

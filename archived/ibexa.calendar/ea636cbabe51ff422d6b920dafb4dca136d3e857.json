@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/calendar": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Calendar\\IbexaCalendarBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_calendar.yaml": {
+                    "contents": [
+                        "ibexa.calendar:",
+                        "    resource: '@IbexaCalendarBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.calendar.rest:",
+                        "    resource: '@IbexaCalendarBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "ea636cbabe51ff422d6b920dafb4dca136d3e857"
+        }
+    }
+}

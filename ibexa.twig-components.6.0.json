@@ -11,8 +11,23 @@
                     "config/": "%CONFIG_DIR%/"
                 }
             },
-            "files": [],
-            "ref": "f2a0508673feab7662ca3bea9e3163f37f09bb09"
+            "files": {
+                "config/packages/ibexa_twig_components.yaml": {
+                    "contents": [
+                        "## Uncomment and change configuration below if you wish to configure twig components",
+                        "",
+                        "#ibexa_twig_components:",
+                        "#    example_components_group:",
+                        "#        example_html_component:",
+                        "#            type: html",
+                        "#            arguments:",
+                        "#                content: 'some example html content'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "18a70b49db390986f80f89237cfc36b22b85d726"
         }
     }
 }

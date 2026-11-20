@@ -2,10 +2,26 @@
     "manifests": {
         "ibexa/oauth2-client": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
             },
-            "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "files": {
+                "config/routes/ibexa_oauth2_client.yaml": {
+                    "contents": [
+                        "ibexa.oauth2_client:",
+                        "  resource: '@IbexaOAuth2ClientBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1816266bc1cc0a25330c538621b0754d0fb00c15"
         }
     }
 }

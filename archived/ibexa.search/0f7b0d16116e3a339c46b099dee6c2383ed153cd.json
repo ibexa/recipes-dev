@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/search": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Search\\IbexaSearchBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_search.yaml": {
+                    "contents": [
+                        "ibexa.search:",
+                        "    resource: '@IbexaSearchBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0f7b0d16116e3a339c46b099dee6c2383ed153cd"
+        }
+    }
+}

@@ -2,10 +2,14 @@
     "manifests": {
         "ibexa/measurement": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": [
+                        "all"
+                    ]
+                }
             },
             "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "ref": "293eedee93b290b5be81406934de95ad7b3fe7a1"
         }
     }
 }

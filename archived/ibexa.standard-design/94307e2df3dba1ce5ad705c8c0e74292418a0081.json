@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/standard-design": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\StandardDesign\\IbexaStandardDesignBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "94307e2df3dba1ce5ad705c8c0e74292418a0081"
+        }
+    }
+}

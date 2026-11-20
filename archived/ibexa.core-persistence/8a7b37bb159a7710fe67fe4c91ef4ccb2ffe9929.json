@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/core-persistence": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\CorePersistence\\IbexaCorePersistenceBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "8a7b37bb159a7710fe67fe4c91ef4ccb2ffe9929"
+        }
+    }
+}

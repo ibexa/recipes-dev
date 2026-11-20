@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-address": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_fieldtype_address.yaml": {
+                    "contents": [
+                        "ibexa.field_type_address:",
+                        "    resource: '@IbexaFieldTypeAddressBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "915fe3f9cc33e41cec0b978241eb8782d14ac25d"
+        }
+    }
+}

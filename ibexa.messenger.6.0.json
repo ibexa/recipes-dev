@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/messenger": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Messenger\\IbexaMessengerBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "566cea829c09f6c6277a408512ec289c53ee8ebc"
+        }
+    }
+}

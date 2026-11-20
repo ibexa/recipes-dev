@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/image-picker": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ImagePicker\\IbexaImagePickerBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "c09fb30e55deb5ee521bde546e9aaec54d6f8ede"
+        }
+    }
+}

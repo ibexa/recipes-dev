@@ -2,10 +2,54 @@
     "manifests": {
         "ibexa/http-cache": {
             "manifest": {
-                "bundles": []
+                "bundles": {
+                    "Ibexa\\Bundle\\HttpCache\\IbexaHttpCacheBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
             },
-            "files": [],
-            "ref": "575fa895eb28f9d0b7e65e02ba9e3bcb16782094"
+            "files": {
+                "config/packages/ibexa_http_cache.yaml": {
+                    "contents": [
+                        "## FOSHttpCache Configuration",
+                        "fos_http_cache:",
+                        "    cache_control:",
+                        "        rules:",
+                        "            # Make sure already cacheable (fresh) responses from Ibexa which are errors/redirect gets lower ttl (then default_ttl)",
+                        "            -   match:",
+                        "                    match_response: \"response.isFresh() && ( response.isServerError() || response.isClientError() || response.isRedirect() )\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        max_age: 5",
+                        "                        s_maxage: 20",
+                        "            # Example of performance tuning, force TTL on 404 pages to avoid crawlers / ... taking to much load",
+                        "            # Should not be set to high, as cached 404's can cause issues for future routes, url aliases, wildcards, ..",
+                        "            -   match:",
+                        "                    match_response: \"!response.isFresh() && response.isNotFound()\"",
+                        "                headers:",
+                        "                    overwrite: true",
+                        "                    cache_control:",
+                        "                        public: true",
+                        "                        max_age: 0",
+                        "                        s_maxage: 20",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_http_cache.yaml": {
+                    "contents": [
+                        "ibexa.http_cache:",
+                        "    resource: '@IbexaHttpCacheBundle/Resources/config/routing.yml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c1d7a18f75845e4e94cd5c7332762d70291994c8"
         }
     }
 }
