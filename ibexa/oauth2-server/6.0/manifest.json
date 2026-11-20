@@ -1,4 +1,16 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\OAuth2Server\\IbexaOAuth2ServerBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  },
+  "env": {
+    "#23": "Configure OAuth2 server",
+    "OAUTH2_PUBLIC_KEY_PATH": "",
+    "OAUTH2_PRIVATE_KEY_PATH": "",
+    "OAUTH2_PRIVATE_KEY_PASSPHRASE": "",
+    "OAUTH2_ENCRYPTION_KEY": ""
+  }
 }
