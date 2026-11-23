@@ -16,7 +16,7 @@ Encore.setOutputPath('public/build/')
     .copyFiles({
         from: './assets/images',
         to: 'images/[path][name].[ext]',
-        pattern: /\.(png|svg|webp)$/,
+        pattern: /\.(png|svg)$/,
     })
 
     // enables @babel/preset-env polyfills
@@ -28,6 +28,11 @@ Encore.setOutputPath('public/build/')
 // Welcome page stylesheets
 Encore.addEntry('welcome-page-css', [
     path.resolve(__dirname, './assets/scss/welcome-page.scss'),
+]);
+
+// Welcome page javascripts
+Encore.addEntry('welcome-page-js', [
+    path.resolve(__dirname, './assets/js/welcome.page.js'),
 ]);
 
 Encore.addEntry('app', './assets/app.js');
