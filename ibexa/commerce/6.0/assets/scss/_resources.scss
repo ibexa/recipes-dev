@@ -45,7 +45,7 @@
         height: 64px;
         padding: 8px;
         border-radius: 8px;
-        background: color.change($ibexa-welcome-color-primary-0, $alpha: 0.4);
+        background: $ibexa-welcome-color-primary-0;
     }
 
     &__icon {
