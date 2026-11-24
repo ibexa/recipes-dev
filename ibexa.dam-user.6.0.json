@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/dam-user": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\DamUser\\IbexaDamUserBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "13e316558639f12b8f03d22c67bf3d5a26396989"
+        }
+    }
+}

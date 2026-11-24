@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-page": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypePage\\IbexaFieldTypePageBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_fieldtype_page.yaml": {
+                    "contents": [
+                        "ibexa.field_type_page:",
+                        "    resource: '@IbexaFieldTypePageBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c419d30684a05c40710e93b36b77d474f4ce469e"
+        }
+    }
+}

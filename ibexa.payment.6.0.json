@@ -1,0 +1,36 @@
+{
+    "manifests": {
+        "ibexa/payment": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Payment\\IbexaPaymentBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_payment.yaml": {
+                    "contents": [
+                        "ibexa.payment:",
+                        "    resource: '@IbexaPaymentBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.payment.admin:",
+                        "    resource: '@IbexaPaymentBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.payment.rest:",
+                        "    resource: '@IbexaPaymentBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a7e48bbe74d5ce9cce5538957eea97d484982ab4"
+        }
+    }
+}

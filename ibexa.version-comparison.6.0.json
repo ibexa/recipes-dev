@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/version-comparison": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\VersionComparison\\IbexaVersionComparisonBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_version_comparison.yaml": {
+                    "contents": [
+                        "ibexa.version_comparison:",
+                        "    resource: '@IbexaVersionComparisonBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1b2de1a2958aa25324bc1fd7fb550d721186aa0c"
+        }
+    }
+}

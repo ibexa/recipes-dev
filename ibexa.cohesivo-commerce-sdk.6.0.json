@@ -1,0 +1,67 @@
+{
+    "manifests": {
+        "ibexa/cohesivo-commerce-sdk": {
+            "manifest": {
+                "bundles": [],
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_cohesivo_commerce_sdk.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    repositories:",
+                        "        default:",
+                        "            product_catalog:",
+                        "                regions:",
+                        "                    default: ~",
+                        "",
+                        "    siteaccess:",
+                        "        list: [import]",
+                        "        groups:",
+                        "            site_group: [import]",
+                        "            storefront_group: [site]",
+                        "",
+                        "    system:",
+                        "        default:",
+                        "            user_content_type_identifier: ['customer', 'member']",
+                        "",
+                        "        site:",
+                        "            user_content_type_identifier: ['customer']",
+                        "            user_registration:",
+                        "                user_type_identifier: 'customer'",
+                        "                group_remote_id: ibexa_customer_group",
+                        "",
+                        "        admin_group:",
+                        "            user_content_type_identifier: ['customer', 'member']",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/ibexa_storefront.yaml": {
+                    "contents": [
+                        "ibexa:",
+                        "    system:",
+                        "        storefront_group:",
+                        "            product_catalog:",
+                        "                currencies:",
+                        "                    - EUR",
+                        "                regions:",
+                        "                    - default",
+                        "            storefront:",
+                        "                name: Ibexa",
+                        "                logo: 'bundles/ibexaadminui/img/ibexa-logo.svg'",
+                        "                product_list_filters:",
+                        "                    - product_type",
+                        "                    - product_availability",
+                        "                    - product_custom_price",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e6d1411b58855c3ebfca3f7751d940517e885855"
+        }
+    }
+}

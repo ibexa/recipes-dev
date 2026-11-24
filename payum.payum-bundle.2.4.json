@@ -1,0 +1,42 @@
+{
+    "manifests": {
+        "payum/payum-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Payum\\Bundle\\PayumBundle\\PayumBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/payum.yaml": {
+                    "contents": [
+                        "payum:",
+                        "    storages:",
+                        "        Ibexa\\Payment\\Values\\Payment:",
+                        "            custom: Ibexa\\ConnectorPayum\\Storage\\Payment",
+                        "",
+                        "    security:",
+                        "        token_storage:",
+                        "            Ibexa\\ConnectorPayum\\Token\\PaymentToken:",
+                        "                doctrine: orm",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/payum.yaml": {
+                    "contents": [
+                        "payum_all:",
+                        "    resource: \"@PayumBundle/Resources/config/routing/all.yaml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "6d86ff5d3f016340b22971d01e4ca3bc2f379433"
+        }
+    }
+}

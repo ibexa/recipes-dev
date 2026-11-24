@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-matrix": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeMatrix\\IbexaFieldTypeMatrixBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "fe12f39135e8faed4ec577eda31383d66b243817"
+        }
+    }
+}

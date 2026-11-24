@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/shipping": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Shipping\\IbexaShippingBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_shipping.yaml": {
+                    "contents": [
+                        "ibexa.shipping:",
+                        "    resource: '@IbexaShippingBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.shipping.rest:",
+                        "    resource: '@IbexaShippingBundle/Resources/config/routing/rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a6d1cbfb7c680277291df12e14aa25bac6faf7d2"
+        }
+    }
+}

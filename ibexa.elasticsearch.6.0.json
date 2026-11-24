@@ -1,0 +1,38 @@
+{
+    "manifests": {
+        "ibexa/elasticsearch": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "ELASTICSEARCH_DSN": "http://localhost:9200"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_elasticsearch.yaml": {
+                    "contents": [
+                        "# Base configuration for Elasticsearch",
+                        "parameters:",
+                        "    env(ELASTICSEARCH_URL): '%env(string:ELASTICSEARCH_DSN)%'",
+                        "    elasticsearch_dsn: \"%env(string:ELASTICSEARCH_URL)%\"",
+                        "",
+                        "ibexa_elasticsearch:",
+                        "    connections:",
+                        "        default:",
+                        "            hosts:",
+                        "                - \"%elasticsearch_dsn%\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "ff8a631681cdf31e22394fb0b97fbb8fc17cd796"
+        }
+    }
+}

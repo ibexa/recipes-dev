@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/corporate-account-commerce-bridge": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\CorporateAccountCommerceBridge\\IbexaCorporateAccountCommerceBridgeBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "20f55ab2e72ea2861d43ec8f897fe6fcf87d303f"
+        }
+    }
+}

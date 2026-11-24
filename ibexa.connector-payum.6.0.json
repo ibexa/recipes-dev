@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/connector-payum": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ConnectorPayum\\IbexaConnectorPayumBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "edb642933d36f2c8ef949d4c800c8a1dca8901a9"
+        }
+    }
+}

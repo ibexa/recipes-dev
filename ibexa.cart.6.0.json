@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "ibexa/cart": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Cart\\IbexaCartBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_cart.yaml": {
+                    "contents": [
+                        "ibexa.cart:",
+                        "    resource: '@IbexaCartBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.cart.rest:",
+                        "    resource: '@IbexaCartBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "30818c1f88e9660c0b4ce6b1040ac7e10a8b2eef"
+        }
+    }
+}

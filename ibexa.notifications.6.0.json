@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/notifications": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Notifications\\IbexaNotificationsBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "13e8617d5c22dad0410c6b870f224c3f18d23c19"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/core-search": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\CoreSearch\\IbexaCoreSearchBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "356231e73ccc80ca567510f16c7dc71c1d65328d"
+        }
+    }
+}

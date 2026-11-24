@@ -1,0 +1,49 @@
+{
+    "manifests": {
+        "ibexa/product-catalog": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_product_catalog.yaml": {
+                    "contents": [
+                        "ibexa_product_catalog:",
+                        "    engines:",
+                        "        default:",
+                        "            type: local",
+                        "            options:",
+                        "                root_location_remote_id: ibexa_product_catalog_root",
+                        "                product_type_group_identifier: 'product'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_product_catalog.yaml": {
+                    "contents": [
+                        "ibexa.product_catalog:",
+                        "    resource: '@IbexaProductCatalogBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.product_catalog.admin:",
+                        "    resource: '@IbexaProductCatalogBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.product_catalog.rest:",
+                        "    resource: '@IbexaProductCatalogBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "4158902f8dc7d0c8f9e59437d76464bea17d1500"
+        }
+    }
+}

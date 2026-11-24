@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/checkout": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Checkout\\IbexaCheckoutBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_checkout.yaml": {
+                    "contents": [
+                        "ibexa.checkout:",
+                        "    resource: '@IbexaCheckoutBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3a9df0e3ae4847bceaaf1516a404882e8dde7503"
+        }
+    }
+}

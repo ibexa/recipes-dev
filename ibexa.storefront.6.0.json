@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/storefront": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Storefront\\IbexaStorefrontBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_storefront.yaml": {
+                    "contents": [
+                        "ibexa.storefront:",
+                        "    resource: '@IbexaStorefrontBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "d700c18806c9283d7bbf03c81afb91a71bca85d0"
+        }
+    }
+}

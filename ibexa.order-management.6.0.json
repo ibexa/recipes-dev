@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "ibexa/order-management": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\OrderManagement\\IbexaOrderManagementBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_order_management.yaml": {
+                    "contents": [
+                        "ibexa.order_management:",
+                        "    resource: '@IbexaOrderManagementBundle/Resources/config/routing_admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.order_management.rest:",
+                        "    resource: '@IbexaOrderManagementBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5bc62024f5063d785e4cb91781c5c971411ee447"
+        }
+    }
+}

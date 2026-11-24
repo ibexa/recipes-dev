@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/workflow": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Workflow\\IbexaWorkflowBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_workflow.yaml": {
+                    "contents": [
+                        "ibexa.workflow:",
+                        "    resource: '@IbexaWorkflowBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "53fd8dfab4385974222f5b9ec049fac47a1c69f6"
+        }
+    }
+}
