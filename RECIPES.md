@@ -65,7 +65,6 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/cart](https://packagist.org/packages/ibexa/cart) | [6.0](../../../tree/main/ibexa/cart/6.0) |  |
 | [ibexa/cdp](https://packagist.org/packages/ibexa/cdp) | [6.0](../../../tree/main/ibexa/cdp/6.0) | `cdp`, `ibexa-cdp`, `ibexacdp` |
 | [ibexa/checkout](https://packagist.org/packages/ibexa/checkout) | [6.0](../../../tree/main/ibexa/checkout/6.0) |  |
-| [ibexa/ckeditor-premium](https://packagist.org/packages/ibexa/ckeditor-premium) | [6.0](../../../tree/main/ibexa/ckeditor-premium/6.0) |  |
 | [ibexa/cohesivo](https://packagist.org/packages/ibexa/cohesivo) | [6.0](../../../tree/main/ibexa/cohesivo/6.0) | `cohesivo`, `ibexa-cohesivo`, `ibexacohesivo` |
 | [ibexa/collaboration](https://packagist.org/packages/ibexa/collaboration) | [6.0](../../../tree/main/ibexa/collaboration/6.0) |  |
 | [ibexa/commerce](https://packagist.org/packages/ibexa/commerce) | [6.0](../../../tree/main/ibexa/commerce/6.0) | `cms-commerce`, `cmscommerce`, `commerce`, `dxp-commerce`, `dxpcommerce`, `ibexa-commerce`, `ibexacommerce` |
@@ -123,7 +122,6 @@ Additional recipes can be found on the [Contrib Recipes Repository](https://gith
 | [ibexa/fieldtype-page](https://packagist.org/packages/ibexa/fieldtype-page) | [6.0](../../../tree/main/ibexa/fieldtype-page/6.0) |  |
 | [ibexa/fieldtype-query](https://packagist.org/packages/ibexa/fieldtype-query) | [6.0](../../../tree/main/ibexa/fieldtype-query/6.0) |  |
 | [ibexa/fieldtype-richtext](https://packagist.org/packages/ibexa/fieldtype-richtext) | [6.0](../../../tree/main/ibexa/fieldtype-richtext/6.0) |  |
-| [ibexa/fieldtype-richtext-rte](https://packagist.org/packages/ibexa/fieldtype-richtext-rte) | [6.0](../../../tree/main/ibexa/fieldtype-richtext-rte/6.0) |  |
 | [ibexa/form-builder](https://packagist.org/packages/ibexa/form-builder) | [6.0](../../../tree/main/ibexa/form-builder/6.0) |  |
 | [ibexa/graphql](https://packagist.org/packages/ibexa/graphql) | [6.0](../../../tree/main/ibexa/graphql/6.0) |  |
 | [ibexa/headless](https://packagist.org/packages/ibexa/headless) | [6.0](../../../tree/main/ibexa/headless/6.0) | `cms-headless`, `cmsheadless`, `dxp-headless`, `dxpheadless`, `headless`, `ibexa-headless`, `ibexaheadless` |
