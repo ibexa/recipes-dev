@@ -1,4 +1,9 @@
 {
   "aliases": [],
-  "bundles": {}
+  "bundles": {
+    "Ibexa\\Bundle\\OrderManagement\\IbexaOrderManagementBundle": ["all"]
+  },
+  "copy-from-recipe": {
+    "config/": "%CONFIG_DIR%/"
+  }
 }
