@@ -1,3 +1,10 @@
+ibexa.share:
+    resource: '@IbexaShareBundle/Resources/config/routing.yaml'
+
+ibexa.rest.share:
+    resource: '@IbexaShareBundle/Resources/config/routing_rest.yaml'
+    prefix: '%ibexa.rest.path_prefix%'
+
 ibexa.share.routing_admin:
     resource: '@IbexaShareBundle/Resources/config/routing_admin.yaml'
     defaults:
