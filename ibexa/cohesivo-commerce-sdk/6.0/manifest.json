@@ -1,0 +1,7 @@
+{
+    "aliases": ["cohesivo-commerce-sdk", "ibexa-cohesivo-commerce-sdk"],
+    "bundles": {},
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}
