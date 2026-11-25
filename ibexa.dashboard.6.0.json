@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "ibexa/dashboard": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Dashboard\\IbexaDashboardBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_dashboard.yaml": {
+                    "contents": [
+                        "ibexa.dashboard:",
+                        "    resource: '@IbexaDashboardBundle/Resources/config/routing/admin.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a5a8ab79bd22cb777b7fe2723c8f89b87f6941ab"
+        }
+    }
+}

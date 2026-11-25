@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/measurement": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "293eedee93b290b5be81406934de95ad7b3fe7a1"
+        }
+    }
+}

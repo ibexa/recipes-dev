@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "ibexa/scheduler": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Scheduler\\IbexaSchedulerBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_scheduler.yaml": {
+                    "contents": [
+                        "ibexa.scheduler:",
+                        "    resource: '@IbexaSchedulerBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.scheduler.rest:",
+                        "    resource: '@IbexaSchedulerBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.scheduler.rest.prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "7cd78b808089a5acc1595ff6adc5acf0408fc14f"
+        }
+    }
+}

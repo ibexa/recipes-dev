@@ -1,0 +1,32 @@
+{
+    "manifests": {
+        "ibexa/fieldtype-richtext": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\FieldTypeRichText\\IbexaFieldTypeRichTextBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_richtext.yaml": {
+                    "contents": [
+                        "ibexa_fieldtype_richtext:",
+                        "    enabled_attribute_types:",
+                        "        - number",
+                        "        - string",
+                        "        - boolean",
+                        "        - choice",
+                        "        - link",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "07afdc025db7cfb25097e6b8dc0d906f104bdb61"
+        }
+    }
+}

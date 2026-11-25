@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "ibexa/connector-dam": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_connector_dam.yaml": {
+                    "contents": [
+                        "ibexa.connector_dam:",
+                        "    resource: '@IbexaConnectorDamBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.connector_dam.rest:",
+                        "    resource: '@IbexaConnectorDamBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "9c309774fb7c163c7ee256cc335352d52b09d8a3"
+        }
+    }
+}

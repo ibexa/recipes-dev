@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/tree-builder": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "dab0227071366b9fa339992a6f4c47d9e30730fa"
+        }
+    }
+}

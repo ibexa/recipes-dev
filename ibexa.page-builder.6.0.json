@@ -1,0 +1,50 @@
+{
+    "manifests": {
+        "ibexa/page-builder": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\PageBuilder\\IbexaPageBuilderBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/packages/ibexa_page_builder.yaml": {
+                    "contents": [
+                        "jms_translation:",
+                        "    configs:",
+                        "        page_builder:",
+                        "            dirs:",
+                        "                - '%kernel.project_dir%/vendor/ibexa/page-builder/src'",
+                        "            output_dir: '%kernel.project_dir%/vendor/ibexa/page-builder/src/bundle/Resources/translations/'",
+                        "            excluded_dirs: [Behat, Tests]",
+                        "            output_format: \"xlf\"",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_page_builder.yaml": {
+                    "contents": [
+                        "ibexa.page_builder:",
+                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.page_builder_preview:",
+                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_preview.yaml'",
+                        "",
+                        "ibexa.page_builder.rest:",
+                        "    resource: '@IbexaPageBuilderBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "fb71c951a51adddb447c0772ff26fa70d2bb5285"
+        }
+    }
+}

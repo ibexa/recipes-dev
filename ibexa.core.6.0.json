@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "ibexa/core": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Core\\IbexaCoreBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\IO\\IbexaIOBundle": [
+                        "all"
+                    ],
+                    "Ibexa\\Bundle\\Debug\\IbexaDebugBundle": [
+                        "dev",
+                        "test",
+                        "behat"
+                    ],
+                    "Ibexa\\Bundle\\RepositoryInstaller\\IbexaRepositoryInstallerBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "87579bf15cb1efe2b61686ff7ec78c0e08be2246"
+        }
+    }
+}

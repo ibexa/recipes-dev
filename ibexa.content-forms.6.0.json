@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/content-forms": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ContentForms\\IbexaContentFormsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_content_forms.yaml": {
+                    "contents": [
+                        "ibexa.content_forms:",
+                        "    resource: '@IbexaContentFormsBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "7d95a83ff797b51f7471ff14e580b0d44c2c23b4"
+        }
+    }
+}

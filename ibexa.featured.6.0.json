@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/featured": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Featured\\IbexaFeaturedBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_featured.yaml": {
+                    "contents": [
+                        "ibexa.featured:",
+                        "    resource: '@IbexaFeaturedBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "fad14c111cc3942b610d0aaec106fd6678531ef4"
+        }
+    }
+}

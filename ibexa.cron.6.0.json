@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/cron": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Cron\\IbexaCronBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "7909ce43b6af1f3c03c1849444ba8fc13f22b473"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/image-editor": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_image_editor.yaml": {
+                    "contents": [
+                        "ibexa.image_editor:",
+                        "    resource: '@IbexaImageEditorBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "9dbd9bcb3579fb4fa5453c7dded7b3ad3a82c7a9"
+        }
+    }
+}

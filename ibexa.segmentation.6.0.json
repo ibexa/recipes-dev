@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "ibexa/segmentation": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_segmentation.yaml": {
+                    "contents": [
+                        "ibexa.segmentation:",
+                        "    resource: '@IbexaSegmentationBundle/Resources/config/routing.yaml'",
+                        "",
+                        "ibexa.segmentation.rest:",
+                        "    resource: '@IbexaSegmentationBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0df1fa961461d981bb52377ccad2f969ecda3230"
+        }
+    }
+}

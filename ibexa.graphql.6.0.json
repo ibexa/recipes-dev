@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/graphql": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\GraphQL\\IbexaGraphQLBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "ba056185a45ad2af3bd926e3cde9dfeb9e426c66"
+        }
+    }
+}

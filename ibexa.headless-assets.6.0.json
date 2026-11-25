@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/headless-assets": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\HeadlessAssets\\IbexaHeadlessAssetsBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "a7cc957526bd3753d5c7d3c64109d1299c25c467"
+        }
+    }
+}

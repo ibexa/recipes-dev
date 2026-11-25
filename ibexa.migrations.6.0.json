@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "ibexa/migrations": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "716e54cf8f618f2eb71b10f56308f8b16aadcb3d"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "manifests": {
+        "ibexa/webhooks": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\Webhooks\\IbexaWebhooksBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "env": {
+                    "#1": "Base64-encoded 32-byte key encrypting stored webhook secrets. Required before webhooks can be used.",
+                    "#2": "Generate one with: php -r 'echo base64_encode(sodium_crypto_secretbox_keygen()), PHP_EOL;'",
+                    "#3": "Keep the production key out of the committed .env file, e.g. in .env.local or a real environment variable.",
+                    "WEBHOOK_SECRET_KEY": ""
+                }
+            },
+            "files": {
+                "config/packages/ibexa_webhooks.yaml": {
+                    "contents": [
+                        "ibexa_webhooks:",
+                        "    secret_key: '%env(base64:WEBHOOK_SECRET_KEY)%'",
+                        "    delivery:",
+                        "        # Webhooks are delivered asynchronously through a dedicated queue in the Ibexa Messenger table.",
+                        "        # Consume it with: php bin/console messenger:consume ibexa_webhook --time-limit=3600",
+                        "        # Use 'sync://' to deliver webhooks synchronously within the request instead.",
+                        "        transport_dsn: 'doctrine://ibexa.current?table_name=ibexa_messenger_messages&queue_name=ibexa_webhook&auto_setup=false'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/ibexa_webhooks.yaml": {
+                    "contents": [
+                        "ibexa.webhooks:",
+                        "    resource: '@IbexaWebhooksBundle/Resources/config/routing.yaml'",
+                        "    defaults:",
+                        "        siteaccess_group_whitelist: '%admin_group_name%'",
+                        "",
+                        "ibexa.rest.webhooks:",
+                        "    resource: '@IbexaWebhooksBundle/Resources/config/routing_rest.yaml'",
+                        "    prefix: '%ibexa.rest.path_prefix%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e71b6495b73993cbd42d55842f2f1b2c58c607e0"
+        }
+    }
+}

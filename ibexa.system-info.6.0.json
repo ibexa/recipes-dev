@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/system-info": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_system_info.yaml": {
+                    "contents": [
+                        "ibexa.system_info:",
+                        "  resource: '@IbexaSystemInfoBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "99ad460995dcb5e09c8d34beebd5984d980092c0"
+        }
+    }
+}

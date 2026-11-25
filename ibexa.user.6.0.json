@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "ibexa/user": {
+            "manifest": {
+                "bundles": {
+                    "Ibexa\\Bundle\\User\\IbexaUserBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/ibexa_user.yaml": {
+                    "contents": [
+                        "ibexa.user:",
+                        "    resource: '@IbexaUserBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f24b0afd616a41d07080ec478e8f0dbe652dbd60"
+        }
+    }
+}
