@@ -1,0 +1,67 @@
+@use 'variables' as *;
+
+.ibexa-welcome-hero {
+    position: relative;
+    height: 773px;
+    padding-top: 48px;
+    background:
+        linear-gradient(22.98deg, $ibexa-welcome-color-primary-alt-0 26.89%, $ibexa-welcome-color-primary-10 100.43%),
+        $ibexa-welcome-color-neutral-30;
+
+    &__logo {
+        height: 64px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        max-width: 610px;
+        margin-top: 140px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+
+    &__lead {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__art {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 3200px;
+        height: 960px;
+        margin-left: -1600px;
+        max-width: none;
+        pointer-events: none;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .ibexa-welcome-hero__art {
+        transform: translateX(-332px) scale(0.85);
+        transform-origin: 2560px 100px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .ibexa-welcome-hero__art {
+        transform: translateX(-332px) scale(0.8);
+    }
+}
