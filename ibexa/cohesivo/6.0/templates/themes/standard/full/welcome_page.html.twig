@@ -2,6 +2,9 @@
 
 {% trans_default_domain 'ibexa_welcome_page' %}
 
+{% set doc_version = constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')|split('.')|slice(0, 2)|join('.') %}
+{% set doc_url = 'https://doc.ibexa.co/en/' ~ doc_version ~ '/' %}
+
 {% block meta %}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 {% endblock %}
@@ -32,7 +35,7 @@
                     <a href="{{ url('ibexa.dashboard', { 'siteaccess': 'admin' }) }}" class="ibexa-welcome-btn ibexa-welcome-btn--primary">
                         {{ 'ibexa_platform_welcome_page.hero.go_to_cohesivo'|trans|desc('Go to Cohesivo') }}
                     </a>
-                    <a href="https://doc.ibexa.co" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                    <a href="{{ doc_url }}" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
                         {{ 'ibexa_platform_welcome_page.hero.open_documentation'|trans|desc('Open documentation') }}
                     </a>
                 </div>
@@ -62,35 +65,35 @@
                         title: 'ibexa_platform_welcome_page.resources.first_steps.title'|trans|desc('First steps'),
                         description: 'ibexa_platform_welcome_page.resources.first_steps.description'|trans|desc('Set up your content model, templates and SiteAccesses, then replace this welcome page.'),
                         action: 'ibexa_platform_welcome_page.resources.first_steps.action'|trans|desc('Explore first steps'),
-                        url: 'https://doc.ibexa.co/en/latest/getting_started/first_steps/',
+                        url: doc_url ~ 'getting_started/first_steps/',
                     },
                     {
                         icon: 'academy',
                         title: 'ibexa_platform_welcome_page.resources.tutorial.title'|trans|desc('Beginner tutorial'),
                         description: 'ibexa_platform_welcome_page.resources.tutorial.description'|trans|desc('Build your first site step by step, from content model to frontend templates.'),
                         action: 'ibexa_platform_welcome_page.resources.tutorial.action'|trans|desc('Start tutorial'),
-                        url: 'https://doc.ibexa.co/en/latest/tutorials/beginner_tutorial/beginner_tutorial/',
+                        url: doc_url ~ 'tutorials/beginner_tutorial/beginner_tutorial/',
                     },
                     {
                         icon: 'bell',
-                        title: 'ibexa_platform_welcome_page.resources.whats_new.title'|trans({ '%version%': constant('Ibexa\\Contracts\\Core\\Ibexa::VERSION')|split('.')|slice(0, 2)|join('.') })|desc('What’s new in %version%'),
+                        title: 'ibexa_platform_welcome_page.resources.whats_new.title'|trans({ '%version%': doc_version })|desc('What’s new in %version%'),
                         description: 'ibexa_platform_welcome_page.resources.whats_new.description'|trans|desc('See new features, deprecations and breaking changes in this release.'),
                         action: 'ibexa_platform_welcome_page.resources.whats_new.action'|trans|desc('Read release notes'),
-                        url: 'https://doc.ibexa.co/en/latest/release_notes/release_notes/',
+                        url: doc_url ~ 'release_notes/ibexa_dxp_v' ~ doc_version ~ '/',
                     },
                     {
                         icon: 'file-code',
                         title: 'ibexa_platform_welcome_page.resources.apis.title'|trans|desc('APIs'),
                         description: 'ibexa_platform_welcome_page.resources.apis.description'|trans|desc('Build headless experiences and integrations with REST, GraphQL or the PHP API.'),
                         action: 'ibexa_platform_welcome_page.resources.apis.action'|trans|desc('Explore APIs'),
-                        url: 'https://doc.ibexa.co/en/latest/api/api/',
+                        url: doc_url ~ 'api/api/',
                     },
                     {
                         icon: 'form-check-list',
                         title: 'ibexa_platform_welcome_page.resources.security.title'|trans|desc('Security checklist'),
                         description: 'ibexa_platform_welcome_page.resources.security.description'|trans|desc('Review the recommended security measures before you deploy to production.'),
                         action: 'ibexa_platform_welcome_page.resources.security.action'|trans|desc('View checklist'),
-                        url: 'https://doc.ibexa.co/en/latest/infrastructure_and_maintenance/security/security_checklist/',
+                        url: doc_url ~ 'infrastructure_and_maintenance/security/security_checklist/',
                     },
                 ] %}
                 {% for card in cards %}
@@ -119,7 +122,7 @@
                             {{ 'ibexa_platform_welcome_page.infrastructure.description'|trans|desc('Set up caching, backups, background tasks and monitoring, so your project is ready for production.') }}
                         </p>
                     </div>
-                    <a href="https://doc.ibexa.co/en/latest/infrastructure_and_maintenance/infrastructure_and_maintenance/" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
+                    <a href="{{ doc_url ~ 'infrastructure_and_maintenance/infrastructure_and_maintenance/' }}" class="ibexa-welcome-btn ibexa-welcome-btn--secondary">
                         {{ 'ibexa_platform_welcome_page.infrastructure.action'|trans|desc('Explore guide') }}
                     </a>
                 </div>
@@ -141,7 +144,7 @@
                         </p>
                     </div>
                     <div class="ibexa-welcome-help__actions">
-                        <a href="https://doc.ibexa.co/en/latest/getting_started/troubleshooting/" class="ibexa-welcome-btn ibexa-welcome-btn--light">
+                        <a href="{{ doc_url ~ 'getting_started/troubleshooting/' }}" class="ibexa-welcome-btn ibexa-welcome-btn--light">
                             {{ 'ibexa_platform_welcome_page.help.troubleshooting'|trans|desc('Troubleshooting') }}
                         </a>
                         <a href="https://support.ibexa.co" class="ibexa-welcome-btn ibexa-welcome-btn--text">
