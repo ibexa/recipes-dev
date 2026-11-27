@@ -2181,6 +2181,20 @@
                     ],
                     "executable": false
                 },
+                "config/packages/ibexa_fieldtype_page.yaml": {
+                    "contents": [
+                        "ibexa_fieldtype_page:",
+                        "    reporting:",
+                        "        block_usage:",
+                        "            # Content types left out of the Page Builder block usage reports. They use Page Builder,",
+                        "            # but are not site pages. Remove an entry to count it, or add your own.",
+                        "            excluded_content_types:",
+                        "                - dashboard_landing_page",
+                        "                - customer_portal_page",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/packages/ibexa_form_builder.yaml": {
                     "contents": [
                         "jms_translation:",
@@ -3990,7 +4004,7 @@
                     "executable": false
                 }
             },
-            "ref": "aba951d6842aec64689d83213fada37e89fb8a49"
+            "ref": "b23b2d1c208e9c915a39fac0c7444bf7429cde24"
         }
     }
 }
